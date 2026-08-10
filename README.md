@@ -1,0 +1,358 @@
+# A reliability audit of HateXplain
+
+Three annotators, 20148 posts, 60444 labels, and one question: **what can a
+measurement built on these labels actually support?**
+
+This repository applies [Rubricon](../rubricon) -- an evaluation-signal harness
+with agreement statistics, power analysis, and a programmatic claim gate -- to
+the real human annotations of the HateXplain corpus. Nothing is simulated. Every
+number below is computed from the published annotation file and written to
+`results/`.
+
+---
+
+## Headline findings
+
+**1. The labels are moderately reliable, precisely measured, and the moderation
+is real rather than an artefact.**
+
+| coefficient | value |
+|---|---|
+| Krippendorff's alpha (nominal, 3-way) | **0.4597** |
+| 95% cluster-bootstrap CI | [0.4452, 0.4729] |
+| raw pairwise agreement | 0.6439 |
+| Fleiss' kappa | 0.4597 |
+| Gwet's AC1 | 0.4689 |
+
+The kappa paradox does **not** fire. Raw agreement is 0.6439, nowhere near the
+0.85 the paradox needs; the AC1-kappa gap is 0.0092, not the >0.25 it needs; and
+the most common category holds only 40.5% of the mass. All three chance-corrected
+coefficients land within 0.0092 of each other. That rules out prevalence skew as
+the explanation and leaves genuine disagreement about the construct -- which
+matters practically, because it means neither stratified oversampling nor
+annotator retraining would move this number.
+
+**2. The binary task most classifiers actually train on is materially more
+reliable than the 3-way task they are scored on.**
+
+| task | alpha | raw agreement |
+|---|---|---|
+| 3-way (normal / offensive / hatespeech) | 0.4597 | 0.6439 |
+| binary (normal vs toxic) | **0.5613** | 0.7887 |
+| offensive vs hatespeech, conditional | 0.4181 | |
+
+Collapsing to the binary decision moves alpha by +0.1016 (+22.1%) and the
+bootstrap intervals do not overlap. Annotators broadly agree about whether a post
+should be acted on, and disagree about what to call it: 40.7% of all disagreeing
+annotator pairs are offensive-versus-hatespeech, a distinction most deployed
+moderation systems never need to make. A system evaluated on the 3-way label is
+being scored against a noisier target than the decision it will be deployed to
+make.
+
+**3. There is an accuracy ceiling, and published numbers are closer to it than
+they look.**
+
+The best possible predictor -- one that names each post's modal label -- would
+still disagree with a randomly chosen annotator on 18.6% of posts. The ceiling is
+**0.8143** (81.4%) on the 3-way task and 0.8943 on the binary one. Separately, 919 posts
+(4.6%) have three different labels and therefore no target label at all; how a
+downstream user resolves them is a decision made outside the annotation protocol.
+
+**4. A two-point leaderboard gap on a test-split-sized evaluation is inside the
+noise floor.**
+
+At n=2015 (10% of the corpus, the documented 8:1:1 test share), with two systems
+disagreeing on 20% of items, the minimum detectable effect at 80% power is 0.0279
+on the observed scale and 0.0329 in true-score units. Detecting a 2-point gap
+reliably needs n >= 3925. Evaluated on all 20148 posts the same comparison
+resolves 0.0088, so the constraint is the split, not the corpus.
+
+**5. The reliability coefficient is robust to any single annotator. The gold
+labels are not.**
+
+The busiest annotator produced 5,730 labels -- 9.5% of the corpus, present on
+28.4% of posts. Removing them moves overall alpha by only -0.0207, because alpha
+weights posts rather than people. But 2,300 posts (11.4% of the corpus) lose
+their majority label entirely, because that person's vote was one of the two that
+created it. Across the whole corpus, 51.1% of posts sit at a margin of one vote.
+
+**6. An LLM judge on this task should be measured against 76.1%, not against
+100%.**
+
+A real held-out annotator, scored against two of their peers, matches the panel
+on 76.1% of the posts where those two peers agreed (judge-panel alpha 0.6255).
+The two-rater panel reaches consensus on only 64.2% of posts at all. Correcting
+the judge-panel alpha for the panel's own unreliability lifts it to 0.7882. A
+judge reported at 76.1% on this task is at the human ceiling, not two-thirds of the
+way to it.
+
+**7. On a fixed labelling budget, aggregate statistical power is maximised at one
+rater per item -- at any reliability.**
+
+Single-rater reliability is 0.4597; the published 3-rater aggregate reaches
+0.7185, above Krippendorff's tentative-conclusion floor. Reaching 0.800 would
+take 5 raters. But substituting a fixed budget into the attenuation model gives a
+true-scale MDE proportional to `sqrt((1 + (k-1)*rho_1) / rho_1)`, strictly
+increasing in `k`, so more items always beats more raters for detecting a
+difference between two systems: 0.0075 at k=1 against 0.0104 at k=3, a 39%
+penalty. Replication earns its cost through measurability and per-item
+defensibility, not through power -- and a budget argument that conflates the two
+will reach a confident wrong answer in whichever direction it started.
+
+---
+
+## What this is, and what it is not
+
+HateXplain is careful, well-documented work, and this study is not a criticism of
+it. Hate speech is a subjective construct with genuinely contested boundaries.
+A reliability ceiling on such a construct is a property of the *thing being
+measured*, not a defect in the people who measured it, and the authors were
+explicit about their annotation protocol in a way that makes an audit like this
+possible at all. Most benchmarks cannot be audited this way because they do not
+publish per-annotator labels; HateXplain does, and that is a contribution in
+itself.
+
+The problem this study addresses is downstream. Once a corpus is released, its
+majority label becomes "ground truth", and systems get ranked by how often they
+reproduce it -- with no reference to how reproducible it was. This repository
+computes the numbers a downstream user needs in order to know which of their
+conclusions the labels can carry.
+
+**Claimed:**
+
+- The agreement coefficients, consensus structure, confusion structure,
+  per-annotator statistics, and per-community statistics are exact computations
+  over the published annotation file.
+- The accuracy ceilings are exact given the definition stated with each one.
+- The kappa-paradox test is a direct evaluation of a stated rule.
+
+**Not claimed:**
+
+- That HateXplain is unusually noisy. No comparison corpus was analysed here.
+  0.4597 is a normal figure for subjective content moderation; the point is that
+  it is rarely propagated into the conclusions drawn from the data.
+- That any specific published result is wrong. The MDE analysis says what size of
+  gap a design of a given size can resolve; it does not evaluate anyone's paper.
+- That the per-community agreement differences are causal. They are confounded
+  with label mix, and the study says so where it reports them.
+- Anything at all about any language model. **No model was called.** The "judge"
+  in Study B is a held-out human annotator, and every number it produces is
+  labelled as a human-ceiling estimate.
+
+---
+
+## The dataset
+
+> Mathew, B., Saha, P., Yimam, S. M., Biemann, C., Goyal, P., & Mukherjee, A.
+> (2021). HateXplain: A Benchmark Dataset for Explainable Hate Speech Detection.
+> *Proceedings of the AAAI Conference on Artificial Intelligence*, 35(17),
+> 14867-14875.
+
+Source: <https://github.com/hate-alert/HateXplain> (MIT licence). 20148 posts from
+Twitter and Gab, each labelled `normal` / `offensive` / `hatespeech` by exactly
+three crowd annotators drawn from a pool of 253, with a target-community
+multi-select and token-level rationales. This study uses the labels and the
+target field; the rationales are parsed and preserved but not analysed.
+
+---
+
+## The three studies
+
+### Study A -- label-quality audit (`results/study_a.json`)
+
+Agreement battery with a cluster-bootstrap interval; the kappa-paradox test;
+consensus structure; pairwise label confusion; the 3-way/binary contrast;
+per-annotator profiles, load and leave-one-out exposure; per-community agreement;
+the accuracy ceiling and MDE grid; and the signal gate.
+
+Consensus structure:
+
+| mode | posts | share |
+|---|---|---|
+| unanimous | 9,845 | 48.9% |
+| 2-1 split | 9,384 | 46.6% |
+| three-way, no majority | 919 | 4.6% |
+
+Per-community agreement is reported against a like-for-like baseline rather than
+against the corpus figure. Every targeted community sits below 0.4597, but so
+does the baseline over all 12,466 targeted posts (0.3171) -- that drop is
+restriction of range, because selecting posts that target a community removes the
+easy `normal` units. Read against that baseline, alpha across the 11 communities
+clearing the 250-post floor spans 0.1216. Eight further communities are reported
+with an explicit `insufficient_for_claim` marker instead of a comparison.
+
+The signal gate is run over seven claims a paper or model card might plausibly
+make. Four are blocked under the pre-registered default policy
+(`C-MEAS-01`, `C-RANK-01`, `C-COMM-01`, `C-GATE-01`); two of those clear under the
+harness's deliberately looser exploratory policy, which is the point of having
+two policies -- relaxing the bar becomes an explicit, reviewable act rather than
+something that happens by omission. Blocked claims stay in the ledger with their
+reasons; nothing is silently dropped.
+
+### Study B -- judge validation at zero budget (`results/study_b.json`)
+
+One real annotator is held out per post and placed in the judge's seat, scored
+against the remaining two. This exercises the entire scoring path -- protocol,
+panel construction, agreement, disattenuation, ceilings -- against real labels
+before any inference budget is spent, and it measures the ceiling directly.
+
+The harness validates itself: with no conditioning on panel agreement, the
+held-out human matches an individual panel member 0.6447 of the time against a
+corpus-wide pairwise agreement of 0.6439, a difference of 0.0008. If those
+diverged, the panel would be leaking the judge's own label or dropping posts
+non-randomly -- the two failure modes that make a judge harness report a
+flattering number.
+
+| measure | 3-way | binary |
+|---|---|---|
+| exact match vs 2-rater panel | 0.7609 | 0.8672 |
+| panel consensus rate | 0.6422 | 0.7876 |
+| alpha, judge vs panel | 0.6255 | 0.7208 |
+| unconditioned match vs a panel member | 0.6447 | 0.7892 |
+| disattenuated (deterministic judge) | 0.7882 | 0.85 |
+| constant-baseline exact match | 0.4636 | 0.3781 |
+
+Two findings worth stating plainly. First, the naive "maximum score" question has
+a degenerate answer: an oracle naming the modal label of all three annotators
+scores exactly 1.0 against a two-rater consensus, mechanically, because whenever
+two of three raters agree their label *is* the modal one. That bound is useless,
+and it is useless because the consensus is not a function of the text while a
+judge is -- which is why the achievable ceiling has to be estimated by putting a
+human in the judge's seat. Second, the two-sided disattenuation *overshoots* 1.0
+here, and the overshoot is diagnostic rather than cosmetic: the observed alpha is
+computed only where the panel agreed, and dividing a selected-easy numerator by a
+whole-corpus reliability compares two different populations. The results file
+says so, and points to the deterministic-judge correction as the one to quote.
+
+A real LLM judge drops in by implementing `JudgeProtocol.label` and setting
+`RUBRICON_FIELD_JUDGE=api:<model>`. The adapter shape is present, clearly marked
+as unexercised, and raises `NotImplementedError` if called. This package makes no
+network requests.
+
+### Study C -- replication economics (`results/study_c.json`)
+
+| k raters | reliability (Spearman-Brown) |
+|---|---|
+| 1 | 0.4597 |
+| 2 | 0.6298 |
+| 3 | 0.7185 |
+| 5 | 0.8097 |
+| 9 | 0.8845 |
+
+Three raters reach 0.7185 and five reach 0.8097; 0.667 needs 3 and 0.800 needs 5.
+An empirical check confirms Spearman-Brown is being applied to the right
+quantity: recomputing alpha on 2-rater panels returns 0.4597, because alpha is a
+single-rater coefficient regardless of panel size.
+
+At the named unit cost of 0.08 USD per label -- the only price in the model, and
+an explicit assumption -- the published 3-rater design costs 4835.52 USD.
+Reaching 0.800 costs 8059.2 USD. The hybrid design the study recommends (rate
+everything once, triple-rate 10% for reliability and drift) costs 1934.08 USD for
+the same item coverage, and gives up per-item defensibility on the un-replicated
+rows -- the right trade only if the corpus is for aggregate comparison rather
+than as a public gold standard.
+
+---
+
+## Reproducing
+
+```bash
+pip install -e ../rubricon      # the statistical harness
+pip install -e .
+rubricon-field run              # ~45s, writes results/
+rubricon-field report           # re-renders results/REPORT.md
+pytest -q                       # 69 tests
+```
+
+The pipeline is deterministic: no timestamps, no unseeded randomness, every seed
+derived from a single master seed in `src/rubricon_field/assumptions.py`. Two
+runs produce byte-identical files and identical manifest hashes, which the test
+suite checks. `results/_manifest.json` records a content hash for every artefact.
+
+The test suite pins the verified corpus counts and the headline coefficients, so
+a loader change that silently altered them fails the build; it also scans this
+README for statistic-shaped numbers and requires each one to appear in
+`results/`, so a stale sentence here is a test failure rather than a
+disagreement nobody notices.
+
+---
+
+## Method notes
+
+**Statistics come from the harness.** Nothing numerical is reimplemented in this
+repository. `krippendorff_alpha`, `percent_agreement`, `fleiss_kappa`,
+`gwet_ac1`, `alpha_interval`, `spearman_brown`, `cluster_bootstrap`,
+`minimum_detectable_effect`, `attenuated_correlation`, `paired_permutation_test`,
+`profile_annotators`, `SignalGate` and `Store` are all imported from `rubricon`,
+which has its own test suite validating them against independent reference
+implementations. This package supplies the loader, the study designs, and the
+interpretations.
+
+**Subsampling is declared.** Point estimates are always computed on the full
+corpus. Bootstrap intervals are computed on a seeded subsample of 6000 units with
+400 replicates, and every interval records its own `n_clusters` and the
+subsample size in `ci_basis`. At that size the interval on alpha is about
++/-0.014, an order of magnitude below any threshold it is compared against.
+
+**The ties are not resolved.** `majority_label` returns `None` for the 919
+three-way splits and flags them, rather than letting `Counter.most_common` pick a
+winner by insertion order. A test permutes the votes to confirm no winner can be
+conjured out of a tie.
+
+**Contested boundaries are not treated as annotator defects.** Annotator
+profiling declares the binary "is this worth acting on" call uncontested and the
+3-way severity contested. An offset on the first is a calibration issue; an
+offset on the second is a value position about where hate speech begins, and it
+is reported without being flagged as a quality problem. Retraining someone for
+holding a defensible position on a contested boundary is the wrong remedy.
+
+**Assumptions are in one file.** Everything not measured -- seeds, bootstrap
+budgets, the assumed system-disagreement rate behind the MDE grid, the test-split
+fraction, the unit cost, the eligibility floors -- lives in
+`src/rubricon_field/assumptions.py` with a comment explaining its value, and is
+echoed into every results file under `assumptions`.
+
+## Limitations
+
+- **The MDE does not cover gold-panel resampling variance.** These labels are one
+  realisation of a three-annotator draw. A different draw from the same pool
+  would produce different gold labels for a substantial share of posts, and that
+  variance is not identifiable from a single panel of three. It is therefore not
+  estimated rather than guessed at, and the reported MDEs are a floor on the real
+  detection threshold rather than a ceiling. The observable proxy is the 51.1% of
+  posts sitting at a margin of one vote.
+- **The test-split size is an assumption.** The official HateXplain split file is
+  not used here; n=2015 is 10% of the corpus, and every MDE quoted for "a test
+  split" says so.
+- **Spearman-Brown is an approximation here.** It is derived for a mean of
+  exchangeable continuous replications; a majority vote over nominal categories
+  is neither. It also assumes independent rater error, and part of the
+  disagreement in this corpus is systematic. Both caveats push the same way, so
+  the projected gains from extra raters are upper bounds.
+- **Disattenuation is an approximation here.** Spearman's correction is derived
+  for product-moment correlations, not nominal-scale alpha. Read the corrected
+  figures as "roughly this much higher", not as precise estimates.
+- **Per-community differences are confounded** with the label mix of posts about
+  each community. The study reports the like-for-like baseline and says where n
+  is too small to support a claim, but it cannot separate difficulty from
+  prevalence.
+- **The judge is not a model.** Study B measures a ceiling, not a system.
+
+## Layout
+
+```
+src/rubricon_field/
+  data.py          typed loader, consensus, reliability matrices
+  assumptions.py   every seed, budget, threshold and price, with rationale
+  study_a.py       label-quality audit
+  study_b.py       judge-validation harness and the JudgeProtocol
+  study_c.py       replication economics
+  cli.py           rubricon-field run | report
+tests/             loader, statistics, end-to-end studies, CLI, README provenance
+results/           generated: study_a/b/c.json, summary.json, REPORT.md, manifest
+data/hatexplain.json
+```
+
+`results/summary.json` is the flat block of headline numbers every prose claim
+here maps to. If a sentence in this README quotes a figure, that figure is in
+there; if it is not in there, it was not computed and must not be written.

@@ -1,0 +1,262 @@
+{
+  "assumptions": {
+    "alpha_level": 0.05,
+    "annotator_bias_threshold": 0.15,
+    "assumed_pairwise_disagreement_sweep": [
+      0.05,
+      0.1,
+      0.2,
+      0.3
+    ],
+    "bootstrap_replicates": 400,
+    "bootstrap_subsample_units": 6000,
+    "headline_pairwise_disagreement_rate": 0.2,
+    "min_load_for_marginal_ranking": 100,
+    "min_posts_for_community_claim": 250,
+    "note": "Point estimates are computed on the full corpus. Bootstrap intervals are computed on a seeded subsample of the size given above; every interval records its own n_clusters.",
+    "power": 0.8,
+    "seed": 20210201,
+    "test_split_fraction": 0.1,
+    "unit_cost_usd_per_label": 0.08
+  },
+  "binary": {
+    "ceiling": {
+      "alpha_reference": {
+        "human_single_rater_alpha": 0.5613,
+        "measured_judge_vs_panel_alpha": 0.7208,
+        "note": "A reference point, not a hard bound: a systematic judge can track the panel's systematic component better than a second noisy human does.",
+        "two_rater_panel_reliability_spearman_brown": 0.719
+      },
+      "degenerate_consensus_bound": {
+        "basis": "An oracle naming the modal label of all three annotators, scored against the two-annotator consensus. Mechanically 1.0: if two of three raters agree, their shared label is the modal one. Reported to show that the 'what is the maximum score' question has a trivial answer against a consensus target and therefore has to be asked differently.",
+        "is_degenerate": true,
+        "n": 15868,
+        "value": 1.0
+      },
+      "headline": "A judge on this task should be measured against 86.7%, not against 100%. That is what a real human annotator from the same pool scores against two of their peers on the posts where those peers agreed. Against a single randomly drawn annotator across all posts, the best any predictor can do is 89.4%. The missing 13.3% is disagreement among the humans, and no judge, prompt, or model scale removes it. The arithmetic upper bound against a two-rater consensus is exactly 1.0 and is meaningless, because the consensus is not a function of the text while a judge is.",
+      "random_rater_ceiling": {
+        "basis": "measured: a real held-out annotator scored against the other two, over the posts where those two agreed",
+        "n": 15868,
+        "value": 0.8672
+      },
+      "single_rater_modal_ceiling": {
+        "basis": "mean modal vote share over all posts: the best expected match of any predictor against one randomly drawn annotator. No conditioning on panel agreement, so no selection effect.",
+        "n": 20148,
+        "value": 0.8943
+      }
+    },
+    "constant_baseline": {
+      "exact_match": 0.3781,
+      "label": "normal",
+      "n_scored": 15868
+    },
+    "disattenuation": {
+      "assumed_judge_test_retest_reliability": 1.0,
+      "corrected_if_judge_is_a_human_rater": 1.0,
+      "corrected_if_judge_is_a_human_rater_unclamped": 1.1346,
+      "corrected_if_judge_is_deterministic": 0.85,
+      "correction_overshoots_unity": true,
+      "human_single_rater_alpha": 0.5613,
+      "method_caveat": "Spearman's disattenuation is derived for product-moment correlations; alpha on a nominal scale is not one. Treat these as approximations -- 'roughly this much higher', not precise estimates.",
+      "observed_alpha_judge_vs_panel": 0.7208,
+      "overshoot_note": "Correcting for BOTH sides -- right for the human stand-in, whose own single-rater reliability is 0.5613 -- gives 1.1346 unclamped, which exceeds 1.0 and is reported clamped to 1.0000. An overshoot is not a rounding artefact, it is the model telling you one of its inputs is wrong. Here the cause is identifiable: the observed alpha is computed only over posts where the two panel members agreed, and that selection keeps the easy posts. The judge's agreement on a selected-easy subset is being divided by a reliability estimated on the whole corpus, so the numerator and denominator are not describing the same population. The unconditioned judge-versus-individual-panel-member figure reported alongside is the selection-free comparison; the deterministic-judge correction is the one to quote.",
+      "panel_reliability_rho2": 0.719,
+      "reading": "Observed judge-panel alpha is 0.7208. The panel it is scored against has a reliability of only 0.7190, so the observed number is attenuated: it is measuring the judge through a noisy instrument. Correcting for the panel alone -- the right correction when the judge is a deterministic model -- gives 0.8500. That gap, 0.7208 to 0.8500, is the size of the mistake made by quoting the uncorrected number: a judge sitting at 0.72 looks mediocre and is in fact tracking the construct at roughly 0.85, and teams keep tuning judges that already hit the ceiling because of it."
+    },
+    "judge": {
+      "confusion_panel_by_judge": {
+        "normal": {
+          "normal": 5124,
+          "toxic": 875
+        },
+        "toxic": {
+          "normal": 1232,
+          "toxic": 8637
+        }
+      },
+      "exact_match": 0.8672,
+      "judge_vs_individual_panel_members_unconditioned": {
+        "exact_match": 0.7892,
+        "n_pairs": 40296,
+        "note": "Judge against each panel member separately, over all posts, with no conditioning on panel agreement. This is the selection-free comparison; the headline exact match above is conditioned on the panel agreeing and is optimistic relative to it."
+      },
+      "krippendorff_alpha_judge_vs_panel": 0.7208,
+      "n_items": 20148,
+      "n_judge_abstained": 0,
+      "n_panel_without_consensus": 4280,
+      "n_scored": 15868,
+      "panel_consensus_rate": 0.7876,
+      "per_label_precision": {
+        "normal": {
+          "n_judge_predicted": 6356,
+          "precision": 0.8062
+        },
+        "toxic": {
+          "n_judge_predicted": 9512,
+          "precision": 0.908
+        }
+      },
+      "per_label_recall": {
+        "normal": {
+          "n_panel_consensus": 5999,
+          "recall": 0.8541
+        },
+        "toxic": {
+          "n_panel_consensus": 9869,
+          "recall": 0.8752
+        }
+      },
+      "percent_agreement_judge_vs_panel": 0.8672,
+      "scoring_note": "Exact match and alpha are computed only over posts where the two-annotator panel agreed. Posts where it split have no target label and are excluded rather than resolved by tiebreak; their count is reported above."
+    },
+    "judge_minus_baseline": 0.4891,
+    "paired_permutation_vs_baseline": {
+      "n": 2000,
+      "n_perm": 1000,
+      "n_sampled_from": 15868,
+      "note": "Paired permutation test on per-item exact-match, held-out human judge minus the constant 'normal' baseline, on a seeded subsample of 2000 scored posts.",
+      "observed": 0.4975,
+      "p_value": 0.001
+    }
+  },
+  "design": {
+    "holdout_seed": 20210204,
+    "judge_env_values": [
+      "heldout (default)",
+      "constant:<label>",
+      "api:<model>"
+    ],
+    "judge_env_var": "RUBRICON_FIELD_JUDGE",
+    "judge_name": "held_out_human",
+    "n_posts_in_plan": 20148,
+    "panel_size": 2,
+    "selection": "One of the three annotators is chosen uniformly at random per post with a fixed seed and moved into the judge slot; the other two form the panel. The plan is built once so the judge's own label can never leak into the panel that scores it.",
+    "swap_in_a_real_judge": "Implement JudgeProtocol.label and select it with RUBRICON_FIELD_JUDGE=api:<model>. Nothing else in this study changes: the panels, exact match, per-label recall, alpha, disattenuation and ceiling comparison all run against the protocol, not against the human."
+  },
+  "harness_validation": {
+    "absolute_difference": 0.0008,
+    "corpus_pairwise_agreement": 0.6439,
+    "judge_vs_panel_member_unconditioned": 0.6447,
+    "passes": true,
+    "why_this_is_the_right_check": "The held-out human is just an annotator, so scoring them against each panel member with no conditioning must reproduce the corpus-wide pairwise agreement to within sampling noise. It uses two of the three pairs per post rather than all three, so exact equality is not expected. If these two numbers diverged, the panel construction would be leaking the judge's own label or dropping posts non-randomly -- the two failure modes that make a judge harness report a flattering number. They agree, so the scoring path is sound end to end, which is the entire purpose of running a stand-in judge before spending inference budget on a real one."
+  },
+  "headline": "A real human annotator, scored against two of their peers, matches the panel on 76.1% of the 12,939 posts where those two peers agreed, with a judge-panel alpha of 0.6255. The two-annotator panel itself reaches consensus on only 64.2% of posts, so more than a third of the corpus has no target label under this design at all. With no conditioning on panel agreement the same human matches an individual panel member 64.5% of the time. Correcting the judge-panel alpha for the panel's own unreliability lifts it to 0.7882. Those are the numbers an LLM judge on this task should be measured against -- not 1.0, and not 76.1% read as though the missing 23.9% were the judge's fault.",
+  "honesty_statement": "The judge in this study is a held-out human annotator, not a language model. No model was called and this package makes no network requests. The purpose is to exercise the scoring harness end to end on real labels and to establish the ceiling an LLM judge would be measured against. Nothing here is an evaluation of any model's performance.",
+  "study": "B",
+  "three_way": {
+    "ceiling": {
+      "alpha_reference": {
+        "human_single_rater_alpha": 0.4597,
+        "measured_judge_vs_panel_alpha": 0.6255,
+        "note": "A reference point, not a hard bound: a systematic judge can track the panel's systematic component better than a second noisy human does.",
+        "two_rater_panel_reliability_spearman_brown": 0.6298
+      },
+      "degenerate_consensus_bound": {
+        "basis": "An oracle naming the modal label of all three annotators, scored against the two-annotator consensus. Mechanically 1.0: if two of three raters agree, their shared label is the modal one. Reported to show that the 'what is the maximum score' question has a trivial answer against a consensus target and therefore has to be asked differently.",
+        "is_degenerate": true,
+        "n": 12939,
+        "value": 1.0
+      },
+      "headline": "A judge on this task should be measured against 76.1%, not against 100%. That is what a real human annotator from the same pool scores against two of their peers on the posts where those peers agreed. Against a single randomly drawn annotator across all posts, the best any predictor can do is 81.4%. The missing 23.9% is disagreement among the humans, and no judge, prompt, or model scale removes it. The arithmetic upper bound against a two-rater consensus is exactly 1.0 and is meaningless, because the consensus is not a function of the text while a judge is.",
+      "random_rater_ceiling": {
+        "basis": "measured: a real held-out annotator scored against the other two, over the posts where those two agreed",
+        "n": 12939,
+        "value": 0.7609
+      },
+      "single_rater_modal_ceiling": {
+        "basis": "mean modal vote share over all posts: the best expected match of any predictor against one randomly drawn annotator. No conditioning on panel agreement, so no selection effect.",
+        "n": 20148,
+        "value": 0.8143
+      }
+    },
+    "constant_baseline": {
+      "exact_match": 0.4636,
+      "label": "normal",
+      "n_scored": 12939
+    },
+    "disattenuation": {
+      "assumed_judge_test_retest_reliability": 1.0,
+      "corrected_if_judge_is_a_human_rater": 1.0,
+      "corrected_if_judge_is_a_human_rater_unclamped": 1.1625,
+      "corrected_if_judge_is_deterministic": 0.7882,
+      "correction_overshoots_unity": true,
+      "human_single_rater_alpha": 0.4597,
+      "method_caveat": "Spearman's disattenuation is derived for product-moment correlations; alpha on a nominal scale is not one. Treat these as approximations -- 'roughly this much higher', not precise estimates.",
+      "observed_alpha_judge_vs_panel": 0.6255,
+      "overshoot_note": "Correcting for BOTH sides -- right for the human stand-in, whose own single-rater reliability is 0.4597 -- gives 1.1625 unclamped, which exceeds 1.0 and is reported clamped to 1.0000. An overshoot is not a rounding artefact, it is the model telling you one of its inputs is wrong. Here the cause is identifiable: the observed alpha is computed only over posts where the two panel members agreed, and that selection keeps the easy posts. The judge's agreement on a selected-easy subset is being divided by a reliability estimated on the whole corpus, so the numerator and denominator are not describing the same population. The unconditioned judge-versus-individual-panel-member figure reported alongside is the selection-free comparison; the deterministic-judge correction is the one to quote.",
+      "panel_reliability_rho2": 0.6298,
+      "reading": "Observed judge-panel alpha is 0.6255. The panel it is scored against has a reliability of only 0.6298, so the observed number is attenuated: it is measuring the judge through a noisy instrument. Correcting for the panel alone -- the right correction when the judge is a deterministic model -- gives 0.7882. That gap, 0.6255 to 0.7882, is the size of the mistake made by quoting the uncorrected number: a judge sitting at 0.63 looks mediocre and is in fact tracking the construct at roughly 0.79, and teams keep tuning judges that already hit the ceiling because of it."
+    },
+    "judge": {
+      "confusion_panel_by_judge": {
+        "hatespeech": {
+          "hatespeech": 2960,
+          "normal": 240,
+          "offensive": 746
+        },
+        "normal": {
+          "hatespeech": 240,
+          "normal": 5124,
+          "offensive": 635
+        },
+        "offensive": {
+          "hatespeech": 540,
+          "normal": 693,
+          "offensive": 1761
+        }
+      },
+      "exact_match": 0.7609,
+      "judge_vs_individual_panel_members_unconditioned": {
+        "exact_match": 0.6447,
+        "n_pairs": 40296,
+        "note": "Judge against each panel member separately, over all posts, with no conditioning on panel agreement. This is the selection-free comparison; the headline exact match above is conditioned on the panel agreeing and is optimistic relative to it."
+      },
+      "krippendorff_alpha_judge_vs_panel": 0.6255,
+      "n_items": 20148,
+      "n_judge_abstained": 0,
+      "n_panel_without_consensus": 7209,
+      "n_scored": 12939,
+      "panel_consensus_rate": 0.6422,
+      "per_label_precision": {
+        "hatespeech": {
+          "n_judge_predicted": 3740,
+          "precision": 0.7914
+        },
+        "normal": {
+          "n_judge_predicted": 6057,
+          "precision": 0.846
+        },
+        "offensive": {
+          "n_judge_predicted": 3142,
+          "precision": 0.5605
+        }
+      },
+      "per_label_recall": {
+        "hatespeech": {
+          "n_panel_consensus": 3946,
+          "recall": 0.7501
+        },
+        "normal": {
+          "n_panel_consensus": 5999,
+          "recall": 0.8541
+        },
+        "offensive": {
+          "n_panel_consensus": 2994,
+          "recall": 0.5882
+        }
+      },
+      "percent_agreement_judge_vs_panel": 0.7609,
+      "scoring_note": "Exact match and alpha are computed only over posts where the two-annotator panel agreed. Posts where it split have no target label and are excluded rather than resolved by tiebreak; their count is reported above."
+    },
+    "judge_minus_baseline": 0.2973,
+    "paired_permutation_vs_baseline": {
+      "n": 2000,
+      "n_perm": 1000,
+      "n_sampled_from": 12939,
+      "note": "Paired permutation test on per-item exact-match, held-out human judge minus the constant 'normal' baseline, on a seeded subsample of 2000 scored posts.",
+      "observed": 0.31,
+      "p_value": 0.001
+    }
+  },
+  "title": "Judge-validation harness, validated with a held-out human at zero budget"
+}

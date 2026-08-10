@@ -1,0 +1,27 @@
+{
+  "REPORT.md": {
+    "bytes": 16592,
+    "records": 1,
+    "sha256_12": "f6c4e37976f4"
+  },
+  "study_a.json": {
+    "bytes": 87759,
+    "records": 1,
+    "sha256_12": "8402861e5dd7"
+  },
+  "study_b.json": {
+    "bytes": 16081,
+    "records": 1,
+    "sha256_12": "11c9b155c6b2"
+  },
+  "study_c.json": {
+    "bytes": 15919,
+    "records": 1,
+    "sha256_12": "6baad6d791a2"
+  },
+  "summary.json": {
+    "bytes": 10399,
+    "records": 1,
+    "sha256_12": "6df70f1f0102"
+  }
+}

@@ -1,0 +1,2554 @@
+{
+  "accuracy_ceiling": {
+    "ceiling_against_a_human": {
+      "binary": 0.8943,
+      "definition": "Mean over posts of (votes for the post's modal label) / (votes cast). This is the expected accuracy of an oracle that names each post's most popular label, scored against one annotator drawn at random from the three who saw it. No predictor can do better, because the remainder is disagreement among the annotators, not error in the predictor.",
+      "modal_share_distribution_binary": {
+        "2of3": 6387,
+        "3of3": 13761
+      },
+      "modal_share_distribution_three_way": {
+        "1of3": 919,
+        "2of3": 9384,
+        "3of3": 9845
+      },
+      "reading": "The ceiling on the 3-way task is 81.4%: even a perfect model of what this annotator pool believes would disagree with a randomly chosen annotator on 18.6% of posts. On the binary task the ceiling is 89.4%. Reported 3-way accuracies in the high 60s therefore sit closer to the achievable ceiling than to 100%, and the headroom a leaderboard implies is largely not there.",
+      "three_way": 0.8143
+    },
+    "gold_availability": {
+      "note": "A separate cap: for these posts the protocol produces no target label at all, so any accuracy credited on them reflects a resolution rule chosen downstream, not annotator agreement.",
+      "posts_without_a_majority": 919,
+      "share": 0.0456
+    },
+    "gold_reliability_used_for_power": {
+      "method": "Spearman-Brown step-up of the single-rater alpha to the 3-rater aggregate, which is the quantity the gold label represents. Approximate for a majority vote over nominal categories -- Spearman-Brown is derived for a mean of exchangeable continuous replications -- and reported as an approximation, not an identity.",
+      "single_rater_alpha_binary": 0.5613,
+      "single_rater_alpha_three_way": 0.4597,
+      "three_rater_gold_reliability_binary": 0.7933,
+      "three_rater_gold_reliability_three_way": 0.7185
+    },
+    "minimum_detectable_effect": {
+      "alpha_level": 0.05,
+      "assumption": "sd of the per-item paired accuracy difference = sqrt(p_disc), where p_disc is the assumed fraction of items on which the two compared systems disagree. Swept, not fixed; no classifier predictions are held by this study.",
+      "full_corpus_cell": {
+        "assumed_pairwise_disagreement": 0.2,
+        "is_headline_cell": false,
+        "is_test_split_size": false,
+        "mde_observed_scale": 0.0088,
+        "mde_true_scale": 0.0104,
+        "n_items": 20148,
+        "n_required_for_2pt_gap": 3925,
+        "sd_of_paired_difference": 0.4472
+      },
+      "grid": [
+        {
+          "assumed_pairwise_disagreement": 0.05,
+          "is_headline_cell": false,
+          "is_test_split_size": false,
+          "mde_observed_scale": 0.0198,
+          "mde_true_scale": 0.0234,
+          "n_items": 1000,
+          "n_required_for_2pt_gap": 982,
+          "sd_of_paired_difference": 0.2236
+        },
+        {
+          "assumed_pairwise_disagreement": 0.1,
+          "is_headline_cell": false,
+          "is_test_split_size": false,
+          "mde_observed_scale": 0.028,
+          "mde_true_scale": 0.0331,
+          "n_items": 1000,
+          "n_required_for_2pt_gap": 1963,
+          "sd_of_paired_difference": 0.3162
+        },
+        {
+          "assumed_pairwise_disagreement": 0.2,
+          "is_headline_cell": false,
+          "is_test_split_size": false,
+          "mde_observed_scale": 0.0396,
+          "mde_true_scale": 0.0467,
+          "n_items": 1000,
+          "n_required_for_2pt_gap": 3925,
+          "sd_of_paired_difference": 0.4472
+        },
+        {
+          "assumed_pairwise_disagreement": 0.3,
+          "is_headline_cell": false,
+          "is_test_split_size": false,
+          "mde_observed_scale": 0.0485,
+          "mde_true_scale": 0.0572,
+          "n_items": 1000,
+          "n_required_for_2pt_gap": 5887,
+          "sd_of_paired_difference": 0.5477
+        },
+        {
+          "assumed_pairwise_disagreement": 0.05,
+          "is_headline_cell": false,
+          "is_test_split_size": true,
+          "mde_observed_scale": 0.014,
+          "mde_true_scale": 0.0165,
+          "n_items": 2015,
+          "n_required_for_2pt_gap": 982,
+          "sd_of_paired_difference": 0.2236
+        },
+        {
+          "assumed_pairwise_disagreement": 0.1,
+          "is_headline_cell": false,
+          "is_test_split_size": true,
+          "mde_observed_scale": 0.0197,
+          "mde_true_scale": 0.0233,
+          "n_items": 2015,
+          "n_required_for_2pt_gap": 1963,
+          "sd_of_paired_difference": 0.3162
+        },
+        {
+          "assumed_pairwise_disagreement": 0.2,
+          "is_headline_cell": true,
+          "is_test_split_size": true,
+          "mde_observed_scale": 0.0279,
+          "mde_true_scale": 0.0329,
+          "n_items": 2015,
+          "n_required_for_2pt_gap": 3925,
+          "sd_of_paired_difference": 0.4472
+        },
+        {
+          "assumed_pairwise_disagreement": 0.3,
+          "is_headline_cell": false,
+          "is_test_split_size": true,
+          "mde_observed_scale": 0.0342,
+          "mde_true_scale": 0.0403,
+          "n_items": 2015,
+          "n_required_for_2pt_gap": 5887,
+          "sd_of_paired_difference": 0.5477
+        },
+        {
+          "assumed_pairwise_disagreement": 0.05,
+          "is_headline_cell": false,
+          "is_test_split_size": false,
+          "mde_observed_scale": 0.0089,
+          "mde_true_scale": 0.0105,
+          "n_items": 5000,
+          "n_required_for_2pt_gap": 982,
+          "sd_of_paired_difference": 0.2236
+        },
+        {
+          "assumed_pairwise_disagreement": 0.1,
+          "is_headline_cell": false,
+          "is_test_split_size": false,
+          "mde_observed_scale": 0.0125,
+          "mde_true_scale": 0.0148,
+          "n_items": 5000,
+          "n_required_for_2pt_gap": 1963,
+          "sd_of_paired_difference": 0.3162
+        },
+        {
+          "assumed_pairwise_disagreement": 0.2,
+          "is_headline_cell": false,
+          "is_test_split_size": false,
+          "mde_observed_scale": 0.0177,
+          "mde_true_scale": 0.0209,
+          "n_items": 5000,
+          "n_required_for_2pt_gap": 3925,
+          "sd_of_paired_difference": 0.4472
+        },
+        {
+          "assumed_pairwise_disagreement": 0.3,
+          "is_headline_cell": false,
+          "is_test_split_size": false,
+          "mde_observed_scale": 0.0217,
+          "mde_true_scale": 0.0256,
+          "n_items": 5000,
+          "n_required_for_2pt_gap": 5887,
+          "sd_of_paired_difference": 0.5477
+        },
+        {
+          "assumed_pairwise_disagreement": 0.05,
+          "is_headline_cell": false,
+          "is_test_split_size": false,
+          "mde_observed_scale": 0.0044,
+          "mde_true_scale": 0.0052,
+          "n_items": 20148,
+          "n_required_for_2pt_gap": 982,
+          "sd_of_paired_difference": 0.2236
+        },
+        {
+          "assumed_pairwise_disagreement": 0.1,
+          "is_headline_cell": false,
+          "is_test_split_size": false,
+          "mde_observed_scale": 0.0062,
+          "mde_true_scale": 0.0074,
+          "n_items": 20148,
+          "n_required_for_2pt_gap": 1963,
+          "sd_of_paired_difference": 0.3162
+        },
+        {
+          "assumed_pairwise_disagreement": 0.2,
+          "is_headline_cell": false,
+          "is_test_split_size": false,
+          "mde_observed_scale": 0.0088,
+          "mde_true_scale": 0.0104,
+          "n_items": 20148,
+          "n_required_for_2pt_gap": 3925,
+          "sd_of_paired_difference": 0.4472
+        },
+        {
+          "assumed_pairwise_disagreement": 0.3,
+          "is_headline_cell": false,
+          "is_test_split_size": false,
+          "mde_observed_scale": 0.0108,
+          "mde_true_scale": 0.0128,
+          "n_items": 20148,
+          "n_required_for_2pt_gap": 5887,
+          "sd_of_paired_difference": 0.5477
+        }
+      ],
+      "headline_cell": {
+        "assumed_pairwise_disagreement": 0.2,
+        "is_headline_cell": true,
+        "is_test_split_size": true,
+        "mde_observed_scale": 0.0279,
+        "mde_true_scale": 0.0329,
+        "n_items": 2015,
+        "n_required_for_2pt_gap": 3925,
+        "sd_of_paired_difference": 0.4472
+      },
+      "power": 0.8,
+      "reading": "On a test split of 2,015 posts, with two systems disagreeing on 20% of items, the smallest detectable accuracy difference at 80% power is 0.0279 on the observed scale -- 2.8 accuracy points -- and 0.0329 (3.3 points) once the difference is expressed in true-score units by dividing by sqrt(gold reliability). A published gap of 2% is therefore inside the noise floor of that design: detecting it reliably needs n >= 3,925 items, against the 2,015 available. Evaluated on the full 20,148-post corpus the same comparison resolves 0.0088 (0.9 points), so the gap is detectable there -- the constraint is the size of the split, not the corpus.",
+      "test_split_basis": "10% of the corpus. HateXplain ships an 8:1:1 split; the official split file is not used here, so this size is an assumption and is labelled as one.",
+      "test_split_n": 2015,
+      "what_this_mde_does_not_cover": "This MDE covers item-sampling variance, and reports the attenuation correction separately. It does NOT cover gold-panel resampling variance: the labels are one realisation of a three-annotator draw, and a different draw from the same pool would produce different gold labels for a substantial share of posts. That variance is not identifiable from a single panel of three, so it is not estimated here rather than being guessed at. The observable proxy is in the consensus structure -- 51.1% of posts sit at a margin of one vote -- and it means the figures below are a floor on the real detection threshold, not a ceiling."
+    }
+  },
+  "agreement_by_target": {
+    "alpha_spread_across_claimable": 0.1216,
+    "baseline_all_targeted_posts": {
+      "alpha_three_way": 0.3171,
+      "definition": "All posts with at least one target community endorsed by >=2 annotators. Every per-community row below should be read against this, not against the corpus-wide alpha: selecting posts that target a community also selects away the easy 'normal' posts, and that restriction of range lowers all chance-corrected coefficients by construction.",
+      "n_posts": 12466,
+      "raw_agreement": 0.5711
+    },
+    "corpus_alpha_for_reference": 0.4597,
+    "extremes_have_disjoint_intervals": true,
+    "highest_agreement_claimable": [
+      {
+        "alpha_binary": 0.2895,
+        "alpha_three_way": 0.3082,
+        "ci_alpha_three_way": {
+          "hi": 0.3298,
+          "level": 0.95,
+          "lo": 0.2845,
+          "method": "cluster_bootstrap_percentile",
+          "n_boot": 250,
+          "n_clusters": 1939,
+          "point": 0.3082,
+          "width": 0.0453
+        },
+        "claim_note": "",
+        "community": "Homosexual",
+        "label_shares": {
+          "hatespeech": 0.3785,
+          "normal": 0.1803,
+          "offensive": 0.4411
+        },
+        "n_posts": 1939,
+        "no_majority_share": 0.0526,
+        "raw_agreement": 0.5644,
+        "sufficient_for_claim": true,
+        "unanimous_share": 0.3729
+      },
+      {
+        "alpha_binary": 0.2613,
+        "alpha_three_way": 0.3058,
+        "ci_alpha_three_way": {
+          "hi": 0.3343,
+          "level": 0.95,
+          "lo": 0.2781,
+          "method": "cluster_bootstrap_percentile",
+          "n_boot": 250,
+          "n_clusters": 1607,
+          "point": 0.3058,
+          "width": 0.0562
+        },
+        "claim_note": "",
+        "community": "Women",
+        "label_shares": {
+          "hatespeech": 0.2526,
+          "normal": 0.2134,
+          "offensive": 0.5339
+        },
+        "n_posts": 1607,
+        "no_majority_share": 0.0454,
+        "raw_agreement": 0.5795,
+        "sufficient_for_claim": true,
+        "unanimous_share": 0.392
+      },
+      {
+        "alpha_binary": 0.2273,
+        "alpha_three_way": 0.2837,
+        "ci_alpha_three_way": {
+          "hi": 0.3084,
+          "level": 0.95,
+          "lo": 0.2602,
+          "method": "cluster_bootstrap_percentile",
+          "n_boot": 250,
+          "n_clusters": 2027,
+          "point": 0.2837,
+          "width": 0.0482
+        },
+        "claim_note": "",
+        "community": "Jewish",
+        "label_shares": {
+          "hatespeech": 0.6537,
+          "normal": 0.1008,
+          "offensive": 0.2455
+        },
+        "n_posts": 2027,
+        "no_majority_share": 0.0503,
+        "raw_agreement": 0.6402,
+        "sufficient_for_claim": true,
+        "unanimous_share": 0.4854
+      }
+    ],
+    "lowest_agreement_claimable": [
+      {
+        "alpha_binary": 0.2572,
+        "alpha_three_way": 0.1866,
+        "ci_alpha_three_way": {
+          "hi": 0.2224,
+          "level": 0.95,
+          "lo": 0.1546,
+          "method": "cluster_bootstrap_percentile",
+          "n_boot": 250,
+          "n_clusters": 956,
+          "point": 0.1866,
+          "width": 0.0678
+        },
+        "claim_note": "",
+        "community": "Refugee",
+        "label_shares": {
+          "hatespeech": 0.2319,
+          "normal": 0.3651,
+          "offensive": 0.4031
+        },
+        "n_posts": 956,
+        "no_majority_share": 0.113,
+        "raw_agreement": 0.4707,
+        "sufficient_for_claim": true,
+        "unanimous_share": 0.2626
+      },
+      {
+        "alpha_binary": 0.2204,
+        "alpha_three_way": 0.1978,
+        "ci_alpha_three_way": {
+          "hi": 0.2463,
+          "level": 0.95,
+          "lo": 0.145,
+          "method": "cluster_bootstrap_percentile",
+          "n_boot": 250,
+          "n_clusters": 419,
+          "point": 0.1978,
+          "width": 0.1013
+        },
+        "claim_note": "",
+        "community": "Asian",
+        "label_shares": {
+          "hatespeech": 0.3827,
+          "normal": 0.2586,
+          "offensive": 0.3588
+        },
+        "n_posts": 419,
+        "no_majority_share": 0.0859,
+        "raw_agreement": 0.4718,
+        "sufficient_for_claim": true,
+        "unanimous_share": 0.2506
+      },
+      {
+        "alpha_binary": 0.1843,
+        "alpha_three_way": 0.2093,
+        "ci_alpha_three_way": {
+          "hi": 0.2534,
+          "level": 0.95,
+          "lo": 0.165,
+          "method": "cluster_bootstrap_percentile",
+          "n_boot": 250,
+          "n_clusters": 708,
+          "point": 0.2093,
+          "width": 0.0885
+        },
+        "claim_note": "",
+        "community": "Other",
+        "label_shares": {
+          "hatespeech": 0.2147,
+          "normal": 0.1902,
+          "offensive": 0.5951
+        },
+        "n_posts": 708,
+        "no_majority_share": 0.072,
+        "raw_agreement": 0.5541,
+        "sufficient_for_claim": true,
+        "unanimous_share": 0.3672
+      }
+    ],
+    "min_endorsing_annotators": 2,
+    "n_communities_claimable": 11,
+    "n_communities_observed": 19,
+    "reading": "19 target communities are endorsed by at least two annotators on at least one post; 11 clear the 250-post floor. Every one of them sits below the corpus-wide alpha of 0.4597, and so does the like-for-like baseline over all 12,466 targeted posts (0.3171) -- that drop is restriction of range, not a change in annotator behaviour, because selecting posts that target a community removes the easy 'normal' units. Read against that baseline, 3-way alpha across the claimable communities spans 0.1216, from Refugee at 0.1866 to Homosexual at 0.3082, and the bootstrap intervals of the two extremes do not overlap. The comparison is still confounded: posts about different communities have different label mixes, so part of any gap is category prevalence rather than annotator difficulty. It is nonetheless actionable, because a fairness audit that compares model performance across these groups is comparing labels of unequal quality either way, and that is a confound in the audit rather than a finding of it.",
+    "rows": [
+      {
+        "alpha_binary": 0.1686,
+        "alpha_three_way": 0.2487,
+        "ci_alpha_three_way": {
+          "hi": 0.2662,
+          "level": 0.95,
+          "lo": 0.2252,
+          "method": "cluster_bootstrap_percentile",
+          "n_boot": 250,
+          "n_clusters": 3306,
+          "point": 0.2487,
+          "width": 0.0411
+        },
+        "claim_note": "",
+        "community": "African",
+        "label_shares": {
+          "hatespeech": 0.6363,
+          "normal": 0.0992,
+          "offensive": 0.2645
+        },
+        "n_posts": 3306,
+        "no_majority_share": 0.0423,
+        "raw_agreement": 0.6128,
+        "sufficient_for_claim": true,
+        "unanimous_share": 0.4404
+      },
+      {
+        "alpha_binary": 0.3236,
+        "alpha_three_way": 0.2531,
+        "ci_alpha_three_way": {
+          "hi": 0.2742,
+          "level": 0.95,
+          "lo": 0.233,
+          "method": "cluster_bootstrap_percentile",
+          "n_boot": 250,
+          "n_clusters": 2256,
+          "point": 0.2531,
+          "width": 0.0412
+        },
+        "claim_note": "",
+        "community": "Islam",
+        "label_shares": {
+          "hatespeech": 0.5062,
+          "normal": 0.1746,
+          "offensive": 0.3191
+        },
+        "n_posts": 2256,
+        "no_majority_share": 0.0643,
+        "raw_agreement": 0.5433,
+        "sufficient_for_claim": true,
+        "unanimous_share": 0.3471
+      },
+      {
+        "alpha_binary": 0.2273,
+        "alpha_three_way": 0.2837,
+        "ci_alpha_three_way": {
+          "hi": 0.3084,
+          "level": 0.95,
+          "lo": 0.2602,
+          "method": "cluster_bootstrap_percentile",
+          "n_boot": 250,
+          "n_clusters": 2027,
+          "point": 0.2837,
+          "width": 0.0482
+        },
+        "claim_note": "",
+        "community": "Jewish",
+        "label_shares": {
+          "hatespeech": 0.6537,
+          "normal": 0.1008,
+          "offensive": 0.2455
+        },
+        "n_posts": 2027,
+        "no_majority_share": 0.0503,
+        "raw_agreement": 0.6402,
+        "sufficient_for_claim": true,
+        "unanimous_share": 0.4854
+      },
+      {
+        "alpha_binary": 0.2895,
+        "alpha_three_way": 0.3082,
+        "ci_alpha_three_way": {
+          "hi": 0.3298,
+          "level": 0.95,
+          "lo": 0.2845,
+          "method": "cluster_bootstrap_percentile",
+          "n_boot": 250,
+          "n_clusters": 1939,
+          "point": 0.3082,
+          "width": 0.0453
+        },
+        "claim_note": "",
+        "community": "Homosexual",
+        "label_shares": {
+          "hatespeech": 0.3785,
+          "normal": 0.1803,
+          "offensive": 0.4411
+        },
+        "n_posts": 1939,
+        "no_majority_share": 0.0526,
+        "raw_agreement": 0.5644,
+        "sufficient_for_claim": true,
+        "unanimous_share": 0.3729
+      },
+      {
+        "alpha_binary": 0.2613,
+        "alpha_three_way": 0.3058,
+        "ci_alpha_three_way": {
+          "hi": 0.3343,
+          "level": 0.95,
+          "lo": 0.2781,
+          "method": "cluster_bootstrap_percentile",
+          "n_boot": 250,
+          "n_clusters": 1607,
+          "point": 0.3058,
+          "width": 0.0562
+        },
+        "claim_note": "",
+        "community": "Women",
+        "label_shares": {
+          "hatespeech": 0.2526,
+          "normal": 0.2134,
+          "offensive": 0.5339
+        },
+        "n_posts": 1607,
+        "no_majority_share": 0.0454,
+        "raw_agreement": 0.5795,
+        "sufficient_for_claim": true,
+        "unanimous_share": 0.392
+      },
+      {
+        "alpha_binary": 0.2572,
+        "alpha_three_way": 0.1866,
+        "ci_alpha_three_way": {
+          "hi": 0.2224,
+          "level": 0.95,
+          "lo": 0.1546,
+          "method": "cluster_bootstrap_percentile",
+          "n_boot": 250,
+          "n_clusters": 956,
+          "point": 0.1866,
+          "width": 0.0678
+        },
+        "claim_note": "",
+        "community": "Refugee",
+        "label_shares": {
+          "hatespeech": 0.2319,
+          "normal": 0.3651,
+          "offensive": 0.4031
+        },
+        "n_posts": 956,
+        "no_majority_share": 0.113,
+        "raw_agreement": 0.4707,
+        "sufficient_for_claim": true,
+        "unanimous_share": 0.2626
+      },
+      {
+        "alpha_binary": 0.2746,
+        "alpha_three_way": 0.2118,
+        "ci_alpha_three_way": {
+          "hi": 0.2511,
+          "level": 0.95,
+          "lo": 0.1713,
+          "method": "cluster_bootstrap_percentile",
+          "n_boot": 250,
+          "n_clusters": 789,
+          "point": 0.2118,
+          "width": 0.0798
+        },
+        "claim_note": "",
+        "community": "Arab",
+        "label_shares": {
+          "hatespeech": 0.6046,
+          "normal": 0.0938,
+          "offensive": 0.3016
+        },
+        "n_posts": 789,
+        "no_majority_share": 0.0456,
+        "raw_agreement": 0.5784,
+        "sufficient_for_claim": true,
+        "unanimous_share": 0.3904
+      },
+      {
+        "alpha_binary": 0.1843,
+        "alpha_three_way": 0.2093,
+        "ci_alpha_three_way": {
+          "hi": 0.2534,
+          "level": 0.95,
+          "lo": 0.165,
+          "method": "cluster_bootstrap_percentile",
+          "n_boot": 250,
+          "n_clusters": 708,
+          "point": 0.2093,
+          "width": 0.0885
+        },
+        "claim_note": "",
+        "community": "Other",
+        "label_shares": {
+          "hatespeech": 0.2147,
+          "normal": 0.1902,
+          "offensive": 0.5951
+        },
+        "n_posts": 708,
+        "no_majority_share": 0.072,
+        "raw_agreement": 0.5541,
+        "sufficient_for_claim": true,
+        "unanimous_share": 0.3672
+      },
+      {
+        "alpha_binary": 0.2423,
+        "alpha_three_way": 0.2171,
+        "ci_alpha_three_way": {
+          "hi": 0.2555,
+          "level": 0.95,
+          "lo": 0.176,
+          "method": "cluster_bootstrap_percentile",
+          "n_boot": 250,
+          "n_clusters": 520,
+          "point": 0.2171,
+          "width": 0.0795
+        },
+        "claim_note": "",
+        "community": "Caucasian",
+        "label_shares": {
+          "hatespeech": 0.2231,
+          "normal": 0.2679,
+          "offensive": 0.509
+        },
+        "n_posts": 520,
+        "no_majority_share": 0.0442,
+        "raw_agreement": 0.5147,
+        "sufficient_for_claim": true,
+        "unanimous_share": 0.2942
+      },
+      {
+        "alpha_binary": 0.2204,
+        "alpha_three_way": 0.1978,
+        "ci_alpha_three_way": {
+          "hi": 0.2463,
+          "level": 0.95,
+          "lo": 0.145,
+          "method": "cluster_bootstrap_percentile",
+          "n_boot": 250,
+          "n_clusters": 419,
+          "point": 0.1978,
+          "width": 0.1013
+        },
+        "claim_note": "",
+        "community": "Asian",
+        "label_shares": {
+          "hatespeech": 0.3827,
+          "normal": 0.2586,
+          "offensive": 0.3588
+        },
+        "n_posts": 419,
+        "no_majority_share": 0.0859,
+        "raw_agreement": 0.4718,
+        "sufficient_for_claim": true,
+        "unanimous_share": 0.2506
+      },
+      {
+        "alpha_binary": 0.1783,
+        "alpha_three_way": 0.2189,
+        "ci_alpha_three_way": {
+          "hi": 0.2766,
+          "level": 0.95,
+          "lo": 0.1627,
+          "method": "cluster_bootstrap_percentile",
+          "n_boot": 250,
+          "n_clusters": 369,
+          "point": 0.2189,
+          "width": 0.1139
+        },
+        "claim_note": "",
+        "community": "Hispanic",
+        "label_shares": {
+          "hatespeech": 0.6233,
+          "normal": 0.0813,
+          "offensive": 0.2954
+        },
+        "n_posts": 369,
+        "no_majority_share": 0.0325,
+        "raw_agreement": 0.5953,
+        "sufficient_for_claim": true,
+        "unanimous_share": 0.4092
+      },
+      {
+        "alpha_binary": 0.2876,
+        "alpha_three_way": 0.2191,
+        "ci_alpha_three_way": null,
+        "claim_note": "n=92 posts is below the pre-registered floor of 250; the point estimate is reported for completeness but will not support a comparison.",
+        "community": "Men",
+        "label_shares": {
+          "hatespeech": 0.1957,
+          "normal": 0.3913,
+          "offensive": 0.413
+        },
+        "n_posts": 92,
+        "no_majority_share": 0.087,
+        "raw_agreement": 0.5,
+        "sufficient_for_claim": false,
+        "unanimous_share": 0.2935
+      },
+      {
+        "alpha_binary": -0.0662,
+        "alpha_three_way": 0.4242,
+        "ci_alpha_three_way": null,
+        "claim_note": "n=54 posts is below the pre-registered floor of 250; the point estimate is reported for completeness but will not support a comparison.",
+        "community": "Disability",
+        "label_shares": {
+          "hatespeech": 0.2778,
+          "normal": 0.0679,
+          "offensive": 0.6543
+        },
+        "n_posts": 54,
+        "no_majority_share": 0.0,
+        "raw_agreement": 0.716,
+        "sufficient_for_claim": false,
+        "unanimous_share": 0.5741
+      },
+      {
+        "alpha_binary": 0.4152,
+        "alpha_three_way": 0.3073,
+        "ci_alpha_three_way": null,
+        "claim_note": "n=50 posts is below the pre-registered floor of 250; the point estimate is reported for completeness but will not support a comparison.",
+        "community": "Christian",
+        "label_shares": {
+          "hatespeech": 0.2867,
+          "normal": 0.3133,
+          "offensive": 0.4
+        },
+        "n_posts": 50,
+        "no_majority_share": 0.1,
+        "raw_agreement": 0.54,
+        "sufficient_for_claim": false,
+        "unanimous_share": 0.36
+      },
+      {
+        "alpha_binary": 0.4416,
+        "alpha_three_way": 0.3901,
+        "ci_alpha_three_way": null,
+        "claim_note": "n=19 posts is below the pre-registered floor of 250; the point estimate is reported for completeness but will not support a comparison.",
+        "community": "Hindu",
+        "label_shares": {
+          "hatespeech": 0.193,
+          "normal": 0.3158,
+          "offensive": 0.4912
+        },
+        "n_posts": 19,
+        "no_majority_share": 0.1053,
+        "raw_agreement": 0.614,
+        "sufficient_for_claim": false,
+        "unanimous_share": 0.4737
+      },
+      {
+        "alpha_binary": null,
+        "alpha_three_way": 0.4821,
+        "ci_alpha_three_way": null,
+        "claim_note": "n=10 posts is below the pre-registered floor of 250; the point estimate is reported for completeness but will not support a comparison.",
+        "community": "Indian",
+        "label_shares": {
+          "hatespeech": 0.4667,
+          "normal": 0.0,
+          "offensive": 0.5333
+        },
+        "n_posts": 10,
+        "no_majority_share": 0.0,
+        "raw_agreement": 0.7333,
+        "sufficient_for_claim": false,
+        "unanimous_share": 0.6
+      },
+      {
+        "alpha_binary": null,
+        "alpha_three_way": 1.0,
+        "ci_alpha_three_way": null,
+        "claim_note": "n=9 posts is below the pre-registered floor of 250; the point estimate is reported for completeness but will not support a comparison.",
+        "community": "Economic",
+        "label_shares": {
+          "hatespeech": 0.1111,
+          "normal": 0.0,
+          "offensive": 0.8889
+        },
+        "n_posts": 9,
+        "no_majority_share": 0.0,
+        "raw_agreement": 1.0,
+        "sufficient_for_claim": false,
+        "unanimous_share": 1.0
+      },
+      {
+        "alpha_binary": 0.375,
+        "alpha_three_way": 0.1667,
+        "ci_alpha_three_way": null,
+        "claim_note": "n=2 posts is below the pre-registered floor of 250; the point estimate is reported for completeness but will not support a comparison.",
+        "community": "Indigenous",
+        "label_shares": {
+          "hatespeech": 0.1667,
+          "normal": 0.6667,
+          "offensive": 0.1667
+        },
+        "n_posts": 2,
+        "no_majority_share": 0.5,
+        "raw_agreement": 0.5,
+        "sufficient_for_claim": false,
+        "unanimous_share": 0.5
+      },
+      {
+        "alpha_binary": 0.0,
+        "alpha_three_way": -0.1111,
+        "ci_alpha_three_way": null,
+        "claim_note": "n=2 posts is below the pre-registered floor of 250; the point estimate is reported for completeness but will not support a comparison.",
+        "community": "Buddhism",
+        "label_shares": {
+          "hatespeech": 0.1667,
+          "normal": 0.1667,
+          "offensive": 0.6667
+        },
+        "n_posts": 2,
+        "no_majority_share": 0.0,
+        "raw_agreement": 0.3333,
+        "sufficient_for_claim": false,
+        "unanimous_share": 0.0
+      }
+    ],
+    "size_floor": 250
+  },
+  "annotators": {
+    "leave_one_annotator_out": {
+      "full_alpha": 0.4597,
+      "max_abs_alpha_delta": 0.0207,
+      "reading": "Removing the busiest annotator (#4, 5,730 labels, 9.5% of all annotations, present on 28.4% of posts) moves overall alpha by -0.0207 -- the coefficient is robust, because it weights posts, not people. What is not robust is the gold labelling: 2,300 posts (11.4% of the corpus) lose their majority label entirely when this one person is removed, because their vote was one of the two that created it. Across the 10 heaviest annotators the largest alpha movement is 0.0207, so no single rater is distorting the reliability estimate; the exposure is to the labels themselves, not to the statistic.",
+      "rows": [
+        {
+          "alpha_delta": -0.0207,
+          "alpha_without": 0.439,
+          "annotator_id": "4",
+          "gold_labels_lost": 2300,
+          "gold_labels_lost_share_of_corpus": 0.11416,
+          "gold_labels_preserved": 3430,
+          "label_share_delta": {
+            "hatespeech": -0.02904,
+            "normal": 0.01566,
+            "offensive": 0.01338
+          },
+          "n_annotations": 5730,
+          "n_posts_touched": 5730,
+          "posts_unresolved_before_and_after": 0,
+          "raw_agreement_without": 0.6296,
+          "share_of_all_annotations": 0.0948,
+          "share_of_posts_touched": 0.2844
+        },
+        {
+          "alpha_delta": -0.0162,
+          "alpha_without": 0.4435,
+          "annotator_id": "9",
+          "gold_labels_lost": 413,
+          "gold_labels_lost_share_of_corpus": 0.0205,
+          "gold_labels_preserved": 1648,
+          "label_share_delta": {
+            "hatespeech": -0.00135,
+            "normal": -0.00899,
+            "offensive": 0.01034
+          },
+          "n_annotations": 2075,
+          "n_posts_touched": 2075,
+          "posts_unresolved_before_and_after": 14,
+          "raw_agreement_without": 0.6378,
+          "share_of_all_annotations": 0.03433,
+          "share_of_posts_touched": 0.10299
+        },
+        {
+          "alpha_delta": 0.007,
+          "alpha_without": 0.4666,
+          "annotator_id": "223",
+          "gold_labels_lost": 783,
+          "gold_labels_lost_share_of_corpus": 0.03886,
+          "gold_labels_preserved": 1065,
+          "label_share_delta": {
+            "hatespeech": -0.00396,
+            "normal": 0.00917,
+            "offensive": -0.00521
+          },
+          "n_annotations": 1978,
+          "n_posts_touched": 1978,
+          "posts_unresolved_before_and_after": 130,
+          "raw_agreement_without": 0.646,
+          "share_of_all_annotations": 0.03272,
+          "share_of_posts_touched": 0.09817
+        },
+        {
+          "alpha_delta": 0.0014,
+          "alpha_without": 0.461,
+          "annotator_id": "203",
+          "gold_labels_lost": 840,
+          "gold_labels_lost_share_of_corpus": 0.04169,
+          "gold_labels_preserved": 924,
+          "label_share_delta": {
+            "hatespeech": 0.00341,
+            "normal": 0.00615,
+            "offensive": -0.00955
+          },
+          "n_annotations": 1918,
+          "n_posts_touched": 1918,
+          "posts_unresolved_before_and_after": 154,
+          "raw_agreement_without": 0.6404,
+          "share_of_all_annotations": 0.03173,
+          "share_of_posts_touched": 0.0952
+        },
+        {
+          "alpha_delta": 0.0082,
+          "alpha_without": 0.4679,
+          "annotator_id": "209",
+          "gold_labels_lost": 670,
+          "gold_labels_lost_share_of_corpus": 0.03325,
+          "gold_labels_preserved": 965,
+          "label_share_delta": {
+            "hatespeech": 0.00523,
+            "normal": 0.00047,
+            "offensive": -0.0057
+          },
+          "n_annotations": 1769,
+          "n_posts_touched": 1769,
+          "posts_unresolved_before_and_after": 134,
+          "raw_agreement_without": 0.6464,
+          "share_of_all_annotations": 0.02927,
+          "share_of_posts_touched": 0.0878
+        },
+        {
+          "alpha_delta": -0.0122,
+          "alpha_without": 0.4474,
+          "annotator_id": "1",
+          "gold_labels_lost": 275,
+          "gold_labels_lost_share_of_corpus": 0.01365,
+          "gold_labels_preserved": 1463,
+          "label_share_delta": {
+            "hatespeech": 0.00233,
+            "normal": -0.00775,
+            "offensive": 0.00542
+          },
+          "n_annotations": 1748,
+          "n_posts_touched": 1748,
+          "posts_unresolved_before_and_after": 10,
+          "raw_agreement_without": 0.6408,
+          "share_of_all_annotations": 0.02892,
+          "share_of_posts_touched": 0.08676
+        },
+        {
+          "alpha_delta": -0.0041,
+          "alpha_without": 0.4555,
+          "annotator_id": "6",
+          "gold_labels_lost": 326,
+          "gold_labels_lost_share_of_corpus": 0.01618,
+          "gold_labels_preserved": 1283,
+          "label_share_delta": {
+            "hatespeech": 0.00613,
+            "normal": -0.00651,
+            "offensive": 0.00038
+          },
+          "n_annotations": 1614,
+          "n_posts_touched": 1614,
+          "posts_unresolved_before_and_after": 5,
+          "raw_agreement_without": 0.6446,
+          "share_of_all_annotations": 0.0267,
+          "share_of_posts_touched": 0.08011
+        },
+        {
+          "alpha_delta": 0.0034,
+          "alpha_without": 0.463,
+          "annotator_id": "202",
+          "gold_labels_lost": 662,
+          "gold_labels_lost_share_of_corpus": 0.03286,
+          "gold_labels_preserved": 817,
+          "label_share_delta": {
+            "hatespeech": 0.00397,
+            "normal": 0.00338,
+            "offensive": -0.00734
+          },
+          "n_annotations": 1584,
+          "n_posts_touched": 1584,
+          "posts_unresolved_before_and_after": 105,
+          "raw_agreement_without": 0.6431,
+          "share_of_all_annotations": 0.02621,
+          "share_of_posts_touched": 0.07862
+        },
+        {
+          "alpha_delta": 0.0008,
+          "alpha_without": 0.4605,
+          "annotator_id": "199",
+          "gold_labels_lost": 659,
+          "gold_labels_lost_share_of_corpus": 0.03271,
+          "gold_labels_preserved": 766,
+          "label_share_delta": {
+            "hatespeech": 0.00082,
+            "normal": 0.00082,
+            "offensive": -0.00164
+          },
+          "n_annotations": 1526,
+          "n_posts_touched": 1526,
+          "posts_unresolved_before_and_after": 101,
+          "raw_agreement_without": 0.6409,
+          "share_of_all_annotations": 0.02525,
+          "share_of_posts_touched": 0.07574
+        },
+        {
+          "alpha_delta": 0.0166,
+          "alpha_without": 0.4763,
+          "annotator_id": "211",
+          "gold_labels_lost": 518,
+          "gold_labels_lost_share_of_corpus": 0.02571,
+          "gold_labels_preserved": 718,
+          "label_share_delta": {
+            "hatespeech": 0.00517,
+            "normal": -0.00815,
+            "offensive": 0.00299
+          },
+          "n_annotations": 1494,
+          "n_posts_touched": 1494,
+          "posts_unresolved_before_and_after": 258,
+          "raw_agreement_without": 0.6497,
+          "share_of_all_annotations": 0.02472,
+          "share_of_posts_touched": 0.07415
+        }
+      ],
+      "top_n": 10
+    },
+    "marginals_ranking": {
+      "harshest_5": [
+        {
+          "annotator_id": "23",
+          "bias_vs_pool_uncontested": 0.3945,
+          "contested_position": 0.1258,
+          "flags": [
+            "systematic_bias:lenient:+0.39",
+            "low_variance:possible_straightlining"
+          ],
+          "mean_severity": 0.9675,
+          "n": 200,
+          "positions": [],
+          "share_hatespeech": 0.945,
+          "share_normal": 0.01,
+          "share_of_corpus": 0.00331,
+          "share_offensive": 0.045,
+          "share_toxic": 0.99
+        },
+        {
+          "annotator_id": "81",
+          "bias_vs_pool_uncontested": 0.3864,
+          "contested_position": 0.1242,
+          "flags": [
+            "systematic_bias:lenient:+0.39",
+            "low_variance:possible_straightlining"
+          ],
+          "mean_severity": 0.9578,
+          "n": 166,
+          "positions": [],
+          "share_hatespeech": 0.9337,
+          "share_normal": 0.0181,
+          "share_of_corpus": 0.00275,
+          "share_offensive": 0.0482,
+          "share_toxic": 0.9819
+        },
+        {
+          "annotator_id": "68",
+          "bias_vs_pool_uncontested": 0.3343,
+          "contested_position": 0.1249,
+          "flags": [
+            "systematic_bias:lenient:+0.33"
+          ],
+          "mean_severity": 0.9064,
+          "n": 171,
+          "positions": [],
+          "share_hatespeech": 0.883,
+          "share_normal": 0.0702,
+          "share_of_corpus": 0.00283,
+          "share_offensive": 0.0468,
+          "share_toxic": 0.9298
+        },
+        {
+          "annotator_id": "46",
+          "bias_vs_pool_uncontested": 0.1779,
+          "contested_position": 0.1221,
+          "flags": [
+            "systematic_bias:lenient:+0.18"
+          ],
+          "mean_severity": 0.7473,
+          "n": 746,
+          "positions": [],
+          "share_hatespeech": 0.7212,
+          "share_normal": 0.2265,
+          "share_of_corpus": 0.01234,
+          "share_offensive": 0.0523,
+          "share_toxic": 0.7735
+        },
+        {
+          "annotator_id": "20",
+          "bias_vs_pool_uncontested": 0.1676,
+          "contested_position": 0.1176,
+          "flags": [
+            "systematic_bias:lenient:+0.17"
+          ],
+          "mean_severity": 0.7325,
+          "n": 114,
+          "positions": [],
+          "share_hatespeech": 0.7018,
+          "share_normal": 0.2368,
+          "share_of_corpus": 0.00189,
+          "share_offensive": 0.0614,
+          "share_toxic": 0.7632
+        }
+      ],
+      "min_load_for_eligibility": 100,
+      "most_lenient_5": [
+        {
+          "annotator_id": "34",
+          "bias_vs_pool_uncontested": -0.5585,
+          "contested_position": 0.1298,
+          "flags": [
+            "systematic_bias:harsh:-0.56",
+            "low_variance:possible_straightlining"
+          ],
+          "mean_severity": 0.0185,
+          "n": 162,
+          "positions": [],
+          "share_hatespeech": 0.0,
+          "share_normal": 0.963,
+          "share_of_corpus": 0.00268,
+          "share_offensive": 0.037,
+          "share_toxic": 0.037
+        },
+        {
+          "annotator_id": "5",
+          "bias_vs_pool_uncontested": -0.4807,
+          "contested_position": 0.1172,
+          "flags": [
+            "systematic_bias:harsh:-0.48"
+          ],
+          "mean_severity": 0.0837,
+          "n": 209,
+          "positions": [],
+          "share_hatespeech": 0.0526,
+          "share_normal": 0.8852,
+          "share_of_corpus": 0.00346,
+          "share_offensive": 0.0622,
+          "share_toxic": 0.1148
+        },
+        {
+          "annotator_id": "115",
+          "bias_vs_pool_uncontested": -0.4348,
+          "contested_position": 0.0858,
+          "flags": [
+            "systematic_bias:harsh:-0.43"
+          ],
+          "mean_severity": 0.0982,
+          "n": 112,
+          "positions": [],
+          "share_hatespeech": 0.0357,
+          "share_normal": 0.8393,
+          "share_of_corpus": 0.00185,
+          "share_offensive": 0.125,
+          "share_toxic": 0.1607
+        },
+        {
+          "annotator_id": "215",
+          "bias_vs_pool_uncontested": -0.439,
+          "contested_position": 0.0913,
+          "flags": [
+            "systematic_bias:harsh:-0.44"
+          ],
+          "mean_severity": 0.0995,
+          "n": 658,
+          "positions": [],
+          "share_hatespeech": 0.0426,
+          "share_normal": 0.8435,
+          "share_of_corpus": 0.01089,
+          "share_offensive": 0.114,
+          "share_toxic": 0.1565
+        },
+        {
+          "annotator_id": "18",
+          "bias_vs_pool_uncontested": -0.4543,
+          "contested_position": 0.1336,
+          "flags": [
+            "systematic_bias:harsh:-0.45"
+          ],
+          "mean_severity": 0.1265,
+          "n": 1020,
+          "positions": [],
+          "share_hatespeech": 0.1118,
+          "share_normal": 0.8588,
+          "share_of_corpus": 0.01688,
+          "share_offensive": 0.0294,
+          "share_toxic": 0.1412
+        }
+      ],
+      "n_eligible": 83,
+      "reading": "Among the 83 annotators with at least 100 judgements, the share of posts called toxic runs from 3.7% to 99.0% against a pool rate of 59.6%. Two annotators drawn from opposite ends of that range would produce visibly different corpora from identical text.",
+      "share_toxic_range_among_eligible": [
+        0.037,
+        0.99
+      ]
+    },
+    "pool": {
+      "annotations_per_post": {
+        "3": 20148
+      },
+      "busiest_annotator": {
+        "annotator_id": "4",
+        "n": 5730,
+        "share": 0.0948
+      },
+      "load_top20": [
+        {
+          "annotator_id": "4",
+          "n": 5730
+        },
+        {
+          "annotator_id": "9",
+          "n": 2075
+        },
+        {
+          "annotator_id": "223",
+          "n": 1978
+        },
+        {
+          "annotator_id": "203",
+          "n": 1918
+        },
+        {
+          "annotator_id": "209",
+          "n": 1769
+        },
+        {
+          "annotator_id": "1",
+          "n": 1748
+        },
+        {
+          "annotator_id": "6",
+          "n": 1614
+        },
+        {
+          "annotator_id": "202",
+          "n": 1584
+        },
+        {
+          "annotator_id": "199",
+          "n": 1526
+        },
+        {
+          "annotator_id": "211",
+          "n": 1494
+        },
+        {
+          "annotator_id": "207",
+          "n": 1397
+        },
+        {
+          "annotator_id": "3",
+          "n": 1358
+        },
+        {
+          "annotator_id": "212",
+          "n": 1335
+        },
+        {
+          "annotator_id": "200",
+          "n": 1299
+        },
+        {
+          "annotator_id": "217",
+          "n": 1238
+        },
+        {
+          "annotator_id": "235",
+          "n": 1219
+        },
+        {
+          "annotator_id": "206",
+          "n": 1218
+        },
+        {
+          "annotator_id": "17",
+          "n": 1180
+        },
+        {
+          "annotator_id": "204",
+          "n": 1178
+        },
+        {
+          "annotator_id": "221",
+          "n": 1158
+        }
+      ],
+      "median_load": 41,
+      "n_annotations": 60444,
+      "n_annotators": 253,
+      "n_posts": 20148,
+      "top10_share": 0.35464,
+      "top5_share": 0.22285
+    },
+    "pool_label_marginals": {
+      "share_toxic": 0.5955,
+      "shares": {
+        "hatespeech": 0.299,
+        "normal": 0.4045,
+        "offensive": 0.2966
+      }
+    },
+    "profile_summary": {
+      "bias_threshold": 0.15,
+      "contested_dimensions": [
+        "severity"
+      ],
+      "divergent_on_contested": [
+        "104",
+        "135",
+        "147",
+        "158",
+        "162",
+        "173",
+        "174",
+        "205",
+        "207",
+        "227",
+        "229",
+        "234",
+        "237",
+        "63"
+      ],
+      "divergent_on_contested_fraction": 0.055,
+      "flag_caveat": "The pool-wide flagged fraction is dominated by very small annotators: the median load is 41 judgements, and an annotator with a handful of posts can sit far from the pool mean by sampling alone. The high-load figure, restricted to the 83 annotators with at least 100 judgements, is the one to quote. Neither figure is evidence of misconduct; both measure calibration spread on a subjective call.",
+      "flagged_annotators": [
+        "1",
+        "10",
+        "102",
+        "104",
+        "105",
+        "106",
+        "107",
+        "108",
+        "109",
+        "112",
+        "114",
+        "115",
+        "116",
+        "117",
+        "118",
+        "121",
+        "122",
+        "123",
+        "125",
+        "126",
+        "127",
+        "128",
+        "13",
+        "131",
+        "132",
+        "134",
+        "135",
+        "136",
+        "138",
+        "140",
+        "141",
+        "142",
+        "143",
+        "145",
+        "146",
+        "147",
+        "151",
+        "153",
+        "155",
+        "156",
+        "157",
+        "158",
+        "16",
+        "161",
+        "162",
+        "163",
+        "164",
+        "165",
+        "169",
+        "17",
+        "171",
+        "173",
+        "175",
+        "176",
+        "177",
+        "179",
+        "18",
+        "180",
+        "181",
+        "182",
+        "183",
+        "184",
+        "186",
+        "190",
+        "191",
+        "192",
+        "193",
+        "195",
+        "196",
+        "198",
+        "2",
+        "20",
+        "203",
+        "205",
+        "206",
+        "208",
+        "210",
+        "211",
+        "215",
+        "220",
+        "221",
+        "223",
+        "227",
+        "228",
+        "229",
+        "23",
+        "230",
+        "238",
+        "239",
+        "24",
+        "243",
+        "244",
+        "247",
+        "248",
+        "249",
+        "250",
+        "252",
+        "26",
+        "27",
+        "28",
+        "30",
+        "32",
+        "34",
+        "35",
+        "37",
+        "38",
+        "39",
+        "43",
+        "46",
+        "47",
+        "5",
+        "52",
+        "53",
+        "57",
+        "58",
+        "59",
+        "6",
+        "60",
+        "61",
+        "62",
+        "63",
+        "68",
+        "7",
+        "73",
+        "77",
+        "78",
+        "79",
+        "8",
+        "80",
+        "81",
+        "84",
+        "88",
+        "9",
+        "91",
+        "93",
+        "94",
+        "95",
+        "97",
+        "98"
+      ],
+      "flagged_fraction": 0.549,
+      "flagged_fraction_high_load_only": 0.506,
+      "n_annotators": 253,
+      "n_high_load_annotators": 83,
+      "pool_mean": 0.5214,
+      "position_note": "``contested_position`` is an annotator's offset on the contested dimensions net of their leniency offset. It is a value position, not a quality defect: it does not count toward the flagged fraction and it is not remediable by retraining. ``systematic_bias`` is computed over the NON-contested dimensions only, so it measures leniency and nothing else.",
+      "reading": "54.9% of all 253 annotators, and 50.6% of the 83 with at least 100 judgements, sit more than 0.15 from the pool mean on the uncontested binary 'is this worth acting on' call. Separately, 5.5% sit far from the pool on the contested severity boundary. The second group is not a quality problem, and the harness deliberately does not count it as one: it is the measurable footprint of annotators who apply a different, defensible threshold for what counts as hate speech rather than merely offensive. That is the disagreement the construct actually contains."
+    }
+  },
+  "assumptions": {
+    "alpha_level": 0.05,
+    "annotator_bias_threshold": 0.15,
+    "assumed_pairwise_disagreement_sweep": [
+      0.05,
+      0.1,
+      0.2,
+      0.3
+    ],
+    "bootstrap_replicates": 400,
+    "bootstrap_subsample_units": 6000,
+    "headline_pairwise_disagreement_rate": 0.2,
+    "min_load_for_marginal_ranking": 100,
+    "min_posts_for_community_claim": 250,
+    "note": "Point estimates are computed on the full corpus. Bootstrap intervals are computed on a seeded subsample of the size given above; every interval records its own n_clusters.",
+    "power": 0.8,
+    "seed": 20210201,
+    "test_split_fraction": 0.1,
+    "unit_cost_usd_per_label": 0.08
+  },
+  "binary_contrast": {
+    "binary": {
+      "ci": {
+        "hi": 0.5723,
+        "level": 0.95,
+        "lo": 0.5382,
+        "method": "cluster_bootstrap_percentile",
+        "n_boot": 400,
+        "n_clusters": 6000,
+        "point": 0.5555,
+        "width": 0.0341
+      },
+      "ci_basis": {
+        "interval_computed_on": 6000,
+        "n_boot": 400,
+        "note": "Point estimates use every unit. The cluster bootstrap resamples units (posts), not annotations, from a seeded subsample of the size shown.",
+        "point_estimates_computed_on": 20148,
+        "seed": 20210212,
+        "subsampled": true
+      },
+      "description": "normal vs toxic (offensive or hatespeech collapsed). This is the decision a moderation classifier is usually trained to make.",
+      "fleiss_kappa": {
+        "coefficient": "fleiss_kappa",
+        "detail": {
+          "P_expected": 0.5182,
+          "P_observed": 0.7887,
+          "category_prevalence": {
+            "normal": 0.4045,
+            "toxic": 0.5955
+          }
+        },
+        "metric": "",
+        "n_annotators": 253,
+        "n_pairable": 20148,
+        "n_units": 20148,
+        "value": 0.5613
+      },
+      "gwet_ac1": {
+        "coefficient": "gwet_ac1",
+        "detail": {
+          "P_expected": 0.4818,
+          "P_observed": 0.7887,
+          "max_prevalence": 0.5955
+        },
+        "metric": "",
+        "n_annotators": 253,
+        "n_pairable": 20148,
+        "n_units": 20148,
+        "value": 0.5922
+      },
+      "interpretation": "fair",
+      "kappa_paradox_detected": false,
+      "krippendorff_alpha": {
+        "coefficient": "krippendorff_alpha",
+        "detail": {
+          "D_expected": 0.481764,
+          "D_observed": 0.211336
+        },
+        "metric": "nominal",
+        "n_annotators": 253,
+        "n_pairable": 20148,
+        "n_units": 20148,
+        "value": 0.5613
+      },
+      "name": "binary_toxic_vs_normal",
+      "paradox_note": "",
+      "percent_agreement": {
+        "coefficient": "percent_agreement",
+        "detail": {},
+        "metric": "",
+        "n_annotators": 253,
+        "n_pairable": 20148,
+        "n_units": 20148,
+        "value": 0.7887
+      },
+      "scale": "nominal"
+    },
+    "contrast": {
+      "alpha_binary": 0.5613,
+      "alpha_delta": 0.1016,
+      "alpha_offensive_vs_hatespeech_conditional": 0.4181,
+      "alpha_relative_gain": 0.221,
+      "alpha_three_way": 0.4597,
+      "band_binary": "fair",
+      "band_three_way": "fair",
+      "intervals_overlap": false,
+      "raw_binary": 0.7887,
+      "raw_delta": 0.1448,
+      "raw_three_way": 0.6439
+    },
+    "offensive_vs_hatespeech_conditional": {
+      "ci": {
+        "hi": 0.4451,
+        "level": 0.95,
+        "lo": 0.4065,
+        "method": "cluster_bootstrap_percentile",
+        "n_boot": 400,
+        "n_clusters": 6000,
+        "point": 0.427,
+        "width": 0.0385
+      },
+      "ci_basis": {
+        "interval_computed_on": 6000,
+        "n_boot": 400,
+        "note": "Point estimates use every unit. The cluster bootstrap resamples units (posts), not annotations, from a seeded subsample of the size shown.",
+        "point_estimates_computed_on": 12334,
+        "seed": 20210222,
+        "subsampled": true
+      },
+      "description": "CONDITIONAL: offensive vs hatespeech, over the annotations that were not 'normal'. Units retained only where at least two annotators both chose a non-normal label. Selection on the outcome -- read as a description of the boundary, not as a reliability estimate for a task anyone runs.",
+      "fleiss_kappa": {
+        "coefficient": "fleiss_kappa",
+        "detail": {
+          "P_expected": 0.5,
+          "P_observed": 0.7138,
+          "category_prevalence": {
+            "hatespeech": 0.5035,
+            "offensive": 0.4965
+          }
+        },
+        "metric": "",
+        "n_annotators": 249,
+        "n_pairable": 12334,
+        "n_units": 12334,
+        "value": 0.4276
+      },
+      "gwet_ac1": {
+        "coefficient": "gwet_ac1",
+        "detail": {
+          "P_expected": 0.5,
+          "P_observed": 0.7138,
+          "max_prevalence": 0.5035
+        },
+        "metric": "",
+        "n_annotators": 249,
+        "n_pairable": 12334,
+        "n_units": 12334,
+        "value": 0.4277
+      },
+      "interpretation": "fair",
+      "kappa_paradox_detected": false,
+      "krippendorff_alpha": {
+        "coefficient": "krippendorff_alpha",
+        "detail": {
+          "D_expected": 0.498925,
+          "D_observed": 0.290347
+        },
+        "metric": "nominal",
+        "n_annotators": 249,
+        "n_pairable": 12334,
+        "n_units": 12334,
+        "value": 0.4181
+      },
+      "name": "offensive_vs_hatespeech_conditional",
+      "paradox_note": "",
+      "percent_agreement": {
+        "coefficient": "percent_agreement",
+        "detail": {},
+        "metric": "",
+        "n_annotators": 249,
+        "n_pairable": 12334,
+        "n_units": 12334,
+        "value": 0.7138
+      },
+      "scale": "nominal"
+    },
+    "reading": "Collapsing to the binary decision moves alpha from 0.4597 to 0.5613, a gain of +0.1016 (+22.1%), and raw agreement from 0.6439 to 0.7887. The bootstrap intervals do not overlap. Restricted to the annotations that were not 'normal', alpha on the offensive-versus-hatespeech call is 0.4181 -- that boundary is where the disagreement lives. Practically: the annotators broadly agree about whether a post should be acted on and disagree about what to call it, so a system evaluated on the 3-way label is being scored against a noisier target than the one it will be deployed to make.",
+    "three_way": {
+      "ci": {
+        "hi": 0.4729,
+        "level": 0.95,
+        "lo": 0.4452,
+        "method": "cluster_bootstrap_percentile",
+        "n_boot": 400,
+        "n_clusters": 6000,
+        "point": 0.4584,
+        "width": 0.0277
+      },
+      "ci_basis": {
+        "interval_computed_on": 6000,
+        "n_boot": 400,
+        "note": "Point estimates use every unit. The cluster bootstrap resamples units (posts), not annotations, from a seeded subsample of the size shown.",
+        "point_estimates_computed_on": 20148,
+        "seed": 20210202,
+        "subsampled": true
+      },
+      "description": "The task as annotated: normal / offensive / hatespeech, nominal metric. Nominal rather than ordinal because 'offensive' is not a partial 'hatespeech' -- it is a different speech act that happens to sit between the other two in severity. The ordinal metric is reported alongside so the choice is visible rather than assumed.",
+      "fleiss_kappa": {
+        "coefficient": "fleiss_kappa",
+        "detail": {
+          "P_expected": 0.3409,
+          "P_observed": 0.6439,
+          "category_prevalence": {
+            "hatespeech": 0.299,
+            "normal": 0.4045,
+            "offensive": 0.2966
+          }
+        },
+        "metric": "",
+        "n_annotators": 253,
+        "n_pairable": 20148,
+        "n_units": 20148,
+        "value": 0.4597
+      },
+      "gwet_ac1": {
+        "coefficient": "gwet_ac1",
+        "detail": {
+          "P_expected": 0.3295,
+          "P_observed": 0.6439,
+          "max_prevalence": 0.4045
+        },
+        "metric": "",
+        "n_annotators": 253,
+        "n_pairable": 20148,
+        "n_units": 20148,
+        "value": 0.4689
+      },
+      "interpretation": "fair",
+      "kappa_paradox_detected": false,
+      "krippendorff_alpha": {
+        "coefficient": "krippendorff_alpha",
+        "detail": {
+          "D_expected": 0.65908,
+          "D_observed": 0.356115
+        },
+        "metric": "nominal",
+        "n_annotators": 253,
+        "n_pairable": 20148,
+        "n_units": 20148,
+        "value": 0.4597
+      },
+      "name": "three_way_nominal",
+      "paradox_note": "",
+      "percent_agreement": {
+        "coefficient": "percent_agreement",
+        "detail": {},
+        "metric": "",
+        "n_annotators": 253,
+        "n_pairable": 20148,
+        "n_units": 20148,
+        "value": 0.6439
+      },
+      "scale": "nominal"
+    }
+  },
+  "consensus_structure": {
+    "binary": {
+      "counts": {
+        "no_majority": 0,
+        "split_2_1": 6387,
+        "unanimous": 13761
+      },
+      "gold_label_distribution": {
+        "normal": 7814,
+        "toxic": 12334
+      },
+      "n_posts": 20148,
+      "one_vote_fragile_fraction": 0.317,
+      "one_vote_fragile_posts": 6387,
+      "percentages": {
+        "no_majority": 0.0,
+        "split_2_1": 0.317,
+        "unanimous": 0.683
+      },
+      "resolved_posts": 20148,
+      "unresolved_fraction": 0.0,
+      "unresolved_posts": 0
+    },
+    "no_majority_note": "The 919 no-majority posts have no target label defined by the annotation protocol. Whatever a downstream user does with them -- drop them, assign the most severe label, assign the least severe -- is a decision made outside the protocol, and it silently sets 4.56% of any accuracy figure computed over the full corpus.",
+    "reading": "On the 3-way task 9,845 posts (48.9%) are unanimous, 9,384 (46.6%) are 2-1 splits, and 919 (4.6%) have three different labels and therefore no majority at all. The 2-1 and no-majority rows together are 51.1% of the corpus: for those posts a single annotator changing their mind would remove the gold label entirely. Under the binary collapse the same corpus is 68.3% unanimous, and no post can be unresolved because a two-category vote among three raters always has a majority.",
+    "three_way": {
+      "counts": {
+        "no_majority": 919,
+        "split_2_1": 9384,
+        "unanimous": 9845
+      },
+      "gold_label_distribution": {
+        "hatespeech": 5935,
+        "normal": 7814,
+        "offensive": 5480
+      },
+      "n_posts": 20148,
+      "one_vote_fragile_fraction": 0.5114,
+      "one_vote_fragile_posts": 10303,
+      "percentages": {
+        "no_majority": 0.0456,
+        "split_2_1": 0.4658,
+        "unanimous": 0.4886
+      },
+      "resolved_posts": 19229,
+      "unresolved_fraction": 0.0456,
+      "unresolved_posts": 919
+    }
+  },
+  "dataset": {
+    "annotations_per_post": {
+      "3": 20148
+    },
+    "citation": "Mathew, B., Saha, P., Yimam, S. M., Biemann, C., Goyal, P., & Mukherjee, A. (2021). HateXplain: A Benchmark Dataset for Explainable Hate Speech Detection. AAAI 35(17), 14867-14875.",
+    "label_counts": {
+      "hatespeech": 18070,
+      "normal": 24449,
+      "offensive": 17925
+    },
+    "n_annotations": 60444,
+    "n_annotators": 253,
+    "n_posts": 20148,
+    "name": "HateXplain",
+    "source_path": "data/hatexplain.json"
+  },
+  "label_confusion": {
+    "conditional_label_given_other_rater": {
+      "hatespeech": {
+        "hatespeech": 0.6561,
+        "normal": 0.1018,
+        "offensive": 0.2421
+      },
+      "normal": {
+        "hatespeech": 0.0752,
+        "normal": 0.7388,
+        "offensive": 0.186
+      },
+      "offensive": {
+        "hatespeech": 0.2441,
+        "normal": 0.2537,
+        "offensive": 0.5022
+      }
+    },
+    "disagreement_pairs": [
+      {
+        "count": 9095,
+        "pair": "normal|offensive",
+        "share_of_all_pairs": 0.1505,
+        "share_of_disagreements": 0.4225
+      },
+      {
+        "count": 8751,
+        "pair": "hatespeech|offensive",
+        "share_of_all_pairs": 0.1448,
+        "share_of_disagreements": 0.4066
+      },
+      {
+        "count": 3679,
+        "pair": "hatespeech|normal",
+        "share_of_all_pairs": 0.0609,
+        "share_of_disagreements": 0.1709
+      }
+    ],
+    "n_agreeing_pairs": 38919,
+    "n_annotator_pairs": 60444,
+    "n_disagreeing_pairs": 21525,
+    "pairwise_disagreement_rate": 0.3561,
+    "reading": "Of 21,525 disagreeing annotator pairs, 42.2% are normal|offensive. The 40.7% of disagreements that are offensive-vs-hatespeech are disagreements about *which kind* of unacceptable a post is, not about whether it is unacceptable; a moderation system that only needs the binary decision never has to resolve them."
+  },
+  "overall_agreement": {
+    "battery": {
+      "ci": {
+        "hi": 0.4729,
+        "level": 0.95,
+        "lo": 0.4452,
+        "method": "cluster_bootstrap_percentile",
+        "n_boot": 400,
+        "n_clusters": 6000,
+        "point": 0.4584,
+        "width": 0.0277
+      },
+      "ci_basis": {
+        "interval_computed_on": 6000,
+        "n_boot": 400,
+        "note": "Point estimates use every unit. The cluster bootstrap resamples units (posts), not annotations, from a seeded subsample of the size shown.",
+        "point_estimates_computed_on": 20148,
+        "seed": 20210202,
+        "subsampled": true
+      },
+      "description": "The task as annotated: normal / offensive / hatespeech, nominal metric. Nominal rather than ordinal because 'offensive' is not a partial 'hatespeech' -- it is a different speech act that happens to sit between the other two in severity. The ordinal metric is reported alongside so the choice is visible rather than assumed.",
+      "fleiss_kappa": {
+        "coefficient": "fleiss_kappa",
+        "detail": {
+          "P_expected": 0.3409,
+          "P_observed": 0.6439,
+          "category_prevalence": {
+            "hatespeech": 0.299,
+            "normal": 0.4045,
+            "offensive": 0.2966
+          }
+        },
+        "metric": "",
+        "n_annotators": 253,
+        "n_pairable": 20148,
+        "n_units": 20148,
+        "value": 0.4597
+      },
+      "gwet_ac1": {
+        "coefficient": "gwet_ac1",
+        "detail": {
+          "P_expected": 0.3295,
+          "P_observed": 0.6439,
+          "max_prevalence": 0.4045
+        },
+        "metric": "",
+        "n_annotators": 253,
+        "n_pairable": 20148,
+        "n_units": 20148,
+        "value": 0.4689
+      },
+      "interpretation": "fair",
+      "kappa_paradox_detected": false,
+      "krippendorff_alpha": {
+        "coefficient": "krippendorff_alpha",
+        "detail": {
+          "D_expected": 0.65908,
+          "D_observed": 0.356115
+        },
+        "metric": "nominal",
+        "n_annotators": 253,
+        "n_pairable": 20148,
+        "n_units": 20148,
+        "value": 0.4597
+      },
+      "name": "three_way_nominal",
+      "paradox_note": "",
+      "percent_agreement": {
+        "coefficient": "percent_agreement",
+        "detail": {},
+        "metric": "",
+        "n_annotators": 253,
+        "n_pairable": 20148,
+        "n_units": 20148,
+        "value": 0.6439
+      },
+      "scale": "nominal"
+    },
+    "interpretation": {
+      "band": "fair",
+      "krippendorff_thresholds": {
+        "firm_conclusions": 0.8,
+        "tentative_conclusions": 0.667
+      },
+      "statement": "alpha = 0.4597 (95% CI [0.4452, 0.4729]). That is below Krippendorff's 0.667 floor for tentative conclusions and well below the 0.800 floor for firm ones. Three annotators agreed exactly with each other on 64.4% of pairwise comparisons. The interval is narrow, so this is a precisely measured moderate reliability, not an uncertain one."
+    },
+    "kappa_paradox": {
+      "ac1_minus_kappa": 0.0092,
+      "category_prevalence": {
+        "hatespeech": 0.299,
+        "normal": 0.4045,
+        "offensive": 0.2966
+      },
+      "conclusion": "The kappa paradox does NOT fire. Raw agreement is 0.6439, far below the 0.85 the paradox requires, the AC1-kappa gap is 0.0092 rather than the >0.25 it requires, and the most common category holds only 40.5% of the mass, so no category is dominant enough to collapse kappa's chance model. All three chance-corrected coefficients agree with each other to within 0.0092. This rules out prevalence skew as the explanation for the moderate alpha and leaves genuine disagreement about the construct. The practical consequence is that the usual remedies for a low coefficient -- stratified oversampling of a rare class, or annotator retraining -- would not move this number.",
+      "detected": false,
+      "fleiss_kappa": 0.4597,
+      "gwet_ac1": 0.4689,
+      "max_category_prevalence": 0.4045,
+      "raw_agreement": 0.6439,
+      "trigger_rule": "raw_agreement >= 0.85 AND fleiss_kappa < 0.40 AND (gwet_ac1 - fleiss_kappa) > 0.25"
+    },
+    "ordinal_metric_for_comparison": {
+      "krippendorff_alpha": 0.3366,
+      "note": "Reported only to show that the nominal/ordinal choice does not drive the headline. An ordinal reading treats normal-vs-hatespeech as a bigger error than normal-vs-offensive, which is defensible but not what the codebook asks for."
+    }
+  },
+  "signal_gate": {
+    "claims_unblocked_by_relaxing_policy": [
+      "C-MEAS-01",
+      "C-RANK-01"
+    ],
+    "default_policy": {
+      "blocked_claim_ids": [
+        "C-MEAS-01",
+        "C-RANK-01",
+        "C-COMM-01",
+        "C-GATE-01"
+      ],
+      "claims": [
+        {
+          "blocking_reasons": [],
+          "checks": [
+            {
+              "message": "Mean annotations per response 3.00 meets the minimum of 2.",
+              "name": "replication",
+              "observed": 3.0,
+              "remedy": "",
+              "threshold": 2,
+              "verdict": "pass"
+            }
+          ],
+          "claim_id": "C-DESC-01",
+          "evidence": {
+            "checks_run": [
+              "replication"
+            ],
+            "depth": "production"
+          },
+          "kind": "descriptive",
+          "text": "In HateXplain, 48.9% of posts carry a unanimous 3-way label and 46.6% are 2-1 splits.",
+          "track": "hatexplain",
+          "verdict": "pass",
+          "warnings": []
+        },
+        {
+          "blocking_reasons": [
+            "alpha=0.460 is below the blocking floor of 0.500. Annotators are not measuring the same construct."
+          ],
+          "checks": [
+            {
+              "message": "alpha=0.460 is below the blocking floor of 0.500. Annotators are not measuring the same construct.",
+              "name": "reliability:three_way",
+              "observed": 0.4597,
+              "remedy": "Do not report this number. Revise the rubric definition or split the dimension; more data will not fix a definition problem.",
+              "threshold": 0.5,
+              "verdict": "block"
+            },
+            {
+              "message": "95% CI half-width 0.014 is within the 0.075 budget.",
+              "name": "precision",
+              "observed": 0.0138,
+              "remedy": "",
+              "threshold": 0.075,
+              "verdict": "pass"
+            }
+          ],
+          "claim_id": "C-MEAS-01",
+          "evidence": {
+            "checks_run": [
+              "reliability_three_way",
+              "precision_three_way"
+            ],
+            "depth": "production"
+          },
+          "kind": "measurement",
+          "text": "HateXplain's 3-way majority labels are reliable enough to be treated as ground truth for measuring model quality.",
+          "track": "hatexplain",
+          "verdict": "block",
+          "warnings": []
+        },
+        {
+          "blocking_reasons": [],
+          "checks": [
+            {
+              "message": "alpha=0.561 is below Krippendorff's tentative-conclusion threshold of 0.667.",
+              "name": "reliability:binary",
+              "observed": 0.5613,
+              "remedy": "Report with the interval and an explicit reliability caveat; do not use for ranking.",
+              "threshold": 0.667,
+              "verdict": "warn"
+            },
+            {
+              "message": "95% CI half-width 0.017 is within the 0.075 budget.",
+              "name": "precision",
+              "observed": 0.017,
+              "remedy": "",
+              "threshold": 0.075,
+              "verdict": "pass"
+            }
+          ],
+          "claim_id": "C-MEAS-02",
+          "evidence": {
+            "checks_run": [
+              "reliability_binary",
+              "precision_binary"
+            ],
+            "depth": "production"
+          },
+          "kind": "measurement",
+          "text": "Collapsed to a binary toxic/normal decision, the same annotations support a measurement of model quality.",
+          "track": "hatexplain",
+          "verdict": "warn",
+          "warnings": [
+            "alpha=0.561 is below Krippendorff's tentative-conclusion threshold of 0.667."
+          ]
+        },
+        {
+          "blocking_reasons": [
+            "alpha=0.460 is below the blocking floor of 0.500. Annotators are not measuring the same construct.",
+            "Observed effect 0.0200 is BELOW the minimum detectable effect 0.0279."
+          ],
+          "checks": [
+            {
+              "message": "alpha=0.460 is below the blocking floor of 0.500. Annotators are not measuring the same construct.",
+              "name": "reliability:three_way",
+              "observed": 0.4597,
+              "remedy": "Do not report this number. Revise the rubric definition or split the dimension; more data will not fix a definition problem.",
+              "threshold": 0.5,
+              "verdict": "block"
+            },
+            {
+              "message": "Observed effect 0.0200 is BELOW the minimum detectable effect 0.0279.",
+              "name": "effect_vs_mde",
+              "observed": 0.02,
+              "remedy": "This difference is inside the noise floor of the design. Reporting it as a real difference is not supportable. Either power the study for this effect size or report 'no detectable difference (MDE=0.028)'.",
+              "threshold": 0.0279,
+              "verdict": "block"
+            }
+          ],
+          "claim_id": "C-RANK-01",
+          "evidence": {
+            "checks_run": [
+              "reliability_three_way",
+              "effect_vs_mde_small"
+            ],
+            "depth": "production"
+          },
+          "kind": "ranking",
+          "text": "Model X outperforms model Y by 2.0 accuracy points on the 3-way HateXplain test split (n=2,015).",
+          "track": "hatexplain",
+          "verdict": "block",
+          "warnings": []
+        },
+        {
+          "blocking_reasons": [],
+          "checks": [
+            {
+              "message": "alpha=0.561 is below Krippendorff's tentative-conclusion threshold of 0.667.",
+              "name": "reliability:binary",
+              "observed": 0.5613,
+              "remedy": "Report with the interval and an explicit reliability caveat; do not use for ranking.",
+              "threshold": 0.667,
+              "verdict": "warn"
+            },
+            {
+              "message": "Observed effect 0.0800 exceeds the minimum detectable effect 0.0279.",
+              "name": "effect_vs_mde",
+              "observed": 0.08,
+              "remedy": "",
+              "threshold": 0.0279,
+              "verdict": "pass"
+            }
+          ],
+          "claim_id": "C-RANK-02",
+          "evidence": {
+            "checks_run": [
+              "reliability_binary",
+              "effect_vs_mde_large"
+            ],
+            "depth": "production"
+          },
+          "kind": "ranking",
+          "text": "Model X outperforms model Y by 8.0 accuracy points on the binary toxic/normal task (n=2,015).",
+          "track": "hatexplain",
+          "verdict": "warn",
+          "warnings": [
+            "alpha=0.561 is below Krippendorff's tentative-conclusion threshold of 0.667."
+          ]
+        },
+        {
+          "blocking_reasons": [
+            "alpha=0.219 is below the blocking floor of 0.500. Annotators are not measuring the same construct."
+          ],
+          "checks": [
+            {
+              "message": "alpha=0.219 is below the blocking floor of 0.500. Annotators are not measuring the same construct.",
+              "name": "reliability:target:Men",
+              "observed": 0.2191,
+              "remedy": "Do not report this number. Revise the rubric definition or split the dimension; more data will not fix a definition problem.",
+              "threshold": 0.5,
+              "verdict": "block"
+            },
+            {
+              "message": "95% CI half-width 0.101 EXCEEDS the 0.075 budget.",
+              "name": "precision",
+              "observed": 0.1009,
+              "remedy": "Increase n or reduce measurement noise before quoting a point estimate.",
+              "threshold": 0.075,
+              "verdict": "warn"
+            },
+            {
+              "message": "Worst-factor balance ratio 0.00: one level is sampled at least four times more heavily than another in the same factor.",
+              "name": "coverage",
+              "observed": 0.0006,
+              "remedy": "Unweighted aggregates over an unbalanced design are dominated by the over-sampled level. Report weighted means or rebalance.",
+              "threshold": 0.25,
+              "verdict": "warn"
+            }
+          ],
+          "claim_id": "C-COMM-01",
+          "evidence": {
+            "checks_run": [
+              "reliability_thin_community",
+              "precision_thin_community",
+              "coverage"
+            ],
+            "depth": "production"
+          },
+          "kind": "measurement",
+          "text": "Annotator agreement is materially lower for posts targeting Men (n=92 posts).",
+          "track": "hatexplain",
+          "verdict": "block",
+          "warnings": [
+            "95% CI half-width 0.101 EXCEEDS the 0.075 budget.",
+            "Worst-factor balance ratio 0.00: one level is sampled at least four times more heavily than another in the same factor."
+          ]
+        },
+        {
+          "blocking_reasons": [
+            "Track depth 'pilot' does NOT permit a 'release_gate' claim.",
+            "alpha=0.460 is below the blocking floor of 0.500. Annotators are not measuring the same construct."
+          ],
+          "checks": [
+            {
+              "message": "Track depth 'pilot' does NOT permit a 'release_gate' claim.",
+              "name": "depth_contract",
+              "observed": "pilot",
+              "remedy": "Either reframe the claim as descriptive, or promote the track. Contract for 'pilot': May report measurements with intervals and an explicit MDE. May report system deltas ONLY when the interval excludes zero and the delta exceeds the MDE. May not be used as a release gate.",
+              "threshold": "release_gate",
+              "verdict": "block"
+            },
+            {
+              "message": "alpha=0.460 is below the blocking floor of 0.500. Annotators are not measuring the same construct.",
+              "name": "reliability:three_way",
+              "observed": 0.4597,
+              "remedy": "Do not report this number. Revise the rubric definition or split the dimension; more data will not fix a definition problem.",
+              "threshold": 0.5,
+              "verdict": "block"
+            }
+          ],
+          "claim_id": "C-GATE-01",
+          "evidence": {
+            "checks_run": [
+              "depth",
+              "reliability_three_way"
+            ],
+            "depth": "pilot"
+          },
+          "kind": "release_gate",
+          "text": "Accuracy against HateXplain gold labels is a release gate for a production content-moderation classifier.",
+          "track": "hatexplain",
+          "verdict": "block",
+          "warnings": []
+        }
+      ],
+      "policy": {
+        "alpha_block_below": 0.5,
+        "alpha_firm_at": 0.8,
+        "alpha_warn_below": 0.667,
+        "block_on_drift": true,
+        "correct_for_multiplicity": true,
+        "flagged_annotator_block_multiple": 2.0,
+        "max_ci_half_width": 0.075,
+        "max_empty_cell_fraction": 0.2,
+        "max_flagged_annotator_fraction": 0.34,
+        "max_rubric_gap_rate": 0.15,
+        "mde_safety_margin": 1.0,
+        "min_gold_accuracy": 0.7,
+        "min_n_per_cell": 5,
+        "min_replication": 2,
+        "require_effect_exceeds_mde": true
+      },
+      "policy_name": "default",
+      "publishable_claim_ids": [
+        "C-DESC-01",
+        "C-MEAS-02",
+        "C-RANK-02"
+      ],
+      "summary": {
+        "block_rate": 0.571,
+        "by_verdict": {
+          "block": 4,
+          "pass": 1,
+          "warn": 2
+        },
+        "n_claims": 7
+      }
+    },
+    "exploratory_policy": {
+      "blocked_claim_ids": [
+        "C-COMM-01",
+        "C-GATE-01"
+      ],
+      "claims": [
+        {
+          "blocking_reasons": [],
+          "checks": [
+            {
+              "message": "Mean annotations per response 3.00 meets the minimum of 2.",
+              "name": "replication",
+              "observed": 3.0,
+              "remedy": "",
+              "threshold": 2,
+              "verdict": "pass"
+            }
+          ],
+          "claim_id": "C-DESC-01",
+          "evidence": {
+            "checks_run": [
+              "replication"
+            ],
+            "depth": "production"
+          },
+          "kind": "descriptive",
+          "text": "In HateXplain, 48.9% of posts carry a unanimous 3-way label and 46.6% are 2-1 splits.",
+          "track": "hatexplain",
+          "verdict": "pass",
+          "warnings": []
+        },
+        {
+          "blocking_reasons": [],
+          "checks": [
+            {
+              "message": "alpha=0.460 is below Krippendorff's tentative-conclusion threshold of 0.500.",
+              "name": "reliability:three_way",
+              "observed": 0.4597,
+              "remedy": "Report with the interval and an explicit reliability caveat; do not use for ranking.",
+              "threshold": 0.5,
+              "verdict": "warn"
+            },
+            {
+              "message": "95% CI half-width 0.014 is within the 0.150 budget.",
+              "name": "precision",
+              "observed": 0.0138,
+              "remedy": "",
+              "threshold": 0.15,
+              "verdict": "pass"
+            }
+          ],
+          "claim_id": "C-MEAS-01",
+          "evidence": {
+            "checks_run": [
+              "reliability_three_way",
+              "precision_three_way"
+            ],
+            "depth": "production"
+          },
+          "kind": "measurement",
+          "text": "HateXplain's 3-way majority labels are reliable enough to be treated as ground truth for measuring model quality.",
+          "track": "hatexplain",
+          "verdict": "warn",
+          "warnings": [
+            "alpha=0.460 is below Krippendorff's tentative-conclusion threshold of 0.500."
+          ]
+        },
+        {
+          "blocking_reasons": [],
+          "checks": [
+            {
+              "message": "alpha=0.561 supports tentative conclusions (firm conclusions want >= 0.800).",
+              "name": "reliability:binary",
+              "observed": 0.5613,
+              "remedy": "",
+              "threshold": 0.8,
+              "verdict": "pass"
+            },
+            {
+              "message": "95% CI half-width 0.017 is within the 0.150 budget.",
+              "name": "precision",
+              "observed": 0.017,
+              "remedy": "",
+              "threshold": 0.15,
+              "verdict": "pass"
+            }
+          ],
+          "claim_id": "C-MEAS-02",
+          "evidence": {
+            "checks_run": [
+              "reliability_binary",
+              "precision_binary"
+            ],
+            "depth": "production"
+          },
+          "kind": "measurement",
+          "text": "Collapsed to a binary toxic/normal decision, the same annotations support a measurement of model quality.",
+          "track": "hatexplain",
+          "verdict": "pass",
+          "warnings": []
+        },
+        {
+          "blocking_reasons": [],
+          "checks": [
+            {
+              "message": "alpha=0.460 is below Krippendorff's tentative-conclusion threshold of 0.500.",
+              "name": "reliability:three_way",
+              "observed": 0.4597,
+              "remedy": "Report with the interval and an explicit reliability caveat; do not use for ranking.",
+              "threshold": 0.5,
+              "verdict": "warn"
+            },
+            {
+              "message": "MDE check waived by policy for this depth tier.",
+              "name": "effect_vs_mde",
+              "observed": 0.02,
+              "remedy": "",
+              "threshold": 0.0279,
+              "verdict": "pass"
+            }
+          ],
+          "claim_id": "C-RANK-01",
+          "evidence": {
+            "checks_run": [
+              "reliability_three_way",
+              "effect_vs_mde_small"
+            ],
+            "depth": "production"
+          },
+          "kind": "ranking",
+          "text": "Model X outperforms model Y by 2.0 accuracy points on the 3-way HateXplain test split (n=2,015).",
+          "track": "hatexplain",
+          "verdict": "warn",
+          "warnings": [
+            "alpha=0.460 is below Krippendorff's tentative-conclusion threshold of 0.500."
+          ]
+        },
+        {
+          "blocking_reasons": [],
+          "checks": [
+            {
+              "message": "alpha=0.561 supports tentative conclusions (firm conclusions want >= 0.800).",
+              "name": "reliability:binary",
+              "observed": 0.5613,
+              "remedy": "",
+              "threshold": 0.8,
+              "verdict": "pass"
+            },
+            {
+              "message": "MDE check waived by policy for this depth tier.",
+              "name": "effect_vs_mde",
+              "observed": 0.08,
+              "remedy": "",
+              "threshold": 0.0279,
+              "verdict": "pass"
+            }
+          ],
+          "claim_id": "C-RANK-02",
+          "evidence": {
+            "checks_run": [
+              "reliability_binary",
+              "effect_vs_mde_large"
+            ],
+            "depth": "production"
+          },
+          "kind": "ranking",
+          "text": "Model X outperforms model Y by 8.0 accuracy points on the binary toxic/normal task (n=2,015).",
+          "track": "hatexplain",
+          "verdict": "pass",
+          "warnings": []
+        },
+        {
+          "blocking_reasons": [
+            "alpha=0.219 is below the blocking floor of 0.300. Annotators are not measuring the same construct. UNCERTAINTY: the 95% bootstrap interval for alpha [0.110, 0.311] does not exclude 0.300, so which side of that threshold this dimension falls on is NOT established by these data; the classification is a point estimate, not a finding."
+          ],
+          "checks": [
+            {
+              "message": "alpha=0.219 is below the blocking floor of 0.300. Annotators are not measuring the same construct. UNCERTAINTY: the 95% bootstrap interval for alpha [0.110, 0.311] does not exclude 0.300, so which side of that threshold this dimension falls on is NOT established by these data; the classification is a point estimate, not a finding.",
+              "name": "reliability:target:Men",
+              "observed": 0.2191,
+              "remedy": "Do not report this number. Revise the rubric definition or split the dimension; more data will not fix a definition problem.",
+              "threshold": 0.3,
+              "verdict": "block"
+            },
+            {
+              "message": "95% CI half-width 0.101 is within the 0.150 budget.",
+              "name": "precision",
+              "observed": 0.1009,
+              "remedy": "",
+              "threshold": 0.15,
+              "verdict": "pass"
+            },
+            {
+              "message": "Worst-factor balance ratio 0.00: one level is sampled at least four times more heavily than another in the same factor.",
+              "name": "coverage",
+              "observed": 0.0006,
+              "remedy": "Unweighted aggregates over an unbalanced design are dominated by the over-sampled level. Report weighted means or rebalance.",
+              "threshold": 0.25,
+              "verdict": "warn"
+            }
+          ],
+          "claim_id": "C-COMM-01",
+          "evidence": {
+            "checks_run": [
+              "reliability_thin_community",
+              "precision_thin_community",
+              "coverage"
+            ],
+            "depth": "production"
+          },
+          "kind": "measurement",
+          "text": "Annotator agreement is materially lower for posts targeting Men (n=92 posts).",
+          "track": "hatexplain",
+          "verdict": "block",
+          "warnings": [
+            "Worst-factor balance ratio 0.00: one level is sampled at least four times more heavily than another in the same factor."
+          ]
+        },
+        {
+          "blocking_reasons": [
+            "Track depth 'pilot' does NOT permit a 'release_gate' claim."
+          ],
+          "checks": [
+            {
+              "message": "Track depth 'pilot' does NOT permit a 'release_gate' claim.",
+              "name": "depth_contract",
+              "observed": "pilot",
+              "remedy": "Either reframe the claim as descriptive, or promote the track. Contract for 'pilot': May report measurements with intervals and an explicit MDE. May report system deltas ONLY when the interval excludes zero and the delta exceeds the MDE. May not be used as a release gate.",
+              "threshold": "release_gate",
+              "verdict": "block"
+            },
+            {
+              "message": "alpha=0.460 is below Krippendorff's tentative-conclusion threshold of 0.500.",
+              "name": "reliability:three_way",
+              "observed": 0.4597,
+              "remedy": "Report with the interval and an explicit reliability caveat; do not use for ranking.",
+              "threshold": 0.5,
+              "verdict": "warn"
+            }
+          ],
+          "claim_id": "C-GATE-01",
+          "evidence": {
+            "checks_run": [
+              "depth",
+              "reliability_three_way"
+            ],
+            "depth": "pilot"
+          },
+          "kind": "release_gate",
+          "text": "Accuracy against HateXplain gold labels is a release gate for a production content-moderation classifier.",
+          "track": "hatexplain",
+          "verdict": "block",
+          "warnings": [
+            "alpha=0.460 is below Krippendorff's tentative-conclusion threshold of 0.500."
+          ]
+        }
+      ],
+      "policy": {
+        "alpha_block_below": 0.3,
+        "alpha_firm_at": 0.8,
+        "alpha_warn_below": 0.5,
+        "block_on_drift": false,
+        "correct_for_multiplicity": true,
+        "flagged_annotator_block_multiple": 2.0,
+        "max_ci_half_width": 0.15,
+        "max_empty_cell_fraction": 0.2,
+        "max_flagged_annotator_fraction": 0.34,
+        "max_rubric_gap_rate": 0.15,
+        "mde_safety_margin": 1.0,
+        "min_gold_accuracy": 0.7,
+        "min_n_per_cell": 3,
+        "min_replication": 2,
+        "require_effect_exceeds_mde": false
+      },
+      "policy_name": "exploratory",
+      "publishable_claim_ids": [
+        "C-DESC-01",
+        "C-MEAS-01",
+        "C-MEAS-02",
+        "C-RANK-01",
+        "C-RANK-02"
+      ],
+      "summary": {
+        "block_rate": 0.286,
+        "by_verdict": {
+          "block": 2,
+          "pass": 3,
+          "warn": 2
+        },
+        "n_claims": 7
+      }
+    },
+    "reading": "Under the pre-registered default policy 4 of 7 claims are blocked: C-MEAS-01, C-RANK-01, C-COMM-01, C-GATE-01. Under the harness's deliberately looser exploratory policy 2 of them clear (C-MEAS-01, C-RANK-01), which is the point of having two policies rather than one: relaxing the bar becomes an explicit, reviewable act instead of something that happens by omission. Note which claims survive either way -- the descriptive counts and the binary-task comparison with a large gap -- and which do not: any 3-way measurement claim, and the 2-point leaderboard gap, which is blocked for being smaller than the design's own minimum detectable effect."
+  },
+  "study": "A",
+  "title": "Label-quality audit of HateXplain"
+}

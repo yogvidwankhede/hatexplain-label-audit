@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rubricon-field"
+version = "1.0.0"
+description = "A field study: applying the Rubricon evaluation harness to real human annotations (HateXplain, Mathew et al. 2021)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+# The statistical core lives in rubricon and is pure standard library.
+# This package adds no numerical dependencies of its own, by design: every
+# statistic reported here is computed by code that has an independent test
+# suite in the parent repository.
+dependencies = ["rubricon>=0.4.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+rubricon-field = "rubricon_field.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

@@ -1,0 +1,421 @@
+{
+  "assumptions": {
+    "alpha_level": 0.05,
+    "annotator_bias_threshold": 0.15,
+    "assumed_pairwise_disagreement_sweep": [
+      0.05,
+      0.1,
+      0.2,
+      0.3
+    ],
+    "bootstrap_replicates": 400,
+    "bootstrap_subsample_units": 6000,
+    "headline_pairwise_disagreement_rate": 0.2,
+    "min_load_for_marginal_ranking": 100,
+    "min_posts_for_community_claim": 250,
+    "note": "Point estimates are computed on the full corpus. Bootstrap intervals are computed on a seeded subsample of the size given above; every interval records its own n_clusters.",
+    "power": 0.8,
+    "seed": 20210201,
+    "test_split_fraction": 0.1,
+    "unit_cost_usd_per_label": 0.08
+  },
+  "budget_allocation": {
+    "analytic_result": "Substituting n = B/k and the Spearman-Brown rho_k into the true-scale MDE gives MDE proportional to sqrt((1 + (k-1)*rho_1) / rho_1), which is strictly increasing in k for every rho_1 in (0,1). One rater per item maximises aggregate statistical power per label at ANY reliability. This is a property of the attenuation model, not of this dataset.",
+    "budget_labels": 60444,
+    "criterion": "true-score-scale minimum detectable effect (lower is better)",
+    "grid": [
+      {
+        "assumed_pairwise_disagreement": 0.05,
+        "gold_reliability_rho_k": 0.4597,
+        "k_raters": 1,
+        "labels_spent": 60444,
+        "mde_observed_scale": 0.0025,
+        "mde_true_scale": 0.0038,
+        "n_items": 60444
+      },
+      {
+        "assumed_pairwise_disagreement": 0.1,
+        "gold_reliability_rho_k": 0.4597,
+        "k_raters": 1,
+        "labels_spent": 60444,
+        "mde_observed_scale": 0.0036,
+        "mde_true_scale": 0.0053,
+        "n_items": 60444
+      },
+      {
+        "assumed_pairwise_disagreement": 0.2,
+        "gold_reliability_rho_k": 0.4597,
+        "k_raters": 1,
+        "labels_spent": 60444,
+        "mde_observed_scale": 0.0051,
+        "mde_true_scale": 0.0075,
+        "n_items": 60444
+      },
+      {
+        "assumed_pairwise_disagreement": 0.3,
+        "gold_reliability_rho_k": 0.4597,
+        "k_raters": 1,
+        "labels_spent": 60444,
+        "mde_observed_scale": 0.0062,
+        "mde_true_scale": 0.0092,
+        "n_items": 60444
+      },
+      {
+        "assumed_pairwise_disagreement": 0.05,
+        "gold_reliability_rho_k": 0.6298,
+        "k_raters": 2,
+        "labels_spent": 60444,
+        "mde_observed_scale": 0.0036,
+        "mde_true_scale": 0.0045,
+        "n_items": 30222
+      },
+      {
+        "assumed_pairwise_disagreement": 0.1,
+        "gold_reliability_rho_k": 0.6298,
+        "k_raters": 2,
+        "labels_spent": 60444,
+        "mde_observed_scale": 0.0051,
+        "mde_true_scale": 0.0064,
+        "n_items": 30222
+      },
+      {
+        "assumed_pairwise_disagreement": 0.2,
+        "gold_reliability_rho_k": 0.6298,
+        "k_raters": 2,
+        "labels_spent": 60444,
+        "mde_observed_scale": 0.0072,
+        "mde_true_scale": 0.0091,
+        "n_items": 30222
+      },
+      {
+        "assumed_pairwise_disagreement": 0.3,
+        "gold_reliability_rho_k": 0.6298,
+        "k_raters": 2,
+        "labels_spent": 60444,
+        "mde_observed_scale": 0.0088,
+        "mde_true_scale": 0.0111,
+        "n_items": 30222
+      },
+      {
+        "assumed_pairwise_disagreement": 0.05,
+        "gold_reliability_rho_k": 0.7185,
+        "k_raters": 3,
+        "labels_spent": 60444,
+        "mde_observed_scale": 0.0044,
+        "mde_true_scale": 0.0052,
+        "n_items": 20148
+      },
+      {
+        "assumed_pairwise_disagreement": 0.1,
+        "gold_reliability_rho_k": 0.7185,
+        "k_raters": 3,
+        "labels_spent": 60444,
+        "mde_observed_scale": 0.0062,
+        "mde_true_scale": 0.0074,
+        "n_items": 20148
+      },
+      {
+        "assumed_pairwise_disagreement": 0.2,
+        "gold_reliability_rho_k": 0.7185,
+        "k_raters": 3,
+        "labels_spent": 60444,
+        "mde_observed_scale": 0.0088,
+        "mde_true_scale": 0.0104,
+        "n_items": 20148
+      },
+      {
+        "assumed_pairwise_disagreement": 0.3,
+        "gold_reliability_rho_k": 0.7185,
+        "k_raters": 3,
+        "labels_spent": 60444,
+        "mde_observed_scale": 0.0108,
+        "mde_true_scale": 0.0128,
+        "n_items": 20148
+      },
+      {
+        "assumed_pairwise_disagreement": 0.05,
+        "gold_reliability_rho_k": 0.7729,
+        "k_raters": 4,
+        "labels_spent": 60444,
+        "mde_observed_scale": 0.0051,
+        "mde_true_scale": 0.0058,
+        "n_items": 15111
+      },
+      {
+        "assumed_pairwise_disagreement": 0.1,
+        "gold_reliability_rho_k": 0.7729,
+        "k_raters": 4,
+        "labels_spent": 60444,
+        "mde_observed_scale": 0.0072,
+        "mde_true_scale": 0.0082,
+        "n_items": 15111
+      },
+      {
+        "assumed_pairwise_disagreement": 0.2,
+        "gold_reliability_rho_k": 0.7729,
+        "k_raters": 4,
+        "labels_spent": 60444,
+        "mde_observed_scale": 0.0102,
+        "mde_true_scale": 0.0116,
+        "n_items": 15111
+      },
+      {
+        "assumed_pairwise_disagreement": 0.3,
+        "gold_reliability_rho_k": 0.7729,
+        "k_raters": 4,
+        "labels_spent": 60444,
+        "mde_observed_scale": 0.0125,
+        "mde_true_scale": 0.0142,
+        "n_items": 15111
+      },
+      {
+        "assumed_pairwise_disagreement": 0.05,
+        "gold_reliability_rho_k": 0.8097,
+        "k_raters": 5,
+        "labels_spent": 60440,
+        "mde_observed_scale": 0.0057,
+        "mde_true_scale": 0.0063,
+        "n_items": 12088
+      },
+      {
+        "assumed_pairwise_disagreement": 0.1,
+        "gold_reliability_rho_k": 0.8097,
+        "k_raters": 5,
+        "labels_spent": 60440,
+        "mde_observed_scale": 0.0081,
+        "mde_true_scale": 0.009,
+        "n_items": 12088
+      },
+      {
+        "assumed_pairwise_disagreement": 0.2,
+        "gold_reliability_rho_k": 0.8097,
+        "k_raters": 5,
+        "labels_spent": 60440,
+        "mde_observed_scale": 0.0114,
+        "mde_true_scale": 0.0127,
+        "n_items": 12088
+      },
+      {
+        "assumed_pairwise_disagreement": 0.3,
+        "gold_reliability_rho_k": 0.8097,
+        "k_raters": 5,
+        "labels_spent": 60440,
+        "mde_observed_scale": 0.014,
+        "mde_true_scale": 0.0155,
+        "n_items": 12088
+      }
+    ],
+    "is_a_third_rater_worth_more_than_a_third_more_items": {
+      "answer": "No -- not for aggregate statistical power.",
+      "detail": "At this dataset's variance and a 60,444-label budget, spending on one rater per item gives 60,444 items and a true-scale MDE of 0.0075. Spending on three raters gives 20,148 items and 0.0104 -- 39% worse. The three-rater gold label is more reliable (0.7185 against 0.4597), but not by enough to pay for having a third as many items. For the narrow question 'which design detects a smaller true difference between two systems', more items wins, and it wins at every reliability.",
+      "k1_true_scale_mde": 0.0075,
+      "k3_penalty_relative": 0.3867,
+      "k3_true_scale_mde": 0.0104
+    },
+    "optimum_is_invariant_to_disagreement_assumption": true,
+    "optimum_k_at_headline_rate": 1,
+    "optimum_k_by_disagreement_rate": {
+      "0.05": 1,
+      "0.1": 1,
+      "0.2": 1,
+      "0.3": 1
+    },
+    "recommended_design": "Rate the bulk of the corpus once and carve out a replicated island: spend 10% of the budget on a 3-rated subsample. That subsample supplies rho_1, the drift signal, and the annotator profiles, while the remaining 90% buys the item count that actually moves the MDE. It is strictly better than uniform 3-rating on power and strictly better than uniform 1-rating on measurability.",
+    "why_you_should_still_replicate": [
+      "With k=1 the reliability of the labels is unknowable. There is no second judgement to compare against, so no alpha, no MDE that accounts for attenuation, and no way to detect that the pool has drifted. The power calculation that recommends k=1 depends on a rho_1 that only replication can supply.",
+      "Per-item gold quality does not follow aggregate power. Error analysis, safety triage, per-community breakdowns and any use of individual rows all need a label that is defensible for that row, and a k=1 label is one person's opinion with no margin at all.",
+      "A single-rated corpus cannot distinguish a hard item from a careless annotator, so it has no quality-control signal and no way to identify the genuinely ambiguous items that are usually the most informative ones.",
+      "Aggregate power is not the only objective. If the deliverable is a public benchmark that others will rank models on, the per-item defensibility of the labels is the product."
+    ]
+  },
+  "cost_model": {
+    "as_published": {
+      "cost_usd": 4835.52,
+      "k_raters": 3,
+      "labels": 60444,
+      "reliability": 0.7185
+    },
+    "by_rater_count": [
+      {
+        "band": "fair",
+        "cost_usd": 1611.84,
+        "k_raters": 1,
+        "labels": 20148,
+        "n_items": 20148,
+        "reliability": 0.4597
+      },
+      {
+        "band": "moderate",
+        "cost_usd": 3223.68,
+        "k_raters": 2,
+        "labels": 40296,
+        "n_items": 20148,
+        "reliability": 0.6298
+      },
+      {
+        "band": "tentative (Krippendorff's minimum for cautious conclusions)",
+        "cost_usd": 4835.52,
+        "k_raters": 3,
+        "labels": 60444,
+        "n_items": 20148,
+        "reliability": 0.7185
+      },
+      {
+        "band": "tentative (Krippendorff's minimum for cautious conclusions)",
+        "cost_usd": 6447.36,
+        "k_raters": 4,
+        "labels": 80592,
+        "n_items": 20148,
+        "reliability": 0.7729
+      },
+      {
+        "band": "substantial-to-perfect",
+        "cost_usd": 8059.2,
+        "k_raters": 5,
+        "labels": 100740,
+        "n_items": 20148,
+        "reliability": 0.8097
+      },
+      {
+        "band": "substantial-to-perfect",
+        "cost_usd": 9671.04,
+        "k_raters": 6,
+        "labels": 120888,
+        "n_items": 20148,
+        "reliability": 0.8362
+      },
+      {
+        "band": "substantial-to-perfect",
+        "cost_usd": 11282.88,
+        "k_raters": 7,
+        "labels": 141036,
+        "n_items": 20148,
+        "reliability": 0.8562
+      },
+      {
+        "band": "substantial-to-perfect",
+        "cost_usd": 12894.72,
+        "k_raters": 8,
+        "labels": 161184,
+        "n_items": 20148,
+        "reliability": 0.8719
+      },
+      {
+        "band": "substantial-to-perfect",
+        "cost_usd": 14506.56,
+        "k_raters": 9,
+        "labels": 181332,
+        "n_items": 20148,
+        "reliability": 0.8845
+      }
+    ],
+    "cost_of_reaching_targets": {
+      "0.667": {
+        "cost_usd": 4835.52,
+        "raters_required": 3
+      },
+      "0.800": {
+        "cost_usd": 8059.2,
+        "marginal_cost_over_published_usd": 3223.68,
+        "marginal_reliability_gain": 0.0912,
+        "raters_required": 5
+      }
+    },
+    "hybrid_design": {
+      "cost_usd": 1934.08,
+      "labels": 24176,
+      "n_items_covered": 20148,
+      "n_items_triple_rated": 2014,
+      "note": "Same item coverage, a measurable reliability, and a saving of 2,901.44 USD at 0.08/label. What it gives up is per-item defensibility on the un-replicated rows, which is the right trade only if the corpus is being used for aggregate comparison rather than as a public gold standard.",
+      "replicated_fraction": 0.1,
+      "saving_vs_uniform_triple_usd": 2901.44
+    },
+    "n_items": 20148,
+    "reading": "At an assumed 0.08 USD per label, the published 3-rater design costs 4,835.52 USD for a gold reliability of 0.7185. Reaching the 0.800 firm-conclusion floor needs 5 raters, 8,059.20 USD -- an extra 3,223.68 USD for +0.0912 of reliability. Whether that is worth paying depends on what the labels are for, which is exactly the conversation the number is meant to start.",
+    "unit_cost_is_an_assumption": true,
+    "unit_cost_usd_per_label": 0.08
+  },
+  "headline": "Single-rater reliability is 0.4597; the 3-rater aggregate the corpus actually publishes is 0.7185. Getting to 0.667 takes 3 raters, getting to 0.800 takes 5. But on a fixed label budget, aggregate statistical power is maximised at ONE rater per item -- at any reliability, as an analytic property of the attenuation model -- so a third rater is not worth more than a third more items if the only goal is detecting a difference between two systems. Replication earns its cost through measurability and per-item defensibility, not through power, and a budget argument that conflates the two will reach a confident wrong answer in whichever direction it started.",
+  "reliability_projection": {
+    "empirical_two_rater_check": {
+      "alphas_by_dropped_position": [
+        0.4607,
+        0.4577,
+        0.4606
+      ],
+      "max_abs_difference": 0.002,
+      "mean": 0.4597,
+      "single_rater_alpha": 0.4597,
+      "why": "Alpha is a single-rater coefficient, so recomputing it on 2-rater panels should return the same value as on 3-rater panels. It does. That confirms Spearman-Brown is being applied to the right quantity: rho_1 is the reliability of one annotator, and the step-up gives the reliability of the k-rater aggregate."
+    },
+    "method_caveats": [
+      "Spearman-Brown is derived for a mean of exchangeable continuous replications; a majority vote over nominal categories is neither. The projection is an approximation, not an identity.",
+      "It assumes independent rater error. Systematic threshold differences between annotators do not average out, so the true gain from extra raters is at or below the projected gain.",
+      "It assumes additional raters come from the same pool. A different recruitment population changes rho_1 rather than moving along this curve."
+    ],
+    "projection": [
+      {
+        "band": "fair",
+        "k_raters": 1,
+        "reliability": 0.4597
+      },
+      {
+        "band": "moderate",
+        "k_raters": 2,
+        "reliability": 0.6298
+      },
+      {
+        "band": "tentative (Krippendorff's minimum for cautious conclusions)",
+        "k_raters": 3,
+        "reliability": 0.7185
+      },
+      {
+        "band": "tentative (Krippendorff's minimum for cautious conclusions)",
+        "k_raters": 4,
+        "reliability": 0.7729
+      },
+      {
+        "band": "substantial-to-perfect",
+        "k_raters": 5,
+        "reliability": 0.8097
+      },
+      {
+        "band": "substantial-to-perfect",
+        "k_raters": 6,
+        "reliability": 0.8362
+      },
+      {
+        "band": "substantial-to-perfect",
+        "k_raters": 7,
+        "reliability": 0.8562
+      },
+      {
+        "band": "substantial-to-perfect",
+        "k_raters": 8,
+        "reliability": 0.8719
+      },
+      {
+        "band": "substantial-to-perfect",
+        "k_raters": 9,
+        "reliability": 0.8845
+      }
+    ],
+    "reading": "One annotator on this task has a reliability of 0.4597. The published 3-rater design reaches 0.7185 -- above Krippendorff's 0.667 floor for tentative conclusions, which is a real and often-missed point in the dataset's favour: the aggregate label is meaningfully more reliable than the individual judgements the headline alpha describes. Reaching 0.667 needs 3 raters and reaching 0.800 needs 5, so firm-conclusion reliability on this construct costs 1.7x the labelling of the design actually used. All three caveats above push the same way, so treat these as upper bounds on what extra raters buy.",
+    "single_rater_alpha": 0.4597,
+    "targets": {
+      "0.667": {
+        "raters_required": 3,
+        "reliability_at_that_k": 0.7185,
+        "target": 0.667
+      },
+      "0.800": {
+        "raters_required": 5,
+        "reliability_at_that_k": 0.8097,
+        "target": 0.8
+      }
+    },
+    "three_rater_reliability": 0.7185
+  },
+  "study": "C",
+  "title": "Replication economics at HateXplain's measured variance"
+}

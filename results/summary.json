@@ -1,0 +1,134 @@
+{
+  "assumptions": {
+    "alpha_level": 0.05,
+    "annotator_bias_threshold": 0.15,
+    "assumed_pairwise_disagreement_sweep": [
+      0.05,
+      0.1,
+      0.2,
+      0.3
+    ],
+    "bootstrap_replicates": 400,
+    "bootstrap_subsample_units": 6000,
+    "headline_pairwise_disagreement_rate": 0.2,
+    "min_load_for_marginal_ranking": 100,
+    "min_posts_for_community_claim": 250,
+    "note": "Point estimates are computed on the full corpus. Bootstrap intervals are computed on a seeded subsample of the size given above; every interval records its own n_clusters.",
+    "power": 0.8,
+    "seed": 20210201,
+    "test_split_fraction": 0.1,
+    "unit_cost_usd_per_label": 0.08
+  },
+  "dataset": {
+    "annotations_per_post": {
+      "3": 20148
+    },
+    "citation": "Mathew, B., Saha, P., Yimam, S. M., Biemann, C., Goyal, P., & Mukherjee, A. (2021). HateXplain: A Benchmark Dataset for Explainable Hate Speech Detection. AAAI 35(17), 14867-14875.",
+    "label_counts": {
+      "hatespeech": 18070,
+      "normal": 24449,
+      "offensive": 17925
+    },
+    "n_annotations": 60444,
+    "n_annotators": 253,
+    "n_posts": 20148,
+    "name": "HateXplain",
+    "source_path": "data/hatexplain.json"
+  },
+  "headlines": {
+    "study_a_agreement": "alpha = 0.4597 (95% CI [0.4452, 0.4729]). That is below Krippendorff's 0.667 floor for tentative conclusions and well below the 0.800 floor for firm ones. Three annotators agreed exactly with each other on 64.4% of pairwise comparisons. The interval is narrow, so this is a precisely measured moderate reliability, not an uncertain one.",
+    "study_a_binary": "Collapsing to the binary decision moves alpha from 0.4597 to 0.5613, a gain of +0.1016 (+22.1%), and raw agreement from 0.6439 to 0.7887. The bootstrap intervals do not overlap. Restricted to the annotations that were not 'normal', alpha on the offensive-versus-hatespeech call is 0.4181 -- that boundary is where the disagreement lives. Practically: the annotators broadly agree about whether a post should be acted on and disagree about what to call it, so a system evaluated on the 3-way label is being scored against a noisier target than the one it will be deployed to make.",
+    "study_a_ceiling": "The ceiling on the 3-way task is 81.4%: even a perfect model of what this annotator pool believes would disagree with a randomly chosen annotator on 18.6% of posts. On the binary task the ceiling is 89.4%. Reported 3-way accuracies in the high 60s therefore sit closer to the achievable ceiling than to 100%, and the headroom a leaderboard implies is largely not there.",
+    "study_a_exposure": "Removing the busiest annotator (#4, 5,730 labels, 9.5% of all annotations, present on 28.4% of posts) moves overall alpha by -0.0207 -- the coefficient is robust, because it weights posts, not people. What is not robust is the gold labelling: 2,300 posts (11.4% of the corpus) lose their majority label entirely when this one person is removed, because their vote was one of the two that created it. Across the 10 heaviest annotators the largest alpha movement is 0.0207, so no single rater is distorting the reliability estimate; the exposure is to the labels themselves, not to the statistic.",
+    "study_a_gate": "Under the pre-registered default policy 4 of 7 claims are blocked: C-MEAS-01, C-RANK-01, C-COMM-01, C-GATE-01. Under the harness's deliberately looser exploratory policy 2 of them clear (C-MEAS-01, C-RANK-01), which is the point of having two policies rather than one: relaxing the bar becomes an explicit, reviewable act instead of something that happens by omission. Note which claims survive either way -- the descriptive counts and the binary-task comparison with a large gap -- and which do not: any 3-way measurement claim, and the 2-point leaderboard gap, which is blocked for being smaller than the design's own minimum detectable effect.",
+    "study_a_mde": "On a test split of 2,015 posts, with two systems disagreeing on 20% of items, the smallest detectable accuracy difference at 80% power is 0.0279 on the observed scale -- 2.8 accuracy points -- and 0.0329 (3.3 points) once the difference is expressed in true-score units by dividing by sqrt(gold reliability). A published gap of 2% is therefore inside the noise floor of that design: detecting it reliably needs n >= 3,925 items, against the 2,015 available. Evaluated on the full 20,148-post corpus the same comparison resolves 0.0088 (0.9 points), so the gap is detectable there -- the constraint is the size of the split, not the corpus.",
+    "study_a_paradox": "The kappa paradox does NOT fire. Raw agreement is 0.6439, far below the 0.85 the paradox requires, the AC1-kappa gap is 0.0092 rather than the >0.25 it requires, and the most common category holds only 40.5% of the mass, so no category is dominant enough to collapse kappa's chance model. All three chance-corrected coefficients agree with each other to within 0.0092. This rules out prevalence skew as the explanation for the moderate alpha and leaves genuine disagreement about the construct. The practical consequence is that the usual remedies for a low coefficient -- stratified oversampling of a rare class, or annotator retraining -- would not move this number.",
+    "study_b": "A real human annotator, scored against two of their peers, matches the panel on 76.1% of the 12,939 posts where those two peers agreed, with a judge-panel alpha of 0.6255. The two-annotator panel itself reaches consensus on only 64.2% of posts, so more than a third of the corpus has no target label under this design at all. With no conditioning on panel agreement the same human matches an individual panel member 64.5% of the time. Correcting the judge-panel alpha for the panel's own unreliability lifts it to 0.7882. Those are the numbers an LLM judge on this task should be measured against -- not 1.0, and not 76.1% read as though the missing 23.9% were the judge's fault.",
+    "study_b_ceiling": "A judge on this task should be measured against 76.1%, not against 100%. That is what a real human annotator from the same pool scores against two of their peers on the posts where those peers agreed. Against a single randomly drawn annotator across all posts, the best any predictor can do is 81.4%. The missing 23.9% is disagreement among the humans, and no judge, prompt, or model scale removes it. The arithmetic upper bound against a two-rater consensus is exactly 1.0 and is meaningless, because the consensus is not a function of the text while a judge is.",
+    "study_c": "Single-rater reliability is 0.4597; the 3-rater aggregate the corpus actually publishes is 0.7185. Getting to 0.667 takes 3 raters, getting to 0.800 takes 5. But on a fixed label budget, aggregate statistical power is maximised at ONE rater per item -- at any reliability, as an analytic property of the attenuation model -- so a third rater is not worth more than a third more items if the only goal is detecting a difference between two systems. Replication earns its cost through measurability and per-item defensibility, not through power, and a budget argument that conflates the two will reach a confident wrong answer in whichever direction it started."
+  },
+  "study_a": {
+    "alpha_binary": 0.5613,
+    "alpha_ci": {
+      "hi": 0.4729,
+      "level": 0.95,
+      "lo": 0.4452,
+      "method": "cluster_bootstrap_percentile",
+      "n_boot": 400,
+      "n_clusters": 6000,
+      "point": 0.4584,
+      "width": 0.0277
+    },
+    "alpha_delta_binary_minus_three_way": 0.1016,
+    "alpha_offensive_vs_hatespeech_conditional": 0.4181,
+    "busiest_annotator": {
+      "annotator_id": "4",
+      "n": 5730,
+      "share": 0.0948
+    },
+    "ceiling_binary": 0.8943,
+    "ceiling_three_way": 0.8143,
+    "community_alpha_spread": 0.1216,
+    "community_baseline_alpha": 0.3171,
+    "fleiss_kappa": 0.4597,
+    "gate_block_rate": 0.571,
+    "gate_blocked_claims": [
+      "C-MEAS-01",
+      "C-RANK-01",
+      "C-COMM-01",
+      "C-GATE-01"
+    ],
+    "gwet_ac1": 0.4689,
+    "kappa_paradox_detected": false,
+    "krippendorff_alpha_nominal": 0.4597,
+    "leave_out_busiest_alpha_delta": -0.0207,
+    "leave_out_busiest_gold_labels_lost": 2300,
+    "leave_out_busiest_gold_labels_lost_share": 0.11416,
+    "mde_observed_scale_test_split": 0.0279,
+    "mde_test_split_n": 2015,
+    "mde_true_scale_test_split": 0.0329,
+    "n_required_for_2pt_gap": 3925,
+    "no_majority_posts": 919,
+    "no_majority_share": 0.0456,
+    "one_vote_fragile_share": 0.5114,
+    "percent_agreement": 0.6439,
+    "raw_agreement_binary": 0.7887,
+    "split_2_1_posts": 9384,
+    "split_2_1_share": 0.4658,
+    "top5_share": 0.22285,
+    "unanimous_posts": 9845,
+    "unanimous_share": 0.4886
+  },
+  "study_b": {
+    "alpha_judge_vs_panel_three_way": 0.6255,
+    "constant_baseline_three_way": 0.4636,
+    "disattenuated_three_way": 0.7882,
+    "exact_match_binary": 0.8672,
+    "exact_match_three_way": 0.7609,
+    "harness_validation": {
+      "absolute_difference": 0.0008,
+      "corpus_pairwise_agreement": 0.6439,
+      "judge_vs_panel_member_unconditioned": 0.6447,
+      "passes": true,
+      "why_this_is_the_right_check": "The held-out human is just an annotator, so scoring them against each panel member with no conditioning must reproduce the corpus-wide pairwise agreement to within sampling noise. It uses two of the three pairs per post rather than all three, so exact equality is not expected. If these two numbers diverged, the panel construction would be leaking the judge's own label or dropping posts non-randomly -- the two failure modes that make a judge harness report a flattering number. They agree, so the scoring path is sound end to end, which is the entire purpose of running a stand-in judge before spending inference budget on a real one."
+    },
+    "judge_name": "held_out_human",
+    "panel_consensus_rate_three_way": 0.6422,
+    "single_rater_modal_ceiling_three_way": 0.8143,
+    "unconditioned_match_three_way": 0.6447
+  },
+  "study_c": {
+    "cost_as_published_usd": 4835.52,
+    "cost_for_0800_usd": 8059.2,
+    "hybrid_cost_usd": 1934.08,
+    "k1_true_scale_mde": 0.0075,
+    "k3_penalty_relative": 0.3867,
+    "k3_true_scale_mde": 0.0104,
+    "optimum_k_for_power": 1,
+    "raters_for_0667": 3,
+    "raters_for_0800": 5,
+    "single_rater_alpha": 0.4597,
+    "three_rater_reliability": 0.7185,
+    "unit_cost_usd_per_label": 0.08
+  }
+}
