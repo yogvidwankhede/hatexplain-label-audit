@@ -110,6 +110,20 @@ def alpha_binary_fast(s: np.ndarray, k: int) -> np.ndarray:
         return 1.0 - d_o / d_e
 
 
+def _rounded(obj, nd: int = 12):
+    """Round derived floats so committed results do not depend on the CPU's summation order.
+
+    numpy's float reductions may use different SIMD paths on different processors, which
+    changes the last bit of a mean (observed on CI: 0.0004777733053698053 vs ...054). Twelve
+    decimals is far below any precision the analysis reports.
+    """
+    if isinstance(obj, float):
+        return round(obj, nd)
+    if isinstance(obj, dict):
+        return {k: _rounded(v, nd) for k, v in obj.items()}
+    return obj
+
+
 # --------------------------------------------------------------------------
 # one cell of the grid
 # --------------------------------------------------------------------------
@@ -230,7 +244,7 @@ def simulate_cell(scenario: str, n: int, alpha: float, pi: float, delta: float,
             n_gate_pub += 1
             sum_gap_gate += float(gap[i])
 
-    return {
+    return _rounded({
         "scenario": scenario, "n": n, "alpha_target": alpha, "pi": pi, "delta": delta,
         "p_disc": p_disc, "reps": reps, "eta_easy": e_easy, "eta_hard": e_hard,
         "n_claims": int(claim.sum()),
@@ -253,7 +267,7 @@ def simulate_cell(scenario: str, n: int, alpha: float, pi: float, delta: float,
         "mean_gap_true_est": float(np.nanmean(gap_true_est)),
         "mean_gap_all": float(gap.mean()),
         "mean_disc_obs": float((d != 0).mean()),
-    }
+    })
 
 
 # --------------------------------------------------------------------------

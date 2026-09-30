@@ -59,3 +59,6 @@ The" -> "yesthe"); whitespace is now normalised first. Covered by tests/test_jud
 
 ## D11 — Wording of the judge claim tested by gate v2 (2026-09-30)
 - PREREG_ADDENDUM says gate v2 is applied to "judge X agrees with the panel at least as well as the held-out human". Gate v2's blocking check is a directional (superiority) test, so what it actually evaluates is "judge X agrees with the panel MORE often than the held-out human". The code was always the superiority test; only the label is corrected (results key renamed to gate_v2_claim_judge_beats_human). Noticed while reading partial results (OpenAI and qwen judges); no analysis choice changed.
+
+## D12 — Rounding simulation floats for cross-hardware reproducibility (2026-09-30)
+- The CI reproduction job found one simulation cell whose `mean_gap_true_est` differed in the 16th significant digit between two GitHub runners (0.0004777733053698053 vs ...054): numpy's summation order depends on the CPU's SIMD support. Derived floats in `gate_sim` outputs are now rounded to 12 decimals. No reported number changed: `gate_sim_summary.json` is byte-identical and every macro in `paper/numbers.tex` is unchanged.
