@@ -68,7 +68,10 @@ def load_judge(judge: str, corpus: str) -> dict[str, dict]:
     out = {}
     for line in p.open():
         r = json.loads(line)
-        lab, how = parse(corpus, r.get("raw"))
+        if r.get("raw_redacted"):   # long free text kept private; see scripts/redact_judge_outputs.py
+            lab, how = r["parsed_label"], r["parsed_how"]
+        else:
+            lab, how = parse(corpus, r.get("raw"))
         if r.get("stop_reason") == "refusal" or r.get("refusal"):
             how = "refusal"
             lab = None

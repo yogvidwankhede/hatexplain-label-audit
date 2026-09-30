@@ -91,10 +91,10 @@
 {"in_tokens": 143, "item_id": "1427", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "no", "stop_reason": "stop"}
 {"in_tokens": 110, "item_id": "14337", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
 {"in_tokens": 165, "item_id": "14382", "model": "qwen2.5:14b", "out_tokens": 3, "raw": "unclear", "stop_reason": "stop"}
-{"in_tokens": 115, "item_id": "14413", "model": "qwen2.5:14b", "out_tokens": 16, "raw": null, "raw_len": 76, "raw_redacted": true, "raw_sha256": "ff16bf70e53b121526dd5dd6e3799b2afa276290f39070387f71337c76d3d2f5", "stop_reason": "length"}
-{"in_tokens": 104, "item_id": "14416", "model": "qwen2.5:14b", "out_tokens": 16, "raw": null, "raw_len": 83, "raw_redacted": true, "raw_sha256": "a31dcb89cbf35cf97ad8481499d9abfa0946d7a0ee860851ab85a765ab59737c", "stop_reason": "length"}
+{"in_tokens": 115, "item_id": "14413", "model": "qwen2.5:14b", "out_tokens": 16, "parsed_how": "first_word", "parsed_label": 0, "raw": null, "raw_len": 76, "raw_redacted": true, "raw_sha256": "ff16bf70e53b121526dd5dd6e3799b2afa276290f39070387f71337c76d3d2f5", "stop_reason": "length"}
+{"in_tokens": 104, "item_id": "14416", "model": "qwen2.5:14b", "out_tokens": 16, "parsed_how": "first_word", "parsed_label": 1, "raw": null, "raw_len": 83, "raw_redacted": true, "raw_sha256": "a31dcb89cbf35cf97ad8481499d9abfa0946d7a0ee860851ab85a765ab59737c", "stop_reason": "length"}
 {"in_tokens": 108, "item_id": "1442", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "no", "stop_reason": "stop"}
-{"in_tokens": 190, "item_id": "14441", "model": "qwen2.5:14b", "out_tokens": 16, "raw": null, "raw_len": 75, "raw_redacted": true, "raw_sha256": "92e9959ffec8bf024afeb5558a8d9fb79b650bdb981eb88ce2360d0ba596c4d6", "stop_reason": "length"}
+{"in_tokens": 190, "item_id": "14441", "model": "qwen2.5:14b", "out_tokens": 16, "parsed_how": "first_word", "parsed_label": 0, "raw": null, "raw_len": 75, "raw_redacted": true, "raw_sha256": "92e9959ffec8bf024afeb5558a8d9fb79b650bdb981eb88ce2360d0ba596c4d6", "stop_reason": "length"}
 {"in_tokens": 146, "item_id": "14485", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
 {"in_tokens": 106, "item_id": "14616", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "no", "stop_reason": "stop"}
 {"in_tokens": 124, "item_id": "14679", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
@@ -127,7 +127,7 @@
 {"in_tokens": 166, "item_id": "15636", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "no", "stop_reason": "stop"}
 {"in_tokens": 110, "item_id": "15660", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
 {"in_tokens": 136, "item_id": "15850", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "no", "stop_reason": "stop"}
-{"in_tokens": 107, "item_id": "15911", "model": "qwen2.5:14b", "out_tokens": 16, "raw": null, "raw_len": 79, "raw_redacted": true, "raw_sha256": "8764e6c7978f94825113806cf17bf43820c49faf6e64ebc9fddef1f5b486b18a", "stop_reason": "length"}
+{"in_tokens": 107, "item_id": "15911", "model": "qwen2.5:14b", "out_tokens": 16, "parsed_how": "first_word", "parsed_label": 0, "raw": null, "raw_len": 79, "raw_redacted": true, "raw_sha256": "8764e6c7978f94825113806cf17bf43820c49faf6e64ebc9fddef1f5b486b18a", "stop_reason": "length"}
 {"in_tokens": 160, "item_id": "1593", "model": "qwen2.5:14b", "out_tokens": 3, "raw": "unclear", "stop_reason": "stop"}
 {"in_tokens": 102, "item_id": "16000", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "no", "stop_reason": "stop"}
 {"in_tokens": 118, "item_id": "1614", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
@@ -143,7 +143,7 @@
 {"in_tokens": 121, "item_id": "16679", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
 {"in_tokens": 134, "item_id": "16718", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
 {"in_tokens": 113, "item_id": "16740", "model": "qwen2.5:14b", "out_tokens": 3, "raw": "unclear", "stop_reason": "stop"}
-{"in_tokens": 106, "item_id": "16765", "model": "qwen2.5:14b", "out_tokens": 16, "raw": null, "raw_len": 85, "raw_redacted": true, "raw_sha256": "ff952e4bb430c5e99c3ce6f7de7f0ff05c81e791f05684fe80b43d012950cd99", "stop_reason": "length"}
+{"in_tokens": 106, "item_id": "16765", "model": "qwen2.5:14b", "out_tokens": 16, "parsed_how": "first_word", "parsed_label": 0, "raw": null, "raw_len": 85, "raw_redacted": true, "raw_sha256": "ff952e4bb430c5e99c3ce6f7de7f0ff05c81e791f05684fe80b43d012950cd99", "stop_reason": "length"}
 {"in_tokens": 214, "item_id": "16816", "model": "qwen2.5:14b", "out_tokens": 3, "raw": "unclear", "stop_reason": "stop"}
 {"in_tokens": 114, "item_id": "16876", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
 {"in_tokens": 197, "item_id": "16908", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "no", "stop_reason": "stop"}
@@ -244,7 +244,7 @@
 {"in_tokens": 155, "item_id": "20646", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
 {"in_tokens": 125, "item_id": "20773", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "no", "stop_reason": "stop"}
 {"in_tokens": 136, "item_id": "20921", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
-{"in_tokens": 110, "item_id": "20967", "model": "qwen2.5:14b", "out_tokens": 16, "raw": null, "raw_len": 83, "raw_redacted": true, "raw_sha256": "4f34c352f23805f13df76b7aeffe789822de2d60cda036d51a99c44465263a32", "stop_reason": "length"}
+{"in_tokens": 110, "item_id": "20967", "model": "qwen2.5:14b", "out_tokens": 16, "parsed_how": "first_word", "parsed_label": 1, "raw": null, "raw_len": 83, "raw_redacted": true, "raw_sha256": "4f34c352f23805f13df76b7aeffe789822de2d60cda036d51a99c44465263a32", "stop_reason": "length"}
 {"in_tokens": 159, "item_id": "20979", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "no", "stop_reason": "stop"}
 {"in_tokens": 108, "item_id": "21140", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
 {"in_tokens": 152, "item_id": "21166", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "no", "stop_reason": "stop"}
@@ -264,7 +264,7 @@
 {"in_tokens": 136, "item_id": "21883", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
 {"in_tokens": 154, "item_id": "21958", "model": "qwen2.5:14b", "out_tokens": 3, "raw": "unclear", "stop_reason": "stop"}
 {"in_tokens": 109, "item_id": "21963", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
-{"in_tokens": 106, "item_id": "21979", "model": "qwen2.5:14b", "out_tokens": 16, "raw": null, "raw_len": 84, "raw_redacted": true, "raw_sha256": "9db1b63d36c1a393023228a8ca6f8c10eb741906002905b73bf621149084bbd4", "stop_reason": "length"}
+{"in_tokens": 106, "item_id": "21979", "model": "qwen2.5:14b", "out_tokens": 16, "parsed_how": "first_word", "parsed_label": 2, "raw": null, "raw_len": 84, "raw_redacted": true, "raw_sha256": "9db1b63d36c1a393023228a8ca6f8c10eb741906002905b73bf621149084bbd4", "stop_reason": "length"}
 {"in_tokens": 163, "item_id": "22000", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "no", "stop_reason": "stop"}
 {"in_tokens": 107, "item_id": "22047", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
 {"in_tokens": 133, "item_id": "22091", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "no", "stop_reason": "stop"}
@@ -274,7 +274,7 @@
 {"in_tokens": 117, "item_id": "22272", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
 {"in_tokens": 175, "item_id": "22279", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
 {"in_tokens": 115, "item_id": "22327", "model": "qwen2.5:14b", "out_tokens": 3, "raw": "unclear", "stop_reason": "stop"}
-{"in_tokens": 106, "item_id": "22331", "model": "qwen2.5:14b", "out_tokens": 16, "raw": null, "raw_len": 74, "raw_redacted": true, "raw_sha256": "df7231bc66191cbef8c756a827d79eabd0ef184f066194bcb65038c1cea2b2ba", "stop_reason": "length"}
+{"in_tokens": 106, "item_id": "22331", "model": "qwen2.5:14b", "out_tokens": 16, "parsed_how": "first_word", "parsed_label": 0, "raw": null, "raw_len": 74, "raw_redacted": true, "raw_sha256": "df7231bc66191cbef8c756a827d79eabd0ef184f066194bcb65038c1cea2b2ba", "stop_reason": "length"}
 {"in_tokens": 126, "item_id": "22366", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "no", "stop_reason": "stop"}
 {"in_tokens": 113, "item_id": "22560", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "no", "stop_reason": "stop"}
 {"in_tokens": 148, "item_id": "22581", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "no", "stop_reason": "stop"}
@@ -345,7 +345,7 @@
 {"in_tokens": 136, "item_id": "25580", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
 {"in_tokens": 129, "item_id": "25588", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
 {"in_tokens": 128, "item_id": "25680", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "no", "stop_reason": "stop"}
-{"in_tokens": 161, "item_id": "25744", "model": "qwen2.5:14b", "out_tokens": 16, "raw": null, "raw_len": 81, "raw_redacted": true, "raw_sha256": "a1f6a7725d28571d08d5be4bb73e0a33ee99450f66b3d9ffa91f6d2e513859da", "stop_reason": "length"}
+{"in_tokens": 161, "item_id": "25744", "model": "qwen2.5:14b", "out_tokens": 16, "parsed_how": "first_word", "parsed_label": 0, "raw": null, "raw_len": 81, "raw_redacted": true, "raw_sha256": "a1f6a7725d28571d08d5be4bb73e0a33ee99450f66b3d9ffa91f6d2e513859da", "stop_reason": "length"}
 {"in_tokens": 121, "item_id": "25773", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "no", "stop_reason": "stop"}
 {"in_tokens": 121, "item_id": "2578", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "no", "stop_reason": "stop"}
 {"in_tokens": 124, "item_id": "25891", "model": "qwen2.5:14b", "out_tokens": 3, "raw": "unclear", "stop_reason": "stop"}
@@ -412,7 +412,7 @@
 {"in_tokens": 109, "item_id": "29578", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
 {"in_tokens": 111, "item_id": "29587", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
 {"in_tokens": 112, "item_id": "29610", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "no", "stop_reason": "stop"}
-{"in_tokens": 101, "item_id": "29867", "model": "qwen2.5:14b", "out_tokens": 16, "raw": null, "raw_len": 61, "raw_redacted": true, "raw_sha256": "318f9069d997e4232ad775943a208391686ab395f59a9d0149e3780d04f71d7d", "stop_reason": "length"}
+{"in_tokens": 101, "item_id": "29867", "model": "qwen2.5:14b", "out_tokens": 16, "parsed_how": "first_word", "parsed_label": 2, "raw": null, "raw_len": 61, "raw_redacted": true, "raw_sha256": "318f9069d997e4232ad775943a208391686ab395f59a9d0149e3780d04f71d7d", "stop_reason": "length"}
 {"in_tokens": 130, "item_id": "2988", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "no", "stop_reason": "stop"}
 {"in_tokens": 103, "item_id": "29880", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
 {"in_tokens": 130, "item_id": "29905", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
@@ -427,7 +427,7 @@
 {"in_tokens": 161, "item_id": "30512", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "no", "stop_reason": "stop"}
 {"in_tokens": 170, "item_id": "30538", "model": "qwen2.5:14b", "out_tokens": 3, "raw": "unclear", "stop_reason": "stop"}
 {"in_tokens": 123, "item_id": "30558", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
-{"in_tokens": 127, "item_id": "306", "model": "qwen2.5:14b", "out_tokens": 16, "raw": null, "raw_len": 81, "raw_redacted": true, "raw_sha256": "7646a398e8e8f5cec931e53213619d50eaf43a722aa75db241326b8f3fc620eb", "stop_reason": "length"}
+{"in_tokens": 127, "item_id": "306", "model": "qwen2.5:14b", "out_tokens": 16, "parsed_how": "first_word", "parsed_label": 0, "raw": null, "raw_len": 81, "raw_redacted": true, "raw_sha256": "7646a398e8e8f5cec931e53213619d50eaf43a722aa75db241326b8f3fc620eb", "stop_reason": "length"}
 {"in_tokens": 161, "item_id": "30614", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
 {"in_tokens": 170, "item_id": "30700", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
 {"in_tokens": 139, "item_id": "30715", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
@@ -466,7 +466,7 @@
 {"in_tokens": 107, "item_id": "3200", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
 {"in_tokens": 142, "item_id": "3212", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
 {"in_tokens": 170, "item_id": "32172", "model": "qwen2.5:14b", "out_tokens": 3, "raw": "unclear", "stop_reason": "stop"}
-{"in_tokens": 180, "item_id": "32176", "model": "qwen2.5:14b", "out_tokens": 16, "raw": null, "raw_len": 70, "raw_redacted": true, "raw_sha256": "aa1b4d2c79910fc49486b254e4e17959afd3ad2d0508b9927358defd72b2aa29", "stop_reason": "length"}
+{"in_tokens": 180, "item_id": "32176", "model": "qwen2.5:14b", "out_tokens": 16, "parsed_how": "first_word", "parsed_label": 0, "raw": null, "raw_len": 70, "raw_redacted": true, "raw_sha256": "aa1b4d2c79910fc49486b254e4e17959afd3ad2d0508b9927358defd72b2aa29", "stop_reason": "length"}
 {"in_tokens": 104, "item_id": "32261", "model": "qwen2.5:14b", "out_tokens": 3, "raw": "unclear", "stop_reason": "stop"}
 {"in_tokens": 153, "item_id": "32287", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
 {"in_tokens": 131, "item_id": "32343", "model": "qwen2.5:14b", "out_tokens": 3, "raw": "unclear", "stop_reason": "stop"}
@@ -532,14 +532,14 @@
 {"in_tokens": 105, "item_id": "35866", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
 {"in_tokens": 108, "item_id": "35871", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
 {"in_tokens": 113, "item_id": "35960", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "no", "stop_reason": "stop"}
-{"in_tokens": 157, "item_id": "35964", "model": "qwen2.5:14b", "out_tokens": 16, "raw": null, "raw_len": 95, "raw_redacted": true, "raw_sha256": "a40d9eccd07b4924e6281ce037d32ad0a6f5d58b283c6c11a9cc9d3e92dd1b1d", "stop_reason": "length"}
+{"in_tokens": 157, "item_id": "35964", "model": "qwen2.5:14b", "out_tokens": 16, "parsed_how": "first_word", "parsed_label": 0, "raw": null, "raw_len": 95, "raw_redacted": true, "raw_sha256": "a40d9eccd07b4924e6281ce037d32ad0a6f5d58b283c6c11a9cc9d3e92dd1b1d", "stop_reason": "length"}
 {"in_tokens": 122, "item_id": "36027", "model": "qwen2.5:14b", "out_tokens": 3, "raw": "unclear", "stop_reason": "stop"}
 {"in_tokens": 163, "item_id": "36084", "model": "qwen2.5:14b", "out_tokens": 3, "raw": "unclear", "stop_reason": "stop"}
 {"in_tokens": 107, "item_id": "36222", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
-{"in_tokens": 152, "item_id": "36260", "model": "qwen2.5:14b", "out_tokens": 16, "raw": null, "raw_len": 96, "raw_redacted": true, "raw_sha256": "423c3f434cbba372bf3cf5cf2d66272bda1f5eb96a5eea5b8464758a95d98a43", "stop_reason": "length"}
+{"in_tokens": 152, "item_id": "36260", "model": "qwen2.5:14b", "out_tokens": 16, "parsed_how": "first_word", "parsed_label": 1, "raw": null, "raw_len": 96, "raw_redacted": true, "raw_sha256": "423c3f434cbba372bf3cf5cf2d66272bda1f5eb96a5eea5b8464758a95d98a43", "stop_reason": "length"}
 {"in_tokens": 158, "item_id": "36320", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
 {"in_tokens": 160, "item_id": "36374", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
-{"in_tokens": 104, "item_id": "36382", "model": "qwen2.5:14b", "out_tokens": 16, "raw": null, "raw_len": 70, "raw_redacted": true, "raw_sha256": "919ba1a24206386d407330da4517570bb5ddbea8dbe5d07c601367f05e73015f", "stop_reason": "length"}
+{"in_tokens": 104, "item_id": "36382", "model": "qwen2.5:14b", "out_tokens": 16, "parsed_how": "first_word", "parsed_label": 0, "raw": null, "raw_len": 70, "raw_redacted": true, "raw_sha256": "919ba1a24206386d407330da4517570bb5ddbea8dbe5d07c601367f05e73015f", "stop_reason": "length"}
 {"in_tokens": 152, "item_id": "36386", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "no", "stop_reason": "stop"}
 {"in_tokens": 110, "item_id": "36420", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
 {"in_tokens": 108, "item_id": "36447", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
@@ -550,7 +550,7 @@
 {"in_tokens": 128, "item_id": "36561", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
 {"in_tokens": 101, "item_id": "36587", "model": "qwen2.5:14b", "out_tokens": 3, "raw": "unclear", "stop_reason": "stop"}
 {"in_tokens": 106, "item_id": "3666", "model": "qwen2.5:14b", "out_tokens": 3, "raw": "unclear", "stop_reason": "stop"}
-{"in_tokens": 113, "item_id": "36724", "model": "qwen2.5:14b", "out_tokens": 16, "raw": null, "raw_len": 83, "raw_redacted": true, "raw_sha256": "7a189970a2ee078f0151c412822c512806706ac19f9091173a0e7ece7e3836d8", "stop_reason": "length"}
+{"in_tokens": 113, "item_id": "36724", "model": "qwen2.5:14b", "out_tokens": 16, "parsed_how": "first_word", "parsed_label": 2, "raw": null, "raw_len": 83, "raw_redacted": true, "raw_sha256": "7a189970a2ee078f0151c412822c512806706ac19f9091173a0e7ece7e3836d8", "stop_reason": "length"}
 {"in_tokens": 114, "item_id": "36786", "model": "qwen2.5:14b", "out_tokens": 3, "raw": "unclear", "stop_reason": "stop"}
 {"in_tokens": 135, "item_id": "36811", "model": "qwen2.5:14b", "out_tokens": 3, "raw": "unclear", "stop_reason": "stop"}
 {"in_tokens": 110, "item_id": "36818", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "no", "stop_reason": "stop"}
@@ -692,7 +692,7 @@
 {"in_tokens": 124, "item_id": "43113", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
 {"in_tokens": 123, "item_id": "43123", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
 {"in_tokens": 106, "item_id": "43128", "model": "qwen2.5:14b", "out_tokens": 3, "raw": "unclear", "stop_reason": "stop"}
-{"in_tokens": 109, "item_id": "43148", "model": "qwen2.5:14b", "out_tokens": 16, "raw": null, "raw_len": 78, "raw_redacted": true, "raw_sha256": "ffde6bf92d2bf9658fd79df8e1e3532cf012260470d0d42cf401274d438949ab", "stop_reason": "length"}
+{"in_tokens": 109, "item_id": "43148", "model": "qwen2.5:14b", "out_tokens": 16, "parsed_how": "first_word", "parsed_label": 2, "raw": null, "raw_len": 78, "raw_redacted": true, "raw_sha256": "ffde6bf92d2bf9658fd79df8e1e3532cf012260470d0d42cf401274d438949ab", "stop_reason": "length"}
 {"in_tokens": 110, "item_id": "43151", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
 {"in_tokens": 118, "item_id": "43204", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "no", "stop_reason": "stop"}
 {"in_tokens": 114, "item_id": "43208", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
@@ -745,7 +745,7 @@
 {"in_tokens": 116, "item_id": "45365", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
 {"in_tokens": 112, "item_id": "45375", "model": "qwen2.5:14b", "out_tokens": 3, "raw": "unclear", "stop_reason": "stop"}
 {"in_tokens": 112, "item_id": "45380", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
-{"in_tokens": 107, "item_id": "4541", "model": "qwen2.5:14b", "out_tokens": 16, "raw": null, "raw_len": 81, "raw_redacted": true, "raw_sha256": "1a04ab73890fd1154d5bbe9aeed347f72704c146cd09d0107f2dc3145568150e", "stop_reason": "length"}
+{"in_tokens": 107, "item_id": "4541", "model": "qwen2.5:14b", "out_tokens": 16, "parsed_how": "first_word", "parsed_label": 0, "raw": null, "raw_len": 81, "raw_redacted": true, "raw_sha256": "1a04ab73890fd1154d5bbe9aeed347f72704c146cd09d0107f2dc3145568150e", "stop_reason": "length"}
 {"in_tokens": 124, "item_id": "45487", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
 {"in_tokens": 112, "item_id": "45574", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
 {"in_tokens": 128, "item_id": "45576", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
@@ -763,10 +763,10 @@
 {"in_tokens": 129, "item_id": "45884", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
 {"in_tokens": 137, "item_id": "45915", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
 {"in_tokens": 103, "item_id": "45926", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
-{"in_tokens": 109, "item_id": "45937", "model": "qwen2.5:14b", "out_tokens": 16, "raw": null, "raw_len": 90, "raw_redacted": true, "raw_sha256": "83b28b5e6aa2a20aedf84fa43841e3a19ffa5a4b64ddc4d1a796e973a8e502b3", "stop_reason": "length"}
+{"in_tokens": 109, "item_id": "45937", "model": "qwen2.5:14b", "out_tokens": 16, "parsed_how": "first_word", "parsed_label": 1, "raw": null, "raw_len": 90, "raw_redacted": true, "raw_sha256": "83b28b5e6aa2a20aedf84fa43841e3a19ffa5a4b64ddc4d1a796e973a8e502b3", "stop_reason": "length"}
 {"in_tokens": 171, "item_id": "46049", "model": "qwen2.5:14b", "out_tokens": 3, "raw": "unclear", "stop_reason": "stop"}
 {"in_tokens": 193, "item_id": "46202", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
-{"in_tokens": 103, "item_id": "46203", "model": "qwen2.5:14b", "out_tokens": 16, "raw": null, "raw_len": 84, "raw_redacted": true, "raw_sha256": "fcb616501245cb1108bc90bc2a65a228d61e7712d2e9ecd18b9ab6b0540af5c7", "stop_reason": "length"}
+{"in_tokens": 103, "item_id": "46203", "model": "qwen2.5:14b", "out_tokens": 16, "parsed_how": "first_word", "parsed_label": 0, "raw": null, "raw_len": 84, "raw_redacted": true, "raw_sha256": "fcb616501245cb1108bc90bc2a65a228d61e7712d2e9ecd18b9ab6b0540af5c7", "stop_reason": "length"}
 {"in_tokens": 110, "item_id": "46242", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "no", "stop_reason": "stop"}
 {"in_tokens": 183, "item_id": "46253", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
 {"in_tokens": 102, "item_id": "46361", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
@@ -897,7 +897,7 @@
 {"in_tokens": 170, "item_id": "5332", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "no", "stop_reason": "stop"}
 {"in_tokens": 109, "item_id": "5339", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
 {"in_tokens": 132, "item_id": "5348", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "no", "stop_reason": "stop"}
-{"in_tokens": 136, "item_id": "535", "model": "qwen2.5:14b", "out_tokens": 16, "raw": null, "raw_len": 84, "raw_redacted": true, "raw_sha256": "1203cb39ca5d45815c2aa25a0c4dc7755ff34a472a23d10af7aa45e5bec64014", "stop_reason": "length"}
+{"in_tokens": 136, "item_id": "535", "model": "qwen2.5:14b", "out_tokens": 16, "parsed_how": "first_word", "parsed_label": 0, "raw": null, "raw_len": 84, "raw_redacted": true, "raw_sha256": "1203cb39ca5d45815c2aa25a0c4dc7755ff34a472a23d10af7aa45e5bec64014", "stop_reason": "length"}
 {"in_tokens": 235, "item_id": "5367", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
 {"in_tokens": 100, "item_id": "5389", "model": "qwen2.5:14b", "out_tokens": 3, "raw": "unclear", "stop_reason": "stop"}
 {"in_tokens": 127, "item_id": "5452", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "no", "stop_reason": "stop"}
@@ -913,7 +913,7 @@
 {"in_tokens": 118, "item_id": "5777", "model": "qwen2.5:14b", "out_tokens": 3, "raw": "unclear", "stop_reason": "stop"}
 {"in_tokens": 103, "item_id": "5920", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
 {"in_tokens": 114, "item_id": "6061", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "no", "stop_reason": "stop"}
-{"in_tokens": 112, "item_id": "6093", "model": "qwen2.5:14b", "out_tokens": 16, "raw": null, "raw_len": 65, "raw_redacted": true, "raw_sha256": "82e247732b1d12fa62bf58a009026cf477562178cba2a8283d5f5e52ff4e3cf7", "stop_reason": "length"}
+{"in_tokens": 112, "item_id": "6093", "model": "qwen2.5:14b", "out_tokens": 16, "parsed_how": "first_word", "parsed_label": 0, "raw": null, "raw_len": 65, "raw_redacted": true, "raw_sha256": "82e247732b1d12fa62bf58a009026cf477562178cba2a8283d5f5e52ff4e3cf7", "stop_reason": "length"}
 {"in_tokens": 134, "item_id": "6118", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "no", "stop_reason": "stop"}
 {"in_tokens": 140, "item_id": "6168", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "no", "stop_reason": "stop"}
 {"in_tokens": 118, "item_id": "6173", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}

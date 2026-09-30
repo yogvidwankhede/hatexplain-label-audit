@@ -541,7 +541,7 @@
 {"in_tokens": 173, "item_id": "1268483283228082177_twitter", "model": "claude-haiku-4-5-20251001", "out_tokens": 7, "raw": "hatespeech", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 172, "item_id": "1269831703801016322_twitter", "model": "claude-haiku-4-5-20251001", "out_tokens": 7, "raw": "hatespeech", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 164, "item_id": "1270444314691280903_twitter", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "normal", "refusal_category": null, "stop_reason": "end_turn"}
-{"in_tokens": 169, "item_id": "12706982_gab", "model": "claude-haiku-4-5-20251001", "out_tokens": 16, "raw": null, "raw_len": 70, "raw_redacted": true, "raw_sha256": "c90ae795547744c7707246664ec56e9d10d702c6bce0ab0dda6de427bf9402f1", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 169, "item_id": "12706982_gab", "model": "claude-haiku-4-5-20251001", "out_tokens": 16, "parsed_how": "unparseable", "parsed_label": null, "raw": null, "raw_len": 70, "raw_redacted": true, "raw_sha256": "c90ae795547744c7707246664ec56e9d10d702c6bce0ab0dda6de427bf9402f1", "refusal_category": null, "stop_reason": "max_tokens"}
 {"in_tokens": 176, "item_id": "1272988351612588032_twitter", "model": "claude-haiku-4-5-20251001", "out_tokens": 7, "raw": "hatespeech", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 200, "item_id": "12753212_gab", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "normal", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 181, "item_id": "1276241517267615745_twitter", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "normal", "refusal_category": null, "stop_reason": "end_turn"}

@@ -21,7 +21,7 @@
 {"in_tokens": 141, "item_id": "109407592.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "toxic", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 121, "item_id": "109714931.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "toxic", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 96, "item_id": "110339701.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "toxic", "refusal_category": null, "stop_reason": "end_turn"}
-{"in_tokens": 99, "item_id": "110809737.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 16, "raw": null, "raw_len": 71, "raw_redacted": true, "raw_sha256": "8db20ec9bf88d6eaf5f7642245052bb36fe9e0dc7f2a3200656e5445657683d6", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 99, "item_id": "110809737.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 16, "parsed_how": "unparseable", "parsed_label": null, "raw": null, "raw_len": 71, "raw_redacted": true, "raw_sha256": "8db20ec9bf88d6eaf5f7642245052bb36fe9e0dc7f2a3200656e5445657683d6", "refusal_category": null, "stop_reason": "max_tokens"}
 {"in_tokens": 89, "item_id": "111134601.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "neither", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 125, "item_id": "112255486.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "neither", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 89, "item_id": "113477196.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "neither", "refusal_category": null, "stop_reason": "end_turn"}
@@ -112,7 +112,7 @@
 {"in_tokens": 144, "item_id": "156807035.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "healthy", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 126, "item_id": "15720750.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "healthy", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 321, "item_id": "157319661.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "healthy", "refusal_category": null, "stop_reason": "end_turn"}
-{"in_tokens": 1101, "item_id": "159798299.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 16, "raw": null, "raw_len": 97, "raw_redacted": true, "raw_sha256": "ceea69d1ffb6bf2ad624b09e1407f4008ea6578bbb0dbbd00957c41b4d23cc24", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 1101, "item_id": "159798299.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 16, "parsed_how": "first_word", "parsed_label": -2, "raw": null, "raw_len": 97, "raw_redacted": true, "raw_sha256": "ceea69d1ffb6bf2ad624b09e1407f4008ea6578bbb0dbbd00957c41b4d23cc24", "refusal_category": null, "stop_reason": "max_tokens"}
 {"in_tokens": 128, "item_id": "160600325.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 6, "raw": "very_toxic", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 100, "item_id": "161387055.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "neither", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 159, "item_id": "164826600.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "toxic", "refusal_category": null, "stop_reason": "end_turn"}
@@ -127,7 +127,7 @@
 {"in_tokens": 119, "item_id": "170399371.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "neither", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 121, "item_id": "170972711.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "toxic", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 99, "item_id": "171208310.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "neither", "refusal_category": null, "stop_reason": "end_turn"}
-{"in_tokens": 92, "item_id": "172164934.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 16, "raw": null, "raw_len": 54, "raw_redacted": true, "raw_sha256": "4d2ecc0926c555a6421a3eea0639181f20ec6c41af214ea64650939a0e4c3bdb", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 92, "item_id": "172164934.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 16, "parsed_how": "unparseable", "parsed_label": null, "raw": null, "raw_len": 54, "raw_redacted": true, "raw_sha256": "4d2ecc0926c555a6421a3eea0639181f20ec6c41af214ea64650939a0e4c3bdb", "refusal_category": null, "stop_reason": "max_tokens"}
 {"in_tokens": 101, "item_id": "172496681.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "neither", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 125, "item_id": "172557723.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "toxic", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 319, "item_id": "173426100.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "healthy", "refusal_category": null, "stop_reason": "end_turn"}
@@ -290,7 +290,7 @@
 {"in_tokens": 95, "item_id": "249962090.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 6, "raw": "very_healthy", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 138, "item_id": "250015636.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "neither", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 104, "item_id": "250535906.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "neither", "refusal_category": null, "stop_reason": "end_turn"}
-{"in_tokens": 98, "item_id": "250919195.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 16, "raw": null, "raw_len": 67, "raw_redacted": true, "raw_sha256": "ea76d396b776301d9ce1e14a3e74cee246f28b8cd0135fb749b51e37b6ea7c4e", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 98, "item_id": "250919195.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 16, "parsed_how": "unparseable", "parsed_label": null, "raw": null, "raw_len": 67, "raw_redacted": true, "raw_sha256": "ea76d396b776301d9ce1e14a3e74cee246f28b8cd0135fb749b51e37b6ea7c4e", "refusal_category": null, "stop_reason": "max_tokens"}
 {"in_tokens": 137, "item_id": "255073742.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "neither", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 140, "item_id": "255380982.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "neither", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 159, "item_id": "25600440.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 6, "raw": "very_toxic", "refusal_category": null, "stop_reason": "end_turn"}
@@ -302,7 +302,7 @@
 {"in_tokens": 108, "item_id": "257542852.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "toxic", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 106, "item_id": "257600786.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "neither", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 200, "item_id": "258605920.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "toxic", "refusal_category": null, "stop_reason": "end_turn"}
-{"in_tokens": 91, "item_id": "258696092.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 16, "raw": null, "raw_len": 68, "raw_redacted": true, "raw_sha256": "e0a45f9ed24d648eb03450e2c5259d164fc0c42c80413934c33b46ac996cb2d9", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 91, "item_id": "258696092.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 16, "parsed_how": "unparseable", "parsed_label": null, "raw": null, "raw_len": 68, "raw_redacted": true, "raw_sha256": "e0a45f9ed24d648eb03450e2c5259d164fc0c42c80413934c33b46ac996cb2d9", "refusal_category": null, "stop_reason": "max_tokens"}
 {"in_tokens": 135, "item_id": "259446022.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "neither", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 1163, "item_id": "26061620.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "toxic", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 189, "item_id": "260622522.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 6, "raw": "very_toxic", "refusal_category": null, "stop_reason": "end_turn"}
@@ -320,7 +320,7 @@
 {"in_tokens": 238, "item_id": "26797146.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "neither", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 233, "item_id": "268209014.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "neither", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 136, "item_id": "26825030.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "toxic", "refusal_category": null, "stop_reason": "end_turn"}
-{"in_tokens": 241, "item_id": "268297860.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 16, "raw": null, "raw_len": 71, "raw_redacted": true, "raw_sha256": "560b3c0fbce71111dfb51d0315206737f915e99796fe4babcd1fe6dbfc1f0e0a", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 241, "item_id": "268297860.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 16, "parsed_how": "first_word", "parsed_label": -1, "raw": null, "raw_len": 71, "raw_redacted": true, "raw_sha256": "560b3c0fbce71111dfb51d0315206737f915e99796fe4babcd1fe6dbfc1f0e0a", "refusal_category": null, "stop_reason": "max_tokens"}
 {"in_tokens": 130, "item_id": "26903690.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "neither", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 167, "item_id": "269634733.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "neither", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 136, "item_id": "269773273.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "toxic", "refusal_category": null, "stop_reason": "end_turn"}
@@ -410,7 +410,7 @@
 {"in_tokens": 133, "item_id": "307422053.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "neither", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 162, "item_id": "307658398.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "healthy", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 413, "item_id": "307822298.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "healthy", "refusal_category": null, "stop_reason": "end_turn"}
-{"in_tokens": 158, "item_id": "308667787.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 16, "raw": null, "raw_len": 72, "raw_redacted": true, "raw_sha256": "0ec5852f689d9f38ed05e179fcc4ccf14e90da143f5022f5e19201a0c93f9f5c", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 158, "item_id": "308667787.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 16, "parsed_how": "first_word", "parsed_label": -1, "raw": null, "raw_len": 72, "raw_redacted": true, "raw_sha256": "0ec5852f689d9f38ed05e179fcc4ccf14e90da143f5022f5e19201a0c93f9f5c", "refusal_category": null, "stop_reason": "max_tokens"}
 {"in_tokens": 130, "item_id": "309888405.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "toxic", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 94, "item_id": "310810581.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "neither", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 110, "item_id": "311016094.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "neither", "refusal_category": null, "stop_reason": "end_turn"}
@@ -446,7 +446,7 @@
 {"in_tokens": 253, "item_id": "329392465.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "toxic", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 127, "item_id": "329681514.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "neither", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 148, "item_id": "330590371.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "neither", "refusal_category": null, "stop_reason": "end_turn"}
-{"in_tokens": 89, "item_id": "330682200.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 16, "raw": null, "raw_len": 67, "raw_redacted": true, "raw_sha256": "ea76d396b776301d9ce1e14a3e74cee246f28b8cd0135fb749b51e37b6ea7c4e", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 89, "item_id": "330682200.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 16, "parsed_how": "unparseable", "parsed_label": null, "raw": null, "raw_len": 67, "raw_redacted": true, "raw_sha256": "ea76d396b776301d9ce1e14a3e74cee246f28b8cd0135fb749b51e37b6ea7c4e", "refusal_category": null, "stop_reason": "max_tokens"}
 {"in_tokens": 154, "item_id": "331113700.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "healthy", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 379, "item_id": "331217650.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "healthy", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 108, "item_id": "331727278.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "neither", "refusal_category": null, "stop_reason": "end_turn"}
@@ -464,7 +464,7 @@
 {"in_tokens": 116, "item_id": "337686342.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 6, "raw": "very_toxic", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 117, "item_id": "33922669.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "neither", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 1532, "item_id": "339264846.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 6, "raw": "very_toxic", "refusal_category": null, "stop_reason": "end_turn"}
-{"in_tokens": 89, "item_id": "339620941.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 16, "raw": null, "raw_len": 61, "raw_redacted": true, "raw_sha256": "0e029abdc0fab8664cd297175be55646401d3d954f7580b34775cdf724217cea", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 89, "item_id": "339620941.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 16, "parsed_how": "unparseable", "parsed_label": null, "raw": null, "raw_len": 61, "raw_redacted": true, "raw_sha256": "0e029abdc0fab8664cd297175be55646401d3d954f7580b34775cdf724217cea", "refusal_category": null, "stop_reason": "max_tokens"}
 {"in_tokens": 103, "item_id": "339694121.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "neither", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 96, "item_id": "34044108.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "toxic", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 104, "item_id": "341025115.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "neither", "refusal_category": null, "stop_reason": "end_turn"}
@@ -643,7 +643,7 @@
 {"in_tokens": 105, "item_id": "457206800.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "neither", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 126, "item_id": "457261549.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "neither", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 152, "item_id": "457282989.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "healthy", "refusal_category": null, "stop_reason": "end_turn"}
-{"in_tokens": 89, "item_id": "457927640.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 16, "raw": null, "raw_len": 76, "raw_redacted": true, "raw_sha256": "731f58f628496ee79d983f9f933adf7d0f536ae22eff30f628ce34096f2d27c1", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 89, "item_id": "457927640.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 16, "parsed_how": "unparseable", "parsed_label": null, "raw": null, "raw_len": 76, "raw_redacted": true, "raw_sha256": "731f58f628496ee79d983f9f933adf7d0f536ae22eff30f628ce34096f2d27c1", "refusal_category": null, "stop_reason": "max_tokens"}
 {"in_tokens": 133, "item_id": "459359182.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "neither", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 1177, "item_id": "459378077.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 6, "raw": "very_toxic", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 197, "item_id": "459966909.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "healthy", "refusal_category": null, "stop_reason": "end_turn"}
@@ -708,7 +708,7 @@
 {"in_tokens": 104, "item_id": "508625947.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "neither", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 122, "item_id": "510110077.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 6, "raw": "very_toxic", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 168, "item_id": "510114282.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "toxic", "refusal_category": null, "stop_reason": "end_turn"}
-{"in_tokens": 198, "item_id": "510692255.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 16, "raw": null, "raw_len": 63, "raw_redacted": true, "raw_sha256": "763deddd3d68ac6a3fad84a78b5ced4f3ac8a2ad3e3f14c4f6d2b2a9521c2028", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 198, "item_id": "510692255.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 16, "parsed_how": "first_word", "parsed_label": -1, "raw": null, "raw_len": 63, "raw_redacted": true, "raw_sha256": "763deddd3d68ac6a3fad84a78b5ced4f3ac8a2ad3e3f14c4f6d2b2a9521c2028", "refusal_category": null, "stop_reason": "max_tokens"}
 {"in_tokens": 102, "item_id": "511345625.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "neither", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 160, "item_id": "51172871.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "toxic", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 94, "item_id": "511844755.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "neither", "refusal_category": null, "stop_reason": "end_turn"}
@@ -812,7 +812,7 @@
 {"in_tokens": 214, "item_id": "5997861.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "healthy", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 93, "item_id": "600021795.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "toxic", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 90, "item_id": "600645551.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "toxic", "refusal_category": null, "stop_reason": "end_turn"}
-{"in_tokens": 1379, "item_id": "6006995.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 16, "raw": null, "raw_len": 92, "raw_redacted": true, "raw_sha256": "a05d8eb2dec53b5fd2c51b5d4eff7e8e7938d1ac2230a0a1a69ac9bedb685190", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 1379, "item_id": "6006995.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 16, "parsed_how": "first_word", "parsed_label": -1, "raw": null, "raw_len": 92, "raw_redacted": true, "raw_sha256": "a05d8eb2dec53b5fd2c51b5d4eff7e8e7938d1ac2230a0a1a69ac9bedb685190", "refusal_category": null, "stop_reason": "max_tokens"}
 {"in_tokens": 194, "item_id": "60138557.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "neither", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 140, "item_id": "602014122.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "toxic", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 178, "item_id": "602198425.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 6, "raw": "very_healthy", "refusal_category": null, "stop_reason": "end_turn"}
@@ -915,7 +915,7 @@
 {"in_tokens": 120, "item_id": "677871903.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "toxic", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 124, "item_id": "67789848.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "neither", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 122, "item_id": "679573025.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 6, "raw": "very_toxic", "refusal_category": null, "stop_reason": "end_turn"}
-{"in_tokens": 124, "item_id": "679676470.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 16, "raw": null, "raw_len": 67, "raw_redacted": true, "raw_sha256": "ea76d396b776301d9ce1e14a3e74cee246f28b8cd0135fb749b51e37b6ea7c4e", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 124, "item_id": "679676470.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 16, "parsed_how": "unparseable", "parsed_label": null, "raw": null, "raw_len": 67, "raw_redacted": true, "raw_sha256": "ea76d396b776301d9ce1e14a3e74cee246f28b8cd0135fb749b51e37b6ea7c4e", "refusal_category": null, "stop_reason": "max_tokens"}
 {"in_tokens": 221, "item_id": "679970209.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "neither", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 159, "item_id": "683129845.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "neither", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 121, "item_id": "683494473.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "neither", "refusal_category": null, "stop_reason": "end_turn"}
@@ -971,7 +971,7 @@
 {"in_tokens": 113, "item_id": "85352111.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 6, "raw": "very_healthy", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 124, "item_id": "85617199.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "toxic", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 197, "item_id": "86108933.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "toxic", "refusal_category": null, "stop_reason": "end_turn"}
-{"in_tokens": 224, "item_id": "86659970.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 16, "raw": null, "raw_len": 63, "raw_redacted": true, "raw_sha256": "c1bb6c2b572fb0c7d7e69c1e4c1244eb5ed834f7a5d2191f7a598c00a2de8864", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 224, "item_id": "86659970.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 16, "parsed_how": "first_word", "parsed_label": -1, "raw": null, "raw_len": 63, "raw_redacted": true, "raw_sha256": "c1bb6c2b572fb0c7d7e69c1e4c1244eb5ed834f7a5d2191f7a598c00a2de8864", "refusal_category": null, "stop_reason": "max_tokens"}
 {"in_tokens": 113, "item_id": "86661239.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "toxic", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 120, "item_id": "86976976.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "toxic", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 235, "item_id": "87217837.0", "model": "claude-haiku-4-5-20251001", "out_tokens": 6, "raw": "very_toxic", "refusal_category": null, "stop_reason": "end_turn"}

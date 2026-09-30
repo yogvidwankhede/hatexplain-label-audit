@@ -464,7 +464,7 @@
 {"in_tokens": 191, "item_id": "337686342.0", "model": "claude-sonnet-5-5", "out_tokens": 7, "raw": "very_toxic", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 180, "item_id": "33922669.0", "model": "claude-sonnet-5-5", "out_tokens": 4, "raw": "neither", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 1785, "item_id": "339264846.0", "model": "claude-sonnet-5-5", "out_tokens": 5, "raw": "toxic", "refusal_category": null, "stop_reason": "end_turn"}
-{"in_tokens": 135, "item_id": "339620941.0", "model": "claude-sonnet-5-5", "out_tokens": 62, "raw": null, "raw_len": 189, "raw_redacted": true, "raw_sha256": "569f044fe04ecbe637dcf21743a6b8d685a7f75ce03ed3cb782347d1290be9da", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 135, "item_id": "339620941.0", "model": "claude-sonnet-5-5", "out_tokens": 62, "parsed_how": "lenient", "parsed_label": 0, "raw": null, "raw_len": 189, "raw_redacted": true, "raw_sha256": "569f044fe04ecbe637dcf21743a6b8d685a7f75ce03ed3cb782347d1290be9da", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 160, "item_id": "339694121.0", "model": "claude-sonnet-5-5", "out_tokens": 4, "raw": "neither", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 153, "item_id": "34044108.0", "model": "claude-sonnet-5-5", "out_tokens": 5, "raw": "toxic", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 153, "item_id": "341025115.0", "model": "claude-sonnet-5-5", "out_tokens": 4, "raw": "neither", "refusal_category": null, "stop_reason": "end_turn"}

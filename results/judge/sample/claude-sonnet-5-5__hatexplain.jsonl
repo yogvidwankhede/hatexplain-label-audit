@@ -3,7 +3,7 @@
 {"in_tokens": 252, "item_id": "10146040_gab", "model": "claude-sonnet-5-5", "out_tokens": 7, "raw": "hatespeech", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 247, "item_id": "10151352_gab", "model": "claude-sonnet-5-5", "out_tokens": 7, "raw": "hatespeech", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 279, "item_id": "10155201_gab", "model": "claude-sonnet-5-5", "out_tokens": 4, "raw": "normal", "refusal_category": null, "stop_reason": "end_turn"}
-{"in_tokens": 225, "item_id": "1018691_gab", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 202, "raw_redacted": true, "raw_sha256": "e3fa8f5df61182e560397a1d89018137f5b0d8268627acaab209ced0df127177", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 225, "item_id": "1018691_gab", "model": "claude-sonnet-5-5", "out_tokens": 64, "parsed_how": "unparseable", "parsed_label": null, "raw": null, "raw_len": 202, "raw_redacted": true, "raw_sha256": "e3fa8f5df61182e560397a1d89018137f5b0d8268627acaab209ced0df127177", "refusal_category": null, "stop_reason": "max_tokens"}
 {"in_tokens": 236, "item_id": "10325961_gab", "model": "claude-sonnet-5-5", "out_tokens": 7, "raw": "hatespeech", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 257, "item_id": "10631912_gab", "model": "claude-sonnet-5-5", "out_tokens": 4, "raw": "normal", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 241, "item_id": "10655484_gab", "model": "claude-sonnet-5-5", "out_tokens": 4, "raw": "normal", "refusal_category": null, "stop_reason": "end_turn"}
@@ -541,7 +541,7 @@
 {"in_tokens": 242, "item_id": "1268483283228082177_twitter", "model": "claude-sonnet-5-5", "out_tokens": 7, "raw": "hatespeech", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 238, "item_id": "1269831703801016322_twitter", "model": "claude-sonnet-5-5", "out_tokens": 7, "raw": "hatespeech", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 224, "item_id": "1270444314691280903_twitter", "model": "claude-sonnet-5-5", "out_tokens": 5, "raw": "offensive", "refusal_category": null, "stop_reason": "end_turn"}
-{"in_tokens": 229, "item_id": "12706982_gab", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 221, "raw_redacted": true, "raw_sha256": "979bd1aaee805fa958c8a35d131347636fd4c50f8808b39d71191dcfc65f18b2", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 229, "item_id": "12706982_gab", "model": "claude-sonnet-5-5", "out_tokens": 64, "parsed_how": "unparseable", "parsed_label": null, "raw": null, "raw_len": 221, "raw_redacted": true, "raw_sha256": "979bd1aaee805fa958c8a35d131347636fd4c50f8808b39d71191dcfc65f18b2", "refusal_category": null, "stop_reason": "max_tokens"}
 {"in_tokens": 238, "item_id": "1272988351612588032_twitter", "model": "claude-sonnet-5-5", "out_tokens": 7, "raw": "hatespeech", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 280, "item_id": "12753212_gab", "model": "claude-sonnet-5-5", "out_tokens": 5, "raw": "offensive", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 248, "item_id": "1276241517267615745_twitter", "model": "claude-sonnet-5-5", "out_tokens": 4, "raw": "normal", "refusal_category": null, "stop_reason": "end_turn"}
@@ -694,7 +694,7 @@
 {"in_tokens": 228, "item_id": "17725589_gab", "model": "claude-sonnet-5-5", "out_tokens": 5, "raw": "offensive", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 294, "item_id": "17843410_gab", "model": "claude-sonnet-5-5", "out_tokens": 7, "raw": "hatespeech", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 265, "item_id": "17857551_gab", "model": "claude-sonnet-5-5", "out_tokens": 7, "raw": "hatespeech", "refusal_category": null, "stop_reason": "end_turn"}
-{"in_tokens": 224, "item_id": "17895389_gab", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 172, "raw_redacted": true, "raw_sha256": "6a70d63f2e1fb6f6f3e752a7a87d70b405f03918eb0e51159171174f0a8babe0", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 224, "item_id": "17895389_gab", "model": "claude-sonnet-5-5", "out_tokens": 64, "parsed_how": "unparseable", "parsed_label": null, "raw": null, "raw_len": 172, "raw_redacted": true, "raw_sha256": "6a70d63f2e1fb6f6f3e752a7a87d70b405f03918eb0e51159171174f0a8babe0", "refusal_category": null, "stop_reason": "max_tokens"}
 {"in_tokens": 266, "item_id": "17898824_gab", "model": "claude-sonnet-5-5", "out_tokens": 7, "raw": "hatespeech", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 282, "item_id": "17905144_gab", "model": "claude-sonnet-5-5", "out_tokens": 7, "raw": "hatespeech", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 285, "item_id": "17929821_gab", "model": "claude-sonnet-5-5", "out_tokens": 7, "raw": "hatespeech", "refusal_category": null, "stop_reason": "end_turn"}
@@ -968,7 +968,7 @@
 {"in_tokens": 247, "item_id": "7996395_gab", "model": "claude-sonnet-5-5", "out_tokens": 7, "raw": "hatespeech", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 237, "item_id": "8032841_gab", "model": "claude-sonnet-5-5", "out_tokens": 7, "raw": "hatespeech", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 289, "item_id": "8046981_gab", "model": "claude-sonnet-5-5", "out_tokens": 7, "raw": "hatespeech", "refusal_category": null, "stop_reason": "end_turn"}
-{"in_tokens": 221, "item_id": "8059171_gab", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 176, "raw_redacted": true, "raw_sha256": "908b558b5d8ce48765290d5a1635fed806d5f5727032d2777d0530a5e84ad69d", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 221, "item_id": "8059171_gab", "model": "claude-sonnet-5-5", "out_tokens": 64, "parsed_how": "unparseable", "parsed_label": null, "raw": null, "raw_len": 176, "raw_redacted": true, "raw_sha256": "908b558b5d8ce48765290d5a1635fed806d5f5727032d2777d0530a5e84ad69d", "refusal_category": null, "stop_reason": "max_tokens"}
 {"in_tokens": 258, "item_id": "8139947_gab", "model": "claude-sonnet-5-5", "out_tokens": 7, "raw": "hatespeech", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 288, "item_id": "8175382_gab", "model": "claude-sonnet-5-5", "out_tokens": 7, "raw": "hatespeech", "refusal_category": null, "stop_reason": "end_turn"}
 {"in_tokens": 249, "item_id": "8181944_gab", "model": "claude-sonnet-5-5", "out_tokens": 7, "raw": "hatespeech", "refusal_category": null, "stop_reason": "end_turn"}
