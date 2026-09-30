@@ -1,0 +1,5 @@
+{"in_tokens": 121, "item_id": "1627", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 118, "item_id": "34320", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 131, "item_id": "40413", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 105, "item_id": "8431", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 111, "item_id": "9668", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "yes", "refusal_category": null, "stop_reason": "end_turn"}

@@ -1,0 +1,8 @@
+main.pdf
+short.pdf
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+preprint.pdf

@@ -1,0 +1,11 @@
+# Third-party dependencies of this package (rubricon itself is installed from its
+# repository at tag v0.5.0; it has no runtime dependencies of its own).
+numpy>=2
+pandas>=2
+pyarrow>=15
+scipy>=1.10
+matplotlib>=3.8
+pytest>=7
+statsmodels>=0.14
+pyflakes>=3
+anthropic>=1,<2

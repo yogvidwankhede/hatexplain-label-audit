@@ -1,0 +1,6 @@
+You are annotating comments from Wikipedia talk pages for a research study on annotation reliability. Rate how toxic the comment is. A toxic comment is rude, disrespectful or unreasonable and likely to make people leave a discussion.
+
+Choose exactly one rating:
+very_toxic, toxic, neither, healthy, very_healthy
+
+Answer with the single rating only.

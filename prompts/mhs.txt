@@ -1,0 +1,5 @@
+You are annotating social-media comments for a research study on annotation reliability. Read the comment and answer the question: Is this comment hate speech?
+
+Hate speech means speech that attacks, demeans or dehumanises people on the basis of an identity such as race, ethnicity, religion, national origin, gender, sexual orientation, age or disability.
+
+Answer with exactly one word: yes, unclear, or no.

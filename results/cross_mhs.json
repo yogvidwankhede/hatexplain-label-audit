@@ -1,0 +1,96 @@
+{
+  "cap": 5,
+  "provenance": {
+    "coding": "0 neutral/counter, 1 unclear, 2 hate speech (from a secondary source; primary codebook not seen)",
+    "duplicate_item_rater_rows": 0,
+    "items_capped_to_max": 73,
+    "items_dropped_lt2_ratings": 10077,
+    "max_ratings_per_item": 5,
+    "n_items_raw": 39565,
+    "n_items_used": 29488,
+    "n_ratings_raw": 135556,
+    "n_ratings_used": 82599,
+    "ratings_on_capped_items": 43245,
+    "source": "ucberkeley-dlab/measuring-hate-speech"
+  },
+  "variants": [
+    {
+      "alpha": 0.3627,
+      "alpha_ci95": {
+        "hi": 0.37,
+        "level": 0.95,
+        "lo": 0.3558,
+        "method": "cluster_bootstrap_percentile_all_units",
+        "n_boot": 1000,
+        "n_clusters": 29488,
+        "point": 0.3627
+      },
+      "ceiling_in_sample": 0.8345,
+      "ceiling_leave_one_out": 0.6948,
+      "ci_basis": {
+        "n_items_bootstrapped": 29488,
+        "replicates": 1000
+      },
+      "fleiss_kappa": 0.3534,
+      "gwet_ac1": 0.5848,
+      "metric": "nominal",
+      "n_items": 29488,
+      "n_raters": 7909,
+      "no_strict_plurality_fraction": 0.1761,
+      "notes": {
+        "duplicate_item_rater_rows": 0,
+        "items_capped_to_max": 73,
+        "items_dropped_lt2_ratings": 10077,
+        "max_ratings_per_item": 5,
+        "n_items_raw": 39565,
+        "n_items_used": 29488,
+        "n_ratings_raw": 135556,
+        "n_ratings_used": 82599,
+        "ratings_on_capped_items": 43245
+      },
+      "one_vote_margin_fraction": 0.166,
+      "ratings_per_item": {
+        "2": 12136,
+        "3": 11362,
+        "4": 5709,
+        "5": 281
+      },
+      "raw_pairwise_agreement": 0.6857,
+      "variant": "three_way"
+    },
+    {
+      "alpha": 0.4255,
+      "alpha_ci95": {
+        "hi": 0.4343,
+        "level": 0.95,
+        "lo": 0.4164,
+        "method": "cluster_bootstrap_percentile_all_units",
+        "n_boot": 1000,
+        "n_clusters": 29488,
+        "point": 0.4255
+      },
+      "ceiling_in_sample": 0.8835,
+      "ceiling_leave_one_out": 0.7806,
+      "ci_basis": {
+        "n_items_bootstrapped": 29488,
+        "replicates": 1000
+      },
+      "fleiss_kappa": 0.4158,
+      "gwet_ac1": 0.6341,
+      "metric": "nominal",
+      "n_items": 29488,
+      "n_raters": 7909,
+      "no_strict_plurality_fraction": 0.1189,
+      "notes": {},
+      "one_vote_margin_fraction": 0.1304,
+      "ratings_per_item": {
+        "2": 12136,
+        "3": 11362,
+        "4": 5709,
+        "5": 281
+      },
+      "raw_pairwise_agreement": 0.775,
+      "variant": "binary"
+    }
+  ]
+}

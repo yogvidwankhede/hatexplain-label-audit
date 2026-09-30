@@ -1,0 +1,80 @@
+% Short version (ARR short paper, 4 pages + references/limitations/ethics).
+% Build: tectonic -X compile short.tex
+\documentclass[11pt]{article}
+\usepackage[review]{acl}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{inconsolata}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{xspace}
+\input{numbers.tex}
+\xspaceaddexceptions{\%}
+
+\title{Reliability Floors Are the Wrong Gate:\\Propagating Label Noise into Benchmark Claims}
+\author{Anonymous submission}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+Evaluation guidance increasingly asks that a benchmark's annotator agreement clear a threshold before its labels are used to rank systems. We test whether such a gate improves decisions. In a known-truth simulation of \simComparisons million two-system comparisons, a gate that blocks claims when Krippendorff's $\alpha$ is below a floor published \simResVoneIid\% of real differences, while a plain stricter significance test published \simResMatchedIid\% at the same false-claim rate. For a binary label, gold-label noise does not create gaps between systems; it shrinks them by a known factor, so we instead estimate that factor from the benchmark's own replicated labels and report the smallest true gap the test set can resolve. Across six public corpora with per-annotator labels, no binary label reaches $\alpha=0.667$; on HateXplain, \retroUnresolvable of \retroPairs published accuracy gaps could be resolved only if the systems nearly always agreed. Code, pre-registration and data scripts are released.
+\end{abstract}
+
+\noindent\textbf{Content warning.} We analyse hate-speech corpora but quote no examples.
+
+\section{Introduction}
+Agreement coefficients are routinely reported for annotation \citep{artstein2008survey,klie2024analyzing}, and thresholds such as Krippendorff's 0.667 and 0.800 \citep{krippendorff2004reliability} are increasingly proposed as conditions for using labels to score systems \citep{caban2026measurement}. A natural tool is a \emph{claim gate}: before a sentence like ``A beats B'' is published, check that the labels are reliable enough. We ask whether such a gate makes better decisions than the significance test it would sit beside, and what should replace it if not. We contribute a known-truth evaluation of two gates (\S\ref{s:gate}), a six-corpus audit (\S\ref{s:audit}), and a retrospective check of published HateXplain gaps (\S\ref{s:retro}). The plan was pre-registered; departures are listed in the long version.
+
+\section{Noise model and gates}
+For a binary label with symmetric rater error $\eta$, two raters disagree with probability $2\eta(1-\eta)$ regardless of prevalence, so $\eta$ is identifiable from replicated labels. A $k$-rater majority is wrong with probability $\eta_k$ (a binomial tail). If a system's errors are independent of the gold errors, label noise leaves two systems' disagreement rate $p$ unchanged and shrinks the expected accuracy gap by $1-2\eta_k$ \citep{lam2003evaluating,dorner2024dont}. The smallest true gap a paired test on $n$ items resolves is then $(z^\ast+z_{1-\beta})\sqrt{p/n}/(1-2\eta_k)$.
+
+\emph{Gate~v1} (Rubricon's original) blocks a comparison if $\alpha$ is below 0.50, if the gap is below the minimum detectable effect, or if a 95\% interval includes zero. \emph{Gate~v2} blocks only on a paired $z$-test at $z^\ast=2.58$, and reports the estimated $\eta$, the true-scale gap and the smallest resolvable true gap without blocking.
+
+\section{Do gates improve decisions?}
+\label{s:gate}
+We simulate binary truth, three raters and two systems with known true gaps across prevalence, $\alpha$ (0.2--0.9), $n$ (200--5,000) and disagreement rates (\simCellsIid cells, 1,000 replicates each), and score claims against the simulated majority label. A false claim is ``A beats B'' published when the true gap is $\leq0$; a resolvable one has a true gap $\geq0.03$.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/gate_operating_points.pdf}
+\caption{Share of false and resolvable claims published. Line: paired $z$-test with threshold 1.96 to 4.5. The third panel is a post-hoc scenario in which the better system's advantage lies on items the raters agree on.}
+\label{fig:gate}
+\end{figure*}
+
+Gate~v1 published \simFalseVoneIid\% false and \simResVoneIid\% resolvable claims under independent noise; a $z$-test matched to its false-claim rate published \simResMatchedIid\% (Figure~\ref{fig:gate}). With errors concentrated on hard items the gap persists (\simResVoneHet\% vs.\ \simResMatchedHet\%), and only in a post-hoc scenario built to favour the floor do the two draw level (\simResVoneHetneg\% vs.\ \simResMatchedHetneg\%). Only the $\alpha$ floor and the MDE check ever bind; removing the floor raises the resolvable rate from \ablResNone\% to \ablResRel\%. Below $\alpha=0.5$ the floor blocks nearly every real difference (\simResVoneLowAlphaIid\% published, against \simResZlowLowAlphaIid\% for an ordinary test). Gate~v2's decisions equal a $z$-test at 2.58, which is what we claim for it; its value is the report, whose attenuation estimate is within \attEstMaxErr of the truth at $n\geq1{,}000$.
+
+\section{How reliable are real labels?}
+\label{s:audit}
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{figures/agreement.pdf}
+\caption{Agreement on each corpus's binary label (95\% bootstrap intervals for $\alpha$).}
+\label{fig:agree}
+\end{figure}
+We audit every corpus we found with rater identifiers and a research licence: HateXplain \citep{mathew2021hatexplain}, Measuring Hate Speech \citep{kennedy2020measuring}, Wikipedia Talk toxicity \citep{wulczyn2017ex}, DICES-350/990 \citep{aroyo2023dices} and GoEmotions \citep{demszky2020goemotions}. Binary $\alpha$ ranges from \alphaDthree to \alphaHx (Figure~\ref{fig:agree}); none reaches 0.667. Coefficients diverge under skew: on Wikipedia Talk, $\alpha$ is \alphaWiki while AC1 is \acOneWiki. A threshold on one coefficient would pass or block the same labels depending on which coefficient was chosen.
+
+\section{Could published gaps be resolved?}
+\label{s:retro}
+HateXplain's official test split has \retroN posts, \retroSplit\% of them 2--1 splits. Of the \retroPairs pairwise gaps between the six models in \citet[Table 6]{mathew2021hatexplain}, \retroUnresolvable (\retroMinGap to \retroBertGap) are significant at $z=1.96$ only if the two systems disagree on fewer than \retroMinPmax--\retroBertPmax\% of posts, including both comparisons that isolate rationale supervision. This concerns accuracy only, not the paper's explainability claims.
+
+\section{LLM judges against a held-out human}
+We scored five judges on up to 1,000 items per corpus against the panel majority, with one annotator held out and scored identically. On HateXplain, MHS and Wikipedia Talk no judge beat the held-out human (best: \jSonnetHx vs.\ \jHumanHx, \jHaikuMhs vs.\ \jHumanMhs, \jSonnetWiki vs.\ \jHumanWiki). On DICES, where a single rater is a weak reference ($\alpha\approx$ \alphaDthree), three judges exceed the human (up to \jSonnetDthree vs.\ \jHumanDthree), yet none matches the crowd majority on the expert labels (\jExpertSonnet at best vs.\ \jExpertPanel), and Sonnet's figure drops to \jSonnetDthreeInvalidWrong if its \jSonnetDthreeUnparsed truncated outputs count as wrong. Gate~v2 resolved \jPairsPass of \jPairsTotal judge-versus-judge comparisons and none with a gap below 0.02.
+
+\section{Recommendations}
+Report agreement with an interval and with AC1 and raw agreement beside $\alpha$; report the paired disagreement rate of compared systems; and report the smallest true gap the test size and label noise can resolve. Do not replace a significance test with a reliability threshold. At a fixed budget, label more items once rather than fewer items several times \citep{dorner2024dont}; in our real-rater test this held in all \clFourCells design cells.
+
+\section*{Limitations}
+The attenuation factor assumes binary labels, symmetric rater noise, and system errors independent of gold errors; we test departures with hard-item scenarios and real raters but cannot cover every structure. Two simulation scenarios were added after seeing results. The retrospective uses rounded published accuracies without system outputs and covers one paper. All corpora are English and five of six concern harmful content.
+
+\section*{Ethics statement}
+The corpora contain offensive text. We use them under their licences, quote no examples, and release only code, identifiers, labels and derived statistics. Stating that labels cannot resolve a gap is a statement about measurement, not a claim that any published result is wrong.
+
+\section*{Acknowledgements}
+\textit{[Author to complete.]} We used an AI coding assistant (Anthropic's Claude via Claude Code) to write and test analysis code, search for and verify related work, and draft text under the author's direction; the author checked the code and every citation and is responsible for the content.
+
+\bibliography{references}
+\end{document}

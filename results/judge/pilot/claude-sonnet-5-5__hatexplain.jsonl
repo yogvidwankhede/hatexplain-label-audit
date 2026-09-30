@@ -1,0 +1,5 @@
+{"in_tokens": 248, "item_id": "1080863043356160000_twitter", "model": "claude-sonnet-5-5", "out_tokens": 4, "raw": "normal", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 229, "item_id": "1088890307884838918_twitter", "model": "claude-sonnet-5-5", "out_tokens": 5, "raw": "offensive", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 214, "item_id": "1178835680467804161_twitter", "model": "claude-sonnet-5-5", "out_tokens": 7, "raw": "hatespeech", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 275, "item_id": "15330010_gab", "model": "claude-sonnet-5-5", "out_tokens": 7, "raw": "hatespeech", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 264, "item_id": "16909050_gab", "model": "claude-sonnet-5-5", "out_tokens": 7, "raw": "hatespeech", "refusal_category": null, "stop_reason": "end_turn"}

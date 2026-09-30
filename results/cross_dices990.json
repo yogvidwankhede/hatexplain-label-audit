@@ -1,0 +1,90 @@
+{
+  "cap": 5,
+  "provenance": {
+    "duplicate_item_rater_rows": 0,
+    "items_capped_to_max": 990,
+    "items_dropped_lt2_ratings": 0,
+    "label": "Q_overall",
+    "max_ratings_per_item": 5,
+    "n_items_raw": 990,
+    "n_items_used": 990,
+    "n_ratings_raw": 72103,
+    "n_ratings_used": 4950,
+    "ratings_on_capped_items": 72103,
+    "source": "google-research-datasets/dices-dataset 990"
+  },
+  "variants": [
+    {
+      "alpha": 0.1458,
+      "alpha_ci95": {
+        "hi": 0.1715,
+        "level": 0.95,
+        "lo": 0.1219,
+        "method": "cluster_bootstrap_percentile_all_units",
+        "n_boot": 1000,
+        "n_clusters": 990,
+        "point": 0.1458
+      },
+      "ceiling_in_sample": 0.7588,
+      "ceiling_leave_one_out": 0.6591,
+      "ci_basis": {
+        "n_items_bootstrapped": 990,
+        "replicates": 1000
+      },
+      "fleiss_kappa": 0.1457,
+      "gwet_ac1": 0.4819,
+      "metric": "nominal",
+      "n_items": 990,
+      "n_raters": 166,
+      "no_strict_plurality_fraction": 0.0636,
+      "notes": {
+        "duplicate_item_rater_rows": 0,
+        "items_capped_to_max": 990,
+        "items_dropped_lt2_ratings": 0,
+        "max_ratings_per_item": 5,
+        "n_items_raw": 990,
+        "n_items_used": 990,
+        "n_ratings_raw": 72103,
+        "n_ratings_used": 4950,
+        "ratings_on_capped_items": 72103
+      },
+      "one_vote_margin_fraction": 0.2475,
+      "ratings_per_item": {
+        "5": 990
+      },
+      "raw_pairwise_agreement": 0.6024,
+      "variant": "three_way"
+    },
+    {
+      "alpha": 0.1536,
+      "alpha_ci95": {
+        "hi": 0.183,
+        "level": 0.95,
+        "lo": 0.1245,
+        "method": "cluster_bootstrap_percentile_all_units",
+        "n_boot": 1000,
+        "n_clusters": 990,
+        "point": 0.1536
+      },
+      "ceiling_in_sample": 0.8012,
+      "ceiling_leave_one_out": 0.7058,
+      "ci_basis": {
+        "n_items_bootstrapped": 990,
+        "replicates": 1000
+      },
+      "fleiss_kappa": 0.1535,
+      "gwet_ac1": 0.4485,
+      "metric": "nominal",
+      "n_items": 990,
+      "n_raters": 166,
+      "no_strict_plurality_fraction": 0.0,
+      "notes": {},
+      "one_vote_margin_fraction": 0.3182,
+      "ratings_per_item": {
+        "5": 990
+      },
+      "raw_pairwise_agreement": 0.6661,
+      "variant": "binary"
+    }
+  ]
+}

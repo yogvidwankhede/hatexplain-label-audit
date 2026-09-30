@@ -1,0 +1,5 @@
+{"in_tokens": 140, "item_id": "19222973.0", "model": "claude-sonnet-5-5", "out_tokens": 4, "raw": "neither", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 181, "item_id": "218962098.0", "model": "claude-sonnet-5-5", "out_tokens": 4, "raw": "neither", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 153, "item_id": "327723462.0", "model": "claude-sonnet-5-5", "out_tokens": 4, "raw": "neither", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 186, "item_id": "394569984.0", "model": "claude-sonnet-5-5", "out_tokens": 4, "raw": "neither", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 176, "item_id": "487592561.0", "model": "claude-sonnet-5-5", "out_tokens": 5, "raw": "healthy", "refusal_category": null, "stop_reason": "end_turn"}

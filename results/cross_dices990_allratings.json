@@ -1,0 +1,104 @@
+{
+  "cap": null,
+  "provenance": {
+    "duplicate_item_rater_rows": 0,
+    "items_capped_to_max": 0,
+    "items_dropped_lt2_ratings": 0,
+    "label": "Q_overall",
+    "max_ratings_per_item": null,
+    "n_items_raw": 990,
+    "n_items_used": 990,
+    "n_ratings_raw": 72103,
+    "n_ratings_used": 72103,
+    "ratings_on_capped_items": 0,
+    "source": "google-research-datasets/dices-dataset 990"
+  },
+  "variants": [
+    {
+      "alpha": 0.1432,
+      "alpha_ci95": {
+        "hi": 0.1548,
+        "level": 0.95,
+        "lo": 0.1319,
+        "method": "cluster_bootstrap_percentile_all_units",
+        "n_boot": 1000,
+        "n_clusters": 990,
+        "point": 0.1432
+      },
+      "ceiling_in_sample": 0.718,
+      "ceiling_leave_one_out": 0.7116,
+      "ci_basis": {
+        "n_items_bootstrapped": 990,
+        "replicates": 1000
+      },
+      "fleiss_kappa": 0.1432,
+      "gwet_ac1": 0.4833,
+      "metric": "nominal",
+      "n_items": 990,
+      "n_raters": 172,
+      "no_strict_plurality_fraction": 0.0081,
+      "notes": {
+        "duplicate_item_rater_rows": 0,
+        "items_capped_to_max": 0,
+        "items_dropped_lt2_ratings": 0,
+        "max_ratings_per_item": null,
+        "n_items_raw": 990,
+        "n_items_used": 990,
+        "n_ratings_raw": 72103,
+        "n_ratings_used": 72103,
+        "ratings_on_capped_items": 0
+      },
+      "one_vote_margin_fraction": 0.0111,
+      "ratings_per_item": {
+        "69": 5,
+        "70": 15,
+        "71": 93,
+        "72": 281,
+        "73": 298,
+        "74": 233,
+        "75": 63,
+        "76": 2
+      },
+      "raw_pairwise_agreement": 0.603,
+      "variant": "three_way"
+    },
+    {
+      "alpha": 0.1543,
+      "alpha_ci95": {
+        "hi": 0.1672,
+        "level": 0.95,
+        "lo": 0.1417,
+        "method": "cluster_bootstrap_percentile_all_units",
+        "n_boot": 1000,
+        "n_clusters": 990,
+        "point": 0.1543
+      },
+      "ceiling_in_sample": 0.7605,
+      "ceiling_leave_one_out": 0.756,
+      "ci_basis": {
+        "n_items_bootstrapped": 990,
+        "replicates": 1000
+      },
+      "fleiss_kappa": 0.1542,
+      "gwet_ac1": 0.4532,
+      "metric": "nominal",
+      "n_items": 990,
+      "n_raters": 172,
+      "no_strict_plurality_fraction": 0.0051,
+      "notes": {},
+      "one_vote_margin_fraction": 0.0081,
+      "ratings_per_item": {
+        "69": 5,
+        "70": 15,
+        "71": 93,
+        "72": 281,
+        "73": 298,
+        "74": 233,
+        "75": 63,
+        "76": 2
+      },
+      "raw_pairwise_agreement": 0.6679,
+      "variant": "binary"
+    }
+  ]
+}
