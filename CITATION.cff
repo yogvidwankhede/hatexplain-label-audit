@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this code or its results, please cite the paper and the software."
+title: "What can your labels support? Reproducibility package"
+type: software
+authors:
+  - family-names: Wankhede
+    given-names: Yogvid
+version: 2.0.0
+license: MIT
+repository-code: "https://github.com/yogvidwankhede/hatexplain-label-audit"
+keywords: [annotation reliability, Krippendorff's alpha, LLM-as-a-judge, statistical power, hate speech]
+references:
+  - type: software
+    title: Rubricon
+    authors: [{family-names: Wankhede, given-names: Yogvid}]
+    repository-code: "https://github.com/yogvidwankhede/rubricon"
+preferred-citation:
+  type: article
+  title: "What can your labels support? A claim-gated reliability audit of annotation benchmarks"
+  authors:
+    - family-names: Wankhede
+      given-names: Yogvid
+  year: 2026
+  notes: "Preprint in preparation; identifier to be added when posted."

@@ -18,7 +18,7 @@ help:  ## list targets
 all: data corpora study cross sims claim4 retro judge-samples judge-analysis alt-test figures test paper  ## regenerate everything (no API calls)
 
 install:  ## install pinned dependencies and both packages
-	pip install -r requirements.lock
+	pip install --require-hashes -r requirements.lock
 	pip install --no-deps -e ../rubricon -e .   # CI checks rubricon out at tag v0.5.0
 
 data:  ## HateXplain (12 MB)
