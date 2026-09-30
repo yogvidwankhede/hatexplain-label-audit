@@ -25,3 +25,17 @@ Each entry says whether any result on the affected corpus had been seen.
 - After seeing aggregate S1 results (the gate publishes ~30% of resolvable claims vs ~66% for an unadjusted z>1.96 test, and only effect_vs_mde and reliability ever bind), added a fairer comparison: plain z-thresholds {1.96, 2.24, 2.58, 2.80, 3.00, 3.29}, so the gate can be compared with a significance test at the SAME resolvable-claim publish rate or the SAME false-claim rate.
 - This is exploratory and labelled as such in the paper. Results seen before adding: S1 aggregates for iid and het (not the matched comparison itself). Simulation seeds are unchanged, so the earlier numbers do not move.
 - A ablation bug (double-counted unblocked claims) was found and fixed before interpretation; a regression test covers it.
+
+## D6 — Gate v2 and post-hoc scenarios (POST HOC, 2026-09-29)
+- Decision (author, 2026-09-29): report the negative S1 result and design/validate a replacement gate.
+- Gate v2 (all quantities computed from gold labels, rater votes and system outputs):
+  (C1) direction evidence: z of the paired accuracy gap must exceed z* = 2.58;
+  (C2) attenuation report: eta_hat from pairwise rater disagreement, eta_K for the K-rater majority, true-scale gap = observed gap / (1 - 2 eta_K) and true-scale MDE, reported, not used to block;
+  (C3) contested-item consistency: the gap is computed separately on items where raters were unanimous and on items where they split; BLOCK a direction claim if the two gaps have opposite signs and their difference has |z| > 2.58; WARN if |z| > 1.96.
+  z* = 2.58 and the C3 cut-offs were fixed here, before any v2 run.
+- New scenarios, added because the pre-registered `het` (systems' gap larger on hard items) only hides real gaps and cannot produce false claims: `het_k-0.05` and `het_k-0.10`, where the systems' gap is smaller on the hard/contested items (kappa < 0). The direction was chosen after seeing that the original `het` produced no extra false claims. Reported as post hoc.
+- Cells with infeasible joint probabilities are skipped and counted.
+
+## D7 — Wider z-threshold grid for the matched comparison (POST HOC, 2026-09-29)
+- In het k=-0.10 the v1 gate's operating point (false 0.0043) lies below the smallest false-claim rate the grid {1.96..3.29} reaches (0.0078), so a matched comparison was not possible. Added 3.5, 4.0, 4.5 to Z_THRESHOLDS. Results seen before adding: all S1/v2 aggregates. Seeds and earlier columns are unchanged.
+- C3 was NOT modified after seeing that it adds little (D6 fixed its cut-offs); the paper reports it as is.
