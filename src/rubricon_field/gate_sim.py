@@ -167,8 +167,6 @@ def simulate_cell(scenario: str, n: int, alpha: float, pi: float, delta: float,
     se = sd / math.sqrt(n)
     a_hat = alpha_binary_fast(s, K_RATERS)
 
-    # true (item-averaged) gap, for the record
-    true_gap = delta
     claim = gap > 0
     zstat = gap / np.where(se > 0, se, np.inf)
     naive = claim & (zstat > Z_A)

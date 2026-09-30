@@ -10,6 +10,7 @@
     "n_items_used": 29488,
     "n_ratings_raw": 135556,
     "n_ratings_used": 125479,
+    "ratings_on_capped_items": 0,
     "source": "ucberkeley-dlab/measuring-hate-speech"
   },
   "variants": [
@@ -44,7 +45,8 @@
         "n_items_raw": 39565,
         "n_items_used": 29488,
         "n_ratings_raw": 135556,
-        "n_ratings_used": 125479
+        "n_ratings_used": 125479,
+        "ratings_on_capped_items": 0
       },
       "one_vote_margin_fraction": 0.1658,
       "ratings_per_item": {

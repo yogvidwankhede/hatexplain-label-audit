@@ -74,6 +74,7 @@ def build_matrix(
     n_ratings_raw = sum(len(v) for v in per_item.values())
     dropped_lt2 = 0
     capped_items = 0
+    ratings_on_capped = 0
     out: Matrix = {}
     for item, cell in per_item.items():
         if len(cell) < 2:
@@ -82,6 +83,7 @@ def build_matrix(
         if cap is not None and len(cell) > cap:
             keys = sorted(cell)
             keep = _item_rng(item, salt).sample(keys, cap)
+            ratings_on_capped += len(cell)
             cell = {k: cell[k] for k in keep}
             capped_items += 1
         out[item] = cell
@@ -90,6 +92,7 @@ def build_matrix(
         "n_ratings_raw": n_ratings_raw,
         "items_dropped_lt2_ratings": dropped_lt2,
         "items_capped_to_max": capped_items,
+        "ratings_on_capped_items": ratings_on_capped,
         "max_ratings_per_item": cap,
         "duplicate_item_rater_rows": duplicates,
         "n_items_used": len(out),

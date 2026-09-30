@@ -8,7 +8,7 @@ a sensitivity analysis. Every interval is a 95% item-cluster percentile bootstra
 (2,000 replicates, seeded), paired where two raters are compared.
 
 Gate v2 is applied to two claim families, with z* = 2.58:
-* "judge J agrees with the panel at least as well as a held-out human" -- the
+* "judge J agrees with the panel more often than a held-out human" -- the
   direction check runs on d_i = [J right] - [human right];
 * "judge J beats judge K" on the same items.
 The attenuation report uses the panel raters' own pairwise disagreement.
@@ -140,7 +140,7 @@ def analyse(corpus: str) -> dict:
             "diff_vs_human": round(float(d.mean()), 4), "diff_vs_human_ci": [round(x, 4) for x in diff_ci],
             "m2": round(float(np.mean([np.mean([x == y for y in r["panel_bin"]])
                                        for x, r, v in zip(jb, rows, valid) if v])), 4),
-            "gate_v2_claim_ge_human": {"verdict": verdict, "checks": [c.to_dict() for c in checks]},
+            "gate_v2_claim_judge_beats_human": {"verdict": verdict, "checks": [c.to_dict() for c in checks]},
             "tokens_in": int(sum(out[r["item"]]["in"] for r in rows)),
             "tokens_out": int(sum(out[r["item"]]["out"] for r in rows)),
         }
@@ -197,4 +197,4 @@ if __name__ == "__main__":
         print(c, "human M1", v["human"]["m1"], v["human"]["m1_ci"])
         for j, e in v["judges"].items():
             print(f"   {j:18s} M1 {e['m1']:.3f} {e['m1_ci']} diff {e['diff_vs_human']:+.3f} {e['diff_vs_human_ci']} "
-                  f"gate {e['gate_v2_claim_ge_human']['verdict']} parse {e['parse']}")
+                  f"gate {e['gate_v2_claim_judge_beats_human']['verdict']} parse {e['parse']}")

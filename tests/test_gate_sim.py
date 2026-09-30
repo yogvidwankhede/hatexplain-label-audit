@@ -53,7 +53,6 @@ def test_ablation_baseline_equals_gate_publish_count():
 
 
 def test_vectorised_v2_matches_rubricon_gate_v2():
-    import math
     from rubricon.core.schema import Verdict
     from rubricon.gates import attenuation as T
     for scen, kappa in (("iid", 0.05), ("het", -0.10)):

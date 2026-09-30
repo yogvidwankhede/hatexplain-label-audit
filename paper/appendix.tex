@@ -1,0 +1,55 @@
+\section{Pre-registration and deviations}
+\label{app:deviations}
+The analysis plan (\texttt{PREREG.md}) was committed and tagged before any new-corpus statistic was computed. The HateXplain single-corpus results predate it and are replications. The judge addendum (\texttt{PREREG\_ADDENDUM.md}), fixing models, prompts, samples, the parser and the metrics, was committed before any model call; alt-test parameters were added before any alt-test result existed. Table~\ref{tab:dev} lists every departure; the repository's \texttt{DEVIATIONS.md} gives dates and whether results had been seen.
+
+\begin{table*}[t]
+\centering\small
+\begin{tabular}{@{}p{0.2\textwidth}p{0.5\textwidth}p{0.22\textwidth}@{}}
+\toprule
+Change & What and why & Results seen before? \\
+\midrule
+Leave-one-out ceiling & Added a lower end to the ceiling bracket because the mean modal share includes the scored vote. & Only the already-published HateXplain value. \\
+Separate seed & New analyses use a new master seed so the earlier HateXplain files still reproduce. & No. \\
+Margin definition & Report exactly-one-vote lead and no-plurality separately. & HateXplain only. \\
+Hard-item scenario (pre-registered model extended) & Added a second generative model with hard items; extended the gap grid to include negative gaps so false claims exist. & No. \\
+Matched-threshold baseline & Compare gates with $z$-tests at matched false-claim rates. & Yes: aggregate gate rates. \\
+Gate~v2 and two post-hoc scenarios & Designed after seeing that the $\alpha$ floor loses power; scenarios with the gap on clear items were added because the pre-registered scenario produced no extra false claims. & Yes. \\
+Wider $z$ grid & Needed to reach gate~v1's false-claim rate in one scenario. & Yes. \\
+Full-data bootstrap & Replaced the subsample bootstrap, whose interval excluded its own point estimate on one emotion. & Yes: first-run intervals. \\
+Real-rater study details & Pool/reference split, system models and budgets fixed; one system model re-specified after an infeasibility crash, before any output. & No. \\
+Judge pilot & DICES pilot items from DICES-990; a first-word parse rule added after pilot outputs began with a label and then explained. & Pilot only. \\
+Sonnet sampling & Claude Sonnet~5.5 rejects temperature~0; default sampling used. & No. \\
+\bottomrule
+\end{tabular}
+\caption{Departures from the pre-registered plan.}
+\label{tab:dev}
+\end{table*}
+
+\section{All agreement statistics}
+\label{app:cross}
+\begin{table*}[t]
+\centering\small
+\input{tables/cross.tex}
+\caption{Agreement per corpus and label. Ceiling: leave-one-out to in-sample bracket. $\alpha_{\text{all}}$: all ratings kept instead of at most five per item.}
+\end{table*}
+
+\section{Threshold sweep}
+\label{app:sweep}
+\begin{figure}[h]
+\centering
+\includegraphics[width=\columnwidth]{figures/alpha_floor_sweep.pdf}
+\caption{Gate~v1 under independent rater noise as its $\alpha$ floor varies (dotted: default).}
+\end{figure}
+
+\section{HateXplain gaps}
+\label{app:retro}
+For a paired comparison on $n$ items with discordance $p$ (the share of items exactly one system gets right), a gap $g$ has $z=g/\sqrt{(p-g^2)/n}$, so it is significant at threshold $z^\ast$ only if $p<p_{\max}=g^2(1+n/z^{\ast2})$. Since $p\geq g$, a $p_{\max}$ near $g$ means the gap cannot be resolved by any realistic pair of systems. Values are capped at 100\%.
+\begin{table}[h]
+\centering\small
+\resizebox{\columnwidth}{!}{\input{tables/retro.tex}}
+\caption{Published HateXplain test-accuracy gaps and the largest disagreement rate at which each is resolvable.}
+\end{table}
+
+\section{Judge experiment details}
+\label{app:judges}
+\input{judges_appendix.tex}

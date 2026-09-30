@@ -1,0 +1,163 @@
+% Long version (ARR long paper, 8 pages + unlimited references/limitations/appendix).
+% Build: tectonic -X compile main.tex   (or `make paper` from the repository root)
+% Switch \usepackage[review]{acl} to [preprint] for the non-anonymous arXiv version.
+\documentclass[11pt]{article}
+\usepackage[review]{acl}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{inconsolata}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{xspace}
+\usepackage{siunitx}
+\sisetup{group-separator={,},group-minimum-digits=4}
+\input{numbers.tex}
+\xspaceaddexceptions{\%}
+\newcommand{\eg}{e.g.,\xspace}
+\newcommand{\ie}{i.e.,\xspace}
+
+\title{What Can Your Labels Support?\\A Claim-Gated Reliability Audit of Annotation Benchmarks}
+
+\author{Anonymous submission}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Benchmarks turn a majority vote of a few annotators into ``ground truth'' and then rank systems and LLM judges against it, usually without asking whether the labels can separate the systems being ranked. We study that question with per-annotator labels from six public corpora. (1)~No corpus reaches Krippendorff's tentative-conclusion level of 0.667 on its binary label; $\alpha$ ranges from \alphaDthree (DICES-350) to \alphaHx (HateXplain), and chance-corrected and raw agreement disagree sharply under label skew. (2)~In a known-truth simulation of \simComparisons million comparisons, a claim gate that blocks comparisons when $\alpha$ is below a floor published \simResVoneIid\% of real two-system differences, while a plain stricter significance test published \simResMatchedIid\% at the same false-claim rate. We therefore replace the floor with a check that propagates estimated gold-label noise into the comparison, using the classical $1-2\eta$ attenuation with $\eta$ estimated from the benchmark's own replicated labels. (3)~Applied to HateXplain, \retroUnresolvable of \retroPairs published accuracy gaps, including both ``with vs.\ without rationale supervision'' comparisons, could only be resolved if the two systems disagreed on fewer than \retroBertPmax\% of test posts. (4)~On real annotators, one label per item maximised power in all \clFourCells design cells we tested, replicating a known theorem outside its independent-noise assumptions. (5)~We score five LLM judges against held-out humans on four corpora. We release the software, a pre-registration, and a reproduction package.
+\end{abstract}
+
+\noindent\textbf{Content warning.} This paper analyses hate-speech and abuse corpora. It quotes no examples from them.
+
+\section{Introduction}
+A benchmark label is usually the majority of two to five crowd judgements. Once released, that label is used as if it were exact: systems are ranked by accuracy against it, differences of one or two points are reported as progress, and LLM judges are validated by how often they reproduce it. Reliability is sometimes reported for the annotation, but it is rarely carried into the conclusions drawn from the labels \citep{klie2024analyzing,kunilovskaya2026who}. Two questions follow for anyone reading a leaderboard: how much of a reported gap could the labels detect at this test size, and what agreement should a judge be expected to reach if it models the annotators perfectly?
+
+Much of the machinery already exists. Agreement coefficients and their pitfalls are well documented \citep{artstein2008survey,krippendorff2004reliability,feinstein1990high,gwet2008computing}. Label noise in a test set shrinks accuracy differences by a known factor \citep{lam2003evaluating}, and at a fixed budget, labelling more items once beats labelling fewer items several times when comparing two binary classifiers \citep{dorner2024dont}. Statistical power in NLP comparisons is low \citep{card2020little}, and LLM judges can be tested against held-out annotators \citep{calderon2025alternative}. What is missing is an end-to-end, tested procedure that takes a benchmark's own per-annotator labels and says which claims about systems the labels can support, together with evidence that such a procedure makes better decisions than a simpler rule.
+
+We contribute: (i) a six-corpus reliability audit with coefficients reported side by side and a sensitivity analysis for how ratings are subsampled (\S\ref{sec:audit}); (ii) a known-truth evaluation of two claim gates, one based on a reliability floor and one that propagates label noise, compared with plain significance tests at matched error rates (\S\ref{sec:gate}); (iii) a retrospective check of published HateXplain gaps (\S\ref{sec:retro}); (iv) a real-annotator test of the one-label-per-item result (\S\ref{sec:k}); and (v) an LLM-judge experiment scored against held-out humans, with the Alternative Annotator Test \citep{calderon2025alternative} where it applies (\S\ref{sec:judges}). The analysis plan was pre-registered before the final experiments; every departure from it is listed in Appendix~\ref{app:deviations}.
+
+\section{Related work}
+\paragraph{Agreement and human label variation.} Krippendorff's $\alpha$ \citep{krippendorff2011computing,krippendorff2004content} and the kappa family \citep{artstein2008survey} measure how reproducible a coding is; Krippendorff argues that the acceptable level depends on the cost of drawing wrong conclusions \citep{krippendorff2004reliability}. Under skewed labels, chance-corrected coefficients can be low while raw agreement is high \citep{feinstein1990high}; Gwet's AC1 was proposed partly for this reason \citep{gwet2008computing}. A second line of work treats disagreement as signal rather than noise \citep{plank2022problem,basile2021need,uma2021learning,davani2022dealing}, models annotators explicitly \citep{paun2018comparing}, or scores systems against individual raters \citep{gordon2021disagreement,resnick2021principled}. We do not take a side on whether disagreement is noise; we ask what a majority-vote label can support \emph{if} it is used as the target, which is how most benchmarks are used.
+
+\paragraph{Noisy test labels and power.} \citet{lam2003evaluating} derive how a known label-error rate biases measured error; \citet{northcutt2021pervasive} find label errors in widely used test sets that can change model rankings. \citet{card2020little} show many NLP comparisons are underpowered, and \citet{dror2018hitchhikers} and \citet{miller2024adding} give testing and error-bar practice for evaluations; the latter assume correct labels. \citet{dorner2024dont} prove that one label per item is optimal for identifying the better of two binary classifiers on a budget, and show the $1-2\eta$ attenuation of the expected gap; \citet{homan2026many} and \citet{pandita2026improving} study items versus ratings per item for distribution-sensitive metrics and with rater identity preserved.
+
+\paragraph{LLM judges.} Judges are commonly validated by agreement with humans \citep{zheng2023judging,chiang2023large,bavaresco2025llms}. The Alternative Annotator Test \citep{calderon2025alternative} turns this into a hypothesis test against each held-out annotator, and \citet{li2026llm} study how sparse annotation overlap degrades that validation. Prediction-powered inference combines judge labels with a small human-labelled set for valid intervals \citep{angelopoulos2023prediction,boyeau2025autoeval}, with limits on the savings \citep{dorner2025limits}. \citet{caban2026measurement} proposes $\alpha$ thresholds for evaluations that gate deployment; we test whether a threshold rule of this kind improves decisions.
+
+\section{Protocol}
+\label{sec:protocol}
+All statistics are computed by Rubricon, an open-source library whose agreement code is validated against Krippendorff's published reference values; the audit adds loaders and study designs.
+
+\paragraph{Reliability matrix.} For each corpus we build $\text{item}\to\{\text{rater}\to\text{label}\}$, drop items with fewer than two ratings, and keep at most five ratings per item by a seeded draw (a sensitivity analysis keeps all). Items with no strict plurality are counted, never resolved.
+
+\paragraph{Agreement.} We report nominal Krippendorff's $\alpha$ with a 95\% item-cluster percentile bootstrap interval over all items, Gwet's AC1, Fleiss' $\kappa$, and raw pairwise agreement.
+
+\paragraph{Agreement ceiling.} A predictor that outputs an item's modal label agrees with a randomly chosen annotator on the modal share of that item's ratings. Averaged over items, the mean modal share overstates what is achievable because the modal label includes the vote it is scored against, so we report it as the upper end of a bracket whose lower end predicts each rater from the modal label of the \emph{other} raters. Neither end bounds system performance \citep{boguslav2017inter}; both describe how predictable one annotator is from the others.
+
+\paragraph{Noise model.} For a binary label with symmetric rater noise $\eta$, two raters disagree with probability $2\eta(1-\eta)$ whatever the prevalence, so $\eta$ can be estimated from the corpus's own replicated labels. A $k$-rater majority is wrong with probability $\eta_k=\sum_{j>k/2}\binom{k}{j}\eta^j(1-\eta)^{k-j}$. If a system's correctness is independent of the gold-label error, the system agrees with gold exactly when its correctness and the gold label's correctness coincide. Two consequences follow \citep{lam2003evaluating,dorner2024dont}: the disagreement rate $p$ of two systems is unchanged by label noise, and the expected observed accuracy gap is $(1-2\eta_k)$ times the true gap. The smallest true gap a paired test on $n$ items resolves with power $1-\beta$ at threshold $z^\ast$ is therefore $(z^\ast+z_{1-\beta})\sqrt{p/n}\,/\,(1-2\eta_k)$ (Figure~\ref{fig:mde}).
+
+\paragraph{Two claim gates.} \emph{Gate~v1} is Rubricon's original gate. For a claim ``system A beats B'' it runs five checks that apply to external corpora: $\alpha$ against a floor (block below 0.50, warn below 0.667), the observed gap against the minimum detectable effect, a 95\% interval that must exclude zero, interval width, and replication; six further checks describe Rubricon's simulated annotation pipeline and do not apply to external corpora. \emph{Gate~v2} blocks only on a paired $z$-test at a pre-set $z^\ast=2.58$. It reports, without blocking, the estimated $\eta$, the true-scale gap and the smallest resolvable true gap, and it warns or blocks when the gap has opposite signs, significantly, on items the raters agreed on versus items they split on.
+
+\section{Data}
+\label{sec:data}
+We use every corpus we found that publishes rater identifiers with each label and permits research use (Table~\ref{tab:corpora}): HateXplain \citep{mathew2021hatexplain}, Measuring Hate Speech \citep[MHS;][]{kennedy2020measuring,sachdeva2022measuring}, the Wikipedia Talk toxicity annotations \citep{wulczyn2017ex}, DICES-350 and DICES-990 \citep{aroyo2023dices}, and GoEmotions \citep{demszky2020goemotions}. We dropped Civil Comments and ChaosNLI because their public files contain only aggregated labels. We analyse each corpus's binary decision (toxic or hateful vs.\ not; unsafe vs.\ not; each emotion present vs.\ absent) and report native scales where they exist. We redistribute no text; the repository contains code, item identifiers, labels and derived statistics.
+
+\begin{table}[t]
+\centering\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lrrl@{}}
+\toprule
+Corpus & Items & Raters & Licence \\
+\midrule
+HateXplain & \itemsHx & \ratersHx & MIT \\
+MHS & \itemsMhs & \ratersMhs & CC BY 4.0 \\
+Wikipedia Talk & \itemsWiki & \ratersWiki & CC0 \\
+DICES-350 & \itemsDthree & \ratersDthree & CC BY 4.0 \\
+DICES-990 & \itemsDnine & \ratersDnine & CC BY 4.0 \\
+GoEmotions & --- & --- & Apache-2.0$^\dagger$ \\
+\bottomrule
+\end{tabular}
+\caption{Corpora with per-rater labels (items with $\geq$2 ratings). $^\dagger$As stated on the dataset card; the source repository states no data licence, so we release only derived statistics.}
+\label{tab:corpora}
+\end{table}
+
+\section{How reliable are the labels?}
+\label{sec:audit}
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{figures/agreement.pdf}
+\caption{Agreement on each corpus's binary label, with 95\% bootstrap intervals for $\alpha$ (most are narrower than the marker). For GoEmotions the dashed line spans the \nGoEmotions per-emotion values. Dotted lines: Krippendorff's 0.667 and 0.800.}
+\label{fig:agreement}
+\end{figure}
+No corpus reaches $\alpha=0.667$ on its binary label (Figure~\ref{fig:agreement}). HateXplain is the most reliable at \alphaHx [\alphaLoHx, \alphaHiHx]; Wikipedia Talk (\alphaWiki) and MHS (\alphaMhs) follow; the DICES safety judgements are near \alphaDthree. GoEmotions varies by emotion from \alphaGoMin to \alphaGoMax (median \alphaGoMedian; highest for \goTopEmotion). So HateXplain's 3-way $\alpha$ of \alphaHxthree, which prompted this study, is not unusually low for its kind of task.
+
+\paragraph{Coefficients disagree under skew.} On Wikipedia Talk, raw agreement is \rawWiki and AC1 is \acOneWiki, but $\alpha$ is \alphaWiki. Most comments are benign, so chance agreement is high and $\alpha$ discounts it; AC1 assumes lower chance agreement. The gap is a reminder that ``reliable enough'' must name its coefficient.
+
+\paragraph{Subsampling matters for one corpus.} Keeping all ratings changes $\alpha$ by at most \allRatingsMaxShift on every corpus except MHS, where it rises from \alphaMhs to \alphaMhsAll: \mhsAnchorItems anchor comments rated by hundreds of people hold \mhsAnchorShare\% of all MHS ratings and dominate the coincidence matrix. We use the capped estimate.
+
+\paragraph{Ceilings.} On HateXplain's binary label the agreement ceiling is between \ceilLooHx and \ceilInHx; \marginOneHx\% of items are decided by a single vote. On the official test split, \retroSplit\% of posts are 2--1 splits, and a held-out annotator matches the other two on \retroHuman\% of the posts where those two agree.
+
+\section{Do claim gates make better decisions?}
+\label{sec:gate}
+We simulate binary truth, three raters with known error rates, and two systems with a known true accuracy gap and disagreement rate, and score both gates against the majority label of the simulated raters. The grid crosses prevalence, target $\alpha$ (0.2--0.9), test size (200--5,000), true gap ($-0.03$ to $0.05$) and system disagreement, with 1,000 replicates per cell (\simCellsIid cells). A \emph{false claim} is a published ``A beats B'' when the true gap is $\leq 0$; a claim is \emph{resolvable} when the true gap is $\geq 0.03$. Two further scenarios concentrate rater error on 30\% hard items; in one of them, added after seeing results, the better system's advantage lies on the clear items (Appendix~\ref{app:deviations}).
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/gate_operating_points.pdf}
+\caption{Share of false and resolvable claims each rule publishes. The line traces a plain paired $z$-test as its threshold rises from 1.96 to 4.5. Gate~v1 sits below the line: at its false-claim rate, a stricter $z$-test publishes more real differences. Gate~v2 lies on the line because its only blocking check is a $z$-test.}
+\label{fig:gate}
+\end{figure*}
+
+\paragraph{The reliability floor costs power without buying fewer false claims.} Under independent rater noise, gate~v1 publishes \simFalseVoneIid\% false claims and \simResVoneIid\% of resolvable ones; a plain $z$-test tuned to the same false-claim rate publishes \simResMatchedIid\% (Figure~\ref{fig:gate}). The pattern holds when errors concentrate on hard items (\simResVoneHet\% vs.\ \simResMatchedHet\%), and the floor only draws even (\simResVoneHetneg\% vs.\ \simResMatchedHetneg\%) in the post-hoc scenario built to favour it. Below $\alpha=0.5$ the floor blocks almost everything, publishing \simResVoneLowAlphaIid\% of resolvable claims where an ordinary test at 1.96 publishes \simResZlowLowAlphaIid\%. The reason is structural: for a binary label, gold noise does not manufacture a gap, it shrinks the real one, so a noisy benchmark calls for more items or a larger effect, not a veto.
+
+\paragraph{Ablation.} Only two checks ever bind. Removing the $\alpha$ floor raises the resolvable publish rate from \ablResNone\% to \ablResRel\%, removing the MDE check raises it to \ablResMde\%, and removing any of the other three leaves it at \ablResCi\%. The pre-registered threshold sweep (Appendix~\ref{app:sweep}) shows the trade-off is monotone: every increase of the floor removes more real differences than false ones.
+
+\paragraph{What gate~v2 adds.} Gate~v2 matches a $z$-test at 2.58 (\simResVtwoIid\% resolvable, \simFalseVtwoIid\% false under independent noise), so its blocking behaviour is just a significance test, and we present it as that. Its value is the report: the attenuation estimate recovers the simulated $1-2\eta_k$ to within \attEstMaxErr at $n\geq1{,}000$. The contested-item check rarely fires and changes little (\simResVtwoHetneg\% vs.\ \simResZmidHetneg\% for a $z$-test at 2.58 in the hard-item scenario); we report it as a diagnostic, not a safeguard.
+
+\section{Could published gaps be resolved?}
+\label{sec:retro}
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{figures/mde_vs_n.pdf}
+\caption{Smallest true accuracy gap resolvable at 80\% power ($z^\ast=1.96$) by test size, for perfect labels and for three-rater gold labels at two single-rater error rates.}
+\label{fig:mde}
+\end{figure}
+HateXplain reports six models' test accuracies \citep[Table 6]{mathew2021hatexplain}; its official test split has \retroN posts with a majority label. For each of the \retroPairs pairwise gaps we ask which system-disagreement rates would make it significant at $z=1.96$ (Appendix~\ref{app:retro}). Of these, \retroUnresolvable gaps, from \retroMinGap to \retroBertGap, are resolvable only if the two systems disagree on fewer than \retroMinPmax--\retroBertPmax\% of the test posts, which is implausible for different architectures. They include BERT-HateXplain vs.\ BERT and BiRNN-HateXplain vs.\ BiRNN-Attn, the comparisons that isolate the effect of rationale supervision on accuracy. Gaps of \retroAlwaysGap and above are resolvable at any disagreement rate. This does not bear on the paper's main claims, which concern bias and explainability, and published accuracies are rounded to three decimals. It illustrates that at this test size, the labels cannot rank systems within about three points unless the systems nearly always agree.
+
+\section{Items or raters?}
+\label{sec:k}
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{figures/claim4_power.pdf}
+\caption{Power to detect a true accuracy gap when a fixed budget $B$ is spent as $n=B/k$ items with $k$ real raters each. Dotted: prediction under independent rater noise.}
+\label{fig:k}
+\end{figure}
+\citet{dorner2024dont} prove that a single label per item is optimal for identifying the better of two binary classifiers, assuming no biased heterogeneity. We test this on real raters, whose errors are correlated and item-dependent. For every item with at least ten binary ratings (\clFourItemsWiki Wikipedia Talk comments, \clFourItemsDnine DICES-990 and \clFourItemsDthree DICES-350 conversations), we split raters into a pool of five and a disjoint reference panel whose majority serves as truth. Synthetic systems are drawn against the reference, either uniformly or with both systems erring more on contested items and the better system's advantage on clear items. A design spends budget $B$ on $B/k$ items rated by $k$ pool raters.
+
+One rater per item gave the highest power in all \clFourCells cells (Figure~\ref{fig:k}). Real raters made replication \emph{less} valuable than the independent-noise model predicts: in \clFourBelowPred of \clFourKgtOne designs with $k>1$, observed power fell below the prediction (e.g.\ \clFourWikiKthree vs.\ \clFourWikiKthreePred for $k=3$ on Wikipedia Talk, $B=6{,}000$, gap 0.03, against \clFourWikiKone for $k=1$). This concerns accuracy against a majority reference; \citet{homan2026many} show that distribution-sensitive metrics need more ratings per item, and measuring reliability at all needs a replicated subset.
+
+\section{LLM judges against held-out humans}
+\label{sec:judges}
+\input{judges_section.tex}
+
+\section{Recommendations}
+For a benchmark release: publish per-annotator labels and the test split; report $\alpha$ with an interval, AC1 and raw agreement together; report the agreement bracket and the one-vote share. For a comparison: report the paired disagreement rate and a paired test, and report the smallest true gap the test size and label noise can resolve. Do not replace a significance test with a reliability threshold; noisy labels call for larger test sets or larger effects. For LLM judges: compare with a held-out human on identical items and report both, since the human level, not 100\%, is the reference.
+
+\section*{Limitations}
+\textbf{Noise model.} The attenuation factor assumes binary labels, symmetric rater noise, and gold errors independent of the systems' errors. Real annotator disagreement is partly systematic \citep{davani2022dealing}; our hard-item scenarios and real-rater study probe this but do not cover every structure, and for multi-class labels we analyse only the binary collapse. \textbf{Simulation scope.} The gate comparison uses three raters and synthetic systems; the rankings of rules are stable across our scenarios, but other system-error structures could change them. Two of the four scenarios were added after seeing results and are labelled as such. \textbf{Retrospective.} We use published, rounded accuracies without system outputs, so the analysis states conditions under which gaps are resolvable, not whether they were. It covers one paper. \textbf{Corpora.} All six corpora are English, and five concern toxicity, hate or safety, where disagreement is expected to be high; GoEmotions is the only non-harm task, and we found no NLI or sentiment corpus with rater identifiers and a clear licence. \textbf{Judges.} Judge prompts paraphrase the task definitions rather than reproduce the original guidelines; closed models change over time, and Claude Sonnet~5.5 does not accept temperature~0. \textbf{Alt-test.} It needs annotators with at least 30 items; in 1,000-item samples of MHS and Wikipedia Talk no annotator qualifies, so it applies only to HateXplain and DICES. We did not use its skew correction.
+
+\section*{Ethics statement}
+The hate-speech and abuse corpora contain offensive text about protected groups. We use them under their licences for research on measurement, quote no examples, and redistribute no text: the release contains code, item identifiers, labels and derived statistics, and each corpus is downloaded from its original host by a script. Worker identifiers are the corpora's own pseudonymous IDs; we do not attempt to link them to people, and GoEmotions user names are never read into results. Sending hateful text to commercial APIs exposes it to those providers; we excluded a provider whose free tier uses submitted content for product improvement. A risk of this work is that ``the labels cannot resolve this gap'' is misread as ``the result is wrong''; we state conditions, not verdicts, and name no result as erroneous.
+
+\section*{Acknowledgements}
+\textit{[To be completed by the author: funding and acknowledgements.]} \textbf{Use of AI assistants.} In line with the ACL policy on AI writing assistance, we disclose that an AI coding assistant (Anthropic's Claude, via Claude Code) was used to write and test analysis code, run the experiments, search for and verify related work, and draft text, under the author's direction. The author reviewed the code, verified every citation against its source, and takes responsibility for all content. Separately, LLMs are \emph{objects of study} in \S\ref{sec:judges}; their use there is described in Appendix~\ref{app:judges}.
+
+\bibliography{references}
+
+\appendix
+\input{appendix.tex}
+
+\end{document}

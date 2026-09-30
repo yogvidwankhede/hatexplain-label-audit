@@ -10,6 +10,7 @@
     "n_items_used": 990,
     "n_ratings_raw": 72103,
     "n_ratings_used": 72103,
+    "ratings_on_capped_items": 0,
     "source": "google-research-datasets/dices-dataset 990"
   },
   "variants": [
@@ -44,7 +45,8 @@
         "n_items_raw": 990,
         "n_items_used": 990,
         "n_ratings_raw": 72103,
-        "n_ratings_used": 72103
+        "n_ratings_used": 72103,
+        "ratings_on_capped_items": 0
       },
       "one_vote_margin_fraction": 0.0111,
       "ratings_per_item": {

@@ -56,3 +56,6 @@ Each entry says whether any result on the affected corpus had been seen.
 - The first-word tier initially failed because newlines were deleted before splitting ("yes
 
 The" -> "yesthe"); whitespace is now normalised first. Covered by tests/test_judges.py.
+
+## D11 — Wording of the judge claim tested by gate v2 (2026-09-30)
+- PREREG_ADDENDUM says gate v2 is applied to "judge X agrees with the panel at least as well as the held-out human". Gate v2's blocking check is a directional (superiority) test, so what it actually evaluates is "judge X agrees with the panel MORE often than the held-out human". The code was always the superiority test; only the label is corrected (results key renamed to gate_v2_claim_judge_beats_human). Noticed while reading partial results (OpenAI and qwen judges); no analysis choice changed.

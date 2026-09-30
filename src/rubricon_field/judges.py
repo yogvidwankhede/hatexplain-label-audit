@@ -220,7 +220,7 @@ def _openai_one(judge: str, corpus: str, item: dict) -> dict:
                 continue
             return {"item_id": item["item_id"], "raw": None, "stop_reason": f"http_{e.code}",
                     "model": cfg["model"], "error": e.read().decode()[:300], "in_tokens": 0, "out_tokens": 0}
-        except (urllib.error.URLError, TimeoutError, ConnectionError) as e:
+        except (urllib.error.URLError, TimeoutError, ConnectionError):
             if attempt < 5:
                 time.sleep(2 ** attempt * 5)
                 continue

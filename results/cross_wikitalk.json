@@ -9,6 +9,7 @@
     "n_items_used": 159686,
     "n_ratings_raw": 1598289,
     "n_ratings_used": 798430,
+    "ratings_on_capped_items": 1598289,
     "source": "figshare 4563973 (Wulczyn et al. 2017)"
   },
   "variants": [
@@ -43,7 +44,8 @@
         "n_items_raw": 159686,
         "n_items_used": 159686,
         "n_ratings_raw": 1598289,
-        "n_ratings_used": 798430
+        "n_ratings_used": 798430,
+        "ratings_on_capped_items": 1598289
       },
       "one_vote_margin_fraction": 0.0972,
       "ratings_per_item": {
@@ -78,7 +80,8 @@
         "n_items_raw": 159686,
         "n_items_used": 159686,
         "n_ratings_raw": 1598289,
-        "n_ratings_used": 798430
+        "n_ratings_used": 798430,
+        "ratings_on_capped_items": 1598289
       },
       "ratings_per_item": {
         "5": 159686
