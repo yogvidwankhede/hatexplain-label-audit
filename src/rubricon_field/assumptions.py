@@ -21,6 +21,12 @@ from __future__ import annotations
 #: stream by accident.
 SEED = 20210201  # HateXplain's AAAI-2021 publication year, for memorability only
 
+#: Master seed of the paper analyses (PREREG.md section 8). The HateXplain-only
+#: studies above keep SEED so their committed results stay reproducible byte for
+#: byte; everything added for the cross-corpus paper derives from this one.
+SEED_PAPER = 20260929
+SEED_PAPER_BOOTSTRAP = SEED_PAPER + 1
+
 SEED_BOOTSTRAP = SEED + 1
 SEED_TARGET_BOOTSTRAP = SEED + 2
 SEED_JUDGE_HOLDOUT = SEED + 3
