@@ -16,5 +16,6 @@ for f in toxicity_annotations.tsv toxicity_annotated_comments.tsv toxicity_worke
   url=$(curl -fsS https://api.figshare.com/v2/articles/4563973 | python3 -c "import sys,json;print([x['download_url'] for x in json.load(sys.stdin)['files'] if x['name']=='$f'][0])")
   get wikitalk "$f" "$url"
 done
+curl -fsSL -o data/hatexplain_post_id_divisions.json https://raw.githubusercontent.com/hate-alert/HateXplain/master/Data/post_id_divisions.json
 ( cd data && find . -type f ! -name MANIFEST.sha256 -print0 | sort -z | xargs -0 shasum -a 256 > MANIFEST.sha256 )
 echo "ok"; du -sh data/*
