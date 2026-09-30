@@ -1,0 +1,5 @@
+{"in_tokens": 231, "item_id": "1080863043356160000_twitter", "model": "gpt-oss:20b", "out_tokens": 84, "raw": "normal", "stop_reason": "stop"}
+{"in_tokens": 221, "item_id": "1088890307884838918_twitter", "model": "gpt-oss:20b", "out_tokens": 47, "raw": "offensive", "stop_reason": "stop"}
+{"in_tokens": 211, "item_id": "1178835680467804161_twitter", "model": "gpt-oss:20b", "out_tokens": 30, "raw": "offensive", "stop_reason": "stop"}
+{"in_tokens": 256, "item_id": "15330010_gab", "model": "gpt-oss:20b", "out_tokens": 26, "raw": "offensive", "stop_reason": "stop"}
+{"in_tokens": 248, "item_id": "16909050_gab", "model": "gpt-oss:20b", "out_tokens": 38, "raw": "hatespeech", "stop_reason": "stop"}

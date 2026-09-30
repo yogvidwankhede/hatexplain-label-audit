@@ -17,19 +17,22 @@ Both are agreement with a human, not upper bounds on a system.
 from __future__ import annotations
 
 import json
-import random
 from collections import Counter
 from pathlib import Path
 
 from rubricon.stats.agreement import (
-    alpha_interval, fleiss_kappa, gwet_ac1, krippendorff_alpha, percent_agreement,
+    fleiss_kappa, gwet_ac1, krippendorff_alpha, percent_agreement,
 )
 
+from . import fast_alpha
+
 from . import assumptions as A
-from .corpora import LOADERS, Variant
+from .corpora import LOADERS, MAX_RATINGS_PER_ITEM, Variant
 
 BOOT_REPLICATES = 1000        # PREREG.md A1
-BOOT_MAX_ITEMS = 10_000       # PREREG.md A1
+# PREREG.md A1 allowed bootstrapping a <=10,000-item subsample; DEVIATIONS.md D8
+# replaces that with the full-data bootstrap in fast_alpha, so the point estimate
+# and its interval share one basis.
 
 
 def _r(x, nd=4):
@@ -77,12 +80,9 @@ def ceilings(matrix) -> dict:
 def summarise(v: Variant) -> dict:
     m = v.matrix
     a = krippendorff_alpha(m, metric=v.metric)
-    keys = sorted(m)
-    if len(keys) > BOOT_MAX_ITEMS:
-        rng = random.Random(A.SEED_PAPER_BOOTSTRAP)
-        keys = rng.sample(keys, BOOT_MAX_ITEMS)
-    sub = {k: m[k] for k in keys}
-    ci = alpha_interval(sub, metric=v.metric, n_boot=BOOT_REPLICATES, seed=A.SEED_PAPER_BOOTSTRAP)
+    ci = fast_alpha.bootstrap(m, metric=v.metric, n_boot=BOOT_REPLICATES, seed=A.SEED_PAPER_BOOTSTRAP)
+    if abs(ci["point"] - round(a.value, 4)) > 1e-4:
+        raise AssertionError(f"fast alpha {ci['point']} != rubricon {a.value} on {v.name}")
     per_item = Counter(len(c) for c in m.values())
     out = {
         "variant": v.name,
@@ -92,7 +92,7 @@ def summarise(v: Variant) -> dict:
         "ratings_per_item": {str(k): per_item[k] for k in sorted(per_item)},
         "alpha": _r(a.value),
         "alpha_ci95": ci,
-        "ci_basis": {"n_items_bootstrapped": len(sub), "replicates": BOOT_REPLICATES},
+        "ci_basis": {"n_items_bootstrapped": ci["n_clusters"], "replicates": BOOT_REPLICATES},
         "raw_pairwise_agreement": _r(percent_agreement(m).value),
         "notes": v.notes,
     }
@@ -104,14 +104,16 @@ def summarise(v: Variant) -> dict:
     return out
 
 
-def run(data_dir: Path, out_dir: Path, corpora: list[str] | None = None) -> dict:
+def run(data_dir: Path, out_dir: Path, corpora: list[str] | None = None,
+        cap: int | None = MAX_RATINGS_PER_ITEM) -> dict:
     out_dir.mkdir(parents=True, exist_ok=True)
+    suffix = "" if cap == MAX_RATINGS_PER_ITEM else "_allratings"
     results = {}
     for name in corpora or list(LOADERS):
-        corpus = LOADERS[name](data_dir)
-        results[name] = {"provenance": corpus.provenance,
+        corpus = LOADERS[name](data_dir, cap=cap)
+        results[name] = {"provenance": corpus.provenance, "cap": cap,
                          "variants": [summarise(v) for v in corpus.variants]}
-        (out_dir / f"cross_{name}.json").write_text(
+        (out_dir / f"cross_{name}{suffix}.json").write_text(
             json.dumps(results[name], indent=2, sort_keys=True))
         print(f"{name}: done", flush=True)
     return results
@@ -119,4 +121,8 @@ def run(data_dir: Path, out_dir: Path, corpora: list[str] | None = None) -> dict
 
 if __name__ == "__main__":
     import sys
-    run(Path("data"), Path("results"), sys.argv[1:] or None)
+    args = sys.argv[1:]
+    cap = MAX_RATINGS_PER_ITEM
+    if args and args[0] == "--all-ratings":
+        cap, args = None, args[1:]
+    run(Path("data"), Path("results"), args or None, cap=cap)

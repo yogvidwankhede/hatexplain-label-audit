@@ -114,7 +114,7 @@ def collapse(matrix: Matrix, fn: Callable[[object], object | None]) -> Matrix:
 # --------------------------------------------------------------------------
 
 
-def load_hatexplain_corpus(data_dir: Path) -> Corpus:
+def load_hatexplain_corpus(data_dir: Path, cap: int | None = MAX_RATINGS_PER_ITEM) -> Corpus:
     from .data import load_hatexplain, reliability_matrix
 
     ds = load_hatexplain(data_dir / "hatexplain.json")
@@ -131,13 +131,13 @@ def load_hatexplain_corpus(data_dir: Path) -> Corpus:
     )
 
 
-def load_mhs(data_dir: Path) -> Corpus:
+def load_mhs(data_dir: Path, cap: int | None = MAX_RATINGS_PER_ITEM) -> Corpus:
     import pandas as pd
 
     df = pd.read_parquet(data_dir / "mhs" / "mhs.parquet", columns=["comment_id", "annotator_id", "hatespeech"])
     df = df.dropna(subset=["hatespeech"])
     rows = zip(df.comment_id.astype(str), df.annotator_id.astype(str), df.hatespeech.astype(int))
-    m3, info = build_matrix(rows, "mhs")
+    m3, info = build_matrix(rows, "mhs", cap)
     m2 = collapse(m3, lambda v: "hate" if v == 2 else "other")
     return Corpus(
         "mhs",
@@ -148,14 +148,14 @@ def load_mhs(data_dir: Path) -> Corpus:
     )
 
 
-def _load_dices(data_dir: Path, tag: str) -> Corpus:
+def _load_dices(data_dir: Path, tag: str, cap: int | None = MAX_RATINGS_PER_ITEM) -> Corpus:
     import pandas as pd
 
     df = pd.read_csv(data_dir / "dices" / f"diverse_safety_adversarial_dialog_{tag}.csv",
                      usecols=["item_id", "rater_id", "Q_overall"])
     df = df.dropna(subset=["Q_overall"])
     rows = zip(df.item_id.astype(str), df.rater_id.astype(str), df.Q_overall.astype(str))
-    m3, info = build_matrix(rows, f"dices{tag}")
+    m3, info = build_matrix(rows, f"dices{tag}", cap)
     m2 = collapse(m3, lambda v: "yes" if v == "Yes" else "other")
     return Corpus(
         f"dices{tag}",
@@ -164,23 +164,23 @@ def _load_dices(data_dir: Path, tag: str) -> Corpus:
     )
 
 
-def load_dices350(data_dir: Path) -> Corpus:
-    return _load_dices(data_dir, "350")
+def load_dices350(data_dir: Path, cap: int | None = MAX_RATINGS_PER_ITEM) -> Corpus:
+    return _load_dices(data_dir, "350", cap)
 
 
-def load_dices990(data_dir: Path) -> Corpus:
-    return _load_dices(data_dir, "990")
+def load_dices990(data_dir: Path, cap: int | None = MAX_RATINGS_PER_ITEM) -> Corpus:
+    return _load_dices(data_dir, "990", cap)
 
 
-def load_wikitalk(data_dir: Path) -> Corpus:
+def load_wikitalk(data_dir: Path, cap: int | None = MAX_RATINGS_PER_ITEM) -> Corpus:
     import pandas as pd
 
     df = pd.read_csv(data_dir / "wikitalk" / "toxicity_annotations.tsv", sep="\t",
                      usecols=["rev_id", "worker_id", "toxicity", "toxicity_score"])
     ids = df.rev_id.astype(str)
     workers = df.worker_id.astype(str)
-    mb, info = build_matrix(zip(ids, workers, df.toxicity.astype(int)), "wiki")
-    ms, info_s = build_matrix(zip(ids, workers, df.toxicity_score.astype(int)), "wiki")
+    mb, info = build_matrix(zip(ids, workers, df.toxicity.astype(int)), "wiki", cap)
+    ms, info_s = build_matrix(zip(ids, workers, df.toxicity_score.astype(int)), "wiki", cap)
     return Corpus(
         "wikitalk",
         [Variant("toxicity_binary", mb, notes=info),
@@ -189,7 +189,7 @@ def load_wikitalk(data_dir: Path) -> Corpus:
     )
 
 
-def load_goemotions(data_dir: Path) -> Corpus:
+def load_goemotions(data_dir: Path, cap: int | None = MAX_RATINGS_PER_ITEM) -> Corpus:
     import pandas as pd
 
     frames = [pd.read_csv(data_dir / "goemotions" / f"goemotions_{i}.csv") for i in (1, 2, 3)]
@@ -202,7 +202,7 @@ def load_goemotions(data_dir: Path) -> Corpus:
     variants = []
     infos = {}
     for emo in emotions:
-        m, info = build_matrix(zip(ids, raters, df[emo].astype(int)), "goemo")
+        m, info = build_matrix(zip(ids, raters, df[emo].astype(int)), "goemo", cap)
         variants.append(Variant(f"emotion:{emo}", m, notes=info))
         infos[emo] = info["n_items_used"]
     return Corpus(

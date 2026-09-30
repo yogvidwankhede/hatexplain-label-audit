@@ -1,0 +1,5 @@
+{"in_tokens": 182, "item_id": "990-900", "model": "qwen2.5:14b", "out_tokens": 3, "raw": "unsure", "stop_reason": "stop"}
+{"in_tokens": 377, "item_id": "990-420", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "no", "stop_reason": "stop"}
+{"in_tokens": 260, "item_id": "990-255", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
+{"in_tokens": 374, "item_id": "990-903", "model": "qwen2.5:14b", "out_tokens": 2, "raw": "yes", "stop_reason": "stop"}
+{"in_tokens": 215, "item_id": "990-574", "model": "qwen2.5:14b", "out_tokens": 3, "raw": "unsure", "stop_reason": "stop"}

@@ -1,4 +1,5 @@
 {
+  "cap": 5,
   "provenance": {
     "coding": "0 neutral/counter, 1 unclear, 2 hate speech (from a secondary source; primary codebook not seen)",
     "duplicate_item_rater_rows": 0,
@@ -15,19 +16,18 @@
     {
       "alpha": 0.3627,
       "alpha_ci95": {
-        "hi": 0.382,
+        "hi": 0.37,
         "level": 0.95,
-        "lo": 0.3545,
-        "method": "cluster_bootstrap_percentile",
+        "lo": 0.3558,
+        "method": "cluster_bootstrap_percentile_all_units",
         "n_boot": 1000,
-        "n_clusters": 10000,
-        "point": 0.3684,
-        "width": 0.0275
+        "n_clusters": 29488,
+        "point": 0.3627
       },
       "ceiling_in_sample": 0.8345,
       "ceiling_leave_one_out": 0.6948,
       "ci_basis": {
-        "n_items_bootstrapped": 10000,
+        "n_items_bootstrapped": 29488,
         "replicates": 1000
       },
       "fleiss_kappa": 0.3534,
@@ -59,19 +59,18 @@
     {
       "alpha": 0.4255,
       "alpha_ci95": {
-        "hi": 0.4498,
+        "hi": 0.4343,
         "level": 0.95,
-        "lo": 0.4181,
-        "method": "cluster_bootstrap_percentile",
+        "lo": 0.4164,
+        "method": "cluster_bootstrap_percentile_all_units",
         "n_boot": 1000,
-        "n_clusters": 10000,
-        "point": 0.434,
-        "width": 0.0317
+        "n_clusters": 29488,
+        "point": 0.4255
       },
       "ceiling_in_sample": 0.8835,
       "ceiling_leave_one_out": 0.7806,
       "ci_basis": {
-        "n_items_bootstrapped": 10000,
+        "n_items_bootstrapped": 29488,
         "replicates": 1000
       },
       "fleiss_kappa": 0.4158,

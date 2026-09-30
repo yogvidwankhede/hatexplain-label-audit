@@ -1,67 +1,77 @@
 {
-  "cap": 5,
+  "cap": null,
   "provenance": {
     "duplicate_item_rater_rows": 0,
-    "items_capped_to_max": 159686,
+    "items_capped_to_max": 0,
     "items_dropped_lt2_ratings": 0,
-    "max_ratings_per_item": 5,
+    "max_ratings_per_item": null,
     "n_items_raw": 159686,
     "n_items_used": 159686,
     "n_ratings_raw": 1598289,
-    "n_ratings_used": 798430,
+    "n_ratings_used": 1598289,
     "source": "figshare 4563973 (Wulczyn et al. 2017)"
   },
   "variants": [
     {
-      "alpha": 0.4644,
+      "alpha": 0.4662,
       "alpha_ci95": {
-        "hi": 0.4685,
+        "hi": 0.47,
         "level": 0.95,
-        "lo": 0.4603,
+        "lo": 0.4627,
         "method": "cluster_bootstrap_percentile_all_units",
         "n_boot": 1000,
         "n_clusters": 159686,
-        "point": 0.4644
+        "point": 0.4662
       },
-      "ceiling_in_sample": 0.9238,
-      "ceiling_leave_one_out": 0.8947,
+      "ceiling_in_sample": 0.9176,
+      "ceiling_leave_one_out": 0.9078,
       "ci_basis": {
         "n_items_bootstrapped": 159686,
         "replicates": 1000
       },
-      "fleiss_kappa": 0.4644,
-      "gwet_ac1": 0.8233,
+      "fleiss_kappa": 0.4664,
+      "gwet_ac1": 0.824,
       "metric": "nominal",
       "n_items": 159686,
       "n_raters": 4301,
-      "no_strict_plurality_fraction": 0.0,
+      "no_strict_plurality_fraction": 0.019,
       "notes": {
         "duplicate_item_rater_rows": 0,
-        "items_capped_to_max": 159686,
+        "items_capped_to_max": 0,
         "items_dropped_lt2_ratings": 0,
-        "max_ratings_per_item": 5,
+        "max_ratings_per_item": null,
         "n_items_raw": 159686,
         "n_items_used": 159686,
         "n_ratings_raw": 1598289,
-        "n_ratings_used": 798430
+        "n_ratings_used": 1598289
       },
-      "one_vote_margin_fraction": 0.0972,
+      "one_vote_margin_fraction": 0.0013,
       "ratings_per_item": {
-        "5": 159686
+        "10": 153852,
+        "11": 2062,
+        "12": 308,
+        "13": 59,
+        "14": 1,
+        "18": 1,
+        "19": 9,
+        "20": 223,
+        "21": 4,
+        "8": 626,
+        "9": 2541
       },
-      "raw_pairwise_agreement": 0.8671,
+      "raw_pairwise_agreement": 0.8676,
       "variant": "toxicity_binary"
     },
     {
-      "alpha": 0.2957,
+      "alpha": 0.2973,
       "alpha_ci95": {
-        "hi": 0.2987,
+        "hi": 0.3,
         "level": 0.95,
-        "lo": 0.2927,
+        "lo": 0.2945,
         "method": "cluster_bootstrap_percentile_all_units",
         "n_boot": 1000,
         "n_clusters": 159686,
-        "point": 0.2957
+        "point": 0.2973
       },
       "ci_basis": {
         "n_items_bootstrapped": 159686,
@@ -72,18 +82,28 @@
       "n_raters": 4301,
       "notes": {
         "duplicate_item_rater_rows": 0,
-        "items_capped_to_max": 159686,
+        "items_capped_to_max": 0,
         "items_dropped_lt2_ratings": 0,
-        "max_ratings_per_item": 5,
+        "max_ratings_per_item": null,
         "n_items_raw": 159686,
         "n_items_used": 159686,
         "n_ratings_raw": 1598289,
-        "n_ratings_used": 798430
+        "n_ratings_used": 1598289
       },
       "ratings_per_item": {
-        "5": 159686
+        "10": 153852,
+        "11": 2062,
+        "12": 308,
+        "13": 59,
+        "14": 1,
+        "18": 1,
+        "19": 9,
+        "20": 223,
+        "21": 4,
+        "8": 626,
+        "9": 2541
       },
-      "raw_pairwise_agreement": 0.4816,
+      "raw_pairwise_agreement": 0.4819,
       "variant": "toxicity_score"
     }
   ]

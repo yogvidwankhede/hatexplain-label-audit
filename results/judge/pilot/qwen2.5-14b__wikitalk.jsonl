@@ -1,0 +1,5 @@
+{"in_tokens": 90, "item_id": "19222973.0", "model": "qwen2.5:14b", "out_tokens": 3, "raw": "neither", "stop_reason": "stop"}
+{"in_tokens": 118, "item_id": "218962098.0", "model": "qwen2.5:14b", "out_tokens": 3, "raw": "toxic", "stop_reason": "stop"}
+{"in_tokens": 98, "item_id": "327723462.0", "model": "qwen2.5:14b", "out_tokens": 3, "raw": "toxic", "stop_reason": "stop"}
+{"in_tokens": 119, "item_id": "394569984.0", "model": "qwen2.5:14b", "out_tokens": 3, "raw": "toxic", "stop_reason": "stop"}
+{"in_tokens": 112, "item_id": "487592561.0", "model": "qwen2.5:14b", "out_tokens": 4, "raw": "very_healthy", "stop_reason": "stop"}

@@ -48,3 +48,11 @@ Each entry says whether any result on the affected corpus had been seen.
 - Systems: B accuracy 0.80, p_disc 0.20, deltas {0.02, 0.03, 0.05}; two system models, `uniform` and `contested` (both systems err more where reference raters split, minority share >= 0.3; A's advantage only on clear items). The `contested` model was added here, before any S2 run, because PREREG asked that contradicting results be sought.
 - Budgets: Wikipedia Talk {1500, 3000, 6000}; DICES-350 {300}; DICES-990 {450, 900} (n cannot exceed the item count). 2,000 replicates per cell.
 - D9 addendum (same day, after a crash and before any S2 output existed): the `contested` model's rescaling to overall B accuracy 0.80 was infeasible on corpora where most items are contested. Replaced by fixed B accuracy 0.60 (contested) / 0.85 (clear), p_disc on clear items lowered to min(0.20, 0.30 - d) where needed, and cells needing d > 0.15 on clear items skipped and counted.
+
+## D10 — Judge pilot details (2026-09-30, no evaluation-sample output seen)
+- DICES-350 has no items outside the sample, so its 5 pilot items come from DICES-990 (seeded), which the same prompt applies to.
+- anthropic SDK 1.x removed `temperature` from `messages.create()`; Haiku 4.5 still honours it, so it is sent via `extra_body` (sync pilot) and in the batch params (forwarded). The request sent to the API is unchanged from the addendum.
+- Parser: after the pilot showed Haiku 4.5 answering "yes" followed by an explanation (truncated at max_tokens) on 2 of 5 DICES pilot items, a "first_word" tier was added between strict and lenient: if the first word of the answer is a label, that label is taken. Prompts were not changed. No evaluation-sample output existed.
+- The first-word tier initially failed because newlines were deleted before splitting ("yes
+
+The" -> "yesthe"); whitespace is now normalised first. Covered by tests/test_judges.py.

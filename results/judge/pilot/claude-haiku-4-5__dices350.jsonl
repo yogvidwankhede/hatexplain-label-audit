@@ -1,0 +1,5 @@
+{"in_tokens": 200, "item_id": "990-900", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 393, "item_id": "990-420", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 277, "item_id": "990-255", "model": "claude-haiku-4-5-20251001", "out_tokens": 16, "raw": null, "raw_len": 61, "raw_redacted": true, "raw_sha256": "551cdd2dd1de3278d8d65215dc6483211ad58e68a50ee76133bf2bcbe2b71502", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 396, "item_id": "990-903", "model": "claude-haiku-4-5-20251001", "out_tokens": 16, "raw": null, "raw_len": 59, "raw_redacted": true, "raw_sha256": "14260d0636c00b129b0d63c6084383555f6b1865068b8b9494d5bc72e2a66043", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 224, "item_id": "990-574", "model": "claude-haiku-4-5-20251001", "out_tokens": 4, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}

@@ -1,0 +1,5 @@
+{"in_tokens": 177, "item_id": "990-900", "model": "gpt-4.1-mini-2025-04-14", "out_tokens": 1, "raw": "no", "refusal": null, "stop_reason": "stop", "system_fingerprint": "fp_3b6179e2bf"}
+{"in_tokens": 367, "item_id": "990-420", "model": "gpt-4.1-mini-2025-04-14", "out_tokens": 1, "raw": "no", "refusal": null, "stop_reason": "stop", "system_fingerprint": "fp_3b6179e2bf"}
+{"in_tokens": 257, "item_id": "990-255", "model": "gpt-4.1-mini-2025-04-14", "out_tokens": 1, "raw": "yes", "refusal": null, "stop_reason": "stop", "system_fingerprint": "fp_3b6179e2bf"}
+{"in_tokens": 363, "item_id": "990-903", "model": "gpt-4.1-mini-2025-04-14", "out_tokens": 1, "raw": "yes", "refusal": null, "stop_reason": "stop", "system_fingerprint": "fp_3b6179e2bf"}
+{"in_tokens": 209, "item_id": "990-574", "model": "gpt-4.1-mini-2025-04-14", "out_tokens": 1, "raw": "no", "refusal": null, "stop_reason": "stop", "system_fingerprint": "fp_3b6179e2bf"}

@@ -58,14 +58,18 @@ CAP_USD = {"anthropic": 8.0, "openai": 4.0}
 
 def parse(corpus: str, raw: str | None) -> tuple[object | None, str]:
     """Strict: the whole answer, minus quotes/punctuation/case, is one label.
+    First word: the answer starts with a label (then explains).
     Lenient: exactly one distinct label word occurs in the answer. Else None."""
     if raw is None:
         return None, "no_output"
     labels = LABELS[corpus]
-    norm = re.sub(r"[^a-z_ ]", "", raw.strip().lower().replace("-", "_")).strip()
+    norm = re.sub(r"[^a-z_ ]", "", re.sub(r"\s+", " ", raw.strip().lower()).replace("-", "_")).strip()
     norm = norm.replace("very toxic", "very_toxic").replace("very healthy", "very_healthy")
     if norm in labels:
         return labels[norm], "strict"
+    first = norm.split()[0] if norm.split() else ""
+    if first in labels:          # added after the pilot (DEVIATIONS.md D10)
+        return labels[first], "first_word"
     words = set(norm.split())
     hits = [k for k in labels if k in words]
     if corpus == "wikitalk" and "very_toxic" in hits:
@@ -133,8 +137,14 @@ def _anthropic_sync(judge: str, corpus: str, item: dict) -> dict:
     import anthropic
     cfg = JUDGES[judge]
     client = anthropic.Anthropic()
+    params = dict(cfg["params"])
+    extra = {k: params.pop(k) for k in ("temperature",) if k in params}
+    # anthropic>=1 removed the sampling keywords from messages.create(); models that
+    # still honour them (Haiku 4.5) take them through extra_body. In batch params the
+    # key is forwarded as-is.
     msg = client.messages.create(model=cfg["model"], system=_prompt(corpus),
-                                 messages=[{"role": "user", "content": item["text"]}], **cfg["params"])
+                                 messages=[{"role": "user", "content": item["text"]}],
+                                 extra_body=extra or None, **params)
     return _anthropic_row(item["item_id"], msg)
 
 

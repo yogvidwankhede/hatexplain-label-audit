@@ -48,6 +48,7 @@ Z_A = 1.959964   # two-sided 5%
 Z_B = 0.841621   # 80% power
 ACC_B = 0.75
 K_RATERS = 3
+ALPHA_FLOOR_SWEEP = (0.0, 0.30, 0.35, 0.40, 0.45, 0.50, 0.55, 0.60, 0.667)
 Z_THRESHOLDS = (1.96, 2.24, 2.58, 2.8, 3.0, 3.29, 3.5, 4.0, 4.5)
 
 CHECK_ORDER = ("reliability", "precision", "effect_vs_mde", "interval_excludes_zero", "replication")
@@ -124,7 +125,7 @@ def _cell_probs(delta: float, p_disc: float):
 
 def simulate_cell(scenario: str, n: int, alpha: float, pi: float, delta: float,
                   p_disc: float, reps: int, cell_id: int,
-                  h: float = 0.3, mult: float = 3.0, kappa: float = 0.05) -> dict | None:
+                  h: float = 0.3, mult: float = 3.0, kappa: float = 0.05, debug: bool = False) -> dict | None:
     etas = solve_etas(alpha, pi, scenario, h, mult)
     if etas is None:
         return None
@@ -201,6 +202,13 @@ def simulate_cell(scenario: str, n: int, alpha: float, pi: float, delta: float,
     with np.errstate(divide="ignore", invalid="ignore"):
         gap_true_est = gap / a_hat_att
 
+    lo_ci = gap - Z_A * se
+    v1_sweep = {f"{f:.2f}": int((claim & (a_hat >= f) & (np.abs(gap) >= mde) & (lo_ci > 0)).sum())
+                for f in ALPHA_FLOOR_SWEEP}
+    if debug:
+        return {"v1_sweep": v1_sweep, "d": d, "unan": unan, "gap": gap, "sd": sd, "zstat": zstat, "claim": claim,
+                "v2_pub": v2_pub, "dis": dis, "eta_hat": eta_hat, "eta_k_hat": eta_k_hat}
+
     gate = SignalGate(GatePolicy(), depth="production")
     verdicts = Counter()
     masks = Counter()
@@ -238,6 +246,7 @@ def simulate_cell(scenario: str, n: int, alpha: float, pi: float, delta: float,
         "sum_gap_gate": sum_gap_gate,
         "mean_alpha_hat": float(np.nanmean(a_hat)),
         "v2_n_pub": int(v2_pub.sum()),
+        "v1_alpha_floor_sweep": v1_sweep,
         "v2_n_z_only": int((claim & (zstat > 2.58)).sum()),
         "v2_n_c3_block": int((claim & (zstat > 2.58) & c3_block).sum()),
         "v2_n_c3_warn_among_pub": int((v2_pub & c3_warn).sum()),

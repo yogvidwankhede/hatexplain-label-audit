@@ -1,0 +1,5 @@
+{"in_tokens": 152, "item_id": "19222973.0", "model": "gpt-oss:20b", "out_tokens": 24, "raw": "neither", "stop_reason": "stop"}
+{"in_tokens": 181, "item_id": "218962098.0", "model": "gpt-oss:20b", "out_tokens": 73, "raw": "healthy", "stop_reason": "stop"}
+{"in_tokens": 159, "item_id": "327723462.0", "model": "gpt-oss:20b", "out_tokens": 46, "raw": "neither", "stop_reason": "stop"}
+{"in_tokens": 180, "item_id": "394569984.0", "model": "gpt-oss:20b", "out_tokens": 71, "raw": "neither", "stop_reason": "stop"}
+{"in_tokens": 175, "item_id": "487592561.0", "model": "gpt-oss:20b", "out_tokens": 21, "raw": "healthy", "stop_reason": "stop"}

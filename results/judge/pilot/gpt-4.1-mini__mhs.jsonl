@@ -1,0 +1,5 @@
+{"in_tokens": 117, "item_id": "1627", "model": "gpt-4.1-mini-2025-04-14", "out_tokens": 1, "raw": "no", "refusal": null, "stop_reason": "stop", "system_fingerprint": "fp_6371d09ca5"}
+{"in_tokens": 115, "item_id": "34320", "model": "gpt-4.1-mini-2025-04-14", "out_tokens": 1, "raw": "no", "refusal": null, "stop_reason": "stop", "system_fingerprint": "fp_844c5ab404"}
+{"in_tokens": 122, "item_id": "40413", "model": "gpt-4.1-mini-2025-04-14", "out_tokens": 1, "raw": "no", "refusal": null, "stop_reason": "stop", "system_fingerprint": "fp_46ce4fdcea"}
+{"in_tokens": 104, "item_id": "8431", "model": "gpt-4.1-mini-2025-04-14", "out_tokens": 1, "raw": "no", "refusal": null, "stop_reason": "stop", "system_fingerprint": "fp_a2374ad346"}
+{"in_tokens": 107, "item_id": "9668", "model": "gpt-4.1-mini-2025-04-14", "out_tokens": 1, "raw": "yes", "refusal": null, "stop_reason": "stop", "system_fingerprint": "fp_d3d121d3d6"}

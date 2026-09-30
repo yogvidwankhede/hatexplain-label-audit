@@ -1,0 +1,5 @@
+{"in_tokens": 167, "item_id": "1080863043356160000_twitter", "model": "gpt-4.1-mini-2025-04-14", "out_tokens": 1, "raw": "normal", "refusal": null, "stop_reason": "stop", "system_fingerprint": "fp_692c4c6140"}
+{"in_tokens": 157, "item_id": "1088890307884838918_twitter", "model": "gpt-4.1-mini-2025-04-14", "out_tokens": 2, "raw": "offensive", "refusal": null, "stop_reason": "stop", "system_fingerprint": "fp_692c4c6140"}
+{"in_tokens": 147, "item_id": "1178835680467804161_twitter", "model": "gpt-4.1-mini-2025-04-14", "out_tokens": 2, "raw": "offensive", "refusal": null, "stop_reason": "stop", "system_fingerprint": "fp_692c4c6140"}
+{"in_tokens": 192, "item_id": "15330010_gab", "model": "gpt-4.1-mini-2025-04-14", "out_tokens": 2, "raw": "offensive", "refusal": null, "stop_reason": "stop", "system_fingerprint": "fp_692c4c6140"}
+{"in_tokens": 184, "item_id": "16909050_gab", "model": "gpt-4.1-mini-2025-04-14", "out_tokens": 3, "raw": "hatespeech", "refusal": null, "stop_reason": "stop", "system_fingerprint": "fp_692c4c6140"}

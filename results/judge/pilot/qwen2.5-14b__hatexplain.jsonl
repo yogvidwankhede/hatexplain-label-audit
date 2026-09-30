@@ -1,0 +1,5 @@
+{"in_tokens": 169, "item_id": "1080863043356160000_twitter", "model": "qwen2.5:14b", "out_tokens": 3, "raw": "offensive", "stop_reason": "stop"}
+{"in_tokens": 159, "item_id": "1088890307884838918_twitter", "model": "qwen2.5:14b", "out_tokens": 3, "raw": "offensive", "stop_reason": "stop"}
+{"in_tokens": 149, "item_id": "1178835680467804161_twitter", "model": "qwen2.5:14b", "out_tokens": 3, "raw": "offensive", "stop_reason": "stop"}
+{"in_tokens": 194, "item_id": "15330010_gab", "model": "qwen2.5:14b", "out_tokens": 4, "raw": "hatespeech", "stop_reason": "stop"}
+{"in_tokens": 185, "item_id": "16909050_gab", "model": "qwen2.5:14b", "out_tokens": 4, "raw": "hatespeech", "stop_reason": "stop"}

@@ -50,3 +50,28 @@ def test_ablation_baseline_equals_gate_publish_count():
         assert publish_count(c, None) == c["n_gate_pub"]
         # removing a check can only publish more, never fewer
         assert all(publish_count(c, j) >= c["n_gate_pub"] for j in range(5))
+
+
+def test_vectorised_v2_matches_rubricon_gate_v2():
+    import math
+    from rubricon.core.schema import Verdict
+    from rubricon.gates import attenuation as T
+    for scen, kappa in (("iid", 0.05), ("het", -0.10)):
+        dbg = G.simulate_cell(scen, 400, 0.6, 0.3, 0.02, 0.2, reps=150, cell_id=21, kappa=kappa, debug=True)
+        for i in range(150):
+            d = dbg["d"][i]
+            pg = T.PairedGap(len(d), float(d.mean()), float(d.std(ddof=1)), float((d != 0).mean()))
+            direction = T.check_direction(pg, 2.58).verdict is Verdict.PASS
+            cons = T.check_contested_consistency(d[dbg["unan"][i]].tolist(), d[~dbg["unan"][i]].tolist())
+            ref = direction and cons.verdict is not Verdict.BLOCK
+            assert ref == bool(dbg["v2_pub"][i])
+            assert T.eta_from_disagreement(float(dbg["dis"][i])) == \
+                __import__("pytest").approx(float(dbg["eta_hat"][i]), abs=1e-12)
+            assert T.eta_majority(float(dbg["eta_hat"][i]), 3) == \
+                __import__("pytest").approx(float(dbg["eta_k_hat"][i]), abs=1e-12)
+
+
+def test_vectorised_v1_sweep_reproduces_shipped_gate_at_default_floor():
+    for scen in ("iid", "het"):
+        c = G.simulate_cell(scen, 500, 0.5, 0.3, 0.03, 0.2, reps=300, cell_id=31)
+        assert c["v1_alpha_floor_sweep"]["0.50"] == c["n_gate_pub"]
