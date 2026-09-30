@@ -26,7 +26,7 @@ Nothing below has been done on your behalf. Nothing has been pushed, published, 
    - Fuzzing and Packaging are not addressed.
 
 ## Paper
-1. **Author block and personal details.** Author name, affiliation (WashU), email and ORCID go in the preprint version only (`\usepackage[preprint]{acl}`). The review version must stay anonymous.
+1. **Author block.** Done for the preprint (name, affiliation, email, ORCID). The review version stays anonymous.
 2. **Acknowledgements.** Add funding and thanks. Keep the AI-assistance paragraph; ACL requires it. Check it against how you actually used the tools.
 3. **Anonymised code for review.** ARR is double-blind, so GitHub links reveal you. Use an anonymisation service (for example anonymous.4open.science) for the review version, or upload a zip as supplementary material.
 4. **Read every cited paper you rely on.**
