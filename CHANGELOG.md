@@ -2,7 +2,7 @@
 
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versions follow [Semantic Versioning](https://semver.org/).
 
-## [2.0.0] - unreleased
+## [2.0.0] - 2026-09-30
 ### Added
 - Cross-corpus audit of six per-annotator corpora (HateXplain, Measuring Hate Speech, Wikipedia Talk toxicity, DICES-350, DICES-990, GoEmotions): `corpora.py`, `cross_corpus.py`, full-data cluster bootstrap in `fast_alpha.py` (validated exactly against rubricon), capped and all-ratings variants.
 - Known-truth simulation of claim gates (`gate_sim.py`, `gate_sim_report.py`) with ablation, alpha-floor sweep and matched significance-test baselines.
