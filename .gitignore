@@ -9,3 +9,5 @@ data/
 __pycache__/
 *.egg-info/
 .venv/
+
+.env
