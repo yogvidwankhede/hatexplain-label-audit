@@ -34,12 +34,11 @@ Nothing below has been done on your behalf. Nothing has been pushed, published, 
    - Krippendorff's book page for the 0.667/0.800 thresholds was not seen directly. Check it, or cite only the 2004 article.
    - ACL desk-rejects papers with hallucinated references. All 48 bib entries were fetched from primary sources, but verify any you are unsure of.
 5. **Responsible NLP checklist.** Re-check `paper/responsible_nlp_checklist.md` against the final PDF, then enter it in the ARR form.
-6. **Venue.** The primary target is ARR January 2027, then commit to ACL 2027.
-   - The exact January 2027 date was not yet published on aclrollingreview.org/dates on 2026-09-30. Check it.
-   - Every author must register as an ARR reviewer by the cycle's reviewer-registration deadline.
-   - Backup 1: a 2027 workshop that accepts ARR-reviewed papers. Proposals were notified on 2026-10-02, so look for evaluation or human-label-variation workshops.
-   - Backup 2: TMLR, for the long version.
-7. **arXiv.** ARR allows non-anonymous preprints unless you tick its optional "no preprint" commitment. Decide before submitting. If you post, use the preprint version and fill in the preprint identifier in both `CITATION.cff` files.
+6. **Venue (decided 2026-09-30): ARR October 2026 cycle, then NAACL 2027.**
+   - ARR submission deadline 2026-10-12; all authors register as reviewers by 2026-10-14; reviews 2026-12-17; NAACL commitment 2026-12-23; notification 2027-02-10 (NAACL 2027, San Francisco, June 1-5).
+   - Fallback: revise from the October reviews and resubmit to ARR January 2027, then ACL 2027. Alternative: TMLR (no fees, rolling).
+   - Create the OpenReview profile now: profiles with public-domain email can take up to two weeks to be activated.
+7. **Preprint (decided):** do NOT tick ARR's binding no-preprint option; post to arXiv (cs.CL). First-time arXiv submitters need an endorsement from an established author in the category.
 8. **Licences.** Your code is MIT. Before any public release, confirm you are comfortable with the GoEmotions data licence being ambiguous. The repository releases only derived statistics for it.
 
 ## Money and keys
