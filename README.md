@@ -48,6 +48,10 @@ The analysis plan is `PREREG.md` (tag `prereg-v1`), the judge addendum is
   are resolvable only if the two systems disagree on almost no posts.
 - The one-label-per-item result of Dorner & Hardt (ICML 2024) held on real raters in
   every design cell tested.
+- Five LLM judges (Claude Haiku 4.5, Claude Sonnet 5.5, GPT-4.1-mini, Qwen2.5 14B,
+  gpt-oss 20B) never beat a held-out human annotator on HateXplain, Measuring Hate Speech or
+  Wikipedia Talk. On DICES three did, but none matched the crowd majority on the expert
+  labels. Results: `results/judge/analysis.json`, `results/judge/alt_test.json`.
 
 ## Corrections to version 1 of this repository
 

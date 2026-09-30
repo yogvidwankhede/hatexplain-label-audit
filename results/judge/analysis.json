@@ -1,0 +1,1628 @@
+{
+ "dices350": {
+  "corpus": "dices350",
+  "expert_gold_agreement": {
+   "claude-haiku-4-5": 0.5543,
+   "claude-sonnet-5-5": 0.6272,
+   "gpt-4.1-mini": 0.58,
+   "gpt-oss-20b": 0.56,
+   "human_heldout": 0.62,
+   "panel_majority": 0.6679,
+   "qwen2.5-14b": 0.48
+  },
+  "human": {
+   "m1": 0.6974,
+   "m1_ci": [
+    0.6421,
+    0.7528
+   ],
+   "m2": 0.6171,
+   "m3": 0.625
+  },
+  "judge_pairs": {
+   "claude-haiku-4-5|claude-sonnet-5-5": {
+    "ci": [
+     -0.1342,
+     -0.039
+    ],
+    "discordance": 0.1472,
+    "gap": -0.0866,
+    "gate_v2_direction": "pass",
+    "leader": "claude-sonnet-5-5",
+    "n": 231,
+    "z": 3.51
+   },
+   "claude-haiku-4-5|gpt-4.1-mini": {
+    "ci": [
+     -0.0996,
+     0.0037
+    ],
+    "discordance": 0.1808,
+    "gap": -0.048,
+    "gate_v2_direction": "block",
+    "leader": "gpt-4.1-mini",
+    "n": 271,
+    "z": 1.87
+   },
+   "claude-haiku-4-5|gpt-oss-20b": {
+    "ci": [
+     -0.1144,
+     -0.0185
+    ],
+    "discordance": 0.1624,
+    "gap": -0.0664,
+    "gate_v2_direction": "pass",
+    "leader": "gpt-oss-20b",
+    "n": 271,
+    "z": 2.75
+   },
+   "claude-haiku-4-5|qwen2.5-14b": {
+    "ci": [
+     -0.0074,
+     0.0996
+    ],
+    "discordance": 0.214,
+    "gap": 0.0443,
+    "gate_v2_direction": "block",
+    "leader": "claude-haiku-4-5",
+    "n": 271,
+    "z": 1.58
+   },
+   "claude-sonnet-5-5|gpt-4.1-mini": {
+    "ci": [
+     -0.0173,
+     0.0736
+    ],
+    "discordance": 0.1169,
+    "gap": 0.0303,
+    "gate_v2_direction": "block",
+    "leader": "claude-sonnet-5-5",
+    "n": 231,
+    "z": 1.35
+   },
+   "claude-sonnet-5-5|gpt-oss-20b": {
+    "ci": [
+     -0.026,
+     0.0519
+    ],
+    "discordance": 0.0909,
+    "gap": 0.013,
+    "gate_v2_direction": "block",
+    "leader": "claude-sonnet-5-5",
+    "n": 231,
+    "z": 0.65
+   },
+   "claude-sonnet-5-5|qwen2.5-14b": {
+    "ci": [
+     0.0692,
+     0.1818
+    ],
+    "discordance": 0.2035,
+    "gap": 0.1255,
+    "gate_v2_direction": "pass",
+    "leader": "claude-sonnet-5-5",
+    "n": 231,
+    "z": 4.39
+   },
+   "gpt-4.1-mini|gpt-oss-20b": {
+    "ci": [
+     -0.059,
+     0.0221
+    ],
+    "discordance": 0.1218,
+    "gap": -0.0185,
+    "gate_v2_direction": "block",
+    "leader": "gpt-oss-20b",
+    "n": 271,
+    "z": 0.87
+   },
+   "gpt-4.1-mini|qwen2.5-14b": {
+    "ci": [
+     0.0406,
+     0.1476
+    ],
+    "discordance": 0.2177,
+    "gap": 0.0923,
+    "gate_v2_direction": "pass",
+    "leader": "gpt-4.1-mini",
+    "n": 271,
+    "z": 3.31
+   },
+   "gpt-oss-20b|qwen2.5-14b": {
+    "ci": [
+     0.0627,
+     0.1587
+    ],
+    "discordance": 0.1845,
+    "gap": 0.1107,
+    "gate_v2_direction": "pass",
+    "leader": "gpt-oss-20b",
+    "n": 271,
+    "z": 4.38
+   }
+  },
+  "judges": {
+   "claude-haiku-4-5": {
+    "diff_vs_human": 0.0443,
+    "diff_vs_human_ci": [
+     -0.0295,
+     0.1181
+    ],
+    "gate_v2_claim_judge_beats_human": {
+     "checks": [
+      {
+       "message": "Paired z = 1.18 for an observed gap of +0.0443 (n=271); does NOT exceed the pre-set z* = 2.58.",
+       "name": "direction",
+       "observed": 1.178,
+       "remedy": "State the comparison as unresolved at this n; do not claim a direction.",
+       "threshold": 2.58,
+       "verdict": "block"
+      },
+      {
+       "message": "Gap on unanimous items +0.0696 vs split items +0.0256: the gap is consistent across item types (z = 0.58).",
+       "name": "contested_consistency",
+       "observed": 0.584,
+       "remedy": "",
+       "threshold": 2.58,
+       "verdict": "pass"
+      },
+      {
+       "message": "Rater disagreement 0.373 implies single-rater error 0.248 and gold error 0.154 for a 3-rater majority, so observed gaps are shrunk by a factor 0.691. Observed gap +0.0443 is +0.0641 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.1861.",
+       "name": "attenuation",
+       "observed": 0.6912,
+       "remedy": "",
+       "threshold": null,
+       "verdict": "pass"
+      }
+     ],
+     "verdict": "block"
+    },
+    "human_m1_same_items": 0.6974,
+    "m1": 0.7417,
+    "m1_ci": [
+     0.6863,
+     0.7934
+    ],
+    "m1_invalid_as_wrong": 0.7417,
+    "m1_n": 271,
+    "m2": 0.6457,
+    "m3": 0.5903,
+    "model": "claude-haiku-4-5-20251001",
+    "parse": {
+     "first_word": 227,
+     "strict": 123
+    },
+    "tokens_in": 82216,
+    "tokens_out": 4124
+   },
+   "claude-sonnet-5-5": {
+    "diff_vs_human": 0.1472,
+    "diff_vs_human_ci": [
+     0.0736,
+     0.2165
+    ],
+    "gate_v2_claim_judge_beats_human": {
+     "checks": [
+      {
+       "message": "Paired z = 4.03 for an observed gap of +0.1472 (n=231); exceeds the pre-set z* = 2.58.",
+       "name": "direction",
+       "observed": 4.026,
+       "remedy": "",
+       "threshold": 2.58,
+       "verdict": "pass"
+      },
+      {
+       "message": "Gap on unanimous items +0.1727 vs split items +0.1240: the gap is consistent across item types (z = 0.67).",
+       "name": "contested_consistency",
+       "observed": 0.669,
+       "remedy": "",
+       "threshold": 2.58,
+       "verdict": "pass"
+      },
+      {
+       "message": "Rater disagreement 0.373 implies single-rater error 0.248 and gold error 0.154 for a 3-rater majority, so observed gaps are shrunk by a factor 0.691. Observed gap +0.1472 is +0.2129 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.1809.",
+       "name": "attenuation",
+       "observed": 0.6912,
+       "remedy": "",
+       "threshold": null,
+       "verdict": "pass"
+      }
+     ],
+     "verdict": "pass"
+    },
+    "human_m1_same_items": 0.7056,
+    "m1": 0.8528,
+    "m1_ci": [
+     0.8095,
+     0.8961
+    ],
+    "m1_invalid_as_wrong": 0.7269,
+    "m1_n": 231,
+    "m2": 0.7204,
+    "m3": 0.7741,
+    "model": "claude-sonnet-5-5",
+    "parse": {
+     "first_word": 3,
+     "lenient": 14,
+     "strict": 270,
+     "unparseable": 63
+    },
+    "tokens_in": 115270,
+    "tokens_out": 5927
+   },
+   "gpt-4.1-mini": {
+    "diff_vs_human": 0.0923,
+    "diff_vs_human_ci": [
+     0.0258,
+     0.1624
+    ],
+    "gate_v2_claim_judge_beats_human": {
+     "checks": [
+      {
+       "message": "Paired z = 2.62 for an observed gap of +0.0923 (n=271); exceeds the pre-set z* = 2.58.",
+       "name": "direction",
+       "observed": 2.62,
+       "remedy": "",
+       "threshold": 2.58,
+       "verdict": "pass"
+      },
+      {
+       "message": "Gap on unanimous items +0.1043 vs split items +0.0833: the gap is consistent across item types (z = 0.29).",
+       "name": "contested_consistency",
+       "observed": 0.294,
+       "remedy": "",
+       "threshold": 2.58,
+       "verdict": "pass"
+      },
+      {
+       "message": "Rater disagreement 0.373 implies single-rater error 0.248 and gold error 0.154 for a 3-rater majority, so observed gaps are shrunk by a factor 0.691. Observed gap +0.0923 is +0.1335 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.1743.",
+       "name": "attenuation",
+       "observed": 0.6912,
+       "remedy": "",
+       "threshold": null,
+       "verdict": "pass"
+      }
+     ],
+     "verdict": "pass"
+    },
+    "human_m1_same_items": 0.6974,
+    "m1": 0.7897,
+    "m1_ci": [
+     0.738,
+     0.8376
+    ],
+    "m1_invalid_as_wrong": 0.7897,
+    "m1_n": 271,
+    "m2": 0.67,
+    "m3": 0.7292,
+    "model": "gpt-4.1-mini-2025-04-14",
+    "parse": {
+     "strict": 350
+    },
+    "tokens_in": 75855,
+    "tokens_out": 350
+   },
+   "gpt-oss-20b": {
+    "diff_vs_human": 0.1107,
+    "diff_vs_human_ci": [
+     0.0406,
+     0.1808
+    ],
+    "gate_v2_claim_judge_beats_human": {
+     "checks": [
+      {
+       "message": "Paired z = 3.11 for an observed gap of +0.1107 (n=271); exceeds the pre-set z* = 2.58.",
+       "name": "direction",
+       "observed": 3.11,
+       "remedy": "",
+       "threshold": 2.58,
+       "verdict": "pass"
+      },
+      {
+       "message": "Gap on unanimous items +0.1478 vs split items +0.0833: the gap is consistent across item types (z = 0.92).",
+       "name": "contested_consistency",
+       "observed": 0.916,
+       "remedy": "",
+       "threshold": 2.58,
+       "verdict": "pass"
+      },
+      {
+       "message": "Rater disagreement 0.373 implies single-rater error 0.248 and gold error 0.154 for a 3-rater majority, so observed gaps are shrunk by a factor 0.691. Observed gap +0.1107 is +0.1602 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.1762.",
+       "name": "attenuation",
+       "observed": 0.6912,
+       "remedy": "",
+       "threshold": null,
+       "verdict": "pass"
+      }
+     ],
+     "verdict": "pass"
+    },
+    "human_m1_same_items": 0.6974,
+    "m1": 0.8081,
+    "m1_ci": [
+     0.7601,
+     0.8524
+    ],
+    "m1_invalid_as_wrong": 0.8081,
+    "m1_n": 271,
+    "m2": 0.6843,
+    "m3": 0.75,
+    "model": "gpt-oss:20b",
+    "parse": {
+     "strict": 350
+    },
+    "tokens_in": 98255,
+    "tokens_out": 12275
+   },
+   "qwen2.5-14b": {
+    "diff_vs_human": 0.0,
+    "diff_vs_human_ci": [
+     -0.0738,
+     0.0775
+    ],
+    "gate_v2_claim_judge_beats_human": {
+     "checks": [
+      {
+       "message": "Paired z = 0.00 for an observed gap of +0.0000 (n=271); does NOT exceed the pre-set z* = 2.58.",
+       "name": "direction",
+       "observed": 0.0,
+       "remedy": "State the comparison as unresolved at this n; do not claim a direction.",
+       "threshold": 2.58,
+       "verdict": "block"
+      },
+      {
+       "message": "Gap on unanimous items +0.0000 vs split items +0.0000: the gap is consistent across item types (z = 0.00).",
+       "name": "contested_consistency",
+       "observed": 0.0,
+       "remedy": "",
+       "threshold": 2.58,
+       "verdict": "pass"
+      },
+      {
+       "message": "Rater disagreement 0.373 implies single-rater error 0.248 and gold error 0.154 for a 3-rater majority, so observed gaps are shrunk by a factor 0.691. Observed gap +0.0000 is +0.0000 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.1954.",
+       "name": "attenuation",
+       "observed": 0.6912,
+       "remedy": "",
+       "threshold": null,
+       "verdict": "pass"
+      }
+     ],
+     "verdict": "block"
+    },
+    "human_m1_same_items": 0.6974,
+    "m1": 0.6974,
+    "m1_ci": [
+     0.6421,
+     0.7528
+    ],
+    "m1_invalid_as_wrong": 0.6974,
+    "m1_n": 271,
+    "m2": 0.6171,
+    "m3": 0.316,
+    "model": "qwen2.5:14b",
+    "parse": {
+     "strict": 350
+    },
+    "tokens_in": 78354,
+    "tokens_out": 872
+   }
+  },
+  "m1_items_with_panel_majority": 271,
+  "n_items": 350,
+  "panel_pairwise_disagreement_binary": 0.3733,
+  "panel_sizes": {
+   "4": 350
+  }
+ },
+ "hatexplain": {
+  "corpus": "hatexplain",
+  "human": {
+   "m1": 0.8723,
+   "m1_ci": [
+    0.8473,
+    0.8961
+   ],
+   "m2": 0.7975,
+   "m3": 0.783
+  },
+  "judge_pairs": {
+   "claude-haiku-4-5|claude-sonnet-5-5": {
+    "ci": [
+     -0.0427,
+     0.0038
+    ],
+    "discordance": 0.1093,
+    "gap": -0.0188,
+    "gate_v2_direction": "block",
+    "leader": "claude-sonnet-5-5",
+    "n": 796,
+    "z": 1.61
+   },
+   "claude-haiku-4-5|gpt-4.1-mini": {
+    "ci": [
+     -0.0025,
+     0.0438
+    ],
+    "discordance": 0.1126,
+    "gap": 0.02,
+    "gate_v2_direction": "block",
+    "leader": "claude-haiku-4-5",
+    "n": 799,
+    "z": 1.69
+   },
+   "claude-haiku-4-5|gpt-oss-20b": {
+    "ci": [
+     0.0363,
+     0.0876
+    ],
+    "discordance": 0.1477,
+    "gap": 0.0626,
+    "gate_v2_direction": "pass",
+    "leader": "claude-haiku-4-5",
+    "n": 799,
+    "z": 4.66
+   },
+   "claude-haiku-4-5|qwen2.5-14b": {
+    "ci": [
+     0.0738,
+     0.1327
+    ],
+    "discordance": 0.1877,
+    "gap": 0.1026,
+    "gate_v2_direction": "pass",
+    "leader": "claude-haiku-4-5",
+    "n": 799,
+    "z": 6.89
+   },
+   "claude-sonnet-5-5|gpt-4.1-mini": {
+    "ci": [
+     0.0126,
+     0.0616
+    ],
+    "discordance": 0.1231,
+    "gap": 0.0377,
+    "gate_v2_direction": "pass",
+    "leader": "claude-sonnet-5-5",
+    "n": 796,
+    "z": 3.05
+   },
+   "claude-sonnet-5-5|gpt-oss-20b": {
+    "ci": [
+     0.0528,
+     0.108
+    ],
+    "discordance": 0.1633,
+    "gap": 0.0804,
+    "gate_v2_direction": "pass",
+    "leader": "claude-sonnet-5-5",
+    "n": 796,
+    "z": 5.72
+   },
+   "claude-sonnet-5-5|qwen2.5-14b": {
+    "ci": [
+     0.0917,
+     0.152
+    ],
+    "discordance": 0.2035,
+    "gap": 0.1206,
+    "gate_v2_direction": "pass",
+    "leader": "claude-sonnet-5-5",
+    "n": 796,
+    "z": 7.82
+   },
+   "gpt-4.1-mini|gpt-oss-20b": {
+    "ci": [
+     0.0188,
+     0.0676
+    ],
+    "discordance": 0.1327,
+    "gap": 0.0426,
+    "gate_v2_direction": "pass",
+    "leader": "gpt-4.1-mini",
+    "n": 799,
+    "z": 3.32
+   },
+   "gpt-4.1-mini|qwen2.5-14b": {
+    "ci": [
+     0.0563,
+     0.1064
+    ],
+    "discordance": 0.1452,
+    "gap": 0.0826,
+    "gate_v2_direction": "pass",
+    "leader": "gpt-4.1-mini",
+    "n": 799,
+    "z": 6.27
+   },
+   "gpt-oss-20b|qwen2.5-14b": {
+    "ci": [
+     0.0175,
+     0.0626
+    ],
+    "discordance": 0.1076,
+    "gap": 0.0401,
+    "gate_v2_direction": "pass",
+    "leader": "gpt-oss-20b",
+    "n": 799,
+    "z": 3.47
+   }
+  },
+  "judges": {
+   "claude-haiku-4-5": {
+    "diff_vs_human": -0.0951,
+    "diff_vs_human_ci": [
+     -0.1289,
+     -0.0638
+    ],
+    "gate_v2_claim_judge_beats_human": {
+     "checks": [
+      {
+       "message": "Paired z = -5.62 for an observed gap of -0.0951 (n=799); does NOT exceed the pre-set z* = 2.58.",
+       "name": "direction",
+       "observed": -5.618,
+       "remedy": "State the comparison as unresolved at this n; do not claim a direction.",
+       "threshold": 2.58,
+       "verdict": "block"
+      },
+      {
+       "message": "Too few unanimous or split items to compare.",
+       "name": "contested_consistency",
+       "observed": null,
+       "remedy": "",
+       "threshold": 2.58,
+       "verdict": "warn"
+      },
+      {
+       "message": "Rater disagreement 0.201 implies single-rater error 0.113 and gold error 0.036 for a 3-rater majority, so observed gaps are shrunk by a factor 0.929. Observed gap -0.0951 is -0.1024 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.0624.",
+       "name": "attenuation",
+       "observed": 0.9287,
+       "remedy": "",
+       "threshold": null,
+       "verdict": "pass"
+      }
+     ],
+     "verdict": "block"
+    },
+    "human_m1_same_items": 0.8723,
+    "m1": 0.7772,
+    "m1_ci": [
+     0.7484,
+     0.806
+    ],
+    "m1_invalid_as_wrong": 0.7772,
+    "m1_n": 799,
+    "m2": 0.7217,
+    "m3": 0.6631,
+    "model": "claude-haiku-4-5-20251001",
+    "parse": {
+     "strict": 999,
+     "unparseable": 1
+    },
+    "tokens_in": 182514,
+    "tokens_out": 5089
+   },
+   "claude-sonnet-5-5": {
+    "diff_vs_human": -0.0766,
+    "diff_vs_human_ci": [
+     -0.1106,
+     -0.044
+    ],
+    "gate_v2_claim_judge_beats_human": {
+     "checks": [
+      {
+       "message": "Paired z = -4.59 for an observed gap of -0.0766 (n=796); does NOT exceed the pre-set z* = 2.58.",
+       "name": "direction",
+       "observed": -4.591,
+       "remedy": "State the comparison as unresolved at this n; do not claim a direction.",
+       "threshold": 2.58,
+       "verdict": "block"
+      },
+      {
+       "message": "Too few unanimous or split items to compare.",
+       "name": "contested_consistency",
+       "observed": null,
+       "remedy": "",
+       "threshold": 2.58,
+       "verdict": "warn"
+      },
+      {
+       "message": "Rater disagreement 0.201 implies single-rater error 0.113 and gold error 0.036 for a 3-rater majority, so observed gaps are shrunk by a factor 0.929. Observed gap -0.0766 is -0.0825 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.0615.",
+       "name": "attenuation",
+       "observed": 0.9287,
+       "remedy": "",
+       "threshold": null,
+       "verdict": "pass"
+      }
+     ],
+     "verdict": "block"
+    },
+    "human_m1_same_items": 0.8731,
+    "m1": 0.7965,
+    "m1_ci": [
+     0.7701,
+     0.8241
+    ],
+    "m1_invalid_as_wrong": 0.7935,
+    "m1_n": 796,
+    "m2": 0.7369,
+    "m3": 0.6768,
+    "model": "claude-sonnet-5-5",
+    "parse": {
+     "strict": 996,
+     "unparseable": 4
+    },
+    "tokens_in": 248821,
+    "tokens_out": 5845
+   },
+   "gpt-4.1-mini": {
+    "diff_vs_human": -0.1151,
+    "diff_vs_human_ci": [
+     -0.1514,
+     -0.0813
+    ],
+    "gate_v2_claim_judge_beats_human": {
+     "checks": [
+      {
+       "message": "Paired z = -6.32 for an observed gap of -0.1151 (n=799); does NOT exceed the pre-set z* = 2.58.",
+       "name": "direction",
+       "observed": -6.323,
+       "remedy": "State the comparison as unresolved at this n; do not claim a direction.",
+       "threshold": 2.58,
+       "verdict": "block"
+      },
+      {
+       "message": "Too few unanimous or split items to compare.",
+       "name": "contested_consistency",
+       "observed": null,
+       "remedy": "",
+       "threshold": 2.58,
+       "verdict": "warn"
+      },
+      {
+       "message": "Rater disagreement 0.201 implies single-rater error 0.113 and gold error 0.036 for a 3-rater majority, so observed gaps are shrunk by a factor 0.929. Observed gap -0.1151 is -0.1240 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.0671.",
+       "name": "attenuation",
+       "observed": 0.9287,
+       "remedy": "",
+       "threshold": null,
+       "verdict": "pass"
+      }
+     ],
+     "verdict": "block"
+    },
+    "human_m1_same_items": 0.8723,
+    "m1": 0.7572,
+    "m1_ci": [
+     0.7284,
+     0.7872
+    ],
+    "m1_invalid_as_wrong": 0.7572,
+    "m1_n": 799,
+    "m2": 0.7055,
+    "m3": 0.6328,
+    "model": "gpt-4.1-mini-2025-04-14",
+    "parse": {
+     "strict": 1000
+    },
+    "tokens_in": 170720,
+    "tokens_out": 2183
+   },
+   "gpt-oss-20b": {
+    "diff_vs_human": -0.1577,
+    "diff_vs_human_ci": [
+     -0.1952,
+     -0.1214
+    ],
+    "gate_v2_claim_judge_beats_human": {
+     "checks": [
+      {
+       "message": "Paired z = -8.23 for an observed gap of -0.1577 (n=799); does NOT exceed the pre-set z* = 2.58.",
+       "name": "direction",
+       "observed": -8.229,
+       "remedy": "State the comparison as unresolved at this n; do not claim a direction.",
+       "threshold": 2.58,
+       "verdict": "block"
+      },
+      {
+       "message": "Too few unanimous or split items to compare.",
+       "name": "contested_consistency",
+       "observed": null,
+       "remedy": "",
+       "threshold": 2.58,
+       "verdict": "warn"
+      },
+      {
+       "message": "Rater disagreement 0.201 implies single-rater error 0.113 and gold error 0.036 for a 3-rater majority, so observed gaps are shrunk by a factor 0.929. Observed gap -0.1577 is -0.1698 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.0706.",
+       "name": "attenuation",
+       "observed": 0.9287,
+       "remedy": "",
+       "threshold": null,
+       "verdict": "pass"
+      }
+     ],
+     "verdict": "block"
+    },
+    "human_m1_same_items": 0.8723,
+    "m1": 0.7146,
+    "m1_ci": [
+     0.6821,
+     0.7447
+    ],
+    "m1_invalid_as_wrong": 0.7146,
+    "m1_n": 799,
+    "m2": 0.6715,
+    "m3": 0.522,
+    "model": "gpt-oss:20b",
+    "parse": {
+     "strict": 1000
+    },
+    "tokens_in": 234720,
+    "tokens_out": 53069
+   },
+   "qwen2.5-14b": {
+    "diff_vs_human": -0.1977,
+    "diff_vs_human_ci": [
+     -0.2353,
+     -0.1564
+    ],
+    "gate_v2_claim_judge_beats_human": {
+     "checks": [
+      {
+       "message": "Paired z = -9.89 for an observed gap of -0.1977 (n=799); does NOT exceed the pre-set z* = 2.58.",
+       "name": "direction",
+       "observed": -9.893,
+       "remedy": "State the comparison as unresolved at this n; do not claim a direction.",
+       "threshold": 2.58,
+       "verdict": "block"
+      },
+      {
+       "message": "Too few unanimous or split items to compare.",
+       "name": "contested_consistency",
+       "observed": null,
+       "remedy": "",
+       "threshold": 2.58,
+       "verdict": "warn"
+      },
+      {
+       "message": "Rater disagreement 0.201 implies single-rater error 0.113 and gold error 0.036 for a 3-rater majority, so observed gaps are shrunk by a factor 0.929. Observed gap -0.1977 is -0.2129 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.0736.",
+       "name": "attenuation",
+       "observed": 0.9287,
+       "remedy": "",
+       "threshold": null,
+       "verdict": "pass"
+      }
+     ],
+     "verdict": "block"
+    },
+    "human_m1_same_items": 0.8723,
+    "m1": 0.6746,
+    "m1_ci": [
+     0.6421,
+     0.7059
+    ],
+    "m1_invalid_as_wrong": 0.6746,
+    "m1_n": 799,
+    "m2": 0.6395,
+    "m3": 0.5023,
+    "model": "qwen2.5:14b",
+    "parse": {
+     "strict": 1000
+    },
+    "tokens_in": 173014,
+    "tokens_out": 3414
+   }
+  },
+  "m1_items_with_panel_majority": 799,
+  "n_items": 1000,
+  "panel_pairwise_disagreement_binary": 0.201,
+  "panel_sizes": {
+   "2": 1000
+  }
+ },
+ "mhs": {
+  "corpus": "mhs",
+  "human": {
+   "m1": 0.803,
+   "m1_ci": [
+    0.7764,
+    0.8285
+   ],
+   "m2": 0.7582,
+   "m3": 0.7572
+  },
+  "judge_pairs": {
+   "claude-haiku-4-5|claude-sonnet-5-5": {
+    "ci": [
+     -0.0071,
+     0.0424
+    ],
+    "discordance": 0.1424,
+    "gap": 0.0176,
+    "gate_v2_direction": "block",
+    "leader": "claude-haiku-4-5",
+    "n": 850,
+    "z": 1.36
+   },
+   "claude-haiku-4-5|gpt-4.1-mini": {
+    "ci": [
+     0.0116,
+     0.0649
+    ],
+    "discordance": 0.1703,
+    "gap": 0.0382,
+    "gate_v2_direction": "pass",
+    "leader": "claude-haiku-4-5",
+    "n": 863,
+    "z": 2.73
+   },
+   "claude-haiku-4-5|gpt-oss-20b": {
+    "ci": [
+     0.0742,
+     0.1425
+    ],
+    "discordance": 0.2642,
+    "gap": 0.1089,
+    "gate_v2_direction": "pass",
+    "leader": "claude-haiku-4-5",
+    "n": 863,
+    "z": 6.37
+   },
+   "claude-haiku-4-5|qwen2.5-14b": {
+    "ci": [
+     0.0626,
+     0.1228
+    ],
+    "discordance": 0.2109,
+    "gap": 0.0927,
+    "gate_v2_direction": "pass",
+    "leader": "claude-haiku-4-5",
+    "n": 863,
+    "z": 6.05
+   },
+   "claude-sonnet-5-5|gpt-4.1-mini": {
+    "ci": [
+     -0.0071,
+     0.0471
+    ],
+    "discordance": 0.16,
+    "gap": 0.0212,
+    "gate_v2_direction": "block",
+    "leader": "claude-sonnet-5-5",
+    "n": 850,
+    "z": 1.54
+   },
+   "claude-sonnet-5-5|gpt-oss-20b": {
+    "ci": [
+     0.0576,
+     0.1247
+    ],
+    "discordance": 0.2624,
+    "gap": 0.0906,
+    "gate_v2_direction": "pass",
+    "leader": "claude-sonnet-5-5",
+    "n": 850,
+    "z": 5.24
+   },
+   "claude-sonnet-5-5|qwen2.5-14b": {
+    "ci": [
+     0.0424,
+     0.1094
+    ],
+    "discordance": 0.2553,
+    "gap": 0.0765,
+    "gate_v2_direction": "pass",
+    "leader": "claude-sonnet-5-5",
+    "n": 850,
+    "z": 4.46
+   },
+   "gpt-4.1-mini|gpt-oss-20b": {
+    "ci": [
+     0.0429,
+     0.0973
+    ],
+    "discordance": 0.1819,
+    "gap": 0.0707,
+    "gate_v2_direction": "pass",
+    "leader": "gpt-4.1-mini",
+    "n": 863,
+    "z": 4.93
+   },
+   "gpt-4.1-mini|qwen2.5-14b": {
+    "ci": [
+     0.0267,
+     0.0834
+    ],
+    "discordance": 0.1819,
+    "gap": 0.0545,
+    "gate_v2_direction": "pass",
+    "leader": "gpt-4.1-mini",
+    "n": 863,
+    "z": 3.78
+   },
+   "gpt-oss-20b|qwen2.5-14b": {
+    "ci": [
+     -0.0441,
+     0.0127
+    ],
+    "discordance": 0.19,
+    "gap": -0.0162,
+    "gate_v2_direction": "block",
+    "leader": "qwen2.5-14b",
+    "n": 863,
+    "z": 1.09
+   }
+  },
+  "judges": {
+   "claude-haiku-4-5": {
+    "diff_vs_human": 0.0,
+    "diff_vs_human_ci": [
+     -0.0302,
+     0.0313
+    ],
+    "gate_v2_claim_judge_beats_human": {
+     "checks": [
+      {
+       "message": "Paired z = 0.00 for an observed gap of +0.0000 (n=863); does NOT exceed the pre-set z* = 2.58.",
+       "name": "direction",
+       "observed": 0.0,
+       "remedy": "State the comparison as unresolved at this n; do not claim a direction.",
+       "threshold": 2.58,
+       "verdict": "block"
+      },
+      {
+       "message": "Gap on unanimous items -0.0013 vs split items +0.0087: the gap is consistent across item types (z = -0.16).",
+       "name": "contested_consistency",
+       "observed": -0.165,
+       "remedy": "",
+       "threshold": 2.58,
+       "verdict": "pass"
+      },
+      {
+       "message": "Rater disagreement 0.211 implies single-rater error 0.120 and gold error 0.040 for a 3-rater majority, so observed gaps are shrunk by a factor 0.920. Observed gap +0.0000 is +0.0000 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.0600.",
+       "name": "attenuation",
+       "observed": 0.9203,
+       "remedy": "",
+       "threshold": null,
+       "verdict": "pass"
+      }
+     ],
+     "verdict": "block"
+    },
+    "human_m1_same_items": 0.803,
+    "m1": 0.803,
+    "m1_ci": [
+     0.7764,
+     0.8297
+    ],
+    "m1_invalid_as_wrong": 0.803,
+    "m1_n": 863,
+    "m2": 0.7572,
+    "m3": 0.7071,
+    "model": "claude-haiku-4-5-20251001",
+    "parse": {
+     "strict": 1000
+    },
+    "tokens_in": 131201,
+    "tokens_out": 4000
+   },
+   "claude-sonnet-5-5": {
+    "diff_vs_human": -0.0153,
+    "diff_vs_human_ci": [
+     -0.0482,
+     0.0165
+    ],
+    "gate_v2_claim_judge_beats_human": {
+     "checks": [
+      {
+       "message": "Paired z = -0.93 for an observed gap of -0.0153 (n=850); does NOT exceed the pre-set z* = 2.58.",
+       "name": "direction",
+       "observed": -0.926,
+       "remedy": "State the comparison as unresolved at this n; do not claim a direction.",
+       "threshold": 2.58,
+       "verdict": "block"
+      },
+      {
+       "message": "Gap on unanimous items -0.0149 vs split items -0.0177: the gap is consistent across item types (z = 0.04).",
+       "name": "contested_consistency",
+       "observed": 0.043,
+       "remedy": "",
+       "threshold": 2.58,
+       "verdict": "pass"
+      },
+      {
+       "message": "Rater disagreement 0.211 implies single-rater error 0.120 and gold error 0.040 for a 3-rater majority, so observed gaps are shrunk by a factor 0.920. Observed gap -0.0153 is -0.0166 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.0614.",
+       "name": "attenuation",
+       "observed": 0.9203,
+       "remedy": "",
+       "threshold": null,
+       "verdict": "pass"
+      }
+     ],
+     "verdict": "block"
+    },
+    "human_m1_same_items": 0.8035,
+    "m1": 0.7882,
+    "m1_ci": [
+     0.7612,
+     0.8165
+    ],
+    "m1_invalid_as_wrong": 0.7764,
+    "m1_n": 850,
+    "m2": 0.7463,
+    "m3": 0.6633,
+    "model": "claude-sonnet-5-5",
+    "parse": {
+     "first_word": 49,
+     "lenient": 3,
+     "strict": 933,
+     "unparseable": 15
+    },
+    "tokens_in": 185895,
+    "tokens_out": 7958
+   },
+   "gpt-4.1-mini": {
+    "diff_vs_human": -0.0382,
+    "diff_vs_human_ci": [
+     -0.0718,
+     -0.0058
+    ],
+    "gate_v2_claim_judge_beats_human": {
+     "checks": [
+      {
+       "message": "Paired z = -2.26 for an observed gap of -0.0382 (n=863); does NOT exceed the pre-set z* = 2.58.",
+       "name": "direction",
+       "observed": -2.256,
+       "remedy": "State the comparison as unresolved at this n; do not claim a direction.",
+       "threshold": 2.58,
+       "verdict": "block"
+      },
+      {
+       "message": "Gap on unanimous items -0.0481 vs split items +0.0261: the gap is consistent across item types (z = -1.17).",
+       "name": "contested_consistency",
+       "observed": -1.17,
+       "remedy": "",
+       "threshold": 2.58,
+       "verdict": "pass"
+      },
+      {
+       "message": "Rater disagreement 0.211 implies single-rater error 0.120 and gold error 0.040 for a 3-rater majority, so observed gaps are shrunk by a factor 0.920. Observed gap -0.0382 is -0.0416 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.0630.",
+       "name": "attenuation",
+       "observed": 0.9203,
+       "remedy": "",
+       "threshold": null,
+       "verdict": "pass"
+      }
+     ],
+     "verdict": "block"
+    },
+    "human_m1_same_items": 0.803,
+    "m1": 0.7648,
+    "m1_ci": [
+     0.737,
+     0.7926
+    ],
+    "m1_invalid_as_wrong": 0.7648,
+    "m1_n": 863,
+    "m2": 0.7228,
+    "m3": 0.7785,
+    "model": "gpt-4.1-mini-2025-04-14",
+    "parse": {
+     "strict": 1000
+    },
+    "tokens_in": 126475,
+    "tokens_out": 1008
+   },
+   "gpt-oss-20b": {
+    "diff_vs_human": -0.1089,
+    "diff_vs_human_ci": [
+     -0.1449,
+     -0.0718
+    ],
+    "gate_v2_claim_judge_beats_human": {
+     "checks": [
+      {
+       "message": "Paired z = -5.64 for an observed gap of -0.1089 (n=863); does NOT exceed the pre-set z* = 2.58.",
+       "name": "direction",
+       "observed": -5.637,
+       "remedy": "State the comparison as unresolved at this n; do not claim a direction.",
+       "threshold": 2.58,
+       "verdict": "block"
+      },
+      {
+       "message": "Gap on unanimous items -0.1364 vs split items +0.0696: the gap reverses sign and the difference is significant (z = -2.98).",
+       "name": "contested_consistency",
+       "observed": -2.982,
+       "remedy": "Report the gap separately by item type; the ranking depends on how contested items are resolved.",
+       "threshold": 2.58,
+       "verdict": "block"
+      },
+      {
+       "message": "Rater disagreement 0.211 implies single-rater error 0.120 and gold error 0.040 for a 3-rater majority, so observed gaps are shrunk by a factor 0.920. Observed gap -0.1089 is -0.1184 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.0718.",
+       "name": "attenuation",
+       "observed": 0.9203,
+       "remedy": "",
+       "threshold": null,
+       "verdict": "pass"
+      }
+     ],
+     "verdict": "block"
+    },
+    "human_m1_same_items": 0.803,
+    "m1": 0.6941,
+    "m1_ci": [
+     0.6616,
+     0.7242
+    ],
+    "m1_invalid_as_wrong": 0.6941,
+    "m1_n": 863,
+    "m2": 0.6586,
+    "m3": 0.7121,
+    "model": "gpt-oss:20b",
+    "parse": {
+     "strict": 1000
+    },
+    "tokens_in": 190477,
+    "tokens_out": 47429
+   },
+   "qwen2.5-14b": {
+    "diff_vs_human": -0.0927,
+    "diff_vs_human_ci": [
+     -0.1309,
+     -0.0556
+    ],
+    "gate_v2_claim_judge_beats_human": {
+     "checks": [
+      {
+       "message": "Paired z = -4.97 for an observed gap of -0.0927 (n=863); does NOT exceed the pre-set z* = 2.58.",
+       "name": "direction",
+       "observed": -4.972,
+       "remedy": "State the comparison as unresolved at this n; do not claim a direction.",
+       "threshold": 2.58,
+       "verdict": "block"
+      },
+      {
+       "message": "Gap on unanimous items -0.1043 vs split items -0.0174: the gap is consistent across item types (z = -1.22).",
+       "name": "contested_consistency",
+       "observed": -1.219,
+       "remedy": "",
+       "threshold": 2.58,
+       "verdict": "pass"
+      },
+      {
+       "message": "Rater disagreement 0.211 implies single-rater error 0.120 and gold error 0.040 for a 3-rater majority, so observed gaps are shrunk by a factor 0.920. Observed gap -0.0927 is -0.1007 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.0693.",
+       "name": "attenuation",
+       "observed": 0.9203,
+       "remedy": "",
+       "threshold": null,
+       "verdict": "pass"
+      }
+     ],
+     "verdict": "block"
+    },
+    "human_m1_same_items": 0.803,
+    "m1": 0.7103,
+    "m1_ci": [
+     0.6813,
+     0.7381
+    ],
+    "m1_invalid_as_wrong": 0.7103,
+    "m1_n": 863,
+    "m2": 0.6793,
+    "m3": 0.5569,
+    "model": "qwen2.5:14b",
+    "parse": {
+     "first_word": 22,
+     "strict": 978
+    },
+    "tokens_in": 130443,
+    "tokens_out": 2507
+   }
+  },
+  "m1_items_with_panel_majority": 863,
+  "n_items": 1000,
+  "panel_pairwise_disagreement_binary": 0.2115,
+  "panel_sizes": {
+   "2": 659,
+   "3": 320,
+   "4": 21
+  }
+ },
+ "wikitalk": {
+  "corpus": "wikitalk",
+  "human": {
+   "m1": 0.9149,
+   "m1_ci": [
+    0.8968,
+    0.9319
+   ],
+   "m2": 0.8605
+  },
+  "judge_pairs": {
+   "claude-haiku-4-5|claude-sonnet-5-5": {
+    "ci": [
+     -0.118,
+     -0.0773
+    ],
+    "discordance": 0.1084,
+    "gap": -0.0976,
+    "gate_v2_direction": "pass",
+    "leader": "claude-sonnet-5-5",
+    "n": 932,
+    "z": 9.48
+   },
+   "claude-haiku-4-5|gpt-4.1-mini": {
+    "ci": [
+     -0.0268,
+     0.0139
+    ],
+    "discordance": 0.0955,
+    "gap": -0.0054,
+    "gate_v2_direction": "block",
+    "leader": "gpt-4.1-mini",
+    "n": 932,
+    "z": 0.53
+   },
+   "claude-haiku-4-5|gpt-oss-20b": {
+    "ci": [
+     -0.0536,
+     -0.0107
+    ],
+    "discordance": 0.1116,
+    "gap": -0.0322,
+    "gate_v2_direction": "pass",
+    "leader": "gpt-oss-20b",
+    "n": 932,
+    "z": 2.95
+   },
+   "claude-haiku-4-5|qwen2.5-14b": {
+    "ci": [
+     0.1845,
+     0.2382
+    ],
+    "discordance": 0.2221,
+    "gap": 0.2114,
+    "gate_v2_direction": "pass",
+    "leader": "claude-haiku-4-5",
+    "n": 932,
+    "z": 15.31
+   },
+   "claude-sonnet-5-5|gpt-4.1-mini": {
+    "ci": [
+     0.0744,
+     0.1128
+    ],
+    "discordance": 0.1053,
+    "gap": 0.0926,
+    "gate_v2_direction": "pass",
+    "leader": "claude-sonnet-5-5",
+    "n": 940,
+    "z": 9.12
+   },
+   "claude-sonnet-5-5|gpt-oss-20b": {
+    "ci": [
+     0.0468,
+     0.084
+    ],
+    "discordance": 0.0947,
+    "gap": 0.0649,
+    "gate_v2_direction": "pass",
+    "leader": "claude-sonnet-5-5",
+    "n": 940,
+    "z": 6.61
+   },
+   "claude-sonnet-5-5|qwen2.5-14b": {
+    "ci": [
+     0.2777,
+     0.3372
+    ],
+    "discordance": 0.3202,
+    "gap": 0.3074,
+    "gate_v2_direction": "pass",
+    "leader": "claude-sonnet-5-5",
+    "n": 940,
+    "z": 19.83
+   },
+   "gpt-4.1-mini|gpt-oss-20b": {
+    "ci": [
+     -0.0468,
+     -0.0085
+    ],
+    "discordance": 0.0979,
+    "gap": -0.0277,
+    "gate_v2_direction": "pass",
+    "leader": "gpt-oss-20b",
+    "n": 940,
+    "z": 2.72
+   },
+   "gpt-4.1-mini|qwen2.5-14b": {
+    "ci": [
+     0.1893,
+     0.2426
+    ],
+    "discordance": 0.2277,
+    "gap": 0.2149,
+    "gate_v2_direction": "pass",
+    "leader": "gpt-4.1-mini",
+    "n": 940,
+    "z": 15.46
+   },
+   "gpt-oss-20b|qwen2.5-14b": {
+    "ci": [
+     0.2138,
+     0.2713
+    ],
+    "discordance": 0.2596,
+    "gap": 0.2426,
+    "gate_v2_direction": "pass",
+    "leader": "gpt-oss-20b",
+    "n": 940,
+    "z": 16.59
+   }
+  },
+  "judges": {
+   "claude-haiku-4-5": {
+    "diff_vs_human": -0.1052,
+    "diff_vs_human_ci": [
+     -0.132,
+     -0.0783
+    ],
+    "gate_v2_claim_judge_beats_human": {
+     "checks": [
+      {
+       "message": "Paired z = -7.56 for an observed gap of -0.1052 (n=932); does NOT exceed the pre-set z* = 2.58.",
+       "name": "direction",
+       "observed": -7.564,
+       "remedy": "State the comparison as unresolved at this n; do not claim a direction.",
+       "threshold": 2.58,
+       "verdict": "block"
+      },
+      {
+       "message": "Gap on unanimous items -0.0874 vs split items -0.1700: the gap is consistent across item types (z = 1.92).",
+       "name": "contested_consistency",
+       "observed": 1.919,
+       "remedy": "",
+       "threshold": 2.58,
+       "verdict": "pass"
+      },
+      {
+       "message": "Rater disagreement 0.140 implies single-rater error 0.076 and gold error 0.016 for a 3-rater majority, so observed gaps are shrunk by a factor 0.967. Observed gap -0.1052 is -0.1087 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.0492.",
+       "name": "attenuation",
+       "observed": 0.9673,
+       "remedy": "",
+       "threshold": null,
+       "verdict": "pass"
+      }
+     ],
+     "verdict": "block"
+    },
+    "human_m1_same_items": 0.9152,
+    "m1": 0.8101,
+    "m1_ci": [
+     0.7843,
+     0.8337
+    ],
+    "m1_invalid_as_wrong": 0.8032,
+    "m1_n": 932,
+    "m2": 0.7787,
+    "model": "claude-haiku-4-5-20251001",
+    "parse": {
+     "first_word": 6,
+     "strict": 986,
+     "unparseable": 8
+    },
+    "tokens_in": 180828,
+    "tokens_out": 4434
+   },
+   "claude-sonnet-5-5": {
+    "diff_vs_human": -0.0064,
+    "diff_vs_human_ci": [
+     -0.0298,
+     0.016
+    ],
+    "gate_v2_claim_judge_beats_human": {
+     "checks": [
+      {
+       "message": "Paired z = -0.55 for an observed gap of -0.0064 (n=940); does NOT exceed the pre-set z* = 2.58.",
+       "name": "direction",
+       "observed": -0.552,
+       "remedy": "State the comparison as unresolved at this n; do not claim a direction.",
+       "threshold": 2.58,
+       "verdict": "block"
+      },
+      {
+       "message": "Gap on unanimous items +0.0014 vs split items -0.0350: the gap is consistent across item types (z = 0.94).",
+       "name": "contested_consistency",
+       "observed": 0.941,
+       "remedy": "",
+       "threshold": 2.58,
+       "verdict": "pass"
+      },
+      {
+       "message": "Rater disagreement 0.140 implies single-rater error 0.076 and gold error 0.016 for a 3-rater majority, so observed gaps are shrunk by a factor 0.967. Observed gap -0.0064 is -0.0066 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.0409.",
+       "name": "attenuation",
+       "observed": 0.9673,
+       "remedy": "",
+       "threshold": null,
+       "verdict": "pass"
+      }
+     ],
+     "verdict": "block"
+    },
+    "human_m1_same_items": 0.9149,
+    "m1": 0.9085,
+    "m1_ci": [
+     0.8904,
+     0.9266
+    ],
+    "m1_invalid_as_wrong": 0.9085,
+    "m1_n": 940,
+    "m2": 0.858,
+    "model": "claude-sonnet-5-5",
+    "parse": {
+     "lenient": 1,
+     "strict": 999
+    },
+    "tokens_in": 263342,
+    "tokens_out": 4904
+   },
+   "gpt-4.1-mini": {
+    "diff_vs_human": -0.0989,
+    "diff_vs_human_ci": [
+     -0.1266,
+     -0.0723
+    ],
+    "gate_v2_claim_judge_beats_human": {
+     "checks": [
+      {
+       "message": "Paired z = -7.13 for an observed gap of -0.0989 (n=940); does NOT exceed the pre-set z* = 2.58.",
+       "name": "direction",
+       "observed": -7.133,
+       "remedy": "State the comparison as unresolved at this n; do not claim a direction.",
+       "threshold": 2.58,
+       "verdict": "block"
+      },
+      {
+       "message": "Gap on unanimous items -0.0703 vs split items -0.2050: the gap differs significantly between the two item types (z = 3.02).",
+       "name": "contested_consistency",
+       "observed": 3.015,
+       "remedy": "Report the gap separately by item type; the ranking depends on how contested items are resolved.",
+       "threshold": 2.58,
+       "verdict": "warn"
+      },
+      {
+       "message": "Rater disagreement 0.140 implies single-rater error 0.076 and gold error 0.016 for a 3-rater majority, so observed gaps are shrunk by a factor 0.967. Observed gap -0.0989 is -0.1023 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.0491.",
+       "name": "attenuation",
+       "observed": 0.9673,
+       "remedy": "",
+       "threshold": null,
+       "verdict": "pass"
+      }
+     ],
+     "verdict": "block"
+    },
+    "human_m1_same_items": 0.9149,
+    "m1": 0.816,
+    "m1_ci": [
+     0.7904,
+     0.8415
+    ],
+    "m1_invalid_as_wrong": 0.816,
+    "m1_n": 940,
+    "m2": 0.788,
+    "model": "gpt-4.1-mini-2025-04-14",
+    "parse": {
+     "strict": 1000
+    },
+    "tokens_in": 169130,
+    "tokens_out": 1857
+   },
+   "gpt-oss-20b": {
+    "diff_vs_human": -0.0713,
+    "diff_vs_human_ci": [
+     -0.0979,
+     -0.0447
+    ],
+    "gate_v2_claim_judge_beats_human": {
+     "checks": [
+      {
+       "message": "Paired z = -5.36 for an observed gap of -0.0713 (n=940); does NOT exceed the pre-set z* = 2.58.",
+       "name": "direction",
+       "observed": -5.358,
+       "remedy": "State the comparison as unresolved at this n; do not claim a direction.",
+       "threshold": 2.58,
+       "verdict": "block"
+      },
+      {
+       "message": "Gap on unanimous items -0.0568 vs split items -0.1250: the gap is consistent across item types (z = 1.56).",
+       "name": "contested_consistency",
+       "observed": 1.561,
+       "remedy": "",
+       "threshold": 2.58,
+       "verdict": "pass"
+      },
+      {
+       "message": "Rater disagreement 0.140 implies single-rater error 0.076 and gold error 0.016 for a 3-rater majority, so observed gaps are shrunk by a factor 0.967. Observed gap -0.0713 is -0.0737 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.0471.",
+       "name": "attenuation",
+       "observed": 0.9673,
+       "remedy": "",
+       "threshold": null,
+       "verdict": "pass"
+      }
+     ],
+     "verdict": "block"
+    },
+    "human_m1_same_items": 0.9149,
+    "m1": 0.8436,
+    "m1_ci": [
+     0.8202,
+     0.867
+    ],
+    "m1_invalid_as_wrong": 0.8436,
+    "m1_n": 940,
+    "m2": 0.806,
+    "model": "gpt-oss:20b",
+    "parse": {
+     "strict": 1000
+    },
+    "tokens_in": 233130,
+    "tokens_out": 36011
+   },
+   "qwen2.5-14b": {
+    "diff_vs_human": -0.3138,
+    "diff_vs_human_ci": [
+     -0.35,
+     -0.2798
+    ],
+    "gate_v2_claim_judge_beats_human": {
+     "checks": [
+      {
+       "message": "Paired z = -17.93 for an observed gap of -0.3138 (n=940); does NOT exceed the pre-set z* = 2.58.",
+       "name": "direction",
+       "observed": -17.93,
+       "remedy": "State the comparison as unresolved at this n; do not claim a direction.",
+       "threshold": 2.58,
+       "verdict": "block"
+      },
+      {
+       "message": "Gap on unanimous items -0.2973 vs split items -0.3750: the gap is consistent across item types (z = 1.58).",
+       "name": "contested_consistency",
+       "observed": 1.578,
+       "remedy": "",
+       "threshold": 2.58,
+       "verdict": "pass"
+      },
+      {
+       "message": "Rater disagreement 0.140 implies single-rater error 0.076 and gold error 0.016 for a 3-rater majority, so observed gaps are shrunk by a factor 0.967. Observed gap -0.3138 is -0.3244 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.0619.",
+       "name": "attenuation",
+       "observed": 0.9673,
+       "remedy": "",
+       "threshold": null,
+       "verdict": "pass"
+      }
+     ],
+     "verdict": "block"
+    },
+    "human_m1_same_items": 0.9149,
+    "m1": 0.6011,
+    "m1_ci": [
+     0.5713,
+     0.6319
+    ],
+    "m1_invalid_as_wrong": 0.6011,
+    "m1_n": 940,
+    "m2": 0.603,
+    "model": "qwen2.5:14b",
+    "parse": {
+     "strict": 1000
+    },
+    "tokens_in": 172547,
+    "tokens_out": 3200
+   }
+  },
+  "m1_items_with_panel_majority": 940,
+  "n_items": 1000,
+  "panel_pairwise_disagreement_binary": 0.14,
+  "panel_sizes": {
+   "4": 1000
+  }
+ }
+}

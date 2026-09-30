@@ -109,6 +109,7 @@ _ALLOWED = {
     "0.05",      # significance level, declared in assumptions
     "0.80",      # target power
     "8:1:1",     # the dataset's documented split ratio
+    "4.1",       # part of a model name (GPT-4.1-mini), not a measurement
 }
 
 

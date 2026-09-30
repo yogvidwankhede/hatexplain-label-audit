@@ -189,10 +189,14 @@ def fig_judges():
             ax.plot(e["m1_ci"], [y, y], color=C[y % 5], lw=2)
             ax.plot(e["m1"], y, M[y % 5], color=C[y % 5], ms=5, zorder=3)
         ax.set_title(title)
-        ax.set_yticks(range(len(judges)), judges if c == "hatexplain" else [""] * len(judges))
+        nice = {"claude-haiku-4-5": "Claude Haiku 4.5", "claude-sonnet-5-5": "Claude Sonnet 5.5",
+                "gpt-4.1-mini": "GPT-4.1-mini", "gpt-oss-20b": "gpt-oss 20B", "qwen2.5-14b": "Qwen2.5 14B"}
+        ax.set_yticks(range(len(judges)), [nice[j] for j in judges] if c == "hatexplain" else [""] * len(judges))
         ax.invert_yaxis()
-        ax.set_xlim(0.5, 1.0)
-        ax.set_xlabel("agreement with panel")
+        ax.set_xlim(0.55, 1.0)
+        ax.set_xticks([0.6, 0.8, 1.0])
+    fig.supxlabel("agreement with the panel majority (binary); black line and band: held-out human with 95% CI",
+                  fontsize=7, y=-0.06)
     _save(fig, "judges")
 
 

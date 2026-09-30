@@ -44,4 +44,4 @@ Nothing below has been done on your behalf. Nothing has been pushed, published, 
 
 ## Money and keys
 - Anthropic, OpenAI, Google and Groq keys are in `.env`, which is gitignored and was never printed. Rotate them if you ever suspect exposure.
-- Spend: see `results/judge/analysis.json` token counts and the provider dashboards. The caps were $8 for Anthropic and $4 for OpenAI; the projected worst case was about $2.83.
+- Spend: the three API judges used about $1.49 at list prices (paper macro `\jCostUsd`, computed from logged token counts). Confirm against your provider dashboards. The caps were $8 for Anthropic and $4 for OpenAI.

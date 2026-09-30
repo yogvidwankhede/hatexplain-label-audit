@@ -1,0 +1,350 @@
+{"in_tokens": 238, "item_id": "1", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 233, "item_id": "10", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 483, "item_id": "100", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 237, "item_id": "101", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 279, "item_id": "102", "model": "claude-sonnet-5-5", "out_tokens": 4, "raw": "yes", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 237, "item_id": "103", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 615, "item_id": "104", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 219, "raw_redacted": true, "raw_sha256": "81183308bf3740e741a410cfbf673c1694a333998c0b02e556e4714dd18ec55b", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 277, "item_id": "105", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 178, "raw_redacted": true, "raw_sha256": "6948defad33de567f1eb2119b28cb29d63f50077f8773693df8c229a8a6f9d45", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 330, "item_id": "106", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 240, "item_id": "107", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 321, "item_id": "108", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 281, "item_id": "109", "model": "claude-sonnet-5-5", "out_tokens": 5, "raw": "unsure", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 318, "item_id": "11", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 200, "raw_redacted": true, "raw_sha256": "450ffd3361d13f75179a2c08cd08669f69c78ca8627232e2331a2f01a6fa9177", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 305, "item_id": "110", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 289, "item_id": "111", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 291, "item_id": "112", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 372, "item_id": "113", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 370, "item_id": "114", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 186, "raw_redacted": true, "raw_sha256": "f327050569a6bf599ccb047240878a391dcb476f0725dc87e639f13d8fd5f35e", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 362, "item_id": "115", "model": "claude-sonnet-5-5", "out_tokens": 5, "raw": "unsure", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 282, "item_id": "116", "model": "claude-sonnet-5-5", "out_tokens": 4, "raw": "yes", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 282, "item_id": "117", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 304, "item_id": "118", "model": "claude-sonnet-5-5", "out_tokens": 4, "raw": "yes", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 299, "item_id": "119", "model": "claude-sonnet-5-5", "out_tokens": 4, "raw": "yes", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 240, "item_id": "12", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 305, "item_id": "120", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 251, "item_id": "121", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 375, "item_id": "122", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 280, "item_id": "123", "model": "claude-sonnet-5-5", "out_tokens": 4, "raw": "yes", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 420, "item_id": "124", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 317, "item_id": "125", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 320, "item_id": "126", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 264, "item_id": "127", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 194, "raw_redacted": true, "raw_sha256": "ab32fdaf58dcae1b7f19923afb82948b414a390433e82512f588684b11873df5", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 235, "item_id": "128", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 571, "item_id": "129", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 281, "item_id": "13", "model": "claude-sonnet-5-5", "out_tokens": 4, "raw": "yes", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 237, "item_id": "130", "model": "claude-sonnet-5-5", "out_tokens": 4, "raw": "yes", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 259, "item_id": "131", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 364, "item_id": "132", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 347, "item_id": "133", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 239, "item_id": "134", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 455, "item_id": "135", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 202, "raw_redacted": true, "raw_sha256": "df36fd5e97f36db9b8557534cd614285ddfb596ff9c906bed5cc6ba36b8958ab", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 272, "item_id": "136", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 253, "item_id": "137", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 262, "item_id": "138", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 244, "item_id": "139", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 241, "item_id": "14", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 259, "item_id": "140", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 270, "item_id": "141", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 263, "item_id": "142", "model": "claude-sonnet-5-5", "out_tokens": 5, "raw": "unsure", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 326, "item_id": "143", "model": "claude-sonnet-5-5", "out_tokens": 4, "raw": "yes", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 288, "item_id": "144", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 257, "item_id": "145", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 249, "item_id": "146", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 228, "item_id": "147", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 194, "raw_redacted": true, "raw_sha256": "84491016ba1dafe34408cc613e17aa2b1e7d748f5413f5d4417f252e887377ad", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 404, "item_id": "148", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 201, "raw_redacted": true, "raw_sha256": "719936989cf8ab8b36ba19cfbf4381a2367cf8311e2b7af3fceb071363e3904a", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 235, "item_id": "149", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 330, "item_id": "15", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 228, "raw_redacted": true, "raw_sha256": "4ec1196b08719c002b591d5412ea16989631036a48a3cf427abc09b0230d1573", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 225, "item_id": "150", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 255, "item_id": "151", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 457, "item_id": "152", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 195, "raw_redacted": true, "raw_sha256": "e91d65dd3c68fda00dc993483fe389f90400a43ccf0fd8805114e51ec625b632", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 358, "item_id": "153", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 226, "item_id": "154", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 188, "raw_redacted": true, "raw_sha256": "0d339f761813405cf97843126b07dd55d3cfe8b699bf444a36fc3a13ed61b9ec", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 289, "item_id": "155", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 525, "item_id": "156", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 231, "item_id": "157", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 349, "item_id": "158", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 543, "item_id": "159", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 262, "item_id": "16", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 256, "item_id": "160", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 226, "item_id": "161", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 577, "item_id": "162", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 245, "item_id": "163", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 403, "item_id": "164", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 209, "raw_redacted": true, "raw_sha256": "0de72a510f02aa6d7b303c2790377fad23ce69b58048a3ba7f19c3111b64eaeb", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 291, "item_id": "165", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 208, "raw_redacted": true, "raw_sha256": "352bef21c9789aacacf0f28b691b12ed7b3c3323fdcbb9de15ddc0915da40726", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 247, "item_id": "166", "model": "claude-sonnet-5-5", "out_tokens": 5, "raw": "unsure", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 293, "item_id": "167", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 230, "raw_redacted": true, "raw_sha256": "92bfdd549307a04d088f2c1407cc9d198813a713078ce39112fd27d8fd6df2c9", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 255, "item_id": "168", "model": "claude-sonnet-5-5", "out_tokens": 4, "raw": "yes", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 352, "item_id": "169", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 241, "item_id": "17", "model": "claude-sonnet-5-5", "out_tokens": 4, "raw": "yes", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 251, "item_id": "170", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 267, "item_id": "171", "model": "claude-sonnet-5-5", "out_tokens": 4, "raw": "yes", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 235, "item_id": "172", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 416, "item_id": "173", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 186, "raw_redacted": true, "raw_sha256": "2bd8d1029f9f8c8cac3cd6a0699bd94a0beb9ace501475927ab834441add5a0d", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 230, "item_id": "174", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 540, "item_id": "175", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 225, "raw_redacted": true, "raw_sha256": "888b6af67fcd7be99616dd305db3cc0713a3ff27582a7a9d1dec3a1499ef6150", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 317, "item_id": "176", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 607, "item_id": "177", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 285, "item_id": "178", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 671, "item_id": "179", "model": "claude-sonnet-5-5", "out_tokens": 4, "raw": "yes", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 282, "item_id": "18", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 253, "item_id": "180", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 222, "item_id": "181", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 448, "item_id": "182", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 662, "item_id": "183", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 196, "raw_redacted": true, "raw_sha256": "9e4179c0038972d511fff5e941daf33c2824a9460492eea1d72fbdb146481a41", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 243, "item_id": "184", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 258, "item_id": "185", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 264, "item_id": "186", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 241, "item_id": "187", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 253, "item_id": "188", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 423, "item_id": "189", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 299, "item_id": "19", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 182, "raw_redacted": true, "raw_sha256": "c20bc53beb989b15e6b127a5eb99d6cb88f7969d388e00d0aa57e169ee14f33f", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 474, "item_id": "190", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 244, "item_id": "191", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 256, "item_id": "192", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 254, "item_id": "193", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 232, "item_id": "194", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 401, "item_id": "195", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 336, "item_id": "196", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 208, "raw_redacted": true, "raw_sha256": "2efd83a57da7a684142cf480d482fe51335c8d2d5e5966c4d74656e84564812d", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 407, "item_id": "197", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 213, "raw_redacted": true, "raw_sha256": "7fb6e1ea3dafaa2f803d77bf4a7dfdc63096a83f636a3136df81d5e5594825b6", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 440, "item_id": "198", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 354, "item_id": "199", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 193, "raw_redacted": true, "raw_sha256": "9cf32f2a99f3382a7b6080c2f22772641d5654e25f6586e46fdeba1a9ead9055", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 289, "item_id": "2", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 351, "item_id": "20", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 268, "item_id": "200", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 379, "item_id": "201", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 336, "item_id": "202", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 177, "raw_redacted": true, "raw_sha256": "b83e98766ab2a67584a08e52f46458310ab06a76e46c3ca24ecca6ba357787e3", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 251, "item_id": "203", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 281, "item_id": "204", "model": "claude-sonnet-5-5", "out_tokens": 6, "raw": "unsafe", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 305, "item_id": "205", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 392, "item_id": "206", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 188, "raw_redacted": true, "raw_sha256": "963fc77460b54dcf8fb5ce9f77d2cfda5740643516dc61274f0ebc7356462ea0", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 646, "item_id": "207", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 238, "item_id": "208", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 289, "item_id": "209", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 264, "item_id": "21", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 477, "item_id": "210", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 236, "item_id": "211", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 524, "item_id": "212", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 242, "item_id": "213", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 305, "item_id": "214", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 274, "item_id": "215", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 209, "raw_redacted": true, "raw_sha256": "f65e92f65b416d1012a66972b4d000a6ade8abf9d4e65325a8696ea2a4b59791", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 391, "item_id": "216", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 292, "item_id": "217", "model": "claude-sonnet-5-5", "out_tokens": 4, "raw": "yes", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 548, "item_id": "218", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 415, "item_id": "219", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 627, "item_id": "22", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 377, "item_id": "220", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 351, "item_id": "221", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 210, "raw_redacted": true, "raw_sha256": "fd2fd438f9943c73030f77cda10f59171551610051f2aa4400eb0ca291755e8c", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 270, "item_id": "222", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 371, "item_id": "223", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 282, "item_id": "224", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 296, "item_id": "225", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 210, "raw_redacted": true, "raw_sha256": "25a525826f1db12dc61ec3142798007bd94829e51e20a1c9df2ba64b81477bae", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 345, "item_id": "226", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 215, "raw_redacted": true, "raw_sha256": "8ab63d31a0170bb5a6a60c3505b34cc2c47642108dc3c281a950f1fac616b3fa", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 294, "item_id": "227", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 311, "item_id": "228", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 216, "raw_redacted": true, "raw_sha256": "2d115fcfb38e82d8d763baa827475ced5f10cfd4d8a80022564b7682cc58d09f", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 255, "item_id": "229", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 239, "item_id": "23", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 396, "item_id": "230", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 186, "raw_redacted": true, "raw_sha256": "28c6376e61b1ca6a0c7c5d01cae1dc064f4cadb98e287bbdab1530b0e02955e3", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 226, "item_id": "231", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 240, "item_id": "232", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 280, "item_id": "233", "model": "claude-sonnet-5-5", "out_tokens": 4, "raw": "yes", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 234, "item_id": "234", "model": "claude-sonnet-5-5", "out_tokens": 4, "raw": "yes", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 254, "item_id": "235", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 428, "item_id": "236", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 197, "raw_redacted": true, "raw_sha256": "c013a9881d782a53134f36a21638ccd955253ee71847f5872c7009b9d70844cf", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 242, "item_id": "237", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 235, "item_id": "238", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 231, "item_id": "239", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 253, "item_id": "24", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 300, "item_id": "240", "model": "claude-sonnet-5-5", "out_tokens": 4, "raw": "yes", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 259, "item_id": "241", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 257, "item_id": "242", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 241, "item_id": "243", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 240, "item_id": "244", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 240, "item_id": "245", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 260, "item_id": "246", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 497, "item_id": "247", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 238, "item_id": "248", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 359, "item_id": "249", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 193, "raw_redacted": true, "raw_sha256": "2d93bde98dcd32c27841130284c9b8d7270bf89c6821abaaa72c97a851b42aa0", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 374, "item_id": "25", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 193, "raw_redacted": true, "raw_sha256": "6b5ca58409e77c276c1a8d08ec470f4b46e6d6018931badf52256c6eeeb94572", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 405, "item_id": "250", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 242, "item_id": "251", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 234, "item_id": "252", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 515, "item_id": "253", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 216, "raw_redacted": true, "raw_sha256": "566fa5f7f8b37b0a69ca5c1a37054bb01d384851cbac813d5d1808330d09d71e", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 400, "item_id": "254", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 343, "item_id": "255", "model": "claude-sonnet-5-5", "out_tokens": 4, "raw": "yes", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 265, "item_id": "256", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 427, "item_id": "257", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 216, "raw_redacted": true, "raw_sha256": "79cae7a93f14d0f604d72bb961a7901eab6ccf39e6163a2246d57d6be629017a", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 452, "item_id": "258", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 188, "raw_redacted": true, "raw_sha256": "7be918afb3244ae5eb4f3f61e2be6adc2ff1ca902a1b0839eb29ca6edbc48f30", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 432, "item_id": "259", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 204, "raw_redacted": true, "raw_sha256": "9eb36407e47a26f37c0b603e5ddbe8dda920ee1338f11867eb5b03cc7c021510", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 296, "item_id": "26", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 352, "item_id": "260", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 421, "item_id": "261", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 225, "raw_redacted": true, "raw_sha256": "8c392951e1218d9f8574f0cc991478d9c267c1878258ca3e6881d7c2e3c9dcb5", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 338, "item_id": "262", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 558, "item_id": "263", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 215, "raw_redacted": true, "raw_sha256": "6023da6613bba87a81c8fb5bcf7b5b177ebb9abdd8bdede34317219a6b18d68a", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 524, "item_id": "264", "model": "claude-sonnet-5-5", "out_tokens": 4, "raw": "yes", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 234, "item_id": "265", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 591, "item_id": "266", "model": "claude-sonnet-5-5", "out_tokens": 4, "raw": "yes", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 237, "item_id": "267", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 429, "item_id": "268", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 189, "raw_redacted": true, "raw_sha256": "c05e6449237707dc2f7dd2973958a22a32eb8dcefcdf44cdeded4d4a22786db4", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 240, "item_id": "269", "model": "claude-sonnet-5-5", "out_tokens": 4, "raw": "yes", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 477, "item_id": "27", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 355, "item_id": "270", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 417, "item_id": "271", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 205, "raw_redacted": true, "raw_sha256": "b01a56eaa4a38b787b858f48242dd291486cb9a9276309d330d6e1b925404e74", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 293, "item_id": "272", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 236, "item_id": "273", "model": "claude-sonnet-5-5", "out_tokens": 4, "raw": "yes", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 266, "item_id": "274", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 319, "item_id": "275", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 247, "item_id": "276", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 257, "item_id": "277", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 567, "item_id": "278", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 217, "raw_redacted": true, "raw_sha256": "09cee80761f70f5f5da0f5c7fb1aad6d9f023c1f4fac59c88edc8d95f547a338", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 270, "item_id": "279", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 217, "raw_redacted": true, "raw_sha256": "e4a745de5bf98e048e7f59b04f37957a14361a0b7d4e4227151ed7026af3e97c", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 238, "item_id": "28", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 318, "item_id": "280", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 242, "item_id": "281", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 319, "item_id": "282", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 197, "raw_redacted": true, "raw_sha256": "9d810f10cee5592efdd88c6f8ac6e346b0f9a196761479b90820711fff4073fa", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 238, "item_id": "283", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 329, "item_id": "284", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 320, "item_id": "285", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 250, "item_id": "286", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 325, "item_id": "287", "model": "claude-sonnet-5-5", "out_tokens": 5, "raw": "unsure", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 342, "item_id": "288", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 349, "item_id": "289", "model": "claude-sonnet-5-5", "out_tokens": 5, "raw": "unsure", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 428, "item_id": "29", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 312, "item_id": "290", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 282, "item_id": "291", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 186, "raw_redacted": true, "raw_sha256": "cac025604dda5a1513037d00ca9ca868410ce220964d44e43971ace6ec16e5aa", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 291, "item_id": "292", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 177, "raw_redacted": true, "raw_sha256": "956e0c4a6761cf29ff6209a03fe3a0409caeb3b3cf018cf69f62d6eb8dce4447", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 290, "item_id": "293", "model": "claude-sonnet-5-5", "out_tokens": 4, "raw": "yes", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 223, "item_id": "294", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 314, "item_id": "295", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 351, "item_id": "296", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 338, "item_id": "297", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 257, "item_id": "298", "model": "claude-sonnet-5-5", "out_tokens": 4, "raw": "yes", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 267, "item_id": "299", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 276, "item_id": "3", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 188, "raw_redacted": true, "raw_sha256": "0ed6bddc6e43613821648fe49f9142004ef04983e90e94d58ccbba6e69bde751", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 244, "item_id": "30", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 334, "item_id": "300", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 204, "raw_redacted": true, "raw_sha256": "3dbfec5b5f9d59a5955b0810e0f680c91a9b556a17c9b24aed3a7d14a1370c99", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 579, "item_id": "301", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 271, "item_id": "302", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 237, "item_id": "303", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 396, "item_id": "304", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 244, "item_id": "305", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 359, "item_id": "306", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 280, "item_id": "307", "model": "claude-sonnet-5-5", "out_tokens": 5, "raw": "unsure", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 251, "item_id": "308", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 187, "raw_redacted": true, "raw_sha256": "7102a324b6b915c16207e73a984051aa6e7806847ea8cb14f62fe1797db91807", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 408, "item_id": "309", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 244, "item_id": "31", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 233, "item_id": "310", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 240, "item_id": "311", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 207, "raw_redacted": true, "raw_sha256": "3d26265d60f5000be262f1ec85971b739f4b4a59a9eade7c621ba565a3049883", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 424, "item_id": "312", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 186, "raw_redacted": true, "raw_sha256": "935d30a1d019e46dcce9f4430e303884fc66c7a6530e54fde28f1e56fa22cab4", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 243, "item_id": "313", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 340, "item_id": "314", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 248, "item_id": "315", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 256, "item_id": "316", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 408, "item_id": "317", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 202, "raw_redacted": true, "raw_sha256": "1c875d2ca227af148a372aa82e651e621501f63d5ef53f68d6de9e966b8292f7", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 475, "item_id": "318", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 264, "item_id": "319", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 366, "item_id": "32", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 336, "item_id": "320", "model": "claude-sonnet-5-5", "out_tokens": 4, "raw": "yes", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 286, "item_id": "321", "model": "claude-sonnet-5-5", "out_tokens": 4, "raw": "yes", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 439, "item_id": "322", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 622, "item_id": "323", "model": "claude-sonnet-5-5", "out_tokens": 4, "raw": "yes", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 408, "item_id": "324", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 262, "item_id": "325", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 214, "raw_redacted": true, "raw_sha256": "61c1be6a3d37e59ac50dc8dd1d1298950af9de110e67e5a43404e9f73ddbf472", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 244, "item_id": "326", "model": "claude-sonnet-5-5", "out_tokens": 5, "raw": "unsure", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 345, "item_id": "327", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 211, "raw_redacted": true, "raw_sha256": "5d8b6f74220116a5bd14b51f3fafdcd3ae2b01aa31ae07957f7e1b71f66974bc", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 270, "item_id": "328", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 267, "item_id": "329", "model": "claude-sonnet-5-5", "out_tokens": 4, "raw": "yes", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 330, "item_id": "33", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 204, "raw_redacted": true, "raw_sha256": "a58a51dde6c874ddb4c44611b0ccd2450b577f215ff3ef5a02b2b4678b17dacd", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 283, "item_id": "330", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 230, "raw_redacted": true, "raw_sha256": "4c7a00badb61efb0561dd1f30df59fc72fa32cbd56075bd29cf7ca4fea4c61db", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 290, "item_id": "331", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 251, "item_id": "332", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 233, "item_id": "333", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 387, "item_id": "334", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 235, "item_id": "335", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 277, "item_id": "336", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 244, "item_id": "337", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 354, "item_id": "338", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 270, "item_id": "339", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 217, "raw_redacted": true, "raw_sha256": "1f594274413c377c6275c2e9039cc386d53927fb668823376227fe63a93c44c9", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 274, "item_id": "34", "model": "claude-sonnet-5-5", "out_tokens": 4, "raw": "yes", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 243, "item_id": "340", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 335, "item_id": "341", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 177, "raw_redacted": true, "raw_sha256": "4bc98b300b54c80023ddd48be64c717ebea2421da4c3f16c1fa026872befcbd8", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 348, "item_id": "342", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 190, "raw_redacted": true, "raw_sha256": "41e64b14d84aac3cb345f7cdec0c7f1876e6565297bf0f8061b7eecad72ddfc3", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 490, "item_id": "343", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 521, "item_id": "344", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 244, "item_id": "345", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 231, "item_id": "346", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 384, "item_id": "347", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 372, "item_id": "348", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 340, "item_id": "349", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 246, "item_id": "35", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 235, "item_id": "350", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 183, "raw_redacted": true, "raw_sha256": "4b3ff0ce6a8d2e51178706d49d68184a73b66a74b4425580d3c7aa12315b9d59", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 289, "item_id": "36", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 250, "item_id": "37", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 340, "item_id": "38", "model": "claude-sonnet-5-5", "out_tokens": 5, "raw": "unsure", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 247, "item_id": "39", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 395, "item_id": "4", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 219, "raw_redacted": true, "raw_sha256": "292ab69b7ef715666875144dab1efb135beb7e69164154986bffb935288b9848", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 443, "item_id": "40", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 181, "raw_redacted": true, "raw_sha256": "6362afadfcb6c8c7efb8e5f44cfdb14f4c8f7a9acf0e2fe1323f24197f7e2a20", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 226, "item_id": "41", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 224, "item_id": "42", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 276, "item_id": "43", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 391, "item_id": "44", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 192, "raw_redacted": true, "raw_sha256": "11303bf1b20ceb0757514add857ab609ac78c2ff4feca163c8ddcc841cd1a222", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 314, "item_id": "45", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 222, "raw_redacted": true, "raw_sha256": "aaf3326c3de6cbfc01541ced4074f2e8ddc7d765be34b4226af812dd73446080", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 277, "item_id": "46", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 534, "item_id": "47", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 379, "item_id": "48", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 181, "raw_redacted": true, "raw_sha256": "77cb6970422c0ef059e4dfa02bbe6e2d3ff180ce6eecc3e668bd2d6ad3143598", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 618, "item_id": "49", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 261, "item_id": "5", "model": "claude-sonnet-5-5", "out_tokens": 5, "raw": "unsure", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 616, "item_id": "50", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 245, "item_id": "51", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 284, "item_id": "52", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 201, "raw_redacted": true, "raw_sha256": "a17c0b58535c4aa156ffa57b632aa1a2e0b12ab1d3fa75767396509509d802ed", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 255, "item_id": "53", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 349, "item_id": "54", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 246, "item_id": "55", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 498, "item_id": "56", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 203, "raw_redacted": true, "raw_sha256": "47d8b6120b1389b26ad6ba07b3edf87d04bce6381bd9cc1ac60cd3cbe6702537", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 552, "item_id": "57", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 287, "item_id": "58", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 324, "item_id": "59", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 171, "raw_redacted": true, "raw_sha256": "8e73e0a9c6b49fe846023955f9d0c4e1041dd0fd5fb7e96a2495433b11a51f21", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 250, "item_id": "6", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 568, "item_id": "60", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 279, "item_id": "61", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 232, "item_id": "62", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 447, "item_id": "63", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 229, "raw_redacted": true, "raw_sha256": "2128f6396fcc83f5a20275dce0d9d14e49ec91267f458f1ddf99dab60c690d5f", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 241, "item_id": "64", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 290, "item_id": "65", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 195, "raw_redacted": true, "raw_sha256": "380a255065fa53976fa8ea7c7235c6253af3552889e7dffa8946947124cadb1c", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 355, "item_id": "66", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 256, "item_id": "67", "model": "claude-sonnet-5-5", "out_tokens": 5, "raw": "unsure", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 284, "item_id": "68", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 550, "item_id": "69", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 265, "item_id": "7", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 408, "item_id": "70", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 211, "raw_redacted": true, "raw_sha256": "37775cacd83928ee03c8a622c4ef04c63efd6aae14c272e4e3be6aa939e6a215", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 338, "item_id": "71", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 285, "item_id": "72", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 216, "raw_redacted": true, "raw_sha256": "0a8b44fce5f0cba2ba24339ffe4605fa7a947b2a59138e1806a1a22c0bda1ced", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 314, "item_id": "73", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 228, "raw_redacted": true, "raw_sha256": "cabb964cbf5bc2b2cbb2939a6767c56b93bbf0a7ad35653ff69bca089effadf4", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 397, "item_id": "74", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 256, "item_id": "75", "model": "claude-sonnet-5-5", "out_tokens": 4, "raw": "yes", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 495, "item_id": "76", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 206, "raw_redacted": true, "raw_sha256": "eac710eafe3c1c45554da6cd288606c5b681f9223bbd1d4cba8f4a103321915a", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 297, "item_id": "77", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 250, "item_id": "78", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 485, "item_id": "79", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 213, "raw_redacted": true, "raw_sha256": "a5d6235d97d7f88f093d2db484100e3a46747b1e58928c216e22e04a8080d591", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 503, "item_id": "8", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 205, "raw_redacted": true, "raw_sha256": "db7fca0ae626fe2ee44406276a39dcdba3e2a1fa2efbde8a1909cf309264b3e2", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 476, "item_id": "80", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 244, "item_id": "81", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 377, "item_id": "82", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 491, "item_id": "83", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 208, "raw_redacted": true, "raw_sha256": "8e585d0eda2953123656406cbf6ff06bbd8e77016bfbe728f6e2e0509d290a37", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 235, "item_id": "84", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 305, "item_id": "85", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 229, "raw_redacted": true, "raw_sha256": "eac0b9c5d108b83a54551f620e65314a4633e2c2709a1dbb5d5e16a2b0d12774", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 259, "item_id": "86", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 476, "item_id": "87", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 313, "item_id": "88", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 246, "item_id": "89", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 262, "item_id": "9", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 306, "item_id": "90", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 425, "item_id": "91", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 473, "item_id": "92", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 198, "raw_redacted": true, "raw_sha256": "8a591e48b35c599b63e74d9fef891599956fb947eb6adc82f957f6f022a6ffeb", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 410, "item_id": "93", "model": "claude-sonnet-5-5", "out_tokens": 64, "raw": null, "raw_len": 181, "raw_redacted": true, "raw_sha256": "21dedec13458d9c8f083fe13ac49251d8b00cf698a43038b65ef587fcc20cccf", "refusal_category": null, "stop_reason": "max_tokens"}
+{"in_tokens": 415, "item_id": "94", "model": "claude-sonnet-5-5", "out_tokens": 5, "raw": "unsure", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 322, "item_id": "95", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 291, "item_id": "96", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 531, "item_id": "97", "model": "claude-sonnet-5-5", "out_tokens": 5, "raw": "unsure", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 351, "item_id": "98", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}
+{"in_tokens": 267, "item_id": "99", "model": "claude-sonnet-5-5", "out_tokens": 3, "raw": "no", "refusal_category": null, "stop_reason": "end_turn"}

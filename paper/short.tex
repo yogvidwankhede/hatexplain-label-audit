@@ -61,6 +61,9 @@ We audit every corpus we found with rater identifiers and a research licence: Ha
 \label{s:retro}
 HateXplain's official test split has \retroN posts, \retroSplit\% of them 2--1 splits. Of the \retroPairs pairwise gaps between the six models in \citet[Table 6]{mathew2021hatexplain}, \retroUnresolvable (\retroMinGap to \retroBertGap) are significant at $z=1.96$ only if the two systems disagree on fewer than \retroMinPmax--\retroBertPmax\% of posts, including both comparisons that isolate rationale supervision. This concerns accuracy only, not the paper's explainability claims.
 
+\section{LLM judges against a held-out human}
+We scored five judges on up to 1,000 items per corpus against the panel majority, with one annotator held out and scored identically. On HateXplain, MHS and Wikipedia Talk no judge beat the held-out human (best: \jSonnetHx vs.\ \jHumanHx, \jHaikuMhs vs.\ \jHumanMhs, \jSonnetWiki vs.\ \jHumanWiki). On DICES, where a single rater is a weak reference ($\alpha\approx$ \alphaDthree), three judges exceed the human (up to \jSonnetDthree vs.\ \jHumanDthree), yet none matches the crowd majority on the expert labels (\jExpertSonnet at best vs.\ \jExpertPanel), and Sonnet's figure drops to \jSonnetDthreeInvalidWrong if its \jSonnetDthreeUnparsed truncated outputs count as wrong. Gate~v2 resolved \jPairsPass of \jPairsTotal judge-versus-judge comparisons and none with a gap below 0.02.
+
 \section{Recommendations}
 Report agreement with an interval and with AC1 and raw agreement beside $\alpha$; report the paired disagreement rate of compared systems; and report the smallest true gap the test size and label noise can resolve. Do not replace a significance test with a reliability threshold. At a fixed budget, label more items once rather than fewer items several times \citep{dorner2024dont}; in our real-rater test this held in all \clFourCells design cells.
 
