@@ -1,0 +1,9 @@
+{
+  "title": "What can your labels support? Reproducibility package",
+  "upload_type": "software",
+  "description": "Reproducibility package for the paper 'What can your labels support? A claim-gated reliability audit of annotation benchmarks': a six-corpus annotation reliability audit, a known-truth evaluation of claim gates, a HateXplain retrospective, a real-rater test of the one-label-per-item result, and an LLM-judge experiment against held-out annotators. No corpus text is included.",
+  "creators": [{"name": "Wankhede, Yogvid", "affiliation": "Independent Researcher", "orcid": "0009-0004-2258-6775"}],
+  "license": "MIT",
+  "keywords": ["annotation", "inter-annotator agreement", "Krippendorff's alpha", "evaluation", "statistical power", "LLM-as-a-judge", "reproducibility"],
+  "access_right": "open"
+}
