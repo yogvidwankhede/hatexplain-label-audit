@@ -215,11 +215,16 @@ def _openai_one(judge: str, corpus: str, item: dict) -> dict:
                     "system_fingerprint": d.get("system_fingerprint"),
                     "in_tokens": d["usage"]["prompt_tokens"], "out_tokens": d["usage"]["completion_tokens"]}
         except urllib.error.HTTPError as e:
-            if e.code in (429, 500, 502, 503) and attempt < 5:
+            if e.code in (429, 500, 502, 503, 504) and attempt < 5:
                 time.sleep(2 ** attempt * 5)
                 continue
             return {"item_id": item["item_id"], "raw": None, "stop_reason": f"http_{e.code}",
                     "model": cfg["model"], "error": e.read().decode()[:300], "in_tokens": 0, "out_tokens": 0}
+        except (urllib.error.URLError, TimeoutError, ConnectionError) as e:
+            if attempt < 5:
+                time.sleep(2 ** attempt * 5)
+                continue
+            raise
 
 
 def _ollama_one(judge: str, corpus: str, item: dict) -> dict:
