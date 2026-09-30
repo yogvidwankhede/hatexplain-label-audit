@@ -1,6 +1,6 @@
 # What can your labels support? A claim-gated reliability audit of annotation benchmarks
 
-[![ci](https://github.com/yogvidwankhede/hatexplain-label-audit/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/yogvidwankhede/hatexplain-label-audit/actions/workflows/ci.yml) [![release](https://img.shields.io/github/v/release/yogvidwankhede/hatexplain-label-audit)](https://github.com/yogvidwankhede/hatexplain-label-audit/releases) [![license: MIT](https://img.shields.io/github/license/yogvidwankhede/hatexplain-label-audit)](LICENSE)
+[![ci](https://github.com/yogvidwankhede/hatexplain-label-audit/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/yogvidwankhede/hatexplain-label-audit/actions/workflows/ci.yml) [![release](https://img.shields.io/github/v/release/yogvidwankhede/hatexplain-label-audit)](https://github.com/yogvidwankhede/hatexplain-label-audit/releases) [![license: MIT](https://img.shields.io/github/license/yogvidwankhede/hatexplain-label-audit)](LICENSE) [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/yogvidwankhede/hatexplain-label-audit/badge)](https://securityscorecards.dev/viewer/?uri=github.com/yogvidwankhede/hatexplain-label-audit)
 
 This repository is the reproducibility package for the paper of that name
 (`paper/main.tex`, long version; `paper/short.tex`, short version). It started as a
