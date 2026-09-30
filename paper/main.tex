@@ -1,8 +1,8 @@
 % Long version (ARR long paper, 8 pages + unlimited references/limitations/appendix).
 % Build: tectonic -X compile main.tex   (or `make paper` from the repository root)
-% Switch \usepackage[review]{acl} to [preprint] for the non-anonymous arXiv version.
+% preprint.tex defines \PREPRINT to build the non-anonymous arXiv version from this file.
 \documentclass[11pt]{article}
-\usepackage[review]{acl}
+\ifdefined\PREPRINT\usepackage[preprint]{acl}\else\usepackage[review]{acl}\fi
 \usepackage{times}
 \usepackage{latexsym}
 \usepackage[T1]{fontenc}
@@ -23,7 +23,11 @@
 
 \title{What Can Your Labels Support?\\A Claim-Gated Reliability Audit of Annotation Benchmarks}
 
+\ifdefined\PREPRINT
+\author{Yogvid Wankhede\\Washington University in St.\ Louis\\\texttt{[email to be chosen by the author]}}
+\else
 \author{Anonymous submission}
+\fi
 
 \begin{document}
 \maketitle
