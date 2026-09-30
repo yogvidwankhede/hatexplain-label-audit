@@ -8,6 +8,7 @@ authors:
     orcid: "https://orcid.org/0009-0004-2258-6775"
 version: 2.0.1
 license: MIT
+doi: 10.5281/zenodo.23071900
 repository-code: "https://github.com/yogvidwankhede/hatexplain-label-audit"
 keywords: [annotation reliability, Krippendorff's alpha, LLM-as-a-judge, statistical power, hate speech]
 references:
@@ -15,6 +16,7 @@ references:
     title: Rubricon
     authors: [{family-names: Wankhede, given-names: Yogvid}]
     repository-code: "https://github.com/yogvidwankhede/rubricon"
+    doi: 10.5281/zenodo.23071898
 preferred-citation:
   type: article
   title: "What can your labels support? A claim-gated reliability audit of annotation benchmarks"
