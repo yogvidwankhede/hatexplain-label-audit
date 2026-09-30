@@ -44,3 +44,13 @@ Strict: the whole answer, lower-cased with punctuation removed, equals one label
 - Alternative Annotator Test (Calderon et al., ACL 2025): implemented following the paper; its epsilon, test, FDR level and minimum items per annotator are copied from the paper into this file before the alt-test analysis is run.
 - Gate v2 (rubricon.gates.attenuation) is applied to each claim "judge X agrees with the panel at least as well as the held-out human" and "judge X beats judge Y", with z* = 2.58.
 - DICES-350 expert label (safety_gold): secondary reference for all judges and the human.
+
+## Alt-test parameters (added 2026-09-30, before any alt-test result was computed; judge outputs from OpenAI and qwen existed but had not been scored)
+Copied from Calderon et al. (ACL 2025, 2025.acl-long.782) as read in full (paper/related_work_notes.md):
+- Scoring: ACC(f, x_i, j) = mean over the item's other annotators of 1{f(x_i) = h_k(x_i)}; same for h_j. W^f = 1{S_f >= S_h}, W^h = 1{S_h >= S_f}.
+- Test per annotator j: one-sided t-test on d = W^h - W^f, t = (mean(d) - eps)/(sd/sqrt(n_j)), lower-tail p; annotators with fewer than 30 valid items are excluded (the paper's minimum), so no Wilcoxon fallback is needed.
+- eps = 0.10 (paper default for crowd workers); sensitivity eps in {0.05, 0.15, 0.20}.
+- Benjamini-Yekutieli at q = 0.05 across annotators within a corpus; winning rate omega; pass iff omega >= 0.5 and >= 3 eligible annotators.
+- Labels: binary (the study's primary scale).
+- Annotators: the sample's ratings for HateXplain/MHS/Wikipedia Talk; ALL ratings (123 raters per item) for DICES-350, because the 5-rating cap leaves no DICES rater with 30 items. Eligible annotators: HateXplain 33, MHS 0, Wikipedia Talk 0, DICES-350 123. The alt-test is reported as not applicable where fewer than 3 annotators are eligible.
+- Not used: the paper's inverse-probability weighting for skewed labels (appendix C.1); reported as a limitation.
