@@ -14,7 +14,7 @@ Nothing below has been done on your behalf. Nothing has been pushed, published, 
    - enable Dependabot alerts;
    - add topics such as `annotation`, `inter-annotator-agreement`, `krippendorff-alpha`, `llm-as-a-judge`, `evaluation`, `reproducibility`;
    - optionally enable Discussions.
-5. **Good first issues.** File the drafts in `.github/GOOD_FIRST_ISSUES.md` if you want them public, then delete the file.
+5. **Good first issues.** Done: filed as issues #3-#6 (this repo) and #8-#12 (rubricon).
 6. **Badges.**
    - Add a CI badge only after the workflow has run on GitHub.
    - Add a release badge only after the release exists.
