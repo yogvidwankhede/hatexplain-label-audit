@@ -39,3 +39,12 @@ Each entry says whether any result on the affected corpus had been seen.
 ## D7 — Wider z-threshold grid for the matched comparison (POST HOC, 2026-09-29)
 - In het k=-0.10 the v1 gate's operating point (false 0.0043) lies below the smallest false-claim rate the grid {1.96..3.29} reaches (0.0078), so a matched comparison was not possible. Added 3.5, 4.0, 4.5 to Z_THRESHOLDS. Results seen before adding: all S1/v2 aggregates. Seeds and earlier columns are unchanged.
 - C3 was NOT modified after seeing that it adds little (D6 fixed its cut-offs); the paper reports it as is.
+
+## D8 — Full-data bootstrap replaces the 10,000-item subsample (2026-09-30)
+- PREREG A1 bootstrapped at most 10,000 items while the point estimate used all items; on GoEmotions:amusement the point (0.451) fell outside its subsample interval [0.453, 0.506]. `fast_alpha.py` computes the same cluster bootstrap on all units (validated exactly against rubricon, including ordinal and weighted replicates). Results seen: first-run CIs (all corpora). Point estimates are unaffected.
+
+## D9 — S2 details fixed before running (2026-09-30)
+- Pool = 5 raters per item; reference = majority of 5 other raters (Wikipedia Talk) or of all remaining raters (DICES); items need >= 10 ratings. MHS is excluded from S2: only 70 items have >= 10 ratings.
+- Systems: B accuracy 0.80, p_disc 0.20, deltas {0.02, 0.03, 0.05}; two system models, `uniform` and `contested` (both systems err more where reference raters split, minority share >= 0.3; A's advantage only on clear items). The `contested` model was added here, before any S2 run, because PREREG asked that contradicting results be sought.
+- Budgets: Wikipedia Talk {1500, 3000, 6000}; DICES-350 {300}; DICES-990 {450, 900} (n cannot exceed the item count). 2,000 replicates per cell.
+- D9 addendum (same day, after a crash and before any S2 output existed): the `contested` model's rescaling to overall B accuracy 0.80 was infeasible on corpora where most items are contested. Replaced by fixed B accuracy 0.60 (contested) / 0.85 (clear), p_disc on clear items lowered to min(0.20, 0.30 - d) where needed, and cells needing d > 0.15 on clear items skipped and counted.

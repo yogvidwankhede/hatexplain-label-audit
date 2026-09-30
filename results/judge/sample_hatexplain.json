@@ -1,0 +1,9018 @@
+{
+ "corpus": "hatexplain",
+ "items": [
+  {
+   "heldout_rater": "206",
+   "item_id": "10007406_gab",
+   "ratings": {
+    "205": "offensive",
+    "206": "hatespeech",
+    "207": "normal"
+   }
+  },
+  {
+   "heldout_rater": "220",
+   "item_id": "10076593_gab",
+   "ratings": {
+    "200": "hatespeech",
+    "219": "hatespeech",
+    "220": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "6",
+   "item_id": "10146040_gab",
+   "ratings": {
+    "4": "hatespeech",
+    "6": "normal",
+    "68": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "203",
+   "item_id": "10151352_gab",
+   "ratings": {
+    "203": "hatespeech",
+    "211": "normal",
+    "232": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "204",
+   "item_id": "10155201_gab",
+   "ratings": {
+    "204": "normal",
+    "208": "offensive",
+    "234": "normal"
+   }
+  },
+  {
+   "heldout_rater": "7",
+   "item_id": "1018691_gab",
+   "ratings": {
+    "27": "normal",
+    "6": "normal",
+    "7": "normal"
+   }
+  },
+  {
+   "heldout_rater": "225",
+   "item_id": "10325961_gab",
+   "ratings": {
+    "204": "hatespeech",
+    "207": "normal",
+    "225": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "211",
+   "item_id": "10631912_gab",
+   "ratings": {
+    "206": "offensive",
+    "208": "normal",
+    "211": "normal"
+   }
+  },
+  {
+   "heldout_rater": "223",
+   "item_id": "10655484_gab",
+   "ratings": {
+    "200": "normal",
+    "205": "normal",
+    "223": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "205",
+   "item_id": "10669626_gab",
+   "ratings": {
+    "205": "offensive",
+    "211": "normal",
+    "223": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "212",
+   "item_id": "10681081_gab",
+   "ratings": {
+    "199": "normal",
+    "212": "hatespeech",
+    "215": "normal"
+   }
+  },
+  {
+   "heldout_rater": "202",
+   "item_id": "10688387_gab",
+   "ratings": {
+    "202": "normal",
+    "223": "offensive",
+    "231": "normal"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "10688848_gab",
+   "ratings": {
+    "13": "hatespeech",
+    "3": "hatespeech",
+    "4": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "231",
+   "item_id": "10704751_gab",
+   "ratings": {
+    "200": "normal",
+    "223": "normal",
+    "231": "normal"
+   }
+  },
+  {
+   "heldout_rater": "212",
+   "item_id": "1076084250544201728_twitter",
+   "ratings": {
+    "209": "normal",
+    "212": "offensive",
+    "235": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "216",
+   "item_id": "1076207084931289093_twitter",
+   "ratings": {
+    "203": "hatespeech",
+    "209": "offensive",
+    "216": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "209",
+   "item_id": "1076601726961102849_twitter",
+   "ratings": {
+    "205": "offensive",
+    "209": "offensive",
+    "213": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "208",
+   "item_id": "1076892958484512770_twitter",
+   "ratings": {
+    "208": "offensive",
+    "223": "offensive",
+    "229": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "199",
+   "item_id": "10777192_gab",
+   "ratings": {
+    "199": "offensive",
+    "215": "normal",
+    "217": "normal"
+   }
+  },
+  {
+   "heldout_rater": "222",
+   "item_id": "1078328752613003269_twitter",
+   "ratings": {
+    "209": "offensive",
+    "222": "offensive",
+    "235": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "212",
+   "item_id": "1079100239183675392_twitter",
+   "ratings": {
+    "209": "normal",
+    "212": "offensive",
+    "235": "normal"
+   }
+  },
+  {
+   "heldout_rater": "223",
+   "item_id": "1080113975239630848_twitter",
+   "ratings": {
+    "209": "offensive",
+    "223": "offensive",
+    "229": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "25",
+   "item_id": "1080891149424836609_twitter",
+   "ratings": {
+    "25": "normal",
+    "4": "normal",
+    "6": "normal"
+   }
+  },
+  {
+   "heldout_rater": "115",
+   "item_id": "1081965704939749376_twitter",
+   "ratings": {
+    "115": "hatespeech",
+    "4": "hatespeech",
+    "6": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "6",
+   "item_id": "1082440781149949953_twitter",
+   "ratings": {
+    "6": "offensive",
+    "7": "offensive",
+    "8": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "1082592199718580224_twitter",
+   "ratings": {
+    "25": "normal",
+    "4": "normal",
+    "6": "normal"
+   }
+  },
+  {
+   "heldout_rater": "223",
+   "item_id": "1082732859897667584_twitter",
+   "ratings": {
+    "206": "normal",
+    "217": "normal",
+    "223": "normal"
+   }
+  },
+  {
+   "heldout_rater": "206",
+   "item_id": "1083064587388243968_twitter",
+   "ratings": {
+    "206": "normal",
+    "212": "normal",
+    "223": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "6",
+   "item_id": "1083159533848023041_twitter",
+   "ratings": {
+    "25": "normal",
+    "3": "normal",
+    "6": "normal"
+   }
+  },
+  {
+   "heldout_rater": "246",
+   "item_id": "1083850411235102722_twitter",
+   "ratings": {
+    "209": "normal",
+    "223": "offensive",
+    "246": "normal"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "1084543381546696704_twitter",
+   "ratings": {
+    "4": "normal",
+    "7": "normal",
+    "8": "normal"
+   }
+  },
+  {
+   "heldout_rater": "203",
+   "item_id": "1084918276835237891_twitter",
+   "ratings": {
+    "130": "normal",
+    "203": "normal",
+    "235": "normal"
+   }
+  },
+  {
+   "heldout_rater": "203",
+   "item_id": "1086804965186830338_twitter",
+   "ratings": {
+    "203": "offensive",
+    "209": "offensive",
+    "223": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "25",
+   "item_id": "1086832540407746561_twitter",
+   "ratings": {
+    "25": "normal",
+    "43": "normal",
+    "6": "normal"
+   }
+  },
+  {
+   "heldout_rater": "6",
+   "item_id": "1087092876666945543_twitter",
+   "ratings": {
+    "16": "hatespeech",
+    "4": "normal",
+    "6": "normal"
+   }
+  },
+  {
+   "heldout_rater": "8",
+   "item_id": "1087180671842439168_twitter",
+   "ratings": {
+    "4": "normal",
+    "6": "normal",
+    "8": "normal"
+   }
+  },
+  {
+   "heldout_rater": "8",
+   "item_id": "1087809548998594563_twitter",
+   "ratings": {
+    "6": "offensive",
+    "7": "offensive",
+    "8": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "213",
+   "item_id": "1087971042289696769_twitter",
+   "ratings": {
+    "202": "normal",
+    "213": "normal",
+    "231": "normal"
+   }
+  },
+  {
+   "heldout_rater": "7",
+   "item_id": "1088922994104254465_twitter",
+   "ratings": {
+    "6": "normal",
+    "7": "normal",
+    "8": "normal"
+   }
+  },
+  {
+   "heldout_rater": "206",
+   "item_id": "1089594179196411904_twitter",
+   "ratings": {
+    "206": "offensive",
+    "217": "normal",
+    "223": "normal"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "1089732784174841857_twitter",
+   "ratings": {
+    "25": "normal",
+    "4": "offensive",
+    "7": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "203",
+   "item_id": "1089740628802584577_twitter",
+   "ratings": {
+    "203": "offensive",
+    "209": "offensive",
+    "235": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "235",
+   "item_id": "1090145948280459264_twitter",
+   "ratings": {
+    "209": "normal",
+    "222": "offensive",
+    "235": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "39",
+   "item_id": "10917548_gab",
+   "ratings": {
+    "39": "offensive",
+    "4": "hatespeech",
+    "46": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "223",
+   "item_id": "1092641093584408576_twitter",
+   "ratings": {
+    "203": "normal",
+    "209": "normal",
+    "223": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "199",
+   "item_id": "1093415982893285377_twitter",
+   "ratings": {
+    "199": "normal",
+    "203": "normal",
+    "206": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "209",
+   "item_id": "1095023739304112132_twitter",
+   "ratings": {
+    "203": "hatespeech",
+    "209": "offensive",
+    "223": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "207",
+   "item_id": "1097012359481053185_twitter",
+   "ratings": {
+    "207": "normal",
+    "212": "hatespeech",
+    "221": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "207",
+   "item_id": "1097145209870266370_twitter",
+   "ratings": {
+    "207": "normal",
+    "212": "normal",
+    "221": "normal"
+   }
+  },
+  {
+   "heldout_rater": "235",
+   "item_id": "1097938872837832705_twitter",
+   "ratings": {
+    "203": "normal",
+    "209": "normal",
+    "235": "normal"
+   }
+  },
+  {
+   "heldout_rater": "204",
+   "item_id": "1098366440200171520_twitter",
+   "ratings": {
+    "204": "normal",
+    "207": "normal",
+    "221": "normal"
+   }
+  },
+  {
+   "heldout_rater": "25",
+   "item_id": "1098399050930552832_twitter",
+   "ratings": {
+    "16": "offensive",
+    "25": "offensive",
+    "4": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "233",
+   "item_id": "1098829462005735424_twitter",
+   "ratings": {
+    "202": "offensive",
+    "213": "hatespeech",
+    "233": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "204",
+   "item_id": "1099348020594909184_twitter",
+   "ratings": {
+    "204": "normal",
+    "215": "normal",
+    "221": "normal"
+   }
+  },
+  {
+   "heldout_rater": "223",
+   "item_id": "1099780793050771459_twitter",
+   "ratings": {
+    "199": "offensive",
+    "217": "hatespeech",
+    "223": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "209",
+   "item_id": "1100358109636280321_twitter",
+   "ratings": {
+    "209": "normal",
+    "223": "normal",
+    "229": "normal"
+   }
+  },
+  {
+   "heldout_rater": "25",
+   "item_id": "1100426090907082752_twitter",
+   "ratings": {
+    "25": "normal",
+    "3": "normal",
+    "6": "normal"
+   }
+  },
+  {
+   "heldout_rater": "203",
+   "item_id": "1102795985951043584_twitter",
+   "ratings": {
+    "203": "normal",
+    "209": "normal",
+    "223": "normal"
+   }
+  },
+  {
+   "heldout_rater": "7",
+   "item_id": "1103348266702438401_twitter",
+   "ratings": {
+    "25": "normal",
+    "6": "normal",
+    "7": "normal"
+   }
+  },
+  {
+   "heldout_rater": "209",
+   "item_id": "1103485105891434497_twitter",
+   "ratings": {
+    "209": "offensive",
+    "214": "normal",
+    "227": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "212",
+   "item_id": "1103690106701996033_twitter",
+   "ratings": {
+    "202": "offensive",
+    "207": "normal",
+    "212": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "233",
+   "item_id": "1104150775469608962_twitter",
+   "ratings": {
+    "202": "offensive",
+    "231": "offensive",
+    "233": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "6",
+   "item_id": "1104194723412131845_twitter",
+   "ratings": {
+    "115": "normal",
+    "4": "normal",
+    "6": "normal"
+   }
+  },
+  {
+   "heldout_rater": "6",
+   "item_id": "1104254198621696000_twitter",
+   "ratings": {
+    "6": "normal",
+    "7": "normal",
+    "8": "normal"
+   }
+  },
+  {
+   "heldout_rater": "7",
+   "item_id": "1104443298817683456_twitter",
+   "ratings": {
+    "25": "normal",
+    "4": "offensive",
+    "7": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "8",
+   "item_id": "1104676577634410496_twitter",
+   "ratings": {
+    "58": "normal",
+    "6": "normal",
+    "8": "normal"
+   }
+  },
+  {
+   "heldout_rater": "213",
+   "item_id": "1104875261819060224_twitter",
+   "ratings": {
+    "202": "normal",
+    "213": "normal",
+    "215": "normal"
+   }
+  },
+  {
+   "heldout_rater": "6",
+   "item_id": "1104908371625414657_twitter",
+   "ratings": {
+    "25": "normal",
+    "6": "normal",
+    "7": "normal"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "1106165429700046853_twitter",
+   "ratings": {
+    "25": "offensive",
+    "3": "offensive",
+    "4": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "7",
+   "item_id": "1106211579631202309_twitter",
+   "ratings": {
+    "6": "normal",
+    "7": "normal",
+    "97": "normal"
+   }
+  },
+  {
+   "heldout_rater": "209",
+   "item_id": "1107667699373670400_twitter",
+   "ratings": {
+    "199": "offensive",
+    "203": "normal",
+    "209": "normal"
+   }
+  },
+  {
+   "heldout_rater": "202",
+   "item_id": "1107846791955914752_twitter",
+   "ratings": {
+    "200": "normal",
+    "202": "normal",
+    "238": "normal"
+   }
+  },
+  {
+   "heldout_rater": "200",
+   "item_id": "1108075259897352193_twitter",
+   "ratings": {
+    "200": "hatespeech",
+    "202": "hatespeech",
+    "215": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "202",
+   "item_id": "1109237447005630464_twitter",
+   "ratings": {
+    "202": "normal",
+    "217": "normal",
+    "233": "normal"
+   }
+  },
+  {
+   "heldout_rater": "223",
+   "item_id": "1110671349540896768_twitter",
+   "ratings": {
+    "209": "offensive",
+    "212": "normal",
+    "223": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "6",
+   "item_id": "1111582276847104000_twitter",
+   "ratings": {
+    "4": "normal",
+    "6": "normal",
+    "80": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "6",
+   "item_id": "1111601889429192709_twitter",
+   "ratings": {
+    "25": "normal",
+    "6": "normal",
+    "7": "normal"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "11119899_gab",
+   "ratings": {
+    "25": "hatespeech",
+    "4": "hatespeech",
+    "96": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "235",
+   "item_id": "1113124000467746816_twitter",
+   "ratings": {
+    "203": "normal",
+    "216": "normal",
+    "235": "normal"
+   }
+  },
+  {
+   "heldout_rater": "203",
+   "item_id": "1115608401839439872_twitter",
+   "ratings": {
+    "130": "offensive",
+    "203": "offensive",
+    "235": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "209",
+   "item_id": "1115697903681527808_twitter",
+   "ratings": {
+    "205": "hatespeech",
+    "209": "hatespeech",
+    "213": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "215",
+   "item_id": "1115874362681434117_twitter",
+   "ratings": {
+    "215": "normal",
+    "221": "normal",
+    "229": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "233",
+   "item_id": "1116751513295126528_twitter",
+   "ratings": {
+    "203": "hatespeech",
+    "233": "hatespeech",
+    "235": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "7",
+   "item_id": "1116888771864219650_twitter",
+   "ratings": {
+    "6": "normal",
+    "7": "normal",
+    "8": "normal"
+   }
+  },
+  {
+   "heldout_rater": "235",
+   "item_id": "1116934175196626944_twitter",
+   "ratings": {
+    "203": "offensive",
+    "216": "offensive",
+    "235": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "212",
+   "item_id": "1117382701521227776_twitter",
+   "ratings": {
+    "204": "normal",
+    "207": "normal",
+    "212": "normal"
+   }
+  },
+  {
+   "heldout_rater": "16",
+   "item_id": "1117524200560967680_twitter",
+   "ratings": {
+    "16": "normal",
+    "6": "normal",
+    "7": "normal"
+   }
+  },
+  {
+   "heldout_rater": "208",
+   "item_id": "1117745773054185473_twitter",
+   "ratings": {
+    "208": "normal",
+    "223": "normal",
+    "224": "normal"
+   }
+  },
+  {
+   "heldout_rater": "6",
+   "item_id": "1117944339777359873_twitter",
+   "ratings": {
+    "41": "normal",
+    "6": "normal",
+    "7": "normal"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "1117997582284775424_twitter",
+   "ratings": {
+    "115": "normal",
+    "4": "normal",
+    "6": "normal"
+   }
+  },
+  {
+   "heldout_rater": "6",
+   "item_id": "1118166944081956871_twitter",
+   "ratings": {
+    "4": "normal",
+    "6": "normal",
+    "8": "normal"
+   }
+  },
+  {
+   "heldout_rater": "20",
+   "item_id": "1119074088159367169_twitter",
+   "ratings": {
+    "20": "normal",
+    "4": "offensive",
+    "7": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "202",
+   "item_id": "1120040632548909056_twitter",
+   "ratings": {
+    "200": "hatespeech",
+    "202": "offensive",
+    "215": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "235",
+   "item_id": "1121219290089381889_twitter",
+   "ratings": {
+    "203": "offensive",
+    "222": "offensive",
+    "235": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "233",
+   "item_id": "1121870023922864129_twitter",
+   "ratings": {
+    "202": "normal",
+    "215": "normal",
+    "233": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "203",
+   "item_id": "1122175914379399168_twitter",
+   "ratings": {
+    "203": "offensive",
+    "222": "offensive",
+    "235": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "6",
+   "item_id": "1122558468429352961_twitter",
+   "ratings": {
+    "4": "normal",
+    "6": "normal",
+    "69": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "14",
+   "item_id": "1122688387016687617_twitter",
+   "ratings": {
+    "14": "normal",
+    "6": "normal",
+    "7": "normal"
+   }
+  },
+  {
+   "heldout_rater": "6",
+   "item_id": "1123340794218393600_twitter",
+   "ratings": {
+    "25": "normal",
+    "6": "normal",
+    "7": "normal"
+   }
+  },
+  {
+   "heldout_rater": "7",
+   "item_id": "1123953569466605571_twitter",
+   "ratings": {
+    "25": "normal",
+    "6": "normal",
+    "7": "normal"
+   }
+  },
+  {
+   "heldout_rater": "203",
+   "item_id": "1124388854319013888_twitter",
+   "ratings": {
+    "203": "normal",
+    "209": "normal",
+    "216": "normal"
+   }
+  },
+  {
+   "heldout_rater": "233",
+   "item_id": "1124393975547195392_twitter",
+   "ratings": {
+    "202": "offensive",
+    "233": "normal",
+    "245": "normal"
+   }
+  },
+  {
+   "heldout_rater": "217",
+   "item_id": "1125080079833415681_twitter",
+   "ratings": {
+    "206": "normal",
+    "217": "offensive",
+    "223": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "221",
+   "item_id": "1125356337666433029_twitter",
+   "ratings": {
+    "202": "offensive",
+    "204": "normal",
+    "221": "normal"
+   }
+  },
+  {
+   "heldout_rater": "140",
+   "item_id": "11255170_gab",
+   "ratings": {
+    "140": "hatespeech",
+    "4": "offensive",
+    "7": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "199",
+   "item_id": "1125644062722105346_twitter",
+   "ratings": {
+    "199": "normal",
+    "211": "normal",
+    "225": "normal"
+   }
+  },
+  {
+   "heldout_rater": "209",
+   "item_id": "1126776008877772800_twitter",
+   "ratings": {
+    "209": "normal",
+    "212": "offensive",
+    "223": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "205",
+   "item_id": "1130933063263883264_twitter",
+   "ratings": {
+    "205": "offensive",
+    "209": "offensive",
+    "213": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "18",
+   "item_id": "11313761_gab",
+   "ratings": {
+    "18": "hatespeech",
+    "3": "hatespeech",
+    "4": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "6",
+   "item_id": "11385564_gab",
+   "ratings": {
+    "191": "offensive",
+    "27": "offensive",
+    "6": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "212",
+   "item_id": "1139180184836431877_twitter",
+   "ratings": {
+    "207": "normal",
+    "212": "normal",
+    "221": "normal"
+   }
+  },
+  {
+   "heldout_rater": "54",
+   "item_id": "11398261_gab",
+   "ratings": {
+    "17": "hatespeech",
+    "4": "hatespeech",
+    "54": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "223",
+   "item_id": "11412453_gab",
+   "ratings": {
+    "200": "hatespeech",
+    "202": "hatespeech",
+    "223": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "208",
+   "item_id": "1142197772621426689_twitter",
+   "ratings": {
+    "202": "offensive",
+    "208": "offensive",
+    "238": "normal"
+   }
+  },
+  {
+   "heldout_rater": "6",
+   "item_id": "1142348121663516672_twitter",
+   "ratings": {
+    "16": "offensive",
+    "4": "normal",
+    "6": "normal"
+   }
+  },
+  {
+   "heldout_rater": "223",
+   "item_id": "1142535841937580037_twitter",
+   "ratings": {
+    "208": "offensive",
+    "223": "offensive",
+    "224": "normal"
+   }
+  },
+  {
+   "heldout_rater": "209",
+   "item_id": "1142982217892814854_twitter",
+   "ratings": {
+    "199": "hatespeech",
+    "203": "hatespeech",
+    "209": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "235",
+   "item_id": "1143376745367781383_twitter",
+   "ratings": {
+    "209": "offensive",
+    "222": "offensive",
+    "235": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "8",
+   "item_id": "1143630194571382788_twitter",
+   "ratings": {
+    "6": "normal",
+    "7": "normal",
+    "8": "normal"
+   }
+  },
+  {
+   "heldout_rater": "25",
+   "item_id": "1143836411726061568_twitter",
+   "ratings": {
+    "25": "normal",
+    "6": "normal",
+    "7": "normal"
+   }
+  },
+  {
+   "heldout_rater": "199",
+   "item_id": "1144372754134818816_twitter",
+   "ratings": {
+    "199": "normal",
+    "203": "offensive",
+    "235": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "221",
+   "item_id": "1144577656178053120_twitter",
+   "ratings": {
+    "207": "normal",
+    "212": "offensive",
+    "221": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "199",
+   "item_id": "1145109160691941377_twitter",
+   "ratings": {
+    "199": "normal",
+    "203": "normal",
+    "235": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "211",
+   "item_id": "1145441752213385216_twitter",
+   "ratings": {
+    "199": "offensive",
+    "211": "normal",
+    "225": "normal"
+   }
+  },
+  {
+   "heldout_rater": "204",
+   "item_id": "1146139541805228032_twitter",
+   "ratings": {
+    "204": "normal",
+    "207": "offensive",
+    "221": "normal"
+   }
+  },
+  {
+   "heldout_rater": "204",
+   "item_id": "1146298963089379329_twitter",
+   "ratings": {
+    "204": "hatespeech",
+    "207": "offensive",
+    "221": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "81",
+   "item_id": "11477949_gab",
+   "ratings": {
+    "4": "hatespeech",
+    "6": "offensive",
+    "81": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "200",
+   "item_id": "11539399_gab",
+   "ratings": {
+    "200": "hatespeech",
+    "202": "hatespeech",
+    "230": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "212",
+   "item_id": "11551744_gab",
+   "ratings": {
+    "209": "normal",
+    "212": "offensive",
+    "217": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "200",
+   "item_id": "11577110_gab",
+   "ratings": {
+    "200": "offensive",
+    "223": "offensive",
+    "231": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "25",
+   "item_id": "1159155985417723905_twitter",
+   "ratings": {
+    "25": "normal",
+    "6": "normal",
+    "7": "normal"
+   }
+  },
+  {
+   "heldout_rater": "69",
+   "item_id": "1159300974118363138_twitter",
+   "ratings": {
+    "4": "offensive",
+    "69": "offensive",
+    "8": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "209",
+   "item_id": "1159330162300919808_twitter",
+   "ratings": {
+    "209": "offensive",
+    "212": "offensive",
+    "246": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "204",
+   "item_id": "11595446_gab",
+   "ratings": {
+    "204": "offensive",
+    "207": "offensive",
+    "208": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "235",
+   "item_id": "1159883181262196737_twitter",
+   "ratings": {
+    "203": "offensive",
+    "222": "offensive",
+    "235": "normal"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "1160538553861980160_twitter",
+   "ratings": {
+    "4": "normal",
+    "6": "normal",
+    "7": "normal"
+   }
+  },
+  {
+   "heldout_rater": "213",
+   "item_id": "1162516703923732480_twitter",
+   "ratings": {
+    "202": "normal",
+    "213": "normal",
+    "233": "normal"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "1162565308663644161_twitter",
+   "ratings": {
+    "25": "normal",
+    "4": "normal",
+    "6": "normal"
+   }
+  },
+  {
+   "heldout_rater": "6",
+   "item_id": "1162788017817493506_twitter",
+   "ratings": {
+    "4": "normal",
+    "6": "normal",
+    "7": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "204",
+   "item_id": "1163342806783365121_twitter",
+   "ratings": {
+    "204": "normal",
+    "207": "offensive",
+    "221": "normal"
+   }
+  },
+  {
+   "heldout_rater": "6",
+   "item_id": "1163444506102026241_twitter",
+   "ratings": {
+    "6": "normal",
+    "69": "normal",
+    "8": "normal"
+   }
+  },
+  {
+   "heldout_rater": "8",
+   "item_id": "1163476366026772482_twitter",
+   "ratings": {
+    "6": "normal",
+    "7": "normal",
+    "8": "normal"
+   }
+  },
+  {
+   "heldout_rater": "235",
+   "item_id": "1163927945754423296_twitter",
+   "ratings": {
+    "199": "normal",
+    "203": "offensive",
+    "235": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "212",
+   "item_id": "1164214982956998656_twitter",
+   "ratings": {
+    "209": "normal",
+    "212": "offensive",
+    "235": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "6",
+   "item_id": "1165560301753790464_twitter",
+   "ratings": {
+    "6": "normal",
+    "7": "normal",
+    "8": "normal"
+   }
+  },
+  {
+   "heldout_rater": "215",
+   "item_id": "1166095784363925510_twitter",
+   "ratings": {
+    "202": "normal",
+    "213": "normal",
+    "215": "normal"
+   }
+  },
+  {
+   "heldout_rater": "209",
+   "item_id": "1166190318116646912_twitter",
+   "ratings": {
+    "209": "hatespeech",
+    "212": "offensive",
+    "246": "normal"
+   }
+  },
+  {
+   "heldout_rater": "233",
+   "item_id": "1166667993348280320_twitter",
+   "ratings": {
+    "202": "offensive",
+    "213": "normal",
+    "233": "normal"
+   }
+  },
+  {
+   "heldout_rater": "202",
+   "item_id": "1168499959412535297_twitter",
+   "ratings": {
+    "202": "offensive",
+    "213": "normal",
+    "233": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "202",
+   "item_id": "1169564876425089025_twitter",
+   "ratings": {
+    "202": "normal",
+    "207": "normal",
+    "212": "normal"
+   }
+  },
+  {
+   "heldout_rater": "223",
+   "item_id": "1169988035544416256_twitter",
+   "ratings": {
+    "206": "normal",
+    "212": "normal",
+    "223": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "1170067182069473282_twitter",
+   "ratings": {
+    "25": "hatespeech",
+    "3": "hatespeech",
+    "4": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "222",
+   "item_id": "1170223096936173568_twitter",
+   "ratings": {
+    "203": "normal",
+    "222": "normal",
+    "235": "normal"
+   }
+  },
+  {
+   "heldout_rater": "3",
+   "item_id": "1170496284538671104_twitter",
+   "ratings": {
+    "25": "normal",
+    "3": "normal",
+    "6": "normal"
+   }
+  },
+  {
+   "heldout_rater": "6",
+   "item_id": "1171185916200796162_twitter",
+   "ratings": {
+    "25": "normal",
+    "6": "normal",
+    "7": "normal"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "1171872347621486592_twitter",
+   "ratings": {
+    "4": "normal",
+    "6": "normal",
+    "7": "normal"
+   }
+  },
+  {
+   "heldout_rater": "212",
+   "item_id": "1172924606220517377_twitter",
+   "ratings": {
+    "211": "hatespeech",
+    "212": "hatespeech",
+    "236": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "215",
+   "item_id": "1172940376803594243_twitter",
+   "ratings": {
+    "202": "normal",
+    "213": "normal",
+    "215": "normal"
+   }
+  },
+  {
+   "heldout_rater": "213",
+   "item_id": "1172966232640950272_twitter",
+   "ratings": {
+    "202": "offensive",
+    "213": "hatespeech",
+    "231": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "221",
+   "item_id": "1173430581868318720_twitter",
+   "ratings": {
+    "204": "normal",
+    "207": "normal",
+    "221": "normal"
+   }
+  },
+  {
+   "heldout_rater": "234",
+   "item_id": "11747319_gab",
+   "ratings": {
+    "204": "normal",
+    "208": "offensive",
+    "234": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "221",
+   "item_id": "1174863087666548737_twitter",
+   "ratings": {
+    "215": "normal",
+    "221": "normal",
+    "229": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "209",
+   "item_id": "11750245_gab",
+   "ratings": {
+    "199": "normal",
+    "201": "normal",
+    "209": "normal"
+   }
+  },
+  {
+   "heldout_rater": "199",
+   "item_id": "1175093_gab",
+   "ratings": {
+    "199": "hatespeech",
+    "213": "normal",
+    "235": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "200",
+   "item_id": "11753320_gab",
+   "ratings": {
+    "200": "hatespeech",
+    "205": "hatespeech",
+    "231": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "215",
+   "item_id": "11758726_gab",
+   "ratings": {
+    "208": "offensive",
+    "215": "offensive",
+    "225": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "216",
+   "item_id": "1176080694117838856_twitter",
+   "ratings": {
+    "203": "offensive",
+    "216": "offensive",
+    "233": "normal"
+   }
+  },
+  {
+   "heldout_rater": "6",
+   "item_id": "1177504303822467072_twitter",
+   "ratings": {
+    "6": "normal",
+    "7": "normal",
+    "8": "normal"
+   }
+  },
+  {
+   "heldout_rater": "84",
+   "item_id": "1177524031412744193_twitter",
+   "ratings": {
+    "18": "normal",
+    "4": "normal",
+    "84": "normal"
+   }
+  },
+  {
+   "heldout_rater": "217",
+   "item_id": "1177586147276578817_twitter",
+   "ratings": {
+    "217": "normal",
+    "233": "normal",
+    "238": "normal"
+   }
+  },
+  {
+   "heldout_rater": "89",
+   "item_id": "1177660948162793473_twitter",
+   "ratings": {
+    "4": "hatespeech",
+    "89": "hatespeech",
+    "92": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "2",
+   "item_id": "1177687442725494787_twitter",
+   "ratings": {
+    "100": "offensive",
+    "2": "offensive",
+    "4": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "1177726979438596096_twitter",
+   "ratings": {
+    "25": "normal",
+    "4": "offensive",
+    "80": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "18",
+   "item_id": "1177974580964708353_twitter",
+   "ratings": {
+    "18": "normal",
+    "30": "normal",
+    "34": "normal"
+   }
+  },
+  {
+   "heldout_rater": "44",
+   "item_id": "1177992770234900485_twitter",
+   "ratings": {
+    "21": "hatespeech",
+    "4": "normal",
+    "44": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "165",
+   "item_id": "1178013753536724992_twitter",
+   "ratings": {
+    "165": "offensive",
+    "35": "normal",
+    "4": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "1178022274210906114_twitter",
+   "ratings": {
+    "119": "offensive",
+    "120": "hatespeech",
+    "4": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "3",
+   "item_id": "1178050983923982337_twitter",
+   "ratings": {
+    "3": "normal",
+    "4": "offensive",
+    "42": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "9",
+   "item_id": "1178064726942781440_twitter",
+   "ratings": {
+    "4": "normal",
+    "9": "normal",
+    "91": "normal"
+   }
+  },
+  {
+   "heldout_rater": "48",
+   "item_id": "1178072044380008448_twitter",
+   "ratings": {
+    "48": "hatespeech",
+    "6": "hatespeech",
+    "91": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "64",
+   "item_id": "1178110624905224192_twitter",
+   "ratings": {
+    "17": "hatespeech",
+    "4": "offensive",
+    "64": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "1178120616467161089_twitter",
+   "ratings": {
+    "35": "hatespeech",
+    "4": "hatespeech",
+    "98": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "7",
+   "item_id": "1178150335677960193_twitter",
+   "ratings": {
+    "25": "normal",
+    "4": "offensive",
+    "7": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "83",
+   "item_id": "1178171287786549248_twitter",
+   "ratings": {
+    "35": "offensive",
+    "4": "offensive",
+    "83": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "89",
+   "item_id": "1178234102002016256_twitter",
+   "ratings": {
+    "25": "offensive",
+    "4": "hatespeech",
+    "89": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "25",
+   "item_id": "1178258350124879873_twitter",
+   "ratings": {
+    "25": "hatespeech",
+    "4": "hatespeech",
+    "48": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "65",
+   "item_id": "1178273334452203520_twitter",
+   "ratings": {
+    "1": "normal",
+    "53": "normal",
+    "65": "normal"
+   }
+  },
+  {
+   "heldout_rater": "29",
+   "item_id": "1178283991281086464_twitter",
+   "ratings": {
+    "29": "hatespeech",
+    "30": "hatespeech",
+    "96": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "33",
+   "item_id": "1178286246050848770_twitter",
+   "ratings": {
+    "33": "hatespeech",
+    "39": "normal",
+    "4": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "1178291985741795329_twitter",
+   "ratings": {
+    "135": "hatespeech",
+    "25": "offensive",
+    "4": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "37",
+   "item_id": "1178302914218954752_twitter",
+   "ratings": {
+    "1": "offensive",
+    "14": "offensive",
+    "37": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "1178303521592135680_twitter",
+   "ratings": {
+    "4": "normal",
+    "52": "offensive",
+    "67": "normal"
+   }
+  },
+  {
+   "heldout_rater": "1",
+   "item_id": "1178308746856013826_twitter",
+   "ratings": {
+    "1": "normal",
+    "18": "normal",
+    "4": "normal"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "1178314016592146433_twitter",
+   "ratings": {
+    "4": "normal",
+    "54": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "6",
+   "item_id": "1178318300452806656_twitter",
+   "ratings": {
+    "25": "normal",
+    "6": "normal",
+    "82": "normal"
+   }
+  },
+  {
+   "heldout_rater": "1",
+   "item_id": "1178322843022450688_twitter",
+   "ratings": {
+    "1": "normal",
+    "18": "normal",
+    "4": "normal"
+   }
+  },
+  {
+   "heldout_rater": "64",
+   "item_id": "1178329565330132995_twitter",
+   "ratings": {
+    "17": "normal",
+    "54": "normal",
+    "64": "normal"
+   }
+  },
+  {
+   "heldout_rater": "113",
+   "item_id": "1178331851242426368_twitter",
+   "ratings": {
+    "1": "normal",
+    "113": "offensive",
+    "4": "normal"
+   }
+  },
+  {
+   "heldout_rater": "9",
+   "item_id": "1178354358385287170_twitter",
+   "ratings": {
+    "1": "normal",
+    "20": "offensive",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "165",
+   "item_id": "1178368361132105729_twitter",
+   "ratings": {
+    "121": "normal",
+    "165": "normal",
+    "46": "normal"
+   }
+  },
+  {
+   "heldout_rater": "38",
+   "item_id": "1178382366080950276_twitter",
+   "ratings": {
+    "17": "hatespeech",
+    "37": "hatespeech",
+    "38": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "17",
+   "item_id": "1178384487798972416_twitter",
+   "ratings": {
+    "17": "normal",
+    "18": "normal",
+    "4": "normal"
+   }
+  },
+  {
+   "heldout_rater": "60",
+   "item_id": "1178388442977320968_twitter",
+   "ratings": {
+    "3": "hatespeech",
+    "4": "hatespeech",
+    "60": "normal"
+   }
+  },
+  {
+   "heldout_rater": "129",
+   "item_id": "1178398773413912577_twitter",
+   "ratings": {
+    "1": "normal",
+    "129": "hatespeech",
+    "4": "normal"
+   }
+  },
+  {
+   "heldout_rater": "19",
+   "item_id": "1178402978031521793_twitter",
+   "ratings": {
+    "1": "normal",
+    "18": "normal",
+    "19": "normal"
+   }
+  },
+  {
+   "heldout_rater": "54",
+   "item_id": "1178404812347412480_twitter",
+   "ratings": {
+    "10": "normal",
+    "54": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "67",
+   "item_id": "1178416456238866437_twitter",
+   "ratings": {
+    "1": "offensive",
+    "4": "offensive",
+    "67": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "17",
+   "item_id": "1178422013238620162_twitter",
+   "ratings": {
+    "1": "normal",
+    "17": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "9",
+   "item_id": "1178431628923871232_twitter",
+   "ratings": {
+    "18": "normal",
+    "4": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "39",
+   "item_id": "1178455357057851393_twitter",
+   "ratings": {
+    "39": "offensive",
+    "4": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "9",
+   "item_id": "1178464019683913728_twitter",
+   "ratings": {
+    "4": "hatespeech",
+    "54": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "101",
+   "item_id": "1178501734290935811_twitter",
+   "ratings": {
+    "101": "offensive",
+    "4": "offensive",
+    "96": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "1178502539622240256_twitter",
+   "ratings": {
+    "1": "offensive",
+    "25": "normal",
+    "4": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "18",
+   "item_id": "1178505280155291648_twitter",
+   "ratings": {
+    "18": "normal",
+    "54": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "9",
+   "item_id": "1178517146977984512_twitter",
+   "ratings": {
+    "41": "normal",
+    "64": "offensive",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "2",
+   "item_id": "1178547019104710659_twitter",
+   "ratings": {
+    "18": "normal",
+    "2": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "1",
+   "item_id": "1178569121371426816_twitter",
+   "ratings": {
+    "1": "normal",
+    "17": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "1178571782313463810_twitter",
+   "ratings": {
+    "21": "hatespeech",
+    "4": "hatespeech",
+    "5": "normal"
+   }
+  },
+  {
+   "heldout_rater": "18",
+   "item_id": "1178580445358891009_twitter",
+   "ratings": {
+    "18": "normal",
+    "4": "offensive",
+    "5": "normal"
+   }
+  },
+  {
+   "heldout_rater": "1",
+   "item_id": "1178600318482997248_twitter",
+   "ratings": {
+    "1": "offensive",
+    "2": "offensive",
+    "3": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "64",
+   "item_id": "1178603908618473473_twitter",
+   "ratings": {
+    "17": "normal",
+    "64": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "1178629025511755776_twitter",
+   "ratings": {
+    "127": "hatespeech",
+    "37": "offensive",
+    "4": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "1",
+   "item_id": "1178631556946157568_twitter",
+   "ratings": {
+    "1": "normal",
+    "44": "normal",
+    "52": "normal"
+   }
+  },
+  {
+   "heldout_rater": "30",
+   "item_id": "1178633352934383618_twitter",
+   "ratings": {
+    "17": "normal",
+    "30": "normal",
+    "4": "normal"
+   }
+  },
+  {
+   "heldout_rater": "2",
+   "item_id": "1178643316847431681_twitter",
+   "ratings": {
+    "2": "normal",
+    "4": "hatespeech",
+    "59": "normal"
+   }
+  },
+  {
+   "heldout_rater": "9",
+   "item_id": "1178650040602107904_twitter",
+   "ratings": {
+    "17": "normal",
+    "3": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "48",
+   "item_id": "1178658944136429571_twitter",
+   "ratings": {
+    "10": "hatespeech",
+    "16": "hatespeech",
+    "48": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "1178662130163290112_twitter",
+   "ratings": {
+    "1": "hatespeech",
+    "25": "hatespeech",
+    "4": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "10",
+   "item_id": "1178666966514651137_twitter",
+   "ratings": {
+    "1": "normal",
+    "10": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "1",
+   "item_id": "1178670817451925504_twitter",
+   "ratings": {
+    "1": "normal",
+    "110": "normal",
+    "4": "normal"
+   }
+  },
+  {
+   "heldout_rater": "67",
+   "item_id": "1178701466401423360_twitter",
+   "ratings": {
+    "1": "normal",
+    "52": "normal",
+    "67": "normal"
+   }
+  },
+  {
+   "heldout_rater": "9",
+   "item_id": "1178703649045991424_twitter",
+   "ratings": {
+    "4": "normal",
+    "8": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "35",
+   "item_id": "1178703973793927168_twitter",
+   "ratings": {
+    "18": "normal",
+    "35": "normal",
+    "44": "normal"
+   }
+  },
+  {
+   "heldout_rater": "3",
+   "item_id": "1178713133235539968_twitter",
+   "ratings": {
+    "18": "hatespeech",
+    "3": "hatespeech",
+    "97": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "1",
+   "item_id": "1178720035604271108_twitter",
+   "ratings": {
+    "1": "normal",
+    "44": "normal",
+    "46": "normal"
+   }
+  },
+  {
+   "heldout_rater": "39",
+   "item_id": "1178725575705419776_twitter",
+   "ratings": {
+    "1": "normal",
+    "39": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "9",
+   "item_id": "1178730424635461632_twitter",
+   "ratings": {
+    "10": "normal",
+    "159": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "18",
+   "item_id": "1178733988552200192_twitter",
+   "ratings": {
+    "127": "normal",
+    "18": "normal",
+    "65": "normal"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "1178734502627217408_twitter",
+   "ratings": {
+    "1": "normal",
+    "4": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "127",
+   "item_id": "1178739480381050882_twitter",
+   "ratings": {
+    "127": "normal",
+    "25": "offensive",
+    "4": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "3",
+   "item_id": "1178741533161525249_twitter",
+   "ratings": {
+    "122": "normal",
+    "3": "normal",
+    "4": "normal"
+   }
+  },
+  {
+   "heldout_rater": "38",
+   "item_id": "1178747464171556864_twitter",
+   "ratings": {
+    "122": "offensive",
+    "130": "offensive",
+    "38": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "14",
+   "item_id": "1178750430219780098_twitter",
+   "ratings": {
+    "14": "normal",
+    "39": "offensive",
+    "4": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "17",
+   "item_id": "1178753430162001920_twitter",
+   "ratings": {
+    "17": "normal",
+    "18": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "1",
+   "item_id": "1178754444600721408_twitter",
+   "ratings": {
+    "1": "normal",
+    "18": "normal",
+    "58": "normal"
+   }
+  },
+  {
+   "heldout_rater": "59",
+   "item_id": "1178755414566916096_twitter",
+   "ratings": {
+    "58": "offensive",
+    "59": "offensive",
+    "95": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "1",
+   "item_id": "1178762932198481922_twitter",
+   "ratings": {
+    "1": "offensive",
+    "4": "offensive",
+    "52": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "96",
+   "item_id": "1178765107062546434_twitter",
+   "ratings": {
+    "18": "normal",
+    "4": "normal",
+    "96": "normal"
+   }
+  },
+  {
+   "heldout_rater": "16",
+   "item_id": "1178765620697079809_twitter",
+   "ratings": {
+    "16": "normal",
+    "42": "normal",
+    "8": "normal"
+   }
+  },
+  {
+   "heldout_rater": "30",
+   "item_id": "1178774072563511298_twitter",
+   "ratings": {
+    "195": "normal",
+    "30": "normal",
+    "4": "normal"
+   }
+  },
+  {
+   "heldout_rater": "9",
+   "item_id": "1178775497163055106_twitter",
+   "ratings": {
+    "4": "normal",
+    "64": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "44",
+   "item_id": "1178778213348237312_twitter",
+   "ratings": {
+    "1": "offensive",
+    "44": "hatespeech",
+    "52": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "37",
+   "item_id": "1178786478870142976_twitter",
+   "ratings": {
+    "1": "normal",
+    "3": "normal",
+    "37": "normal"
+   }
+  },
+  {
+   "heldout_rater": "17",
+   "item_id": "1178789180752744450_twitter",
+   "ratings": {
+    "127": "hatespeech",
+    "17": "hatespeech",
+    "9": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "18",
+   "item_id": "1178793522574561280_twitter",
+   "ratings": {
+    "18": "normal",
+    "4": "hatespeech",
+    "63": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "1",
+   "item_id": "1178799194309611521_twitter",
+   "ratings": {
+    "1": "normal",
+    "18": "normal",
+    "89": "normal"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "11787996_gab",
+   "ratings": {
+    "3": "hatespeech",
+    "39": "normal",
+    "4": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "1178801700251021312_twitter",
+   "ratings": {
+    "1": "normal",
+    "4": "offensive",
+    "85": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "5",
+   "item_id": "1178805050035986432_twitter",
+   "ratings": {
+    "19": "normal",
+    "198": "normal",
+    "5": "normal"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "1178810933243711488_twitter",
+   "ratings": {
+    "1": "normal",
+    "18": "normal",
+    "4": "normal"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "1178816674428010499_twitter",
+   "ratings": {
+    "4": "hatespeech",
+    "64": "offensive",
+    "9": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "34",
+   "item_id": "1178818068497207298_twitter",
+   "ratings": {
+    "1": "normal",
+    "34": "normal",
+    "44": "normal"
+   }
+  },
+  {
+   "heldout_rater": "89",
+   "item_id": "1178818616541794305_twitter",
+   "ratings": {
+    "3": "normal",
+    "89": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "1178820704562630656_twitter",
+   "ratings": {
+    "1": "offensive",
+    "4": "offensive",
+    "52": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "18",
+   "item_id": "1178821614483447809_twitter",
+   "ratings": {
+    "18": "normal",
+    "54": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "9",
+   "item_id": "1178824064107978752_twitter",
+   "ratings": {
+    "1": "normal",
+    "10": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "10",
+   "item_id": "1178827615811067904_twitter",
+   "ratings": {
+    "10": "normal",
+    "4": "hatespeech",
+    "54": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "1",
+   "item_id": "1178827642511990784_twitter",
+   "ratings": {
+    "1": "normal",
+    "2": "normal",
+    "4": "normal"
+   }
+  },
+  {
+   "heldout_rater": "30",
+   "item_id": "1178830600171601924_twitter",
+   "ratings": {
+    "17": "normal",
+    "30": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "59",
+   "item_id": "1178833059946418177_twitter",
+   "ratings": {
+    "126": "normal",
+    "44": "normal",
+    "59": "normal"
+   }
+  },
+  {
+   "heldout_rater": "19",
+   "item_id": "1178836489486118923_twitter",
+   "ratings": {
+    "19": "normal",
+    "198": "normal",
+    "5": "normal"
+   }
+  },
+  {
+   "heldout_rater": "1",
+   "item_id": "1178837824625401856_twitter",
+   "ratings": {
+    "1": "offensive",
+    "4": "offensive",
+    "52": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "36",
+   "item_id": "1178845178985156608_twitter",
+   "ratings": {
+    "116": "normal",
+    "35": "normal",
+    "36": "normal"
+   }
+  },
+  {
+   "heldout_rater": "17",
+   "item_id": "1178846052436320256_twitter",
+   "ratings": {
+    "10": "normal",
+    "17": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "96",
+   "item_id": "1178850205564846082_twitter",
+   "ratings": {
+    "17": "normal",
+    "4": "normal",
+    "96": "normal"
+   }
+  },
+  {
+   "heldout_rater": "55",
+   "item_id": "1178852331208761344_twitter",
+   "ratings": {
+    "130": "hatespeech",
+    "4": "normal",
+    "55": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "1178859594329841665_twitter",
+   "ratings": {
+    "17": "normal",
+    "4": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "1178860861357772800_twitter",
+   "ratings": {
+    "25": "offensive",
+    "39": "offensive",
+    "4": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "52",
+   "item_id": "1178864155249430528_twitter",
+   "ratings": {
+    "1": "offensive",
+    "4": "hatespeech",
+    "52": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "3",
+   "item_id": "1178864507554340867_twitter",
+   "ratings": {
+    "160": "normal",
+    "3": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "3",
+   "item_id": "1178865112482013184_twitter",
+   "ratings": {
+    "1": "hatespeech",
+    "3": "hatespeech",
+    "51": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "127",
+   "item_id": "1178867530363998211_twitter",
+   "ratings": {
+    "127": "normal",
+    "4": "normal",
+    "67": "normal"
+   }
+  },
+  {
+   "heldout_rater": "89",
+   "item_id": "1178868328858828801_twitter",
+   "ratings": {
+    "16": "normal",
+    "89": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "56",
+   "item_id": "1178874018016956418_twitter",
+   "ratings": {
+    "1": "offensive",
+    "4": "hatespeech",
+    "56": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "39",
+   "item_id": "1178874779127951361_twitter",
+   "ratings": {
+    "1": "normal",
+    "39": "normal",
+    "54": "normal"
+   }
+  },
+  {
+   "heldout_rater": "21",
+   "item_id": "1178875361750405125_twitter",
+   "ratings": {
+    "18": "hatespeech",
+    "21": "hatespeech",
+    "4": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "39",
+   "item_id": "1178877345190596609_twitter",
+   "ratings": {
+    "101": "hatespeech",
+    "39": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "1178879023528566784_twitter",
+   "ratings": {
+    "4": "offensive",
+    "64": "hatespeech",
+    "93": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "89",
+   "item_id": "1178881076502171648_twitter",
+   "ratings": {
+    "1": "normal",
+    "18": "normal",
+    "89": "normal"
+   }
+  },
+  {
+   "heldout_rater": "111",
+   "item_id": "1178889043456790528_twitter",
+   "ratings": {
+    "111": "hatespeech",
+    "4": "normal",
+    "91": "normal"
+   }
+  },
+  {
+   "heldout_rater": "64",
+   "item_id": "1178889977599414272_twitter",
+   "ratings": {
+    "1": "normal",
+    "64": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "100",
+   "item_id": "1178891150008020993_twitter",
+   "ratings": {
+    "100": "normal",
+    "41": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "18",
+   "item_id": "1178899041129771008_twitter",
+   "ratings": {
+    "10": "normal",
+    "18": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "1",
+   "item_id": "1178900204776497153_twitter",
+   "ratings": {
+    "1": "normal",
+    "39": "normal",
+    "70": "normal"
+   }
+  },
+  {
+   "heldout_rater": "1",
+   "item_id": "1178904752689762304_twitter",
+   "ratings": {
+    "1": "normal",
+    "18": "normal",
+    "3": "normal"
+   }
+  },
+  {
+   "heldout_rater": "59",
+   "item_id": "1178912016574160896_twitter",
+   "ratings": {
+    "14": "normal",
+    "59": "normal",
+    "82": "normal"
+   }
+  },
+  {
+   "heldout_rater": "30",
+   "item_id": "1178916356491595776_twitter",
+   "ratings": {
+    "10": "normal",
+    "17": "normal",
+    "30": "normal"
+   }
+  },
+  {
+   "heldout_rater": "1",
+   "item_id": "1178923484887433217_twitter",
+   "ratings": {
+    "1": "normal",
+    "10": "normal",
+    "60": "normal"
+   }
+  },
+  {
+   "heldout_rater": "25",
+   "item_id": "1178934909823418371_twitter",
+   "ratings": {
+    "25": "normal",
+    "3": "normal",
+    "89": "normal"
+   }
+  },
+  {
+   "heldout_rater": "1",
+   "item_id": "1178935230297600001_twitter",
+   "ratings": {
+    "1": "offensive",
+    "25": "offensive",
+    "52": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "55",
+   "item_id": "1178952973860397057_twitter",
+   "ratings": {
+    "4": "offensive",
+    "55": "offensive",
+    "89": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "52",
+   "item_id": "1178958398676766721_twitter",
+   "ratings": {
+    "106": "normal",
+    "52": "normal",
+    "78": "normal"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "1178968407565328384_twitter",
+   "ratings": {
+    "3": "hatespeech",
+    "4": "hatespeech",
+    "51": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "58",
+   "item_id": "1178970303491461120_twitter",
+   "ratings": {
+    "1": "normal",
+    "58": "normal",
+    "60": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "1178978128762421250_twitter",
+   "ratings": {
+    "1": "normal",
+    "4": "normal",
+    "84": "normal"
+   }
+  },
+  {
+   "heldout_rater": "18",
+   "item_id": "1178978706204872704_twitter",
+   "ratings": {
+    "100": "normal",
+    "18": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "25",
+   "item_id": "1178979938436866049_twitter",
+   "ratings": {
+    "1": "normal",
+    "25": "normal",
+    "91": "normal"
+   }
+  },
+  {
+   "heldout_rater": "39",
+   "item_id": "1178981359991349248_twitter",
+   "ratings": {
+    "17": "hatespeech",
+    "39": "hatespeech",
+    "4": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "46",
+   "item_id": "1179000566309150720_twitter",
+   "ratings": {
+    "45": "normal",
+    "46": "normal",
+    "59": "normal"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "1179004775293046784_twitter",
+   "ratings": {
+    "18": "hatespeech",
+    "22": "normal",
+    "4": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "9",
+   "item_id": "1179007149902577665_twitter",
+   "ratings": {
+    "137": "normal",
+    "3": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "1179008086532509696_twitter",
+   "ratings": {
+    "152": "normal",
+    "4": "normal",
+    "49": "normal"
+   }
+  },
+  {
+   "heldout_rater": "3",
+   "item_id": "1179012999698366464_twitter",
+   "ratings": {
+    "1": "normal",
+    "3": "normal",
+    "91": "normal"
+   }
+  },
+  {
+   "heldout_rater": "25",
+   "item_id": "1179015709302542337_twitter",
+   "ratings": {
+    "18": "normal",
+    "25": "normal",
+    "5": "normal"
+   }
+  },
+  {
+   "heldout_rater": "9",
+   "item_id": "1179018870461329408_twitter",
+   "ratings": {
+    "4": "normal",
+    "67": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "99",
+   "item_id": "1179019049969373184_twitter",
+   "ratings": {
+    "25": "normal",
+    "70": "normal",
+    "99": "normal"
+   }
+  },
+  {
+   "heldout_rater": "6",
+   "item_id": "1179021226246692864_twitter",
+   "ratings": {
+    "18": "normal",
+    "25": "normal",
+    "6": "normal"
+   }
+  },
+  {
+   "heldout_rater": "6",
+   "item_id": "1179021606397628416_twitter",
+   "ratings": {
+    "4": "offensive",
+    "6": "offensive",
+    "89": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "18",
+   "item_id": "1179022759780917249_twitter",
+   "ratings": {
+    "1": "normal",
+    "18": "normal",
+    "30": "normal"
+   }
+  },
+  {
+   "heldout_rater": "18",
+   "item_id": "1179024780516876288_twitter",
+   "ratings": {
+    "122": "normal",
+    "18": "normal",
+    "96": "normal"
+   }
+  },
+  {
+   "heldout_rater": "18",
+   "item_id": "1179025539757215746_twitter",
+   "ratings": {
+    "18": "normal",
+    "39": "normal",
+    "51": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "99",
+   "item_id": "1179026159347986432_twitter",
+   "ratings": {
+    "22": "normal",
+    "5": "normal",
+    "99": "normal"
+   }
+  },
+  {
+   "heldout_rater": "3",
+   "item_id": "1179026597346717701_twitter",
+   "ratings": {
+    "1": "normal",
+    "3": "normal",
+    "60": "normal"
+   }
+  },
+  {
+   "heldout_rater": "1",
+   "item_id": "1179026964486742017_twitter",
+   "ratings": {
+    "1": "normal",
+    "37": "normal",
+    "48": "normal"
+   }
+  },
+  {
+   "heldout_rater": "3",
+   "item_id": "1179027260956954625_twitter",
+   "ratings": {
+    "2": "normal",
+    "3": "normal",
+    "96": "normal"
+   }
+  },
+  {
+   "heldout_rater": "9",
+   "item_id": "1179031296888233985_twitter",
+   "ratings": {
+    "4": "normal",
+    "9": "normal",
+    "91": "normal"
+   }
+  },
+  {
+   "heldout_rater": "70",
+   "item_id": "1179032471083634688_twitter",
+   "ratings": {
+    "21": "normal",
+    "70": "normal",
+    "90": "normal"
+   }
+  },
+  {
+   "heldout_rater": "98",
+   "item_id": "1179034899841314818_twitter",
+   "ratings": {
+    "35": "normal",
+    "53": "normal",
+    "98": "normal"
+   }
+  },
+  {
+   "heldout_rater": "1",
+   "item_id": "1179034997023531008_twitter",
+   "ratings": {
+    "1": "normal",
+    "100": "normal",
+    "21": "normal"
+   }
+  },
+  {
+   "heldout_rater": "17",
+   "item_id": "1179035038530322432_twitter",
+   "ratings": {
+    "17": "normal",
+    "18": "normal",
+    "66": "normal"
+   }
+  },
+  {
+   "heldout_rater": "1",
+   "item_id": "1179037519167422466_twitter",
+   "ratings": {
+    "1": "normal",
+    "114": "normal",
+    "4": "normal"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "1179037768195817472_twitter",
+   "ratings": {
+    "17": "normal",
+    "4": "normal",
+    "89": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "1179038144466833409_twitter",
+   "ratings": {
+    "1": "offensive",
+    "4": "hatespeech",
+    "52": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "6",
+   "item_id": "1179038506020036608_twitter",
+   "ratings": {
+    "5": "normal",
+    "6": "normal",
+    "70": "normal"
+   }
+  },
+  {
+   "heldout_rater": "1",
+   "item_id": "1179040176502431745_twitter",
+   "ratings": {
+    "1": "normal",
+    "127": "normal",
+    "17": "normal"
+   }
+  },
+  {
+   "heldout_rater": "18",
+   "item_id": "1179040376042266630_twitter",
+   "ratings": {
+    "18": "hatespeech",
+    "4": "normal",
+    "46": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "1",
+   "item_id": "1179042058851569664_twitter",
+   "ratings": {
+    "1": "normal",
+    "70": "normal",
+    "99": "normal"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "1179042932579586048_twitter",
+   "ratings": {
+    "29": "offensive",
+    "4": "normal",
+    "96": "normal"
+   }
+  },
+  {
+   "heldout_rater": "1",
+   "item_id": "1179043060598083585_twitter",
+   "ratings": {
+    "1": "offensive",
+    "64": "hatespeech",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "25",
+   "item_id": "1179048325254799361_twitter",
+   "ratings": {
+    "14": "normal",
+    "17": "normal",
+    "25": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "10",
+   "item_id": "1179049673635577862_twitter",
+   "ratings": {
+    "10": "normal",
+    "4": "hatespeech",
+    "9": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "105",
+   "item_id": "1179050112099602433_twitter",
+   "ratings": {
+    "105": "offensive",
+    "17": "normal",
+    "4": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "30",
+   "item_id": "1179051864161173504_twitter",
+   "ratings": {
+    "113": "normal",
+    "30": "normal",
+    "39": "normal"
+   }
+  },
+  {
+   "heldout_rater": "1",
+   "item_id": "1179053487767859207_twitter",
+   "ratings": {
+    "1": "normal",
+    "3": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "1179054205589426182_twitter",
+   "ratings": {
+    "37": "offensive",
+    "4": "offensive",
+    "6": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "1",
+   "item_id": "1179060246351769600_twitter",
+   "ratings": {
+    "1": "normal",
+    "18": "normal",
+    "52": "normal"
+   }
+  },
+  {
+   "heldout_rater": "9",
+   "item_id": "1179063266913316865_twitter",
+   "ratings": {
+    "17": "normal",
+    "64": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "39",
+   "item_id": "1179064112891842560_twitter",
+   "ratings": {
+    "1": "normal",
+    "39": "normal",
+    "4": "normal"
+   }
+  },
+  {
+   "heldout_rater": "110",
+   "item_id": "1179064447941402625_twitter",
+   "ratings": {
+    "110": "offensive",
+    "4": "normal",
+    "51": "normal"
+   }
+  },
+  {
+   "heldout_rater": "1",
+   "item_id": "1179065785030975488_twitter",
+   "ratings": {
+    "1": "normal",
+    "39": "normal",
+    "5": "normal"
+   }
+  },
+  {
+   "heldout_rater": "1",
+   "item_id": "1179066330860986368_twitter",
+   "ratings": {
+    "1": "normal",
+    "18": "normal",
+    "83": "normal"
+   }
+  },
+  {
+   "heldout_rater": "110",
+   "item_id": "1179068046457081862_twitter",
+   "ratings": {
+    "1": "normal",
+    "110": "normal",
+    "51": "normal"
+   }
+  },
+  {
+   "heldout_rater": "46",
+   "item_id": "1179069486923689987_twitter",
+   "ratings": {
+    "35": "normal",
+    "46": "normal",
+    "59": "normal"
+   }
+  },
+  {
+   "heldout_rater": "1",
+   "item_id": "1179069617903304704_twitter",
+   "ratings": {
+    "1": "normal",
+    "17": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "1179070980880261124_twitter",
+   "ratings": {
+    "127": "normal",
+    "37": "normal",
+    "4": "normal"
+   }
+  },
+  {
+   "heldout_rater": "17",
+   "item_id": "1179071111713017861_twitter",
+   "ratings": {
+    "1": "normal",
+    "17": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "18",
+   "item_id": "1179071551364386816_twitter",
+   "ratings": {
+    "1": "normal",
+    "18": "normal",
+    "99": "normal"
+   }
+  },
+  {
+   "heldout_rater": "9",
+   "item_id": "1179072007289397248_twitter",
+   "ratings": {
+    "1": "normal",
+    "55": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "44",
+   "item_id": "1179072123949780993_twitter",
+   "ratings": {
+    "1": "normal",
+    "4": "normal",
+    "44": "normal"
+   }
+  },
+  {
+   "heldout_rater": "18",
+   "item_id": "1179072682467500032_twitter",
+   "ratings": {
+    "18": "normal",
+    "89": "normal",
+    "91": "normal"
+   }
+  },
+  {
+   "heldout_rater": "92",
+   "item_id": "1179072913582034944_twitter",
+   "ratings": {
+    "59": "normal",
+    "84": "normal",
+    "92": "normal"
+   }
+  },
+  {
+   "heldout_rater": "3",
+   "item_id": "1179075212505075713_twitter",
+   "ratings": {
+    "17": "normal",
+    "18": "normal",
+    "3": "normal"
+   }
+  },
+  {
+   "heldout_rater": "14",
+   "item_id": "1179075228430790656_twitter",
+   "ratings": {
+    "14": "normal",
+    "49": "normal",
+    "71": "normal"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "1179076683435008001_twitter",
+   "ratings": {
+    "125": "offensive",
+    "25": "hatespeech",
+    "4": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "18",
+   "item_id": "1179076954621763584_twitter",
+   "ratings": {
+    "17": "normal",
+    "18": "normal",
+    "3": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "17",
+   "item_id": "1179078522507157506_twitter",
+   "ratings": {
+    "11": "normal",
+    "17": "normal",
+    "39": "normal"
+   }
+  },
+  {
+   "heldout_rater": "9",
+   "item_id": "1179079483887951875_twitter",
+   "ratings": {
+    "1": "normal",
+    "39": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "9",
+   "item_id": "1179079794308374528_twitter",
+   "ratings": {
+    "39": "normal",
+    "4": "offensive",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "10",
+   "item_id": "1179080109967282178_twitter",
+   "ratings": {
+    "10": "normal",
+    "17": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "18",
+   "item_id": "1179080749963780096_twitter",
+   "ratings": {
+    "18": "normal",
+    "3": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "30",
+   "item_id": "1179081046790328322_twitter",
+   "ratings": {
+    "1": "normal",
+    "18": "normal",
+    "30": "normal"
+   }
+  },
+  {
+   "heldout_rater": "9",
+   "item_id": "1179082191172710402_twitter",
+   "ratings": {
+    "1": "normal",
+    "172": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "52",
+   "item_id": "1179082498304888833_twitter",
+   "ratings": {
+    "1": "normal",
+    "51": "normal",
+    "52": "normal"
+   }
+  },
+  {
+   "heldout_rater": "8",
+   "item_id": "1179083325060927488_twitter",
+   "ratings": {
+    "25": "normal",
+    "6": "normal",
+    "8": "normal"
+   }
+  },
+  {
+   "heldout_rater": "1",
+   "item_id": "1179083418501603328_twitter",
+   "ratings": {
+    "1": "normal",
+    "9": "normal",
+    "93": "normal"
+   }
+  },
+  {
+   "heldout_rater": "1",
+   "item_id": "1179084956959723521_twitter",
+   "ratings": {
+    "1": "normal",
+    "17": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "1",
+   "item_id": "1179086669280157696_twitter",
+   "ratings": {
+    "1": "normal",
+    "18": "normal",
+    "44": "normal"
+   }
+  },
+  {
+   "heldout_rater": "25",
+   "item_id": "1179088540652601345_twitter",
+   "ratings": {
+    "19": "normal",
+    "25": "normal",
+    "39": "normal"
+   }
+  },
+  {
+   "heldout_rater": "9",
+   "item_id": "1179088569153069056_twitter",
+   "ratings": {
+    "10": "normal",
+    "64": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "17",
+   "item_id": "1179088644159787014_twitter",
+   "ratings": {
+    "106": "normal",
+    "17": "normal",
+    "25": "normal"
+   }
+  },
+  {
+   "heldout_rater": "9",
+   "item_id": "1179089013711544320_twitter",
+   "ratings": {
+    "1": "normal",
+    "150": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "3",
+   "item_id": "1179089058619940864_twitter",
+   "ratings": {
+    "1": "normal",
+    "3": "normal",
+    "91": "normal"
+   }
+  },
+  {
+   "heldout_rater": "9",
+   "item_id": "1179089199208845312_twitter",
+   "ratings": {
+    "3": "normal",
+    "30": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "25",
+   "item_id": "1179089355039596544_twitter",
+   "ratings": {
+    "25": "offensive",
+    "39": "offensive",
+    "4": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "9",
+   "item_id": "1179089677208285184_twitter",
+   "ratings": {
+    "17": "normal",
+    "4": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "9",
+   "item_id": "1179089924441591808_twitter",
+   "ratings": {
+    "1": "normal",
+    "39": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "84",
+   "item_id": "1179090182706024448_twitter",
+   "ratings": {
+    "18": "normal",
+    "46": "normal",
+    "84": "normal"
+   }
+  },
+  {
+   "heldout_rater": "2",
+   "item_id": "1179090261110071298_twitter",
+   "ratings": {
+    "1": "offensive",
+    "2": "offensive",
+    "29": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "9",
+   "item_id": "1179091131784544256_twitter",
+   "ratings": {
+    "17": "normal",
+    "64": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "1",
+   "item_id": "1179093114058952705_twitter",
+   "ratings": {
+    "1": "offensive",
+    "3": "offensive",
+    "4": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "1179093201191362560_twitter",
+   "ratings": {
+    "127": "normal",
+    "4": "normal",
+    "55": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "1179093571342946304_twitter",
+   "ratings": {
+    "19": "offensive",
+    "39": "offensive",
+    "4": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "35",
+   "item_id": "1179093607707533312_twitter",
+   "ratings": {
+    "18": "normal",
+    "35": "offensive",
+    "4": "normal"
+   }
+  },
+  {
+   "heldout_rater": "89",
+   "item_id": "1179093898821586944_twitter",
+   "ratings": {
+    "17": "normal",
+    "60": "normal",
+    "89": "normal"
+   }
+  },
+  {
+   "heldout_rater": "99",
+   "item_id": "1179094241730940928_twitter",
+   "ratings": {
+    "17": "normal",
+    "18": "normal",
+    "99": "normal"
+   }
+  },
+  {
+   "heldout_rater": "39",
+   "item_id": "1179094516277665795_twitter",
+   "ratings": {
+    "10": "normal",
+    "39": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "1",
+   "item_id": "1179095002636603392_twitter",
+   "ratings": {
+    "1": "normal",
+    "4": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "21",
+   "item_id": "1179096153985605633_twitter",
+   "ratings": {
+    "21": "normal",
+    "5": "normal",
+    "67": "normal"
+   }
+  },
+  {
+   "heldout_rater": "60",
+   "item_id": "1179096367496679426_twitter",
+   "ratings": {
+    "1": "normal",
+    "3": "normal",
+    "60": "normal"
+   }
+  },
+  {
+   "heldout_rater": "65",
+   "item_id": "1179097021459898368_twitter",
+   "ratings": {
+    "44": "normal",
+    "46": "normal",
+    "65": "normal"
+   }
+  },
+  {
+   "heldout_rater": "10",
+   "item_id": "1179097295515787264_twitter",
+   "ratings": {
+    "10": "normal",
+    "4": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "19",
+   "item_id": "1179097509425082368_twitter",
+   "ratings": {
+    "18": "normal",
+    "19": "normal",
+    "5": "normal"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "1179098536199311365_twitter",
+   "ratings": {
+    "1": "normal",
+    "39": "normal",
+    "4": "normal"
+   }
+  },
+  {
+   "heldout_rater": "3",
+   "item_id": "1179098553320386560_twitter",
+   "ratings": {
+    "3": "normal",
+    "4": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "53",
+   "item_id": "1179098645192466433_twitter",
+   "ratings": {
+    "18": "normal",
+    "53": "normal",
+    "93": "normal"
+   }
+  },
+  {
+   "heldout_rater": "9",
+   "item_id": "1179099538495115264_twitter",
+   "ratings": {
+    "12": "normal",
+    "55": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "1179100967981244418_twitter",
+   "ratings": {
+    "32": "offensive",
+    "4": "offensive",
+    "90": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "52",
+   "item_id": "1179101736923013121_twitter",
+   "ratings": {
+    "25": "normal",
+    "34": "normal",
+    "52": "normal"
+   }
+  },
+  {
+   "heldout_rater": "39",
+   "item_id": "1179102552345976832_twitter",
+   "ratings": {
+    "39": "offensive",
+    "4": "offensive",
+    "82": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "45",
+   "item_id": "1179102625360486400_twitter",
+   "ratings": {
+    "35": "offensive",
+    "4": "offensive",
+    "45": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "70",
+   "item_id": "1179102982253748229_twitter",
+   "ratings": {
+    "17": "hatespeech",
+    "21": "hatespeech",
+    "70": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "34",
+   "item_id": "1179103115309662209_twitter",
+   "ratings": {
+    "3": "normal",
+    "34": "normal",
+    "4": "normal"
+   }
+  },
+  {
+   "heldout_rater": "1",
+   "item_id": "1179103152479637504_twitter",
+   "ratings": {
+    "1": "normal",
+    "4": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "51",
+   "item_id": "1179103554289582081_twitter",
+   "ratings": {
+    "1": "normal",
+    "114": "normal",
+    "51": "normal"
+   }
+  },
+  {
+   "heldout_rater": "11",
+   "item_id": "1179103606752055298_twitter",
+   "ratings": {
+    "11": "offensive",
+    "4": "offensive",
+    "46": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "1179103900579848195_twitter",
+   "ratings": {
+    "127": "normal",
+    "37": "normal",
+    "4": "normal"
+   }
+  },
+  {
+   "heldout_rater": "5",
+   "item_id": "1179103931944751105_twitter",
+   "ratings": {
+    "5": "normal",
+    "70": "normal",
+    "99": "normal"
+   }
+  },
+  {
+   "heldout_rater": "1",
+   "item_id": "1179103951976882179_twitter",
+   "ratings": {
+    "1": "normal",
+    "60": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "127",
+   "item_id": "1179104489745321987_twitter",
+   "ratings": {
+    "127": "offensive",
+    "4": "normal",
+    "84": "normal"
+   }
+  },
+  {
+   "heldout_rater": "17",
+   "item_id": "1179104739809734657_twitter",
+   "ratings": {
+    "17": "normal",
+    "64": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "70",
+   "item_id": "1179105016797372423_twitter",
+   "ratings": {
+    "25": "normal",
+    "5": "normal",
+    "70": "normal"
+   }
+  },
+  {
+   "heldout_rater": "9",
+   "item_id": "1179105076637552641_twitter",
+   "ratings": {
+    "10": "normal",
+    "4": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "1",
+   "item_id": "1179105547573837824_twitter",
+   "ratings": {
+    "1": "normal",
+    "3": "normal",
+    "84": "normal"
+   }
+  },
+  {
+   "heldout_rater": "1",
+   "item_id": "1179105754005082112_twitter",
+   "ratings": {
+    "1": "normal",
+    "17": "normal",
+    "3": "normal"
+   }
+  },
+  {
+   "heldout_rater": "212",
+   "item_id": "1179926054426861568_twitter",
+   "ratings": {
+    "206": "normal",
+    "212": "normal",
+    "223": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "7",
+   "item_id": "1181305710585503751_twitter",
+   "ratings": {
+    "25": "normal",
+    "6": "normal",
+    "7": "normal"
+   }
+  },
+  {
+   "heldout_rater": "222",
+   "item_id": "1181356826584993792_twitter",
+   "ratings": {
+    "203": "offensive",
+    "222": "offensive",
+    "235": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "209",
+   "item_id": "1182486444906037249_twitter",
+   "ratings": {
+    "205": "offensive",
+    "209": "offensive",
+    "213": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "223",
+   "item_id": "1182489322194268160_twitter",
+   "ratings": {
+    "209": "offensive",
+    "223": "offensive",
+    "235": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "202",
+   "item_id": "1182798517913423872_twitter",
+   "ratings": {
+    "199": "normal",
+    "202": "normal",
+    "213": "normal"
+   }
+  },
+  {
+   "heldout_rater": "212",
+   "item_id": "1182982995998924801_twitter",
+   "ratings": {
+    "208": "offensive",
+    "212": "normal",
+    "223": "normal"
+   }
+  },
+  {
+   "heldout_rater": "207",
+   "item_id": "1183440615528370177_twitter",
+   "ratings": {
+    "204": "normal",
+    "207": "normal",
+    "225": "normal"
+   }
+  },
+  {
+   "heldout_rater": "223",
+   "item_id": "1185128704944439296_twitter",
+   "ratings": {
+    "212": "normal",
+    "217": "normal",
+    "223": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "25",
+   "item_id": "1185336994576158722_twitter",
+   "ratings": {
+    "25": "normal",
+    "3": "normal",
+    "6": "normal"
+   }
+  },
+  {
+   "heldout_rater": "25",
+   "item_id": "1185410004838428672_twitter",
+   "ratings": {
+    "25": "normal",
+    "4": "normal",
+    "6": "normal"
+   }
+  },
+  {
+   "heldout_rater": "208",
+   "item_id": "1185589802042830850_twitter",
+   "ratings": {
+    "208": "hatespeech",
+    "223": "hatespeech",
+    "229": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "6",
+   "item_id": "1185973949957586945_twitter",
+   "ratings": {
+    "25": "normal",
+    "6": "normal",
+    "8": "normal"
+   }
+  },
+  {
+   "heldout_rater": "235",
+   "item_id": "1186748600161914886_twitter",
+   "ratings": {
+    "199": "normal",
+    "235": "offensive",
+    "245": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "217",
+   "item_id": "1186852543420219393_twitter",
+   "ratings": {
+    "212": "offensive",
+    "217": "normal",
+    "223": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "7",
+   "item_id": "1187130390894600194_twitter",
+   "ratings": {
+    "4": "offensive",
+    "7": "offensive",
+    "8": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "225",
+   "item_id": "1187767384024764416_twitter",
+   "ratings": {
+    "204": "normal",
+    "207": "normal",
+    "225": "normal"
+   }
+  },
+  {
+   "heldout_rater": "217",
+   "item_id": "1188472614320136193_twitter",
+   "ratings": {
+    "202": "offensive",
+    "217": "offensive",
+    "233": "normal"
+   }
+  },
+  {
+   "heldout_rater": "25",
+   "item_id": "1188532198607085576_twitter",
+   "ratings": {
+    "25": "normal",
+    "6": "normal",
+    "7": "normal"
+   }
+  },
+  {
+   "heldout_rater": "203",
+   "item_id": "1188807969871409153_twitter",
+   "ratings": {
+    "203": "offensive",
+    "209": "hatespeech",
+    "235": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "212",
+   "item_id": "1190366183167528960_twitter",
+   "ratings": {
+    "211": "normal",
+    "212": "offensive",
+    "236": "normal"
+   }
+  },
+  {
+   "heldout_rater": "238",
+   "item_id": "11906078_gab",
+   "ratings": {
+    "203": "hatespeech",
+    "211": "normal",
+    "238": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "223",
+   "item_id": "11907566_gab",
+   "ratings": {
+    "200": "offensive",
+    "223": "normal",
+    "228": "normal"
+   }
+  },
+  {
+   "heldout_rater": "199",
+   "item_id": "11907745_gab",
+   "ratings": {
+    "199": "offensive",
+    "212": "offensive",
+    "217": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "200",
+   "item_id": "11909770_gab",
+   "ratings": {
+    "200": "offensive",
+    "201": "normal",
+    "210": "normal"
+   }
+  },
+  {
+   "heldout_rater": "207",
+   "item_id": "1192979935029268480_twitter",
+   "ratings": {
+    "207": "offensive",
+    "212": "offensive",
+    "221": "normal"
+   }
+  },
+  {
+   "heldout_rater": "238",
+   "item_id": "1193710071076839429_twitter",
+   "ratings": {
+    "200": "offensive",
+    "202": "normal",
+    "238": "normal"
+   }
+  },
+  {
+   "heldout_rater": "222",
+   "item_id": "1197226143549546496_twitter",
+   "ratings": {
+    "209": "offensive",
+    "212": "normal",
+    "222": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "201",
+   "item_id": "11980925_gab",
+   "ratings": {
+    "201": "offensive",
+    "222": "offensive",
+    "236": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "212",
+   "item_id": "1200675769845813249_twitter",
+   "ratings": {
+    "204": "hatespeech",
+    "207": "offensive",
+    "212": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "233",
+   "item_id": "1204150952007208960_twitter",
+   "ratings": {
+    "202": "offensive",
+    "233": "offensive",
+    "238": "normal"
+   }
+  },
+  {
+   "heldout_rater": "233",
+   "item_id": "1204616012265484288_twitter",
+   "ratings": {
+    "203": "offensive",
+    "233": "normal",
+    "235": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "203",
+   "item_id": "1204829540071034880_twitter",
+   "ratings": {
+    "203": "offensive",
+    "235": "offensive",
+    "239": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "207",
+   "item_id": "1205190699001536518_twitter",
+   "ratings": {
+    "204": "hatespeech",
+    "207": "hatespeech",
+    "221": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "207",
+   "item_id": "1205682548254244865_twitter",
+   "ratings": {
+    "207": "normal",
+    "212": "offensive",
+    "221": "normal"
+   }
+  },
+  {
+   "heldout_rater": "235",
+   "item_id": "1205883388311359496_twitter",
+   "ratings": {
+    "209": "normal",
+    "212": "normal",
+    "235": "normal"
+   }
+  },
+  {
+   "heldout_rater": "13",
+   "item_id": "12075675_gab",
+   "ratings": {
+    "13": "hatespeech",
+    "20": "hatespeech",
+    "4": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "207",
+   "item_id": "1209503685019131905_twitter",
+   "ratings": {
+    "204": "normal",
+    "207": "normal",
+    "212": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "209",
+   "item_id": "1212083874056069121_twitter",
+   "ratings": {
+    "203": "normal",
+    "209": "normal",
+    "235": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "216",
+   "item_id": "1213773504148996097_twitter",
+   "ratings": {
+    "203": "normal",
+    "216": "offensive",
+    "233": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "223",
+   "item_id": "1214661248702390275_twitter",
+   "ratings": {
+    "209": "offensive",
+    "212": "offensive",
+    "223": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "213",
+   "item_id": "1215389430208454656_twitter",
+   "ratings": {
+    "207": "offensive",
+    "212": "offensive",
+    "213": "normal"
+   }
+  },
+  {
+   "heldout_rater": "221",
+   "item_id": "1215629083964583936_twitter",
+   "ratings": {
+    "202": "normal",
+    "204": "normal",
+    "221": "normal"
+   }
+  },
+  {
+   "heldout_rater": "213",
+   "item_id": "1216300407879884802_twitter",
+   "ratings": {
+    "202": "normal",
+    "213": "normal",
+    "231": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "206",
+   "item_id": "1216905926969626624_twitter",
+   "ratings": {
+    "203": "offensive",
+    "206": "offensive",
+    "239": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "203",
+   "item_id": "12182895_gab",
+   "ratings": {
+    "203": "offensive",
+    "204": "offensive",
+    "207": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "199",
+   "item_id": "12189681_gab",
+   "ratings": {
+    "199": "normal",
+    "212": "normal",
+    "217": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "130",
+   "item_id": "1219420538029764608_twitter",
+   "ratings": {
+    "130": "normal",
+    "203": "hatespeech",
+    "235": "normal"
+   }
+  },
+  {
+   "heldout_rater": "220",
+   "item_id": "12197721_gab",
+   "ratings": {
+    "210": "hatespeech",
+    "220": "offensive",
+    "248": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "202",
+   "item_id": "1220736496698896385_twitter",
+   "ratings": {
+    "202": "normal",
+    "233": "normal",
+    "245": "normal"
+   }
+  },
+  {
+   "heldout_rater": "3",
+   "item_id": "12208265_gab",
+   "ratings": {
+    "3": "hatespeech",
+    "54": "hatespeech",
+    "9": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "202",
+   "item_id": "12223373_gab",
+   "ratings": {
+    "202": "normal",
+    "205": "hatespeech",
+    "223": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "199",
+   "item_id": "1224171069658951680_twitter",
+   "ratings": {
+    "199": "normal",
+    "217": "normal",
+    "223": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "200",
+   "item_id": "1225484260083224577_twitter",
+   "ratings": {
+    "199": "offensive",
+    "200": "offensive",
+    "225": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "214",
+   "item_id": "1225858073270476800_twitter",
+   "ratings": {
+    "209": "offensive",
+    "214": "offensive",
+    "227": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "202",
+   "item_id": "1228700650499784704_twitter",
+   "ratings": {
+    "200": "normal",
+    "202": "offensive",
+    "238": "normal"
+   }
+  },
+  {
+   "heldout_rater": "215",
+   "item_id": "1229665905711312896_twitter",
+   "ratings": {
+    "202": "offensive",
+    "213": "normal",
+    "215": "normal"
+   }
+  },
+  {
+   "heldout_rater": "223",
+   "item_id": "1231241038813126657_twitter",
+   "ratings": {
+    "209": "offensive",
+    "223": "offensive",
+    "246": "normal"
+   }
+  },
+  {
+   "heldout_rater": "209",
+   "item_id": "1231344591980253184_twitter",
+   "ratings": {
+    "209": "hatespeech",
+    "212": "offensive",
+    "235": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "235",
+   "item_id": "1231863913693794304_twitter",
+   "ratings": {
+    "209": "offensive",
+    "229": "normal",
+    "235": "normal"
+   }
+  },
+  {
+   "heldout_rater": "202",
+   "item_id": "1232365774972518401_twitter",
+   "ratings": {
+    "202": "hatespeech",
+    "212": "offensive",
+    "221": "normal"
+   }
+  },
+  {
+   "heldout_rater": "207",
+   "item_id": "1232703500863393792_twitter",
+   "ratings": {
+    "204": "normal",
+    "207": "normal",
+    "225": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "204",
+   "item_id": "1232954013533884418_twitter",
+   "ratings": {
+    "204": "normal",
+    "207": "normal",
+    "221": "normal"
+   }
+  },
+  {
+   "heldout_rater": "199",
+   "item_id": "1234364865315266562_twitter",
+   "ratings": {
+    "199": "hatespeech",
+    "235": "hatespeech",
+    "239": "normal"
+   }
+  },
+  {
+   "heldout_rater": "223",
+   "item_id": "1234374288741765120_twitter",
+   "ratings": {
+    "209": "offensive",
+    "223": "normal",
+    "235": "normal"
+   }
+  },
+  {
+   "heldout_rater": "223",
+   "item_id": "1234483055437471745_twitter",
+   "ratings": {
+    "208": "normal",
+    "212": "normal",
+    "223": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "207",
+   "item_id": "1236058528303009797_twitter",
+   "ratings": {
+    "207": "normal",
+    "212": "normal",
+    "221": "normal"
+   }
+  },
+  {
+   "heldout_rater": "233",
+   "item_id": "1236366818044006400_twitter",
+   "ratings": {
+    "202": "normal",
+    "233": "normal",
+    "238": "normal"
+   }
+  },
+  {
+   "heldout_rater": "209",
+   "item_id": "1236443281053147144_twitter",
+   "ratings": {
+    "209": "normal",
+    "222": "normal",
+    "235": "normal"
+   }
+  },
+  {
+   "heldout_rater": "199",
+   "item_id": "1237482196719620097_twitter",
+   "ratings": {
+    "199": "normal",
+    "225": "offensive",
+    "235": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "213",
+   "item_id": "1237912216013344770_twitter",
+   "ratings": {
+    "205": "offensive",
+    "209": "offensive",
+    "213": "normal"
+   }
+  },
+  {
+   "heldout_rater": "225",
+   "item_id": "12384215_gab",
+   "ratings": {
+    "203": "offensive",
+    "211": "normal",
+    "225": "normal"
+   }
+  },
+  {
+   "heldout_rater": "204",
+   "item_id": "1239867975571816450_twitter",
+   "ratings": {
+    "204": "offensive",
+    "207": "offensive",
+    "221": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "215",
+   "item_id": "1241113692210593792_twitter",
+   "ratings": {
+    "200": "offensive",
+    "202": "offensive",
+    "215": "normal"
+   }
+  },
+  {
+   "heldout_rater": "203",
+   "item_id": "1242221588268941312_twitter",
+   "ratings": {
+    "203": "offensive",
+    "209": "hatespeech",
+    "235": "normal"
+   }
+  },
+  {
+   "heldout_rater": "223",
+   "item_id": "1242648_gab",
+   "ratings": {
+    "205": "offensive",
+    "223": "hatespeech",
+    "243": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "217",
+   "item_id": "1243195077859606535_twitter",
+   "ratings": {
+    "206": "hatespeech",
+    "217": "normal",
+    "223": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "207",
+   "item_id": "12436423_gab",
+   "ratings": {
+    "204": "hatespeech",
+    "207": "offensive",
+    "225": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "228",
+   "item_id": "12454853_gab",
+   "ratings": {
+    "208": "normal",
+    "227": "offensive",
+    "228": "normal"
+   }
+  },
+  {
+   "heldout_rater": "215",
+   "item_id": "1246371541681659905_twitter",
+   "ratings": {
+    "207": "normal",
+    "215": "normal",
+    "221": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "207",
+   "item_id": "1246387576539414528_twitter",
+   "ratings": {
+    "207": "offensive",
+    "212": "offensive",
+    "221": "normal"
+   }
+  },
+  {
+   "heldout_rater": "225",
+   "item_id": "1247303149490233345_twitter",
+   "ratings": {
+    "204": "normal",
+    "207": "offensive",
+    "225": "normal"
+   }
+  },
+  {
+   "heldout_rater": "235",
+   "item_id": "1247459356813082625_twitter",
+   "ratings": {
+    "209": "normal",
+    "222": "normal",
+    "235": "normal"
+   }
+  },
+  {
+   "heldout_rater": "227",
+   "item_id": "1248696347957645315_twitter",
+   "ratings": {
+    "209": "normal",
+    "214": "normal",
+    "227": "normal"
+   }
+  },
+  {
+   "heldout_rater": "199",
+   "item_id": "1249052188506124288_twitter",
+   "ratings": {
+    "199": "normal",
+    "200": "normal",
+    "225": "normal"
+   }
+  },
+  {
+   "heldout_rater": "213",
+   "item_id": "1249738535994884102_twitter",
+   "ratings": {
+    "213": "normal",
+    "215": "normal",
+    "233": "normal"
+   }
+  },
+  {
+   "heldout_rater": "203",
+   "item_id": "1251189299627864064_twitter",
+   "ratings": {
+    "203": "hatespeech",
+    "209": "hatespeech",
+    "222": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "216",
+   "item_id": "1251645459548028930_twitter",
+   "ratings": {
+    "203": "offensive",
+    "216": "offensive",
+    "233": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "235",
+   "item_id": "1253409285997879301_twitter",
+   "ratings": {
+    "203": "offensive",
+    "235": "offensive",
+    "239": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "235",
+   "item_id": "1256759549262024704_twitter",
+   "ratings": {
+    "203": "normal",
+    "233": "offensive",
+    "235": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "212",
+   "item_id": "1257722745988710400_twitter",
+   "ratings": {
+    "209": "offensive",
+    "212": "offensive",
+    "235": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "223",
+   "item_id": "1257886286091878400_twitter",
+   "ratings": {
+    "209": "normal",
+    "223": "normal",
+    "235": "normal"
+   }
+  },
+  {
+   "heldout_rater": "208",
+   "item_id": "1258177370793684993_twitter",
+   "ratings": {
+    "208": "offensive",
+    "212": "normal",
+    "223": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "211",
+   "item_id": "1258261495953018881_twitter",
+   "ratings": {
+    "199": "normal",
+    "211": "normal",
+    "245": "normal"
+   }
+  },
+  {
+   "heldout_rater": "209",
+   "item_id": "1258363979602309122_twitter",
+   "ratings": {
+    "209": "normal",
+    "211": "normal",
+    "214": "normal"
+   }
+  },
+  {
+   "heldout_rater": "46",
+   "item_id": "12583735_gab",
+   "ratings": {
+    "34": "normal",
+    "4": "hatespeech",
+    "46": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "207",
+   "item_id": "1258517147162042369_twitter",
+   "ratings": {
+    "207": "offensive",
+    "212": "offensive",
+    "213": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "208",
+   "item_id": "12597139_gab",
+   "ratings": {
+    "208": "hatespeech",
+    "209": "normal",
+    "211": "normal"
+   }
+  },
+  {
+   "heldout_rater": "223",
+   "item_id": "12601470_gab",
+   "ratings": {
+    "205": "hatespeech",
+    "223": "offensive",
+    "231": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "223",
+   "item_id": "1261389251385724929_twitter",
+   "ratings": {
+    "208": "offensive",
+    "223": "offensive",
+    "229": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "235",
+   "item_id": "1261659830709678086_twitter",
+   "ratings": {
+    "130": "offensive",
+    "203": "hatespeech",
+    "235": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "215",
+   "item_id": "1261841488327081986_twitter",
+   "ratings": {
+    "202": "normal",
+    "215": "normal",
+    "233": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "202",
+   "item_id": "1262086782138691585_twitter",
+   "ratings": {
+    "202": "normal",
+    "213": "normal",
+    "215": "normal"
+   }
+  },
+  {
+   "heldout_rater": "19",
+   "item_id": "12628261_gab",
+   "ratings": {
+    "19": "offensive",
+    "4": "hatespeech",
+    "7": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "233",
+   "item_id": "1263335735580430336_twitter",
+   "ratings": {
+    "203": "offensive",
+    "233": "offensive",
+    "235": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "221",
+   "item_id": "1263675365131616258_twitter",
+   "ratings": {
+    "202": "normal",
+    "204": "normal",
+    "221": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "203",
+   "item_id": "1264471163037720577_twitter",
+   "ratings": {
+    "203": "normal",
+    "209": "normal",
+    "223": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "27",
+   "item_id": "12645179_gab",
+   "ratings": {
+    "27": "hatespeech",
+    "4": "hatespeech",
+    "9": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "65",
+   "item_id": "12645639_gab",
+   "ratings": {
+    "25": "hatespeech",
+    "4": "hatespeech",
+    "65": "normal"
+   }
+  },
+  {
+   "heldout_rater": "251",
+   "item_id": "12654394_gab",
+   "ratings": {
+    "215": "normal",
+    "221": "normal",
+    "251": "normal"
+   }
+  },
+  {
+   "heldout_rater": "252",
+   "item_id": "12664110_gab",
+   "ratings": {
+    "205": "hatespeech",
+    "211": "normal",
+    "252": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "235",
+   "item_id": "1266536467662352384_twitter",
+   "ratings": {
+    "209": "offensive",
+    "223": "offensive",
+    "235": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "200",
+   "item_id": "1266823114819866627_twitter",
+   "ratings": {
+    "200": "offensive",
+    "202": "offensive",
+    "215": "normal"
+   }
+  },
+  {
+   "heldout_rater": "221",
+   "item_id": "1266977469371944961_twitter",
+   "ratings": {
+    "212": "normal",
+    "213": "offensive",
+    "221": "normal"
+   }
+  },
+  {
+   "heldout_rater": "200",
+   "item_id": "12675441_gab",
+   "ratings": {
+    "200": "normal",
+    "205": "offensive",
+    "231": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "216",
+   "item_id": "1268038905137369088_twitter",
+   "ratings": {
+    "203": "offensive",
+    "216": "hatespeech",
+    "235": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "238",
+   "item_id": "1268483283228082177_twitter",
+   "ratings": {
+    "202": "hatespeech",
+    "208": "hatespeech",
+    "238": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "207",
+   "item_id": "1269831703801016322_twitter",
+   "ratings": {
+    "204": "hatespeech",
+    "207": "offensive",
+    "221": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "235",
+   "item_id": "1270444314691280903_twitter",
+   "ratings": {
+    "209": "normal",
+    "223": "normal",
+    "235": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "217",
+   "item_id": "12706982_gab",
+   "ratings": {
+    "199": "normal",
+    "205": "offensive",
+    "217": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "235",
+   "item_id": "1272988351612588032_twitter",
+   "ratings": {
+    "209": "hatespeech",
+    "222": "offensive",
+    "235": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "241",
+   "item_id": "12753212_gab",
+   "ratings": {
+    "217": "offensive",
+    "235": "offensive",
+    "241": "normal"
+   }
+  },
+  {
+   "heldout_rater": "202",
+   "item_id": "1276241517267615745_twitter",
+   "ratings": {
+    "202": "normal",
+    "231": "normal",
+    "233": "normal"
+   }
+  },
+  {
+   "heldout_rater": "235",
+   "item_id": "1279235536717262850_twitter",
+   "ratings": {
+    "203": "offensive",
+    "233": "normal",
+    "235": "normal"
+   }
+  },
+  {
+   "heldout_rater": "208",
+   "item_id": "1279414218274603010_twitter",
+   "ratings": {
+    "208": "normal",
+    "223": "offensive",
+    "229": "normal"
+   }
+  },
+  {
+   "heldout_rater": "202",
+   "item_id": "12806975_gab",
+   "ratings": {
+    "200": "offensive",
+    "202": "offensive",
+    "206": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "206",
+   "item_id": "12857619_gab",
+   "ratings": {
+    "206": "hatespeech",
+    "207": "offensive",
+    "221": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "231",
+   "item_id": "12867041_gab",
+   "ratings": {
+    "202": "hatespeech",
+    "223": "hatespeech",
+    "231": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "20",
+   "item_id": "12944256_gab",
+   "ratings": {
+    "20": "normal",
+    "46": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "1",
+   "item_id": "12955204_gab",
+   "ratings": {
+    "1": "hatespeech",
+    "3": "hatespeech",
+    "51": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "209",
+   "item_id": "12994897_gab",
+   "ratings": {
+    "199": "hatespeech",
+    "209": "offensive",
+    "222": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "223",
+   "item_id": "13004313_gab",
+   "ratings": {
+    "206": "offensive",
+    "217": "normal",
+    "223": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "9",
+   "item_id": "13059323_gab",
+   "ratings": {
+    "13": "hatespeech",
+    "4": "hatespeech",
+    "9": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "203",
+   "item_id": "1308990_gab",
+   "ratings": {
+    "203": "offensive",
+    "211": "normal",
+    "238": "normal"
+   }
+  },
+  {
+   "heldout_rater": "230",
+   "item_id": "13170938_gab",
+   "ratings": {
+    "200": "offensive",
+    "201": "offensive",
+    "230": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "217",
+   "item_id": "13190059_gab",
+   "ratings": {
+    "199": "hatespeech",
+    "217": "hatespeech",
+    "235": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "220",
+   "item_id": "13254628_gab",
+   "ratings": {
+    "210": "hatespeech",
+    "220": "offensive",
+    "230": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "221",
+   "item_id": "13333968_gab",
+   "ratings": {
+    "202": "offensive",
+    "207": "offensive",
+    "221": "normal"
+   }
+  },
+  {
+   "heldout_rater": "206",
+   "item_id": "13340926_gab",
+   "ratings": {
+    "206": "hatespeech",
+    "211": "offensive",
+    "245": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "205",
+   "item_id": "13415003_gab",
+   "ratings": {
+    "205": "hatespeech",
+    "223": "hatespeech",
+    "231": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "199",
+   "item_id": "13443541_gab",
+   "ratings": {
+    "199": "offensive",
+    "214": "offensive",
+    "217": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "81",
+   "item_id": "13462408_gab",
+   "ratings": {
+    "25": "hatespeech",
+    "4": "hatespeech",
+    "81": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "50",
+   "item_id": "13484608_gab",
+   "ratings": {
+    "3": "hatespeech",
+    "4": "hatespeech",
+    "50": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "1",
+   "item_id": "13606830_gab",
+   "ratings": {
+    "1": "hatespeech",
+    "4": "hatespeech",
+    "83": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "199",
+   "item_id": "13652786_gab",
+   "ratings": {
+    "199": "normal",
+    "212": "normal",
+    "217": "normal"
+   }
+  },
+  {
+   "heldout_rater": "200",
+   "item_id": "13681983_gab",
+   "ratings": {
+    "200": "offensive",
+    "202": "offensive",
+    "230": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "202",
+   "item_id": "13698648_gab",
+   "ratings": {
+    "202": "offensive",
+    "203": "hatespeech",
+    "204": "normal"
+   }
+  },
+  {
+   "heldout_rater": "9",
+   "item_id": "13711310_gab",
+   "ratings": {
+    "139": "offensive",
+    "4": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "217",
+   "item_id": "13720844_gab",
+   "ratings": {
+    "199": "hatespeech",
+    "212": "normal",
+    "217": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "62",
+   "item_id": "13756324_gab",
+   "ratings": {
+    "6": "hatespeech",
+    "62": "hatespeech",
+    "63": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "19",
+   "item_id": "13761233_gab",
+   "ratings": {
+    "19": "offensive",
+    "6": "offensive",
+    "7": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "212",
+   "item_id": "13817088_gab",
+   "ratings": {
+    "212": "offensive",
+    "215": "hatespeech",
+    "217": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "211",
+   "item_id": "13843144_gab",
+   "ratings": {
+    "210": "hatespeech",
+    "211": "offensive",
+    "215": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "217",
+   "item_id": "13853158_gab",
+   "ratings": {
+    "199": "offensive",
+    "212": "offensive",
+    "217": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "223",
+   "item_id": "13928535_gab",
+   "ratings": {
+    "223": "offensive",
+    "228": "offensive",
+    "231": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "206",
+   "item_id": "13952591_gab",
+   "ratings": {
+    "206": "hatespeech",
+    "207": "offensive",
+    "221": "normal"
+   }
+  },
+  {
+   "heldout_rater": "203",
+   "item_id": "13988291_gab",
+   "ratings": {
+    "203": "hatespeech",
+    "204": "offensive",
+    "207": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "223",
+   "item_id": "14022755_gab",
+   "ratings": {
+    "200": "offensive",
+    "202": "offensive",
+    "223": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "201",
+   "item_id": "14036815_gab",
+   "ratings": {
+    "201": "hatespeech",
+    "222": "offensive",
+    "227": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "231",
+   "item_id": "14049816_gab",
+   "ratings": {
+    "202": "offensive",
+    "223": "offensive",
+    "231": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "9",
+   "item_id": "14075812_gab",
+   "ratings": {
+    "4": "hatespeech",
+    "43": "offensive",
+    "9": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "10",
+   "item_id": "14199319_gab",
+   "ratings": {
+    "1": "hatespeech",
+    "10": "hatespeech",
+    "4": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "208",
+   "item_id": "1420021_gab",
+   "ratings": {
+    "208": "offensive",
+    "228": "offensive",
+    "248": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "70",
+   "item_id": "14274324_gab",
+   "ratings": {
+    "23": "hatespeech",
+    "70": "hatespeech",
+    "96": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "24",
+   "item_id": "14277483_gab",
+   "ratings": {
+    "23": "hatespeech",
+    "24": "hatespeech",
+    "46": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "231",
+   "item_id": "14330454_gab",
+   "ratings": {
+    "200": "hatespeech",
+    "223": "hatespeech",
+    "231": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "212",
+   "item_id": "14351799_gab",
+   "ratings": {
+    "211": "normal",
+    "212": "normal",
+    "230": "normal"
+   }
+  },
+  {
+   "heldout_rater": "206",
+   "item_id": "14403681_gab",
+   "ratings": {
+    "205": "normal",
+    "206": "offensive",
+    "211": "normal"
+   }
+  },
+  {
+   "heldout_rater": "204",
+   "item_id": "14428911_gab",
+   "ratings": {
+    "202": "normal",
+    "203": "normal",
+    "204": "normal"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "14500990_gab",
+   "ratings": {
+    "25": "hatespeech",
+    "4": "hatespeech",
+    "9": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "206",
+   "item_id": "14541274_gab",
+   "ratings": {
+    "203": "hatespeech",
+    "206": "hatespeech",
+    "211": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "13",
+   "item_id": "14557895_gab",
+   "ratings": {
+    "12": "hatespeech",
+    "13": "offensive",
+    "4": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "55",
+   "item_id": "14602552_gab",
+   "ratings": {
+    "3": "hatespeech",
+    "4": "hatespeech",
+    "55": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "15",
+   "item_id": "1474697_gab",
+   "ratings": {
+    "15": "hatespeech",
+    "4": "hatespeech",
+    "54": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "110",
+   "item_id": "14846604_gab",
+   "ratings": {
+    "110": "hatespeech",
+    "27": "hatespeech",
+    "46": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "190",
+   "item_id": "14848345_gab",
+   "ratings": {
+    "190": "hatespeech",
+    "21": "hatespeech",
+    "4": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "14873005_gab",
+   "ratings": {
+    "25": "normal",
+    "34": "normal",
+    "4": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "201",
+   "item_id": "14874848_gab",
+   "ratings": {
+    "201": "hatespeech",
+    "203": "hatespeech",
+    "211": "normal"
+   }
+  },
+  {
+   "heldout_rater": "235",
+   "item_id": "14888001_gab",
+   "ratings": {
+    "221": "offensive",
+    "225": "offensive",
+    "235": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "19",
+   "item_id": "14995491_gab",
+   "ratings": {
+    "19": "normal",
+    "4": "hatespeech",
+    "46": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "202",
+   "item_id": "15002888_gab",
+   "ratings": {
+    "200": "offensive",
+    "202": "offensive",
+    "230": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "232",
+   "item_id": "15013021_gab",
+   "ratings": {
+    "203": "normal",
+    "221": "normal",
+    "232": "normal"
+   }
+  },
+  {
+   "heldout_rater": "46",
+   "item_id": "15032941_gab",
+   "ratings": {
+    "17": "hatespeech",
+    "23": "hatespeech",
+    "46": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "140",
+   "item_id": "15078260_gab",
+   "ratings": {
+    "140": "hatespeech",
+    "4": "hatespeech",
+    "42": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "222",
+   "item_id": "15079049_gab",
+   "ratings": {
+    "199": "offensive",
+    "209": "normal",
+    "222": "normal"
+   }
+  },
+  {
+   "heldout_rater": "210",
+   "item_id": "15122827_gab",
+   "ratings": {
+    "208": "offensive",
+    "210": "hatespeech",
+    "239": "normal"
+   }
+  },
+  {
+   "heldout_rater": "46",
+   "item_id": "15132440_gab",
+   "ratings": {
+    "13": "offensive",
+    "4": "hatespeech",
+    "46": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "15186957_gab",
+   "ratings": {
+    "26": "hatespeech",
+    "4": "hatespeech",
+    "65": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "223",
+   "item_id": "15222713_gab",
+   "ratings": {
+    "200": "normal",
+    "202": "normal",
+    "223": "normal"
+   }
+  },
+  {
+   "heldout_rater": "211",
+   "item_id": "15223108_gab",
+   "ratings": {
+    "203": "offensive",
+    "211": "hatespeech",
+    "212": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "222",
+   "item_id": "15226680_gab",
+   "ratings": {
+    "209": "normal",
+    "222": "offensive",
+    "228": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "67",
+   "item_id": "15239458_gab",
+   "ratings": {
+    "25": "hatespeech",
+    "4": "hatespeech",
+    "67": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "228",
+   "item_id": "15251574_gab",
+   "ratings": {
+    "201": "hatespeech",
+    "209": "offensive",
+    "228": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "20",
+   "item_id": "15254763_gab",
+   "ratings": {
+    "20": "hatespeech",
+    "4": "hatespeech",
+    "9": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "200",
+   "item_id": "15283670_gab",
+   "ratings": {
+    "200": "offensive",
+    "223": "offensive",
+    "228": "normal"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "15295049_gab",
+   "ratings": {
+    "12": "hatespeech",
+    "13": "offensive",
+    "4": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "225",
+   "item_id": "15320394_gab",
+   "ratings": {
+    "208": "offensive",
+    "215": "normal",
+    "225": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "208",
+   "item_id": "15332333_gab",
+   "ratings": {
+    "208": "offensive",
+    "209": "normal",
+    "211": "normal"
+   }
+  },
+  {
+   "heldout_rater": "217",
+   "item_id": "15365618_gab",
+   "ratings": {
+    "209": "offensive",
+    "212": "offensive",
+    "217": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "231",
+   "item_id": "15372556_gab",
+   "ratings": {
+    "207": "offensive",
+    "212": "offensive",
+    "231": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "206",
+   "item_id": "15418448_gab",
+   "ratings": {
+    "206": "hatespeech",
+    "212": "offensive",
+    "213": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "228",
+   "item_id": "15419746_gab",
+   "ratings": {
+    "223": "offensive",
+    "228": "offensive",
+    "231": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "96",
+   "item_id": "15447888_gab",
+   "ratings": {
+    "112": "hatespeech",
+    "4": "hatespeech",
+    "96": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "217",
+   "item_id": "15455318_gab",
+   "ratings": {
+    "199": "hatespeech",
+    "212": "normal",
+    "217": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "221",
+   "item_id": "15464915_gab",
+   "ratings": {
+    "205": "offensive",
+    "211": "normal",
+    "221": "normal"
+   }
+  },
+  {
+   "heldout_rater": "206",
+   "item_id": "15477151_gab",
+   "ratings": {
+    "206": "offensive",
+    "207": "offensive",
+    "221": "normal"
+   }
+  },
+  {
+   "heldout_rater": "231",
+   "item_id": "15477833_gab",
+   "ratings": {
+    "202": "hatespeech",
+    "223": "hatespeech",
+    "231": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "223",
+   "item_id": "15558847_gab",
+   "ratings": {
+    "202": "offensive",
+    "223": "hatespeech",
+    "231": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "208",
+   "item_id": "15628855_gab",
+   "ratings": {
+    "208": "offensive",
+    "231": "normal",
+    "233": "normal"
+   }
+  },
+  {
+   "heldout_rater": "232",
+   "item_id": "15633487_gab",
+   "ratings": {
+    "200": "offensive",
+    "205": "offensive",
+    "232": "normal"
+   }
+  },
+  {
+   "heldout_rater": "222",
+   "item_id": "15735763_gab",
+   "ratings": {
+    "209": "offensive",
+    "222": "normal",
+    "228": "normal"
+   }
+  },
+  {
+   "heldout_rater": "209",
+   "item_id": "15735838_gab",
+   "ratings": {
+    "199": "hatespeech",
+    "209": "normal",
+    "222": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "200",
+   "item_id": "15894296_gab",
+   "ratings": {
+    "200": "normal",
+    "202": "normal",
+    "230": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "223",
+   "item_id": "15909380_gab",
+   "ratings": {
+    "200": "offensive",
+    "202": "hatespeech",
+    "223": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "208",
+   "item_id": "15932473_gab",
+   "ratings": {
+    "208": "hatespeech",
+    "228": "hatespeech",
+    "248": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "201",
+   "item_id": "15991664_gab",
+   "ratings": {
+    "199": "normal",
+    "201": "normal",
+    "210": "normal"
+   }
+  },
+  {
+   "heldout_rater": "13",
+   "item_id": "16018169_gab",
+   "ratings": {
+    "13": "hatespeech",
+    "4": "hatespeech",
+    "68": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "215",
+   "item_id": "16026774_gab",
+   "ratings": {
+    "199": "hatespeech",
+    "215": "normal",
+    "217": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "200",
+   "item_id": "16031140_gab",
+   "ratings": {
+    "200": "offensive",
+    "208": "offensive",
+    "229": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "56",
+   "item_id": "16038579_gab",
+   "ratings": {
+    "4": "hatespeech",
+    "56": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "231",
+   "item_id": "16046300_gab",
+   "ratings": {
+    "220": "offensive",
+    "223": "offensive",
+    "231": "normal"
+   }
+  },
+  {
+   "heldout_rater": "208",
+   "item_id": "16057562_gab",
+   "ratings": {
+    "206": "offensive",
+    "208": "offensive",
+    "211": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "204",
+   "item_id": "1609803_gab",
+   "ratings": {
+    "202": "normal",
+    "203": "offensive",
+    "204": "normal"
+   }
+  },
+  {
+   "heldout_rater": "83",
+   "item_id": "16123013_gab",
+   "ratings": {
+    "14": "offensive",
+    "4": "hatespeech",
+    "83": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "204",
+   "item_id": "16166955_gab",
+   "ratings": {
+    "202": "offensive",
+    "203": "offensive",
+    "204": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "204",
+   "item_id": "16169240_gab",
+   "ratings": {
+    "203": "offensive",
+    "204": "normal",
+    "207": "normal"
+   }
+  },
+  {
+   "heldout_rater": "46",
+   "item_id": "16171583_gab",
+   "ratings": {
+    "46": "hatespeech",
+    "6": "hatespeech",
+    "9": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "1621695_gab",
+   "ratings": {
+    "140": "hatespeech",
+    "4": "hatespeech",
+    "42": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "6",
+   "item_id": "16287198_gab",
+   "ratings": {
+    "4": "normal",
+    "6": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "216",
+   "item_id": "16318854_gab",
+   "ratings": {
+    "213": "hatespeech",
+    "216": "hatespeech",
+    "217": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "3",
+   "item_id": "1632755_gab",
+   "ratings": {
+    "17": "hatespeech",
+    "3": "hatespeech",
+    "4": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "199",
+   "item_id": "16361223_gab",
+   "ratings": {
+    "199": "normal",
+    "213": "normal",
+    "217": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "228",
+   "item_id": "16385365_gab",
+   "ratings": {
+    "208": "hatespeech",
+    "220": "offensive",
+    "228": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "6",
+   "item_id": "16392501_gab",
+   "ratings": {
+    "4": "hatespeech",
+    "6": "offensive",
+    "81": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "207",
+   "item_id": "16451445_gab",
+   "ratings": {
+    "207": "offensive",
+    "221": "normal",
+    "229": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "207",
+   "item_id": "16587698_gab",
+   "ratings": {
+    "204": "normal",
+    "207": "normal",
+    "231": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "199",
+   "item_id": "1659621_gab",
+   "ratings": {
+    "199": "normal",
+    "215": "normal",
+    "217": "normal"
+   }
+  },
+  {
+   "heldout_rater": "223",
+   "item_id": "16619315_gab",
+   "ratings": {
+    "223": "offensive",
+    "228": "offensive",
+    "233": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "221",
+   "item_id": "16644279_gab",
+   "ratings": {
+    "203": "normal",
+    "211": "normal",
+    "221": "normal"
+   }
+  },
+  {
+   "heldout_rater": "216",
+   "item_id": "16653335_gab",
+   "ratings": {
+    "215": "normal",
+    "216": "offensive",
+    "217": "normal"
+   }
+  },
+  {
+   "heldout_rater": "3",
+   "item_id": "16678502_gab",
+   "ratings": {
+    "3": "hatespeech",
+    "4": "hatespeech",
+    "41": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "6",
+   "item_id": "16732983_gab",
+   "ratings": {
+    "191": "offensive",
+    "27": "offensive",
+    "6": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "23",
+   "item_id": "16757317_gab",
+   "ratings": {
+    "17": "hatespeech",
+    "23": "hatespeech",
+    "25": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "16761817_gab",
+   "ratings": {
+    "3": "hatespeech",
+    "4": "hatespeech",
+    "91": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "217",
+   "item_id": "16791442_gab",
+   "ratings": {
+    "205": "hatespeech",
+    "211": "offensive",
+    "217": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "67",
+   "item_id": "16803737_gab",
+   "ratings": {
+    "19": "offensive",
+    "4": "hatespeech",
+    "67": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "237",
+   "item_id": "16896639_gab",
+   "ratings": {
+    "208": "offensive",
+    "211": "offensive",
+    "237": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "160",
+   "item_id": "1690626_gab",
+   "ratings": {
+    "1": "hatespeech",
+    "160": "hatespeech",
+    "4": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "211",
+   "item_id": "16911762_gab",
+   "ratings": {
+    "201": "hatespeech",
+    "203": "offensive",
+    "211": "normal"
+   }
+  },
+  {
+   "heldout_rater": "124",
+   "item_id": "16921944_gab",
+   "ratings": {
+    "124": "hatespeech",
+    "4": "hatespeech",
+    "78": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "212",
+   "item_id": "16956046_gab",
+   "ratings": {
+    "206": "hatespeech",
+    "212": "hatespeech",
+    "213": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "199",
+   "item_id": "16965071_gab",
+   "ratings": {
+    "199": "hatespeech",
+    "217": "hatespeech",
+    "222": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "9",
+   "item_id": "16980692_gab",
+   "ratings": {
+    "4": "hatespeech",
+    "46": "hatespeech",
+    "9": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "207",
+   "item_id": "17022416_gab",
+   "ratings": {
+    "203": "offensive",
+    "204": "offensive",
+    "207": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "218",
+   "item_id": "17030440_gab",
+   "ratings": {
+    "199": "hatespeech",
+    "209": "hatespeech",
+    "218": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "206",
+   "item_id": "17033926_gab",
+   "ratings": {
+    "203": "hatespeech",
+    "206": "hatespeech",
+    "211": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "37",
+   "item_id": "17040268_gab",
+   "ratings": {
+    "3": "hatespeech",
+    "37": "offensive",
+    "4": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "46",
+   "item_id": "17154064_gab",
+   "ratings": {
+    "4": "hatespeech",
+    "46": "hatespeech",
+    "94": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "17188226_gab",
+   "ratings": {
+    "153": "offensive",
+    "20": "hatespeech",
+    "4": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "231",
+   "item_id": "17191948_gab",
+   "ratings": {
+    "223": "hatespeech",
+    "228": "offensive",
+    "231": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "245",
+   "item_id": "17302354_gab",
+   "ratings": {
+    "199": "offensive",
+    "217": "offensive",
+    "245": "normal"
+   }
+  },
+  {
+   "heldout_rater": "210",
+   "item_id": "17387703_gab",
+   "ratings": {
+    "210": "hatespeech",
+    "213": "hatespeech",
+    "228": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "217",
+   "item_id": "17398393_gab",
+   "ratings": {
+    "212": "normal",
+    "217": "normal",
+    "223": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "17428728_gab",
+   "ratings": {
+    "17": "normal",
+    "4": "hatespeech",
+    "60": "normal"
+   }
+  },
+  {
+   "heldout_rater": "202",
+   "item_id": "17446936_gab",
+   "ratings": {
+    "202": "offensive",
+    "205": "hatespeech",
+    "223": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "199",
+   "item_id": "17519453_gab",
+   "ratings": {
+    "199": "normal",
+    "209": "hatespeech",
+    "222": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "204",
+   "item_id": "17566705_gab",
+   "ratings": {
+    "204": "offensive",
+    "224": "normal",
+    "225": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "205",
+   "item_id": "17591259_gab",
+   "ratings": {
+    "200": "normal",
+    "205": "offensive",
+    "223": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "202",
+   "item_id": "17683249_gab",
+   "ratings": {
+    "202": "offensive",
+    "203": "offensive",
+    "204": "normal"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "17725589_gab",
+   "ratings": {
+    "11": "offensive",
+    "4": "hatespeech",
+    "46": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "200",
+   "item_id": "17843410_gab",
+   "ratings": {
+    "200": "offensive",
+    "202": "offensive",
+    "223": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "221",
+   "item_id": "17857551_gab",
+   "ratings": {
+    "203": "offensive",
+    "206": "hatespeech",
+    "221": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "200",
+   "item_id": "17895389_gab",
+   "ratings": {
+    "200": "normal",
+    "223": "normal",
+    "231": "normal"
+   }
+  },
+  {
+   "heldout_rater": "60",
+   "item_id": "17898824_gab",
+   "ratings": {
+    "1": "hatespeech",
+    "4": "hatespeech",
+    "60": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "39",
+   "item_id": "17905144_gab",
+   "ratings": {
+    "39": "normal",
+    "4": "hatespeech",
+    "81": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "222",
+   "item_id": "17929821_gab",
+   "ratings": {
+    "204": "offensive",
+    "209": "hatespeech",
+    "222": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "122",
+   "item_id": "17958826_gab",
+   "ratings": {
+    "122": "hatespeech",
+    "4": "hatespeech",
+    "96": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "217",
+   "item_id": "18003424_gab",
+   "ratings": {
+    "215": "normal",
+    "217": "normal",
+    "235": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "209",
+   "item_id": "18037598_gab",
+   "ratings": {
+    "209": "hatespeech",
+    "223": "hatespeech",
+    "250": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "18071470_gab",
+   "ratings": {
+    "27": "hatespeech",
+    "4": "hatespeech",
+    "67": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "206",
+   "item_id": "18091796_gab",
+   "ratings": {
+    "199": "offensive",
+    "206": "offensive",
+    "217": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "207",
+   "item_id": "18126591_gab",
+   "ratings": {
+    "207": "offensive",
+    "233": "normal",
+    "250": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "230",
+   "item_id": "18200598_gab",
+   "ratings": {
+    "208": "hatespeech",
+    "210": "hatespeech",
+    "230": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "66",
+   "item_id": "1820844_gab",
+   "ratings": {
+    "5": "normal",
+    "66": "hatespeech",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "9",
+   "item_id": "18349415_gab",
+   "ratings": {
+    "126": "hatespeech",
+    "23": "hatespeech",
+    "9": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "18",
+   "item_id": "18382217_gab",
+   "ratings": {
+    "18": "hatespeech",
+    "4": "hatespeech",
+    "46": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "206",
+   "item_id": "18388078_gab",
+   "ratings": {
+    "206": "hatespeech",
+    "208": "hatespeech",
+    "211": "normal"
+   }
+  },
+  {
+   "heldout_rater": "212",
+   "item_id": "18402625_gab",
+   "ratings": {
+    "212": "offensive",
+    "217": "offensive",
+    "222": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "210",
+   "item_id": "18405198_gab",
+   "ratings": {
+    "208": "hatespeech",
+    "210": "hatespeech",
+    "228": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "222",
+   "item_id": "18416365_gab",
+   "ratings": {
+    "219": "hatespeech",
+    "222": "hatespeech",
+    "241": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "199",
+   "item_id": "18421440_gab",
+   "ratings": {
+    "199": "hatespeech",
+    "205": "offensive",
+    "213": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "200",
+   "item_id": "18442746_gab",
+   "ratings": {
+    "200": "offensive",
+    "205": "offensive",
+    "223": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "241",
+   "item_id": "18497901_gab",
+   "ratings": {
+    "205": "offensive",
+    "217": "offensive",
+    "241": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "213",
+   "item_id": "18625305_gab",
+   "ratings": {
+    "210": "hatespeech",
+    "213": "hatespeech",
+    "228": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "210",
+   "item_id": "1862631_gab",
+   "ratings": {
+    "205": "normal",
+    "209": "normal",
+    "210": "normal"
+   }
+  },
+  {
+   "heldout_rater": "231",
+   "item_id": "18778256_gab",
+   "ratings": {
+    "200": "normal",
+    "223": "offensive",
+    "231": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "18918814_gab",
+   "ratings": {
+    "4": "hatespeech",
+    "57": "offensive",
+    "81": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "18943330_gab",
+   "ratings": {
+    "13": "offensive",
+    "4": "hatespeech",
+    "46": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "212",
+   "item_id": "18960184_gab",
+   "ratings": {
+    "212": "offensive",
+    "215": "normal",
+    "223": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "209",
+   "item_id": "18971794_gab",
+   "ratings": {
+    "199": "hatespeech",
+    "209": "normal",
+    "222": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "235",
+   "item_id": "18984909_gab",
+   "ratings": {
+    "199": "offensive",
+    "222": "normal",
+    "235": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "19070371_gab",
+   "ratings": {
+    "4": "hatespeech",
+    "81": "hatespeech",
+    "9": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "9",
+   "item_id": "19084094_gab",
+   "ratings": {
+    "27": "offensive",
+    "4": "hatespeech",
+    "9": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "3",
+   "item_id": "19096665_gab",
+   "ratings": {
+    "3": "hatespeech",
+    "4": "hatespeech",
+    "60": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "209",
+   "item_id": "19132319_gab",
+   "ratings": {
+    "199": "hatespeech",
+    "209": "offensive",
+    "222": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "205",
+   "item_id": "19202856_gab",
+   "ratings": {
+    "202": "offensive",
+    "205": "hatespeech",
+    "223": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "3",
+   "item_id": "19208151_gab",
+   "ratings": {
+    "3": "hatespeech",
+    "4": "hatespeech",
+    "9": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "222",
+   "item_id": "19406197_gab",
+   "ratings": {
+    "199": "hatespeech",
+    "209": "offensive",
+    "222": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "19465121_gab",
+   "ratings": {
+    "1": "hatespeech",
+    "4": "hatespeech",
+    "54": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "68",
+   "item_id": "19581918_gab",
+   "ratings": {
+    "17": "hatespeech",
+    "68": "hatespeech",
+    "9": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "202",
+   "item_id": "19621359_gab",
+   "ratings": {
+    "202": "normal",
+    "205": "offensive",
+    "223": "normal"
+   }
+  },
+  {
+   "heldout_rater": "217",
+   "item_id": "19621619_gab",
+   "ratings": {
+    "212": "offensive",
+    "215": "hatespeech",
+    "217": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "234",
+   "item_id": "19671325_gab",
+   "ratings": {
+    "204": "normal",
+    "208": "hatespeech",
+    "234": "normal"
+   }
+  },
+  {
+   "heldout_rater": "215",
+   "item_id": "19749274_gab",
+   "ratings": {
+    "212": "normal",
+    "215": "normal",
+    "217": "normal"
+   }
+  },
+  {
+   "heldout_rater": "217",
+   "item_id": "19761994_gab",
+   "ratings": {
+    "199": "normal",
+    "213": "hatespeech",
+    "217": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "211",
+   "item_id": "19793380_gab",
+   "ratings": {
+    "205": "hatespeech",
+    "211": "normal",
+    "223": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "123",
+   "item_id": "19802718_gab",
+   "ratings": {
+    "123": "hatespeech",
+    "13": "offensive",
+    "4": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "221",
+   "item_id": "19838534_gab",
+   "ratings": {
+    "205": "offensive",
+    "211": "normal",
+    "221": "normal"
+   }
+  },
+  {
+   "heldout_rater": "228",
+   "item_id": "19847312_gab",
+   "ratings": {
+    "199": "hatespeech",
+    "210": "hatespeech",
+    "228": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "3",
+   "item_id": "19900230_gab",
+   "ratings": {
+    "3": "hatespeech",
+    "54": "hatespeech",
+    "9": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "228",
+   "item_id": "19962883_gab",
+   "ratings": {
+    "223": "hatespeech",
+    "228": "offensive",
+    "233": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "41",
+   "item_id": "2000298_gab",
+   "ratings": {
+    "4": "hatespeech",
+    "41": "offensive",
+    "9": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "215",
+   "item_id": "20016023_gab",
+   "ratings": {
+    "212": "offensive",
+    "213": "offensive",
+    "215": "normal"
+   }
+  },
+  {
+   "heldout_rater": "210",
+   "item_id": "20028637_gab",
+   "ratings": {
+    "205": "hatespeech",
+    "209": "offensive",
+    "210": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "211",
+   "item_id": "20050331_gab",
+   "ratings": {
+    "206": "hatespeech",
+    "211": "normal",
+    "245": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "83",
+   "item_id": "20110849_gab",
+   "ratings": {
+    "15": "hatespeech",
+    "83": "hatespeech",
+    "9": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "60",
+   "item_id": "20164205_gab",
+   "ratings": {
+    "3": "hatespeech",
+    "60": "hatespeech",
+    "9": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "222",
+   "item_id": "20188913_gab",
+   "ratings": {
+    "199": "hatespeech",
+    "209": "hatespeech",
+    "222": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "67",
+   "item_id": "20198010_gab",
+   "ratings": {
+    "4": "hatespeech",
+    "67": "offensive",
+    "9": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "204",
+   "item_id": "20238427_gab",
+   "ratings": {
+    "204": "offensive",
+    "207": "normal",
+    "225": "normal"
+   }
+  },
+  {
+   "heldout_rater": "201",
+   "item_id": "20327507_gab",
+   "ratings": {
+    "199": "hatespeech",
+    "201": "hatespeech",
+    "209": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "49",
+   "item_id": "20448576_gab",
+   "ratings": {
+    "21": "hatespeech",
+    "48": "hatespeech",
+    "49": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "182",
+   "item_id": "20472665_gab",
+   "ratings": {
+    "17": "hatespeech",
+    "182": "hatespeech",
+    "64": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "234",
+   "item_id": "20547070_gab",
+   "ratings": {
+    "207": "normal",
+    "223": "offensive",
+    "234": "normal"
+   }
+  },
+  {
+   "heldout_rater": "100",
+   "item_id": "20577878_gab",
+   "ratings": {
+    "100": "hatespeech",
+    "54": "hatespeech",
+    "9": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "20597057_gab",
+   "ratings": {
+    "19": "offensive",
+    "27": "hatespeech",
+    "4": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "202",
+   "item_id": "20622443_gab",
+   "ratings": {
+    "202": "hatespeech",
+    "206": "hatespeech",
+    "221": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "199",
+   "item_id": "20633746_gab",
+   "ratings": {
+    "199": "hatespeech",
+    "212": "hatespeech",
+    "217": "normal"
+   }
+  },
+  {
+   "heldout_rater": "200",
+   "item_id": "20667502_gab",
+   "ratings": {
+    "200": "hatespeech",
+    "202": "hatespeech",
+    "230": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "200",
+   "item_id": "20685573_gab",
+   "ratings": {
+    "200": "offensive",
+    "205": "offensive",
+    "223": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "211",
+   "item_id": "20753647_gab",
+   "ratings": {
+    "200": "hatespeech",
+    "211": "normal",
+    "231": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "18",
+   "item_id": "21009414_gab",
+   "ratings": {
+    "18": "hatespeech",
+    "4": "hatespeech",
+    "51": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "207",
+   "item_id": "21043320_gab",
+   "ratings": {
+    "202": "normal",
+    "207": "offensive",
+    "221": "normal"
+   }
+  },
+  {
+   "heldout_rater": "7",
+   "item_id": "21056476_gab",
+   "ratings": {
+    "104": "offensive",
+    "57": "offensive",
+    "7": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "209",
+   "item_id": "21073982_gab",
+   "ratings": {
+    "200": "hatespeech",
+    "208": "hatespeech",
+    "209": "normal"
+   }
+  },
+  {
+   "heldout_rater": "231",
+   "item_id": "21145277_gab",
+   "ratings": {
+    "220": "hatespeech",
+    "223": "offensive",
+    "231": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "81",
+   "item_id": "21206689_gab",
+   "ratings": {
+    "4": "hatespeech",
+    "81": "hatespeech",
+    "95": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "6",
+   "item_id": "21217776_gab",
+   "ratings": {
+    "108": "offensive",
+    "4": "hatespeech",
+    "6": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "15",
+   "item_id": "21238137_gab",
+   "ratings": {
+    "15": "offensive",
+    "4": "offensive",
+    "83": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "221",
+   "item_id": "21266760_gab",
+   "ratings": {
+    "206": "hatespeech",
+    "207": "offensive",
+    "221": "normal"
+   }
+  },
+  {
+   "heldout_rater": "6",
+   "item_id": "21455262_gab",
+   "ratings": {
+    "108": "offensive",
+    "6": "offensive",
+    "78": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "218",
+   "item_id": "21498260_gab",
+   "ratings": {
+    "199": "offensive",
+    "218": "normal",
+    "222": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "223",
+   "item_id": "21617110_gab",
+   "ratings": {
+    "202": "offensive",
+    "205": "hatespeech",
+    "223": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "37",
+   "item_id": "21628603_gab",
+   "ratings": {
+    "37": "normal",
+    "4": "hatespeech",
+    "48": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "199",
+   "item_id": "21713275_gab",
+   "ratings": {
+    "199": "hatespeech",
+    "215": "normal",
+    "217": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "201",
+   "item_id": "21793340_gab",
+   "ratings": {
+    "200": "offensive",
+    "201": "offensive",
+    "210": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "21803415_gab",
+   "ratings": {
+    "1": "hatespeech",
+    "39": "offensive",
+    "4": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "199",
+   "item_id": "21830602_gab",
+   "ratings": {
+    "199": "offensive",
+    "217": "offensive",
+    "235": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "67",
+   "item_id": "21920155_gab",
+   "ratings": {
+    "41": "offensive",
+    "6": "offensive",
+    "67": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "17",
+   "item_id": "22020564_gab",
+   "ratings": {
+    "17": "hatespeech",
+    "31": "hatespeech",
+    "96": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "214",
+   "item_id": "22218506_gab",
+   "ratings": {
+    "199": "offensive",
+    "213": "offensive",
+    "214": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "210",
+   "item_id": "22261822_gab",
+   "ratings": {
+    "208": "offensive",
+    "210": "offensive",
+    "230": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "46",
+   "item_id": "22282384_gab",
+   "ratings": {
+    "21": "hatespeech",
+    "46": "hatespeech",
+    "59": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "223",
+   "item_id": "22319846_gab",
+   "ratings": {
+    "200": "hatespeech",
+    "223": "offensive",
+    "231": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "231",
+   "item_id": "2239096_gab",
+   "ratings": {
+    "223": "offensive",
+    "228": "offensive",
+    "231": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "19",
+   "item_id": "22440512_gab",
+   "ratings": {
+    "19": "offensive",
+    "4": "hatespeech",
+    "7": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "212",
+   "item_id": "22552259_gab",
+   "ratings": {
+    "199": "hatespeech",
+    "212": "offensive",
+    "217": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "223",
+   "item_id": "22639477_gab",
+   "ratings": {
+    "205": "normal",
+    "223": "hatespeech",
+    "229": "normal"
+   }
+  },
+  {
+   "heldout_rater": "211",
+   "item_id": "22760271_gab",
+   "ratings": {
+    "208": "offensive",
+    "209": "normal",
+    "211": "normal"
+   }
+  },
+  {
+   "heldout_rater": "217",
+   "item_id": "22806498_gab",
+   "ratings": {
+    "212": "normal",
+    "217": "normal",
+    "223": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "9",
+   "item_id": "23036820_gab",
+   "ratings": {
+    "4": "hatespeech",
+    "81": "hatespeech",
+    "9": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "235",
+   "item_id": "23069155_gab",
+   "ratings": {
+    "199": "offensive",
+    "222": "offensive",
+    "235": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "212",
+   "item_id": "23083459_gab",
+   "ratings": {
+    "212": "offensive",
+    "217": "offensive",
+    "222": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "203",
+   "item_id": "23199017_gab",
+   "ratings": {
+    "203": "hatespeech",
+    "204": "hatespeech",
+    "220": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "23224687_gab",
+   "ratings": {
+    "4": "offensive",
+    "6": "offensive",
+    "67": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "10",
+   "item_id": "23238254_gab",
+   "ratings": {
+    "1": "normal",
+    "10": "hatespeech",
+    "4": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "10",
+   "item_id": "23252924_gab",
+   "ratings": {
+    "10": "normal",
+    "64": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "206",
+   "item_id": "23253693_gab",
+   "ratings": {
+    "206": "normal",
+    "217": "normal",
+    "223": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "39",
+   "item_id": "23287684_gab",
+   "ratings": {
+    "39": "offensive",
+    "4": "hatespeech",
+    "46": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "23291412_gab",
+   "ratings": {
+    "18": "normal",
+    "4": "hatespeech",
+    "63": "normal"
+   }
+  },
+  {
+   "heldout_rater": "208",
+   "item_id": "2335584_gab",
+   "ratings": {
+    "208": "hatespeech",
+    "210": "hatespeech",
+    "228": "normal"
+   }
+  },
+  {
+   "heldout_rater": "204",
+   "item_id": "23368955_gab",
+   "ratings": {
+    "204": "hatespeech",
+    "205": "hatespeech",
+    "211": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "206",
+   "item_id": "23372152_gab",
+   "ratings": {
+    "202": "hatespeech",
+    "206": "hatespeech",
+    "207": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "210",
+   "item_id": "23378663_gab",
+   "ratings": {
+    "208": "hatespeech",
+    "210": "hatespeech",
+    "230": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "202",
+   "item_id": "23420915_gab",
+   "ratings": {
+    "202": "normal",
+    "223": "normal",
+    "231": "normal"
+   }
+  },
+  {
+   "heldout_rater": "3",
+   "item_id": "23463064_gab",
+   "ratings": {
+    "122": "hatespeech",
+    "179": "hatespeech",
+    "3": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "227",
+   "item_id": "23666122_gab",
+   "ratings": {
+    "206": "normal",
+    "223": "hatespeech",
+    "227": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "233",
+   "item_id": "23737066_gab",
+   "ratings": {
+    "202": "hatespeech",
+    "207": "offensive",
+    "233": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "23810387_gab",
+   "ratings": {
+    "27": "hatespeech",
+    "4": "hatespeech",
+    "7": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "223",
+   "item_id": "23811299_gab",
+   "ratings": {
+    "223": "hatespeech",
+    "233": "offensive",
+    "238": "normal"
+   }
+  },
+  {
+   "heldout_rater": "64",
+   "item_id": "23812915_gab",
+   "ratings": {
+    "23": "hatespeech",
+    "4": "hatespeech",
+    "64": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "141",
+   "item_id": "23826033_gab",
+   "ratings": {
+    "141": "hatespeech",
+    "4": "hatespeech",
+    "6": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "233",
+   "item_id": "24007259_gab",
+   "ratings": {
+    "211": "hatespeech",
+    "221": "normal",
+    "233": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "202",
+   "item_id": "24118535_gab",
+   "ratings": {
+    "202": "offensive",
+    "206": "offensive",
+    "207": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "23",
+   "item_id": "24124738_gab",
+   "ratings": {
+    "23": "hatespeech",
+    "4": "hatespeech",
+    "96": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "199",
+   "item_id": "24141943_gab",
+   "ratings": {
+    "199": "offensive",
+    "222": "offensive",
+    "235": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "206",
+   "item_id": "24193372_gab",
+   "ratings": {
+    "202": "hatespeech",
+    "206": "hatespeech",
+    "221": "normal"
+   }
+  },
+  {
+   "heldout_rater": "231",
+   "item_id": "24218254_gab",
+   "ratings": {
+    "200": "hatespeech",
+    "223": "hatespeech",
+    "231": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "217",
+   "item_id": "24235160_gab",
+   "ratings": {
+    "199": "hatespeech",
+    "212": "hatespeech",
+    "217": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "94",
+   "item_id": "24277992_gab",
+   "ratings": {
+    "4": "normal",
+    "6": "normal",
+    "94": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "13",
+   "item_id": "24278281_gab",
+   "ratings": {
+    "13": "hatespeech",
+    "146": "hatespeech",
+    "9": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "46",
+   "item_id": "24301100_gab",
+   "ratings": {
+    "23": "hatespeech",
+    "4": "hatespeech",
+    "46": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "225",
+   "item_id": "24337479_gab",
+   "ratings": {
+    "204": "hatespeech",
+    "224": "hatespeech",
+    "225": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "209",
+   "item_id": "24341213_gab",
+   "ratings": {
+    "199": "offensive",
+    "209": "offensive",
+    "222": "normal"
+   }
+  },
+  {
+   "heldout_rater": "202",
+   "item_id": "24415281_gab",
+   "ratings": {
+    "202": "hatespeech",
+    "203": "hatespeech",
+    "204": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "212",
+   "item_id": "24420267_gab",
+   "ratings": {
+    "199": "normal",
+    "212": "normal",
+    "217": "normal"
+   }
+  },
+  {
+   "heldout_rater": "221",
+   "item_id": "24499582_gab",
+   "ratings": {
+    "206": "hatespeech",
+    "211": "normal",
+    "221": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "24521375_gab",
+   "ratings": {
+    "3": "hatespeech",
+    "4": "offensive",
+    "92": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "24665773_gab",
+   "ratings": {
+    "39": "offensive",
+    "4": "hatespeech",
+    "81": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "206",
+   "item_id": "24680313_gab",
+   "ratings": {
+    "199": "normal",
+    "206": "offensive",
+    "217": "normal"
+   }
+  },
+  {
+   "heldout_rater": "206",
+   "item_id": "24711468_gab",
+   "ratings": {
+    "206": "hatespeech",
+    "208": "offensive",
+    "211": "normal"
+   }
+  },
+  {
+   "heldout_rater": "223",
+   "item_id": "2476611_gab",
+   "ratings": {
+    "200": "hatespeech",
+    "202": "hatespeech",
+    "223": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "210",
+   "item_id": "24888836_gab",
+   "ratings": {
+    "205": "hatespeech",
+    "209": "offensive",
+    "210": "normal"
+   }
+  },
+  {
+   "heldout_rater": "206",
+   "item_id": "24911908_gab",
+   "ratings": {
+    "200": "offensive",
+    "206": "offensive",
+    "223": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "235",
+   "item_id": "24957895_gab",
+   "ratings": {
+    "199": "hatespeech",
+    "217": "offensive",
+    "235": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "235",
+   "item_id": "25008928_gab",
+   "ratings": {
+    "199": "normal",
+    "217": "normal",
+    "235": "normal"
+   }
+  },
+  {
+   "heldout_rater": "7",
+   "item_id": "25196821_gab",
+   "ratings": {
+    "6": "normal",
+    "7": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "211",
+   "item_id": "25239608_gab",
+   "ratings": {
+    "209": "hatespeech",
+    "211": "normal",
+    "242": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "9",
+   "item_id": "25267753_gab",
+   "ratings": {
+    "18": "hatespeech",
+    "30": "hatespeech",
+    "9": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "200",
+   "item_id": "25330302_gab",
+   "ratings": {
+    "200": "normal",
+    "205": "offensive",
+    "231": "normal"
+   }
+  },
+  {
+   "heldout_rater": "199",
+   "item_id": "25333312_gab",
+   "ratings": {
+    "199": "offensive",
+    "209": "hatespeech",
+    "222": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "25340676_gab",
+   "ratings": {
+    "3": "hatespeech",
+    "4": "hatespeech",
+    "68": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "201",
+   "item_id": "25436838_gab",
+   "ratings": {
+    "199": "hatespeech",
+    "201": "hatespeech",
+    "222": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "217",
+   "item_id": "25466958_gab",
+   "ratings": {
+    "206": "normal",
+    "217": "normal",
+    "223": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "46",
+   "item_id": "25487169_gab",
+   "ratings": {
+    "4": "hatespeech",
+    "46": "hatespeech",
+    "56": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "26",
+   "item_id": "25495966_gab",
+   "ratings": {
+    "128": "hatespeech",
+    "26": "hatespeech",
+    "96": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "17",
+   "item_id": "25502005_gab",
+   "ratings": {
+    "1": "hatespeech",
+    "17": "hatespeech",
+    "3": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "64",
+   "item_id": "25605023_gab",
+   "ratings": {
+    "108": "offensive",
+    "4": "hatespeech",
+    "64": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "25643113_gab",
+   "ratings": {
+    "13": "hatespeech",
+    "17": "hatespeech",
+    "4": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "207",
+   "item_id": "25780671_gab",
+   "ratings": {
+    "207": "normal",
+    "211": "normal",
+    "224": "normal"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "25824141_gab",
+   "ratings": {
+    "4": "hatespeech",
+    "67": "hatespeech",
+    "77": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "205",
+   "item_id": "25833850_gab",
+   "ratings": {
+    "205": "hatespeech",
+    "206": "hatespeech",
+    "211": "normal"
+   }
+  },
+  {
+   "heldout_rater": "3",
+   "item_id": "25866917_gab",
+   "ratings": {
+    "3": "hatespeech",
+    "4": "hatespeech",
+    "56": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "25952742_gab",
+   "ratings": {
+    "21": "hatespeech",
+    "4": "hatespeech",
+    "97": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "200",
+   "item_id": "26007185_gab",
+   "ratings": {
+    "200": "offensive",
+    "223": "hatespeech",
+    "231": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "199",
+   "item_id": "26061385_gab",
+   "ratings": {
+    "199": "offensive",
+    "217": "offensive",
+    "235": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "33",
+   "item_id": "26159937_gab",
+   "ratings": {
+    "33": "hatespeech",
+    "4": "hatespeech",
+    "9": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "223",
+   "item_id": "26227105_gab",
+   "ratings": {
+    "202": "offensive",
+    "205": "offensive",
+    "223": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "39",
+   "item_id": "26261243_gab",
+   "ratings": {
+    "39": "normal",
+    "4": "hatespeech",
+    "43": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "25",
+   "item_id": "26344844_gab",
+   "ratings": {
+    "23": "hatespeech",
+    "25": "hatespeech",
+    "71": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "212",
+   "item_id": "26349498_gab",
+   "ratings": {
+    "211": "hatespeech",
+    "212": "offensive",
+    "217": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "9",
+   "item_id": "26361372_gab",
+   "ratings": {
+    "1": "hatespeech",
+    "10": "hatespeech",
+    "9": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "215",
+   "item_id": "26426536_gab",
+   "ratings": {
+    "210": "offensive",
+    "211": "normal",
+    "215": "normal"
+   }
+  },
+  {
+   "heldout_rater": "17",
+   "item_id": "26428645_gab",
+   "ratings": {
+    "17": "hatespeech",
+    "4": "hatespeech",
+    "77": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "204",
+   "item_id": "26532368_gab",
+   "ratings": {
+    "203": "normal",
+    "204": "normal",
+    "207": "normal"
+   }
+  },
+  {
+   "heldout_rater": "26",
+   "item_id": "26534442_gab",
+   "ratings": {
+    "26": "hatespeech",
+    "9": "hatespeech",
+    "96": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "200",
+   "item_id": "26565960_gab",
+   "ratings": {
+    "200": "offensive",
+    "205": "offensive",
+    "211": "normal"
+   }
+  },
+  {
+   "heldout_rater": "203",
+   "item_id": "26571387_gab",
+   "ratings": {
+    "203": "offensive",
+    "206": "hatespeech",
+    "223": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "228",
+   "item_id": "26600445_gab",
+   "ratings": {
+    "223": "hatespeech",
+    "228": "hatespeech",
+    "233": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "211",
+   "item_id": "26627642_gab",
+   "ratings": {
+    "203": "normal",
+    "211": "normal",
+    "221": "normal"
+   }
+  },
+  {
+   "heldout_rater": "3",
+   "item_id": "26646012_gab",
+   "ratings": {
+    "3": "hatespeech",
+    "4": "hatespeech",
+    "46": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "223",
+   "item_id": "26657816_gab",
+   "ratings": {
+    "200": "offensive",
+    "205": "offensive",
+    "223": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "230",
+   "item_id": "26841176_gab",
+   "ratings": {
+    "200": "hatespeech",
+    "202": "offensive",
+    "230": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "100",
+   "item_id": "26871494_gab",
+   "ratings": {
+    "1": "offensive",
+    "100": "offensive",
+    "4": "normal"
+   }
+  },
+  {
+   "heldout_rater": "212",
+   "item_id": "26949341_gab",
+   "ratings": {
+    "212": "offensive",
+    "215": "normal",
+    "217": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "200",
+   "item_id": "26966170_gab",
+   "ratings": {
+    "200": "hatespeech",
+    "202": "offensive",
+    "230": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "203",
+   "item_id": "26974167_gab",
+   "ratings": {
+    "203": "offensive",
+    "204": "offensive",
+    "207": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "218",
+   "item_id": "26989966_gab",
+   "ratings": {
+    "199": "hatespeech",
+    "218": "hatespeech",
+    "222": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "9",
+   "item_id": "27033117_gab",
+   "ratings": {
+    "3": "normal",
+    "41": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "81",
+   "item_id": "27200285_gab",
+   "ratings": {
+    "4": "hatespeech",
+    "81": "hatespeech",
+    "9": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "46",
+   "item_id": "27254282_gab",
+   "ratings": {
+    "4": "hatespeech",
+    "46": "hatespeech",
+    "91": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "206",
+   "item_id": "27265236_gab",
+   "ratings": {
+    "206": "hatespeech",
+    "211": "offensive",
+    "222": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "241",
+   "item_id": "27272328_gab",
+   "ratings": {
+    "228": "hatespeech",
+    "236": "normal",
+    "241": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "27305748_gab",
+   "ratings": {
+    "15": "offensive",
+    "4": "hatespeech",
+    "61": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "203",
+   "item_id": "27313296_gab",
+   "ratings": {
+    "203": "hatespeech",
+    "221": "offensive",
+    "232": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "222",
+   "item_id": "27328494_gab",
+   "ratings": {
+    "201": "offensive",
+    "211": "normal",
+    "222": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "204",
+   "item_id": "27347238_gab",
+   "ratings": {
+    "202": "offensive",
+    "204": "offensive",
+    "207": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "209",
+   "item_id": "27388394_gab",
+   "ratings": {
+    "206": "hatespeech",
+    "209": "offensive",
+    "211": "normal"
+   }
+  },
+  {
+   "heldout_rater": "208",
+   "item_id": "27421287_gab",
+   "ratings": {
+    "206": "hatespeech",
+    "208": "hatespeech",
+    "211": "normal"
+   }
+  },
+  {
+   "heldout_rater": "221",
+   "item_id": "27438758_gab",
+   "ratings": {
+    "206": "hatespeech",
+    "212": "hatespeech",
+    "221": "normal"
+   }
+  },
+  {
+   "heldout_rater": "228",
+   "item_id": "27551024_gab",
+   "ratings": {
+    "208": "hatespeech",
+    "228": "offensive",
+    "248": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "209",
+   "item_id": "27557428_gab",
+   "ratings": {
+    "201": "offensive",
+    "209": "offensive",
+    "222": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "215",
+   "item_id": "27587484_gab",
+   "ratings": {
+    "212": "hatespeech",
+    "215": "hatespeech",
+    "217": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "200",
+   "item_id": "27638978_gab",
+   "ratings": {
+    "200": "hatespeech",
+    "223": "offensive",
+    "228": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "203",
+   "item_id": "27658668_gab",
+   "ratings": {
+    "203": "hatespeech",
+    "206": "offensive",
+    "211": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "217",
+   "item_id": "27667253_gab",
+   "ratings": {
+    "212": "normal",
+    "215": "normal",
+    "217": "normal"
+   }
+  },
+  {
+   "heldout_rater": "3",
+   "item_id": "27669307_gab",
+   "ratings": {
+    "3": "hatespeech",
+    "4": "offensive",
+    "54": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "27799380_gab",
+   "ratings": {
+    "3": "hatespeech",
+    "4": "hatespeech",
+    "60": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "248",
+   "item_id": "27841972_gab",
+   "ratings": {
+    "208": "offensive",
+    "228": "offensive",
+    "248": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "210",
+   "item_id": "27857599_gab",
+   "ratings": {
+    "210": "offensive",
+    "220": "offensive",
+    "230": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "92",
+   "item_id": "27862840_gab",
+   "ratings": {
+    "3": "hatespeech",
+    "4": "hatespeech",
+    "92": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "66",
+   "item_id": "27955734_gab",
+   "ratings": {
+    "15": "hatespeech",
+    "4": "hatespeech",
+    "66": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "225",
+   "item_id": "2852961_gab",
+   "ratings": {
+    "209": "offensive",
+    "225": "normal",
+    "230": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "232",
+   "item_id": "2859820_gab",
+   "ratings": {
+    "200": "hatespeech",
+    "205": "hatespeech",
+    "232": "normal"
+   }
+  },
+  {
+   "heldout_rater": "232",
+   "item_id": "2869193_gab",
+   "ratings": {
+    "205": "hatespeech",
+    "211": "normal",
+    "232": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "211",
+   "item_id": "3007268_gab",
+   "ratings": {
+    "211": "offensive",
+    "212": "offensive",
+    "217": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "3009341_gab",
+   "ratings": {
+    "4": "hatespeech",
+    "7": "offensive",
+    "9": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "204",
+   "item_id": "3168947_gab",
+   "ratings": {
+    "204": "hatespeech",
+    "209": "offensive",
+    "222": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "202",
+   "item_id": "3188045_gab",
+   "ratings": {
+    "202": "offensive",
+    "221": "offensive",
+    "225": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "200",
+   "item_id": "3402108_gab",
+   "ratings": {
+    "200": "normal",
+    "201": "normal",
+    "210": "normal"
+   }
+  },
+  {
+   "heldout_rater": "201",
+   "item_id": "3431791_gab",
+   "ratings": {
+    "201": "hatespeech",
+    "209": "normal",
+    "222": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "3",
+   "item_id": "3525836_gab",
+   "ratings": {
+    "3": "hatespeech",
+    "4": "hatespeech",
+    "46": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "203",
+   "item_id": "3571995_gab",
+   "ratings": {
+    "203": "hatespeech",
+    "206": "hatespeech",
+    "223": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "3",
+   "item_id": "3834555_gab",
+   "ratings": {
+    "3": "normal",
+    "68": "normal",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "223",
+   "item_id": "3947245_gab",
+   "ratings": {
+    "204": "offensive",
+    "207": "offensive",
+    "223": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "225",
+   "item_id": "4005999_gab",
+   "ratings": {
+    "202": "normal",
+    "221": "offensive",
+    "225": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "208",
+   "item_id": "4064564_gab",
+   "ratings": {
+    "208": "offensive",
+    "210": "offensive",
+    "228": "normal"
+   }
+  },
+  {
+   "heldout_rater": "39",
+   "item_id": "4153260_gab",
+   "ratings": {
+    "39": "offensive",
+    "4": "hatespeech",
+    "46": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "217",
+   "item_id": "4231291_gab",
+   "ratings": {
+    "212": "normal",
+    "217": "offensive",
+    "223": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "205",
+   "item_id": "4561266_gab",
+   "ratings": {
+    "202": "normal",
+    "205": "offensive",
+    "223": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "201",
+   "item_id": "4636134_gab",
+   "ratings": {
+    "201": "hatespeech",
+    "220": "hatespeech",
+    "248": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "231",
+   "item_id": "4866547_gab",
+   "ratings": {
+    "200": "offensive",
+    "223": "offensive",
+    "231": "normal"
+   }
+  },
+  {
+   "heldout_rater": "202",
+   "item_id": "5001577_gab",
+   "ratings": {
+    "202": "normal",
+    "223": "hatespeech",
+    "231": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "223",
+   "item_id": "5002223_gab",
+   "ratings": {
+    "200": "hatespeech",
+    "202": "offensive",
+    "223": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "208",
+   "item_id": "5050561_gab",
+   "ratings": {
+    "208": "normal",
+    "210": "hatespeech",
+    "228": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "215",
+   "item_id": "5362935_gab",
+   "ratings": {
+    "215": "normal",
+    "217": "hatespeech",
+    "235": "normal"
+   }
+  },
+  {
+   "heldout_rater": "221",
+   "item_id": "5416566_gab",
+   "ratings": {
+    "207": "normal",
+    "221": "normal",
+    "224": "normal"
+   }
+  },
+  {
+   "heldout_rater": "231",
+   "item_id": "5543927_gab",
+   "ratings": {
+    "205": "offensive",
+    "223": "offensive",
+    "231": "normal"
+   }
+  },
+  {
+   "heldout_rater": "199",
+   "item_id": "5569627_gab",
+   "ratings": {
+    "199": "offensive",
+    "217": "normal",
+    "245": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "7",
+   "item_id": "5650980_gab",
+   "ratings": {
+    "27": "offensive",
+    "4": "offensive",
+    "7": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "231",
+   "item_id": "5676139_gab",
+   "ratings": {
+    "202": "offensive",
+    "221": "normal",
+    "231": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "206",
+   "item_id": "5689010_gab",
+   "ratings": {
+    "203": "hatespeech",
+    "206": "hatespeech",
+    "211": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "228",
+   "item_id": "5778121_gab",
+   "ratings": {
+    "200": "normal",
+    "223": "offensive",
+    "228": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "211",
+   "item_id": "5804553_gab",
+   "ratings": {
+    "201": "normal",
+    "203": "normal",
+    "211": "normal"
+   }
+  },
+  {
+   "heldout_rater": "223",
+   "item_id": "5923246_gab",
+   "ratings": {
+    "199": "hatespeech",
+    "206": "normal",
+    "223": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "217",
+   "item_id": "5966283_gab",
+   "ratings": {
+    "212": "offensive",
+    "215": "offensive",
+    "217": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "54",
+   "item_id": "5990153_gab",
+   "ratings": {
+    "10": "normal",
+    "4": "hatespeech",
+    "54": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "1",
+   "item_id": "6030950_gab",
+   "ratings": {
+    "1": "offensive",
+    "101": "offensive",
+    "48": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "6152693_gab",
+   "ratings": {
+    "15": "normal",
+    "4": "offensive",
+    "9": "normal"
+   }
+  },
+  {
+   "heldout_rater": "211",
+   "item_id": "6498248_gab",
+   "ratings": {
+    "205": "offensive",
+    "211": "normal",
+    "252": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "199",
+   "item_id": "6551465_gab",
+   "ratings": {
+    "199": "normal",
+    "206": "normal",
+    "223": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "199",
+   "item_id": "6618397_gab",
+   "ratings": {
+    "199": "offensive",
+    "210": "hatespeech",
+    "228": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "63",
+   "item_id": "6678426_gab",
+   "ratings": {
+    "27": "offensive",
+    "4": "hatespeech",
+    "63": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "203",
+   "item_id": "6699092_gab",
+   "ratings": {
+    "202": "hatespeech",
+    "203": "hatespeech",
+    "204": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "224",
+   "item_id": "6700335_gab",
+   "ratings": {
+    "207": "offensive",
+    "221": "offensive",
+    "224": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "6780068_gab",
+   "ratings": {
+    "17": "hatespeech",
+    "4": "hatespeech",
+    "9": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "213",
+   "item_id": "6817795_gab",
+   "ratings": {
+    "199": "hatespeech",
+    "213": "hatespeech",
+    "235": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "208",
+   "item_id": "6819403_gab",
+   "ratings": {
+    "200": "hatespeech",
+    "208": "hatespeech",
+    "229": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "162",
+   "item_id": "6891352_gab",
+   "ratings": {
+    "162": "hatespeech",
+    "67": "hatespeech",
+    "7": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "27",
+   "item_id": "6984595_gab",
+   "ratings": {
+    "25": "hatespeech",
+    "27": "offensive",
+    "4": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "4",
+   "item_id": "7079908_gab",
+   "ratings": {
+    "152": "offensive",
+    "4": "hatespeech",
+    "49": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "204",
+   "item_id": "7095387_gab",
+   "ratings": {
+    "202": "normal",
+    "203": "offensive",
+    "204": "normal"
+   }
+  },
+  {
+   "heldout_rater": "41",
+   "item_id": "7225671_gab",
+   "ratings": {
+    "4": "hatespeech",
+    "41": "offensive",
+    "68": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "211",
+   "item_id": "7385200_gab",
+   "ratings": {
+    "206": "hatespeech",
+    "211": "normal",
+    "222": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "215",
+   "item_id": "7403806_gab",
+   "ratings": {
+    "210": "hatespeech",
+    "211": "offensive",
+    "215": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "222",
+   "item_id": "7404978_gab",
+   "ratings": {
+    "199": "hatespeech",
+    "209": "offensive",
+    "222": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "199",
+   "item_id": "7478951_gab",
+   "ratings": {
+    "199": "normal",
+    "217": "offensive",
+    "247": "normal"
+   }
+  },
+  {
+   "heldout_rater": "206",
+   "item_id": "7526280_gab",
+   "ratings": {
+    "206": "hatespeech",
+    "211": "normal",
+    "245": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "221",
+   "item_id": "7591296_gab",
+   "ratings": {
+    "207": "offensive",
+    "221": "normal",
+    "229": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "253",
+   "item_id": "7675455_gab",
+   "ratings": {
+    "209": "normal",
+    "222": "normal",
+    "253": "normal"
+   }
+  },
+  {
+   "heldout_rater": "231",
+   "item_id": "7681424_gab",
+   "ratings": {
+    "209": "offensive",
+    "211": "normal",
+    "231": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "24",
+   "item_id": "7756008_gab",
+   "ratings": {
+    "23": "hatespeech",
+    "24": "hatespeech",
+    "46": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "81",
+   "item_id": "7894283_gab",
+   "ratings": {
+    "4": "hatespeech",
+    "6": "offensive",
+    "81": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "209",
+   "item_id": "7996395_gab",
+   "ratings": {
+    "208": "hatespeech",
+    "209": "hatespeech",
+    "211": "normal"
+   }
+  },
+  {
+   "heldout_rater": "199",
+   "item_id": "8032841_gab",
+   "ratings": {
+    "199": "hatespeech",
+    "215": "normal",
+    "217": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "23",
+   "item_id": "8046981_gab",
+   "ratings": {
+    "23": "hatespeech",
+    "25": "hatespeech",
+    "4": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "6",
+   "item_id": "8059171_gab",
+   "ratings": {
+    "4": "hatespeech",
+    "6": "normal",
+    "7": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "223",
+   "item_id": "8139947_gab",
+   "ratings": {
+    "200": "offensive",
+    "223": "hatespeech",
+    "231": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "202",
+   "item_id": "8175382_gab",
+   "ratings": {
+    "202": "offensive",
+    "203": "offensive",
+    "204": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "206",
+   "item_id": "8181944_gab",
+   "ratings": {
+    "206": "normal",
+    "223": "offensive",
+    "227": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "228",
+   "item_id": "8271175_gab",
+   "ratings": {
+    "208": "offensive",
+    "220": "normal",
+    "228": "normal"
+   }
+  },
+  {
+   "heldout_rater": "202",
+   "item_id": "8304924_gab",
+   "ratings": {
+    "202": "normal",
+    "223": "normal",
+    "231": "normal"
+   }
+  },
+  {
+   "heldout_rater": "27",
+   "item_id": "8511112_gab",
+   "ratings": {
+    "19": "normal",
+    "27": "normal",
+    "7": "normal"
+   }
+  },
+  {
+   "heldout_rater": "202",
+   "item_id": "8549116_gab",
+   "ratings": {
+    "202": "offensive",
+    "205": "normal",
+    "223": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "210",
+   "item_id": "8603729_gab",
+   "ratings": {
+    "208": "hatespeech",
+    "210": "normal",
+    "226": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "207",
+   "item_id": "8608996_gab",
+   "ratings": {
+    "203": "offensive",
+    "204": "normal",
+    "207": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "207",
+   "item_id": "8666025_gab",
+   "ratings": {
+    "204": "hatespeech",
+    "207": "offensive",
+    "225": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "221",
+   "item_id": "8717727_gab",
+   "ratings": {
+    "202": "offensive",
+    "207": "offensive",
+    "221": "normal"
+   }
+  },
+  {
+   "heldout_rater": "202",
+   "item_id": "9017282_gab",
+   "ratings": {
+    "202": "hatespeech",
+    "207": "offensive",
+    "221": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "207",
+   "item_id": "9094154_gab",
+   "ratings": {
+    "203": "offensive",
+    "204": "offensive",
+    "207": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "56",
+   "item_id": "9097672_gab",
+   "ratings": {
+    "4": "hatespeech",
+    "54": "hatespeech",
+    "56": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "210",
+   "item_id": "9216203_gab",
+   "ratings": {
+    "200": "offensive",
+    "201": "normal",
+    "210": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "39",
+   "item_id": "9237072_gab",
+   "ratings": {
+    "3": "hatespeech",
+    "39": "offensive",
+    "4": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "203",
+   "item_id": "9247014_gab",
+   "ratings": {
+    "203": "hatespeech",
+    "206": "hatespeech",
+    "221": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "204",
+   "item_id": "9252494_gab",
+   "ratings": {
+    "203": "hatespeech",
+    "204": "hatespeech",
+    "220": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "200",
+   "item_id": "9346318_gab",
+   "ratings": {
+    "200": "offensive",
+    "211": "normal",
+    "226": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "83",
+   "item_id": "9361416_gab",
+   "ratings": {
+    "15": "hatespeech",
+    "4": "hatespeech",
+    "83": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "64",
+   "item_id": "9474938_gab",
+   "ratings": {
+    "23": "hatespeech",
+    "4": "hatespeech",
+    "64": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "217",
+   "item_id": "9503908_gab",
+   "ratings": {
+    "212": "offensive",
+    "215": "normal",
+    "217": "normal"
+   }
+  },
+  {
+   "heldout_rater": "211",
+   "item_id": "9506123_gab",
+   "ratings": {
+    "203": "hatespeech",
+    "206": "hatespeech",
+    "211": "normal"
+   }
+  },
+  {
+   "heldout_rater": "211",
+   "item_id": "9543918_gab",
+   "ratings": {
+    "207": "offensive",
+    "211": "normal",
+    "212": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "91",
+   "item_id": "9674365_gab",
+   "ratings": {
+    "1": "hatespeech",
+    "4": "hatespeech",
+    "91": "hatespeech"
+   }
+  },
+  {
+   "heldout_rater": "110",
+   "item_id": "9692978_gab",
+   "ratings": {
+    "110": "normal",
+    "72": "normal",
+    "76": "normal"
+   }
+  },
+  {
+   "heldout_rater": "223",
+   "item_id": "9722030_gab",
+   "ratings": {
+    "202": "offensive",
+    "205": "offensive",
+    "223": "offensive"
+   }
+  },
+  {
+   "heldout_rater": "209",
+   "item_id": "9853994_gab",
+   "ratings": {
+    "199": "normal",
+    "209": "hatespeech",
+    "222": "normal"
+   }
+  },
+  {
+   "heldout_rater": "220",
+   "item_id": "9982674_gab",
+   "ratings": {
+    "200": "hatespeech",
+    "219": "offensive",
+    "220": "hatespeech"
+   }
+  }
+ ],
+ "max_chars": 6000,
+ "n_eligible": 20148,
+ "n_sample": 1000,
+ "n_truncated": 0,
+ "pilot_item_ids": [
+  "1080863043356160000_twitter",
+  "1088890307884838918_twitter",
+  "1178835680467804161_twitter",
+  "15330010_gab",
+  "16909050_gab"
+ ],
+ "text_sha256": "2f395379abd9114856138c40fd98f90ccb2a9d33286df38a17354d29e845d038",
+ "variant": "three_way"
+}
