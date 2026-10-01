@@ -13,6 +13,8 @@
 \usepackage{amsmath}
 \usepackage{xspace}
 \input{numbers.tex}
+% Library name is withheld in the anonymous review build.
+\ifdefined\PREPRINT\newcommand{\libname}{Rubricon}\else\newcommand{\libname}{our library}\fi
 \xspaceaddexceptions{\%}
 
 \title{Reliability Floors Are the Wrong Gate:\\Propagating Label Noise into Benchmark Claims}
@@ -32,7 +34,7 @@ Agreement coefficients are routinely reported for annotation \citep{artstein2008
 \section{Noise model and gates}
 For a binary label with symmetric rater error $\eta$, two raters disagree with probability $2\eta(1-\eta)$ regardless of prevalence, so $\eta$ is identifiable from replicated labels. A $k$-rater majority is wrong with probability $\eta_k$ (a binomial tail). If a system's errors are independent of the gold errors, label noise leaves two systems' disagreement rate $p$ unchanged and shrinks the expected accuracy gap by $1-2\eta_k$ \citep{lam2003evaluating,dorner2024dont}. The smallest true gap a paired test on $n$ items resolves is then $(z^\ast+z_{1-\beta})\sqrt{p/n}/(1-2\eta_k)$.
 
-\emph{Gate~v1} (Rubricon's original) blocks a comparison if $\alpha$ is below 0.50, if the gap is below the minimum detectable effect, or if a 95\% interval includes zero. \emph{Gate~v2} blocks only on a paired $z$-test at $z^\ast=2.58$, and reports the estimated $\eta$, the true-scale gap and the smallest resolvable true gap without blocking.
+\emph{Gate~v1} (\libname's original) blocks a comparison if $\alpha$ is below 0.50, if the gap is below the minimum detectable effect, or if a 95\% interval includes zero. \emph{Gate~v2} blocks only on a paired $z$-test at $z^\ast=2.58$, and reports the estimated $\eta$, the true-scale gap and the smallest resolvable true gap without blocking.
 
 \section{Do gates improve decisions?}
 \label{s:gate}

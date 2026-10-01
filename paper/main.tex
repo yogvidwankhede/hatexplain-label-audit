@@ -17,6 +17,8 @@
 \usepackage{siunitx}
 \sisetup{group-separator={,},group-minimum-digits=4}
 \input{numbers.tex}
+% Library name is withheld in the anonymous review build.
+\ifdefined\PREPRINT\newcommand{\libname}{Rubricon}\newcommand{\libintro}{Rubricon, an open-source library}\else\newcommand{\libname}{our library}\newcommand{\libintro}{our open-source library (name withheld for review)}\fi
 \xspaceaddexceptions{\%}
 \newcommand{\eg}{e.g.,\xspace}
 \newcommand{\ie}{i.e.,\xspace}
@@ -54,7 +56,7 @@ We contribute: (i) a six-corpus reliability audit with coefficients reported sid
 
 \section{Protocol}
 \label{sec:protocol}
-All statistics are computed by Rubricon, an open-source library whose agreement code is validated against Krippendorff's published reference values; the audit adds loaders and study designs.
+All statistics are computed by \libintro, whose agreement code is validated against Krippendorff's published reference values; the audit adds loaders and study designs.
 
 \paragraph{Reliability matrix.} For each corpus we build $\text{item}\to\{\text{rater}\to\text{label}\}$, drop items with fewer than two ratings, and keep at most five ratings per item by a seeded draw (a sensitivity analysis keeps all). Items with no strict plurality are counted, never resolved.
 
@@ -64,7 +66,7 @@ All statistics are computed by Rubricon, an open-source library whose agreement 
 
 \paragraph{Noise model.} For a binary label with symmetric rater noise $\eta$, two raters disagree with probability $2\eta(1-\eta)$ whatever the prevalence, so $\eta$ can be estimated from the corpus's own replicated labels. A $k$-rater majority is wrong with probability $\eta_k=\sum_{j>k/2}\binom{k}{j}\eta^j(1-\eta)^{k-j}$. If a system's correctness is independent of the gold-label error, the system agrees with gold exactly when its correctness and the gold label's correctness coincide. Two consequences follow \citep{lam2003evaluating,dorner2024dont}: the disagreement rate $p$ of two systems is unchanged by label noise, and the expected observed accuracy gap is $(1-2\eta_k)$ times the true gap. The smallest true gap a paired test on $n$ items resolves with power $1-\beta$ at threshold $z^\ast$ is therefore $(z^\ast+z_{1-\beta})\sqrt{p/n}\,/\,(1-2\eta_k)$ (Figure~\ref{fig:mde}).
 
-\paragraph{Two claim gates.} \emph{Gate~v1} is Rubricon's original gate. For a claim ``system A beats B'' it runs five checks that apply to external corpora: $\alpha$ against a floor (block below 0.50, warn below 0.667), the observed gap against the minimum detectable effect, a 95\% interval that must exclude zero, interval width, and replication; six further checks describe Rubricon's simulated annotation pipeline and do not apply to external corpora. \emph{Gate~v2} blocks only on a paired $z$-test at a pre-set $z^\ast=2.58$. It reports, without blocking, the estimated $\eta$, the true-scale gap and the smallest resolvable true gap, and it warns or blocks when the gap has opposite signs, significantly, on items the raters agreed on versus items they split on.
+\paragraph{Two claim gates.} \emph{Gate~v1} is \libname's original gate. For a claim ``system A beats B'' it runs five checks that apply to external corpora: $\alpha$ against a floor (block below 0.50, warn below 0.667), the observed gap against the minimum detectable effect, a 95\% interval that must exclude zero, interval width, and replication; six further checks describe \libname's simulated annotation pipeline and do not apply to external corpora. \emph{Gate~v2} blocks only on a paired $z$-test at a pre-set $z^\ast=2.58$. It reports, without blocking, the estimated $\eta$, the true-scale gap and the smallest resolvable true gap, and it warns or blocks when the gap has opposite signs, significantly, on items the raters agreed on versus items they split on.
 
 \section{Data}
 \label{sec:data}
