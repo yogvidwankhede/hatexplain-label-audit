@@ -2,6 +2,13 @@
 
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versions follow [Semantic Versioning](https://semver.org/).
 
+## [2.0.2] - 2026-10-01
+### Changed
+- Paper text corrected after an independent pre-submission review (DEVIATIONS.md D13); no previously reported number changed.
+- Review builds withhold the library name and carry no placeholder text; scripted, self-checking review and arXiv packages.
+### Added
+- Matched-item expert-label comparison with intervals, gate v1 on real judge comparisons, Monte Carlo error counts, Fleiss' kappa in the full table.
+
 ## [2.0.1] - 2026-09-30
 ### Changed
 - Simulation outputs round derived floats to 12 decimals so they reproduce across CPUs (DEVIATIONS.md D12); no reported number changed.
