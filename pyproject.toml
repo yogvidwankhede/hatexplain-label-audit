@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "rubricon-field"
-version = "2.0.1"
+version = "2.0.2"
 description = "A field study: applying the Rubricon evaluation harness to real human annotations (HateXplain, Mathew et al. 2021)."
 readme = "README.md"
 requires-python = ">=3.10"
