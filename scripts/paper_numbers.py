@@ -93,6 +93,8 @@ def cross_numbers():
     put("alphaGoMin", min(al), ".3f", "cross_goemotions.json", "min(variants/*/alpha)", s)
     put("alphaGoMax", max(al), ".3f", "cross_goemotions.json", "max(variants/*/alpha)", s)
     top = max(go, key=lambda v: v["alpha"])
+    # the paper says "only <top emotion> clears 0.667" -- fail loudly if that stops being true
+    assert sum(v["alpha"] >= 0.667 for v in go) == 1, "text assumes exactly one GoEmotions label >= 0.667"
     put("goTopEmotion", top["variant"].split(":")[1], "s", "cross_goemotions.json", "argmax alpha", s)
     put("nGoEmotions", len(go), "d", "cross_goemotions.json", "len(variants)", s)
 
@@ -269,6 +271,103 @@ def judge_numbers():
             put(f"jExpert{name}", v, ".3f", "judge/analysis.json", f"dices350/expert_gold_agreement/{k}", s)
 
 
+def review_fix_numbers():
+    """Numbers added after the pre-submission review (all computed from results files)."""
+    sg = "src/rubricon_field/gate_sim.py"
+    tot = 0
+    for f in ("gate_sim_iid.jsonl", "gate_sim_het.jsonl", "gate_sim_het_k-0.05.jsonl", "gate_sim_het_k-0.10.jsonl"):
+        tot += sum(json.loads(l)["reps"] for l in open(R / f))
+    put("simComparisonsAll", tot / 1e6, ".2f", "gate_sim_*.jsonl", "sum reps over the four scenarios / 1e6", sg)
+
+    def interp(cells, false_rate):
+        F = [c for c in cells if c["delta"] <= 0]; Rz = [c for c in cells if c["delta"] >= 0.03]
+        rF, rR = sum(c["reps"] for c in F), sum(c["reps"] for c in Rz)
+        pts = sorted((sum(c["z_threshold_counts"][z] for c in F) / rF * 100,
+                      sum(c["z_threshold_counts"][z] for c in Rz) / rR * 100) for z in cells[0]["z_threshold_counts"])
+        for (f0, r0), (f2, r2) in zip(pts, pts[1:]):
+            if f0 <= false_rate <= f2 and f2 > f0:
+                return r0 + (r2 - r0) * (false_rate - f0) / (f2 - f0)
+        return None
+
+    iid = [json.loads(l) for l in open(R / "gate_sim_iid.jsonl")]
+    hi = [c for c in iid if c["alpha_target"] >= 0.5]
+    F = [c for c in hi if c["delta"] <= 0]; Rz = [c for c in hi if c["delta"] >= 0.03]
+    f1 = sum(c["n_gate_pub"] for c in F) / sum(c["reps"] for c in F) * 100
+    r1 = sum(c["n_gate_pub"] for c in Rz) / sum(c["reps"] for c in Rz) * 100
+    put("simFalseVoneIidHi", f1, ".2f", "gate_sim_iid.jsonl", "alpha>=0.5 cells: v1 false rate", sg)
+    put("simResVoneIidHi", r1, ".1f", "gate_sim_iid.jsonl", "alpha>=0.5 cells: v1 resolvable rate", sg)
+    put("simResMatchedIidHi", interp(hi, f1), ".1f", "gate_sim_iid.jsonl", "alpha>=0.5: z-grid interpolated at v1 false rate", sg)
+    put("simShareLowAlphaCells", sum(c["alpha_target"] < 0.5 for c in iid) / len(iid) * 100, ".0f",
+        "gate_sim_iid.jsonl", "share of cells with target alpha < 0.5", sg)
+    neg = [json.loads(l) for l in open(R / "gate_sim_het_k-0.10.jsonl")]
+    F = [c for c in neg if c["delta"] <= 0]; rF = sum(c["reps"] for c in F)
+    f2 = sum(c["v2_n_pub"] for c in F) / rF * 100
+    put("simResMatchedVtwoHetneg", interp(neg, f2), ".1f", "gate_sim_het_k-0.10.jsonl",
+        "z-grid interpolated at v2 false rate", sg)
+    zpass = sum(c["v2_n_z_only"] for c in neg); blk = sum(c["v2_n_c3_block"] for c in neg)
+    put("simCthreeBlockShareHetneg", blk / zpass * 100, ".0f", "gate_sim_het_k-0.10.jsonl",
+        "C3 blocks / claims passing z>2.58", sg)
+    summ = _load("gate_sim_summary.json")
+    put("ablFalseRel", summ["iid"]["false_claims"]["overall"]["ablation_publish_rate_without"]["reliability"] * 100,
+        ".2f", "gate_sim_summary.json", "iid/false_claims/overall/ablation_publish_rate_without/reliability",
+        "src/rubricon_field/gate_sim_report.py")
+
+    # claim 4: Monte Carlo error and system-model split
+    sc = "src/rubricon_field/claim4.py"
+    d = _load("claim4.json")["corpora"]
+    rows = [(c, r) for c, v in d.items() for r in v["rows"]]
+    cells = {}
+    for c, r in rows:
+        cells.setdefault((c, r["model"], r["budget"], r["delta"]), []).append(r)
+    reps = _load("claim4.json")["design"]["reps"]
+    close = 0
+    for rs in cells.values():
+        k1 = next(r for r in rs if r["k"] == 1)["power"]
+        best_other = max(r["power"] for r in rs if r["k"] > 1)
+        se = ((k1 * (1 - k1) + best_other * (1 - best_other)) / reps) ** 0.5
+        if k1 - best_other <= 2 * se:
+            close += 1
+    put("clFourCellsClose", close, "d", "claim4.json", "cells where k=1 leads the best k>1 by <= 2 Monte Carlo SE", sc)
+    for model, name in (("uniform", "Uniform"), ("contested", "Contested")):
+        rr = [r for c, r in rows if r["model"] == model and r["k"] > 1]
+        put(f"clFourBelow{name}", sum(r["power"] < r["predicted_power_iid"] for r in rr), "d", "claim4.json",
+            f"{model} k>1 rows below iid prediction", sc)
+        put(f"clFourRows{name}", len(rr), "d", "claim4.json", f"{model} k>1 rows", sc)
+    flip1 = [r["ranking_wrong"] for c, r in rows if r["k"] == 1]
+    flipk = [r["ranking_wrong"] for c, r in rows if r["k"] == 5]
+    put("clFourFlipKone", statistics.mean(flip1) * 100, ".1f", "claim4.json", "mean ranking_wrong at k=1", sc)
+    put("clFourFlipKfive", statistics.mean(flipk) * 100, ".1f", "claim4.json", "mean ranking_wrong at k=5", sc)
+
+    # judges: matched expert comparison, gate v1 on real pairs, alt-test sensitivity
+    sj = "src/rubricon_field/judge_analysis.py"
+    a = json.load(open(R / "judge" / "analysis.json"))
+    jt = {"claude-haiku-4-5": "Haiku", "claude-sonnet-5-5": "Sonnet", "gpt-4.1-mini": "Gpt",
+          "qwen2.5-14b": "Qwen", "gpt-oss-20b": "Oss", "human_heldout": "Human"}
+    m = a["dices350"]["expert_gold_matched"]
+    for k, n in jt.items():
+        e = m[k]
+        put(f"exM{n}", e["rater_vs_expert"], ".3f", "judge/analysis.json", f"dices350/expert_gold_matched/{k}/rater_vs_expert", sj)
+        put(f"exMDiff{n}", e["diff"], "+.3f", "judge/analysis.json", f"dices350/expert_gold_matched/{k}/diff", sj)
+        put(f"exMLo{n}", e["diff_ci"][0], "+.3f", "judge/analysis.json", f".../{k}/diff_ci/0", sj)
+        put(f"exMHi{n}", e["diff_ci"][1], "+.3f", "judge/analysis.json", f".../{k}/diff_ci/1", sj)
+        put(f"exMN{n}", e["n"], "d", "judge/analysis.json", f".../{k}/n", sj)
+    put("exMPanel", m["gpt-4.1-mini"]["panel_vs_expert_same_items"], ".3f", "judge/analysis.json",
+        "dices350/expert_gold_matched/gpt-4.1-mini/panel_vs_expert_same_items", sj)
+    put("expertPrev", a["dices350"]["expert_gold_prevalence"] * 100, ".0f", "judge/analysis.json",
+        "dices350/expert_gold_prevalence", sj)
+    pairs = [p for c in a.values() for p in c["judge_pairs"].values()]
+    put("jPairsVonePub", sum(p["gate_v1_publishable"] for p in pairs), "d", "judge/analysis.json",
+        "judge_pairs gate_v1_publishable", sj)
+    put("jSonnetDthreeHumanSame", a["dices350"]["judges"]["claude-sonnet-5-5"]["human_m1_same_items"], ".3f",
+        "judge/analysis.json", "dices350/judges/claude-sonnet-5-5/human_m1_same_items", sj)
+    at = json.load(open(R / "judge" / "alt_test.json"))
+    for j, n in (("claude-haiku-4-5", "Haiku"), ("claude-sonnet-5-5", "Sonnet"), ("gpt-4.1-mini", "Gpt")):
+        put(f"altEpsHigh{n}Hx", at["hatexplain"][j]["sensitivity_omega"]["0.15"], ".2f", "judge/alt_test.json",
+            f"hatexplain/{j}/sensitivity_omega/0.15", "src/rubricon_field/alt_test.py")
+    put("altSonnetDthreeN", min(x["n"] for x in at["dices350"]["claude-sonnet-5-5"]["per_annotator"]), "d",
+        "judge/alt_test.json", "min per-annotator n for Sonnet on DICES", "src/rubricon_field/alt_test.py")
+
+
 def table(name: str, header: list[str], rows: list[list], file: str, script: str, colspec: str) -> None:
     """Write paper/tables/<name>.tex and ledger every numeric cell."""
     out = ["\\begin{tabular}{" + colspec + "}", "\\toprule", " & ".join(header) + " \\\\", "\\midrule"]
@@ -336,12 +435,13 @@ def extra_numbers():
                          (v["alpha"], ".3f", f"variants/{i}/alpha"),
                          (f"[{v['alpha_ci95']['lo']:.3f}, {v['alpha_ci95']['hi']:.3f}]", None, f"variants/{i}/alpha_ci95"),
                          (v["gwet_ac1"] if nom else "--", ".3f" if nom else None, f"variants/{i}/gwet_ac1" if nom else None),
+                         (v["fleiss_kappa"] if nom else "--", ".3f" if nom else None, f"variants/{i}/fleiss_kappa" if nom else None),
                          (v["raw_pairwise_agreement"], ".3f", f"variants/{i}/raw_pairwise_agreement"),
                          (f"{v['ceiling_leave_one_out']:.3f}--{v['ceiling_in_sample']:.3f}" if nom else "--", None,
                           f"variants/{i}/ceiling_*" if nom else None),
                          (vb["alpha"], ".3f", f"{c}_allratings variants/alpha")])
-    table("cross", ["Corpus", "Label", "$\\alpha$", "95\\% CI", "AC1", "Raw", "Ceiling", "$\\alpha_{\\text{all}}$"],
-          rows, "cross_<corpus>.json", "src/rubricon_field/cross_corpus.py", "@{}llrlrrlr@{}")
+    table("cross", ["Corpus", "Label", "$\\alpha$", "95\\% CI", "AC1", "$\\kappa$", "Raw", "Ceiling", "$\\alpha_{\\text{all}}$"],
+          rows, "cross_<corpus>.json", "src/rubricon_field/cross_corpus.py", "@{}llrlrrrlr@{}")
 
 
 def main():
@@ -351,6 +451,7 @@ def main():
     retro_numbers()
     extra_numbers()
     judge_numbers()
+    review_fix_numbers()
     commit = subprocess.run(["git", "rev-parse", "--short", "HEAD"], capture_output=True, text=True).stdout.strip()
     tex = ["% Generated by scripts/paper_numbers.py -- do not edit. Ledger: CLAIMS.md"]
     for m, v, *_ in LEDGER:

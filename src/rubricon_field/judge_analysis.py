@@ -23,6 +23,7 @@ from pathlib import Path
 import numpy as np
 
 from rubricon.core.schema import Verdict
+from rubricon.gates.signal import GatePolicy, SignalGate
 from rubricon.gates.attenuation import (
     PairedGap, attenuation_report, check_contested_consistency, check_direction,
 )
@@ -31,6 +32,7 @@ from . import assumptions as A
 from .judges import CORPORA, JUDGES, parse
 
 BOOT = 2000
+Z_A, Z_B = 1.959964, 0.841621
 
 
 def binarise(corpus: str, v):
@@ -100,6 +102,7 @@ def analyse(corpus: str) -> dict:
             "unanimous_bin": len(set(pb)) == 1,
         })
     k_panel = Counter(len(r["panel_bin"]) for r in rows)
+    k_mode = k_panel.most_common(1)[0][0]
     pan = [r["panel_bin"] for r in rows]
     dis = float(np.mean([sum(a != b for i, a in enumerate(p) for b in p[i + 1:]) / (len(p) * (len(p) - 1) / 2)
                          for p in pan]))
@@ -129,7 +132,7 @@ def analyse(corpus: str) -> dict:
         pg = PairedGap(int(mask.sum()), float(d.mean()), float(d.std(ddof=1)), float((d != 0).mean()))
         unan = np.array([r["unanimous_bin"] for r in rows])[mask]
         checks = [check_direction(pg), check_contested_consistency(d[unan].tolist(), d[~unan].tolist()),
-                  attenuation_report(pg, dis, 3)]
+                  attenuation_report(pg, dis, k_mode)]
         verdict = ("block" if any(c.verdict is Verdict.BLOCK for c in checks)
                    else "warn" if any(c.verdict is Verdict.WARN for c in checks) else "pass")
         hows = Counter(out[r["item"]]["how"] for r in rows)
@@ -153,7 +156,12 @@ def analyse(corpus: str) -> dict:
         res["judges"][j] = entry
         correct[j] = (right, valid)
 
-    # pairwise judge comparisons
+    # pairwise judge comparisons; gate v1 uses the corpus's capped binary alpha (cross_<corpus>.json)
+    var = {"hatexplain": "binary", "mhs": "binary", "wikitalk": "toxicity_binary", "dices350": "binary"}[corpus]
+    corpus_alpha = next(v["alpha"] for v in json.load(open(f"results/cross_{corpus}.json"))["variants"]
+                        if v["variant"] == var)
+    res["corpus_alpha_binary"] = corpus_alpha
+    v1_gate = SignalGate(GatePolicy(), depth="production")
     pairs = {}
     names = sorted(correct)
     for i, a in enumerate(names):
@@ -166,7 +174,13 @@ def analyse(corpus: str) -> dict:
             sign = 1 if pg.gap >= 0 else -1
             pgd = PairedGap(pg.n, abs(pg.gap), pg.sd, pg.disagreement)
             dirc = check_direction(pgd)
-            pairs[f"{a}|{b}"] = {"gap": round(pg.gap, 4), "ci": [round(x, 4) for x in _boot_mean(d, rng)],
+            se = pgd.sd / np.sqrt(pgd.n)
+            v1_checks = [v1_gate.check_reliability(corpus_alpha),
+                         v1_gate.check_effect_vs_mde(pgd.gap, (Z_A + Z_B) * se),
+                         v1_gate.check_interval_excludes_zero(pgd.gap - Z_A * se, pgd.gap + Z_A * se)]
+            v1_ok = not any(c.verdict is Verdict.BLOCK for c in v1_checks)
+            pairs[f"{a}|{b}"] = {"gate_v1_publishable": v1_ok,
+                                 "gate_v1_blocking": [c.name for c in v1_checks if c.verdict is Verdict.BLOCK],"gap": round(pg.gap, 4), "ci": [round(x, 4) for x in _boot_mean(d, rng)],
                                  "discordance": round(pg.disagreement, 4), "n": pg.n,
                                  "leader": a if sign > 0 else b,
                                  "gate_v2_direction": dirc.verdict.value, "z": round(pgd.z, 2)}
@@ -185,6 +199,22 @@ def analyse(corpus: str) -> dict:
         panel_major = [(r["panel_bin_major"], gold[r["item"]]) for r in rows if r["panel_bin_major"] is not None]
         exp["panel_majority"] = round(float(np.mean([a == b for a, b in panel_major])), 4)
         res["expert_gold_agreement"] = exp
+        res["expert_gold_prevalence"] = round(float(np.mean(list(gold.values()))), 4)
+        rng2 = np.random.default_rng([A.SEED_PAPER, 78])
+        matched = {}
+        cands = {"human_heldout": [r["human_bin"] for r in rows]}
+        for j, out in judges.items():
+            cands[j] = [binarise(corpus, out[r["item"]]["label"]) for r in rows]
+        for name, labs in cands.items():
+            keep = [(x, r) for x, r in zip(labs, rows) if x is not None and r["panel_bin_major"] is not None]
+            jr = np.array([x == gold[r["item"]] for x, r in keep], dtype=float)
+            pr = np.array([r["panel_bin_major"] == gold[r["item"]] for x, r in keep], dtype=float)
+            d = jr - pr
+            matched[name] = {"n": len(keep), "rater_vs_expert": round(float(jr.mean()), 4),
+                             "panel_vs_expert_same_items": round(float(pr.mean()), 4),
+                             "diff": round(float(d.mean()), 4),
+                             "diff_ci": [round(x, 4) for x in _boot_mean(d, rng2)]}
+        res["expert_gold_matched"] = matched
     return res
 
 

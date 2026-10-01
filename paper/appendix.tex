@@ -1,6 +1,6 @@
 \section{Pre-registration and deviations}
 \label{app:deviations}
-The analysis plan (\texttt{PREREG.md}) was committed and tagged before any new-corpus statistic was computed. The HateXplain single-corpus results predate it and are replications. The judge addendum (\texttt{PREREG\_ADDENDUM.md}), fixing models, prompts, samples, the parser and the metrics, was committed before any model call; alt-test parameters were added before any alt-test result existed. Table~\ref{tab:dev} lists every departure; the repository's \texttt{DEVIATIONS.md} gives dates and whether results had been seen.
+The analysis plan (\texttt{PREREG.md}) was committed and tagged before any new-corpus statistic was computed. The tag is a self-held git timestamp, not a third-party registry entry, and the tagged file still carries the header ``DRAFT'' it had when the author approved freezing it. The HateXplain single-corpus results predate it and are replications. The judge addendum (\texttt{PREREG\_ADDENDUM.md}), fixing models, prompts, samples, the parser and the metrics, was committed before any model call; alt-test parameters were added before any alt-test result existed. Table~\ref{tab:dev} lists every departure; the repository's \texttt{DEVIATIONS.md} gives dates and whether results had been seen.
 
 \begin{table*}[t]
 \centering\small
@@ -11,7 +11,7 @@ Change & What and why & Results seen before? \\
 Leave-one-out ceiling & Added a lower end to the ceiling bracket because the mean modal share includes the scored vote. & Only the already-published HateXplain value. \\
 Separate seed & New analyses use a new master seed so the earlier HateXplain files still reproduce. & No. \\
 Margin definition & Report exactly-one-vote lead and no-plurality separately. & HateXplain only. \\
-Hard-item scenario (pre-registered model extended) & Added a second generative model with hard items; extended the gap grid to include negative gaps so false claims exist. & No. \\
+Hard-item scenario & Added a second generative model (hard items) not in the plan; extended the gap grid to include negative gaps so false claims exist. & No. \\
 Matched-threshold baseline & Compare gates with $z$-tests at matched false-claim rates. & Yes: aggregate gate rates. \\
 Gate~v2 and two post-hoc scenarios & Designed after seeing that the $\alpha$ floor loses power; scenarios with the gap on clear items were added because the pre-registered scenario produced no extra false claims. & Yes. \\
 Wider $z$ grid & Needed to reach gate~v1's false-claim rate in one scenario. & Yes. \\
@@ -19,6 +19,9 @@ Full-data bootstrap & Replaced the subsample bootstrap, whose interval excluded 
 Real-rater study details & Pool/reference split, system models and budgets fixed; one system model re-specified after an infeasibility crash, before any output. & No. \\
 Judge pilot & DICES pilot items from DICES-990; a first-word parse rule added after pilot outputs began with a label and then explained. & Pilot only. \\
 Sonnet sampling & Claude Sonnet~5.5 rejects temperature~0; default sampling used. & No. \\
+Judge-claim wording & The plan described gate~v2's judge claim as ``at least as well as'' the human; the check is directional, so the claim is ``better than''. & Partial judge results. \\
+Rounding & Simulation floats rounded to 12 decimals so results reproduce across CPUs; no reported number changed. & Yes. \\
+Post-review additions & Matched-item expert comparison, gate~v1 on real judge comparisons, $\alpha\geq0.5$ restriction, Monte Carlo error counts, Fleiss' $\kappa$ in Table~\ref{tab:crossfull}. & Yes. \\
 \bottomrule
 \end{tabular}
 \caption{Departures from the pre-registered plan.}
@@ -30,7 +33,8 @@ Sonnet sampling & Claude Sonnet~5.5 rejects temperature~0; default sampling used
 \begin{table*}[t]
 \centering\small
 \input{tables/cross.tex}
-\caption{Agreement per corpus and label. Ceiling: leave-one-out to in-sample bracket. $\alpha_{\text{all}}$: all ratings kept instead of at most five per item.}
+\caption{Agreement per corpus and label. $\kappa$: Fleiss' kappa. Ceiling: leave-one-out to in-sample agreement bracket. $\alpha_{\text{all}}$: all ratings kept instead of at most five per item.}
+\label{tab:crossfull}
 \end{table*}
 
 \section{Threshold sweep}

@@ -78,8 +78,8 @@ def fig_agreement():
 
 # --------------------------------------------------------------------------
 def fig_gate_operating_points():
-    files = {"iid noise": "gate_sim_iid.jsonl", "hard items (prereg.)": "gate_sim_het.jsonl",
-             "hard items, gap on clear (post hoc)": "gate_sim_het_k-0.10.jsonl"}
+    files = {"iid noise": "gate_sim_iid.jsonl", "hard items (specified first)": "gate_sim_het.jsonl",
+             "hard items, post hoc (strong)": "gate_sim_het_k-0.10.jsonl"}
     fig, axes = plt.subplots(1, 3, figsize=(FULL, 1.9), sharey=True)
     for ax, (title, f) in zip(axes, files.items()):
         cells = [json.loads(l) for l in open(R / f)]

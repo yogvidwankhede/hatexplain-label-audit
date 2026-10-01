@@ -1,6 +1,7 @@
 {
  "dices350": {
   "corpus": "dices350",
+  "corpus_alpha_binary": 0.1581,
   "expert_gold_agreement": {
    "claude-haiku-4-5": 0.5543,
    "claude-sonnet-5-5": 0.6272,
@@ -10,6 +11,69 @@
    "panel_majority": 0.6679,
    "qwen2.5-14b": 0.48
   },
+  "expert_gold_matched": {
+   "claude-haiku-4-5": {
+    "diff": -0.0959,
+    "diff_ci": [
+     -0.155,
+     -0.0369
+    ],
+    "n": 271,
+    "panel_vs_expert_same_items": 0.6679,
+    "rater_vs_expert": 0.572
+   },
+   "claude-sonnet-5-5": {
+    "diff": -0.0173,
+    "diff_ci": [
+     -0.065,
+     0.0303
+    ],
+    "n": 231,
+    "panel_vs_expert_same_items": 0.671,
+    "rater_vs_expert": 0.6537
+   },
+   "gpt-4.1-mini": {
+    "diff": -0.0701,
+    "diff_ci": [
+     -0.1255,
+     -0.0148
+    ],
+    "n": 271,
+    "panel_vs_expert_same_items": 0.6679,
+    "rater_vs_expert": 0.5978
+   },
+   "gpt-oss-20b": {
+    "diff": -0.0812,
+    "diff_ci": [
+     -0.1328,
+     -0.0331
+    ],
+    "n": 271,
+    "panel_vs_expert_same_items": 0.6679,
+    "rater_vs_expert": 0.5867
+   },
+   "human_heldout": {
+    "diff": -0.0369,
+    "diff_ci": [
+     -0.1033,
+     0.0295
+    ],
+    "n": 271,
+    "panel_vs_expert_same_items": 0.6679,
+    "rater_vs_expert": 0.631
+   },
+   "qwen2.5-14b": {
+    "diff": -0.1771,
+    "diff_ci": [
+     -0.2362,
+     -0.1181
+    ],
+    "n": 271,
+    "panel_vs_expert_same_items": 0.6679,
+    "rater_vs_expert": 0.4908
+   }
+  },
+  "expert_gold_prevalence": 0.5,
   "human": {
    "m1": 0.6974,
    "m1_ci": [
@@ -27,6 +91,10 @@
     ],
     "discordance": 0.1472,
     "gap": -0.0866,
+    "gate_v1_blocking": [
+     "reliability"
+    ],
+    "gate_v1_publishable": false,
     "gate_v2_direction": "pass",
     "leader": "claude-sonnet-5-5",
     "n": 231,
@@ -39,6 +107,12 @@
     ],
     "discordance": 0.1808,
     "gap": -0.048,
+    "gate_v1_blocking": [
+     "reliability",
+     "effect_vs_mde",
+     "interval_excludes_zero"
+    ],
+    "gate_v1_publishable": false,
     "gate_v2_direction": "block",
     "leader": "gpt-4.1-mini",
     "n": 271,
@@ -51,6 +125,11 @@
     ],
     "discordance": 0.1624,
     "gap": -0.0664,
+    "gate_v1_blocking": [
+     "reliability",
+     "effect_vs_mde"
+    ],
+    "gate_v1_publishable": false,
     "gate_v2_direction": "pass",
     "leader": "gpt-oss-20b",
     "n": 271,
@@ -63,6 +142,12 @@
     ],
     "discordance": 0.214,
     "gap": 0.0443,
+    "gate_v1_blocking": [
+     "reliability",
+     "effect_vs_mde",
+     "interval_excludes_zero"
+    ],
+    "gate_v1_publishable": false,
     "gate_v2_direction": "block",
     "leader": "claude-haiku-4-5",
     "n": 271,
@@ -75,6 +160,12 @@
     ],
     "discordance": 0.1169,
     "gap": 0.0303,
+    "gate_v1_blocking": [
+     "reliability",
+     "effect_vs_mde",
+     "interval_excludes_zero"
+    ],
+    "gate_v1_publishable": false,
     "gate_v2_direction": "block",
     "leader": "claude-sonnet-5-5",
     "n": 231,
@@ -87,6 +178,12 @@
     ],
     "discordance": 0.0909,
     "gap": 0.013,
+    "gate_v1_blocking": [
+     "reliability",
+     "effect_vs_mde",
+     "interval_excludes_zero"
+    ],
+    "gate_v1_publishable": false,
     "gate_v2_direction": "block",
     "leader": "claude-sonnet-5-5",
     "n": 231,
@@ -99,6 +196,10 @@
     ],
     "discordance": 0.2035,
     "gap": 0.1255,
+    "gate_v1_blocking": [
+     "reliability"
+    ],
+    "gate_v1_publishable": false,
     "gate_v2_direction": "pass",
     "leader": "claude-sonnet-5-5",
     "n": 231,
@@ -111,6 +212,12 @@
     ],
     "discordance": 0.1218,
     "gap": -0.0185,
+    "gate_v1_blocking": [
+     "reliability",
+     "effect_vs_mde",
+     "interval_excludes_zero"
+    ],
+    "gate_v1_publishable": false,
     "gate_v2_direction": "block",
     "leader": "gpt-oss-20b",
     "n": 271,
@@ -123,6 +230,10 @@
     ],
     "discordance": 0.2177,
     "gap": 0.0923,
+    "gate_v1_blocking": [
+     "reliability"
+    ],
+    "gate_v1_publishable": false,
     "gate_v2_direction": "pass",
     "leader": "gpt-4.1-mini",
     "n": 271,
@@ -135,6 +246,10 @@
     ],
     "discordance": 0.1845,
     "gap": 0.1107,
+    "gate_v1_blocking": [
+     "reliability"
+    ],
+    "gate_v1_publishable": false,
     "gate_v2_direction": "pass",
     "leader": "gpt-oss-20b",
     "n": 271,
@@ -167,7 +282,7 @@
        "verdict": "pass"
       },
       {
-       "message": "Rater disagreement 0.373 implies single-rater error 0.248 and gold error 0.154 for a 3-rater majority, so observed gaps are shrunk by a factor 0.691. Observed gap +0.0443 is +0.0641 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.1861.",
+       "message": "Rater disagreement 0.373 implies single-rater error 0.248 and gold error 0.154 for a 4-rater majority, so observed gaps are shrunk by a factor 0.691. Observed gap +0.0443 is +0.0641 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.1861.",
        "name": "attenuation",
        "observed": 0.6912,
        "remedy": "",
@@ -220,7 +335,7 @@
        "verdict": "pass"
       },
       {
-       "message": "Rater disagreement 0.373 implies single-rater error 0.248 and gold error 0.154 for a 3-rater majority, so observed gaps are shrunk by a factor 0.691. Observed gap +0.1472 is +0.2129 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.1809.",
+       "message": "Rater disagreement 0.373 implies single-rater error 0.248 and gold error 0.154 for a 4-rater majority, so observed gaps are shrunk by a factor 0.691. Observed gap +0.1472 is +0.2129 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.1809.",
        "name": "attenuation",
        "observed": 0.6912,
        "remedy": "",
@@ -275,7 +390,7 @@
        "verdict": "pass"
       },
       {
-       "message": "Rater disagreement 0.373 implies single-rater error 0.248 and gold error 0.154 for a 3-rater majority, so observed gaps are shrunk by a factor 0.691. Observed gap +0.0923 is +0.1335 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.1743.",
+       "message": "Rater disagreement 0.373 implies single-rater error 0.248 and gold error 0.154 for a 4-rater majority, so observed gaps are shrunk by a factor 0.691. Observed gap +0.0923 is +0.1335 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.1743.",
        "name": "attenuation",
        "observed": 0.6912,
        "remedy": "",
@@ -327,7 +442,7 @@
        "verdict": "pass"
       },
       {
-       "message": "Rater disagreement 0.373 implies single-rater error 0.248 and gold error 0.154 for a 3-rater majority, so observed gaps are shrunk by a factor 0.691. Observed gap +0.1107 is +0.1602 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.1762.",
+       "message": "Rater disagreement 0.373 implies single-rater error 0.248 and gold error 0.154 for a 4-rater majority, so observed gaps are shrunk by a factor 0.691. Observed gap +0.1107 is +0.1602 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.1762.",
        "name": "attenuation",
        "observed": 0.6912,
        "remedy": "",
@@ -379,7 +494,7 @@
        "verdict": "pass"
       },
       {
-       "message": "Rater disagreement 0.373 implies single-rater error 0.248 and gold error 0.154 for a 3-rater majority, so observed gaps are shrunk by a factor 0.691. Observed gap +0.0000 is +0.0000 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.1954.",
+       "message": "Rater disagreement 0.373 implies single-rater error 0.248 and gold error 0.154 for a 4-rater majority, so observed gaps are shrunk by a factor 0.691. Observed gap +0.0000 is +0.0000 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.1954.",
        "name": "attenuation",
        "observed": 0.6912,
        "remedy": "",
@@ -416,6 +531,7 @@
  },
  "hatexplain": {
   "corpus": "hatexplain",
+  "corpus_alpha_binary": 0.5613,
   "human": {
    "m1": 0.8723,
    "m1_ci": [
@@ -433,6 +549,11 @@
     ],
     "discordance": 0.1093,
     "gap": -0.0188,
+    "gate_v1_blocking": [
+     "effect_vs_mde",
+     "interval_excludes_zero"
+    ],
+    "gate_v1_publishable": false,
     "gate_v2_direction": "block",
     "leader": "claude-sonnet-5-5",
     "n": 796,
@@ -445,6 +566,11 @@
     ],
     "discordance": 0.1126,
     "gap": 0.02,
+    "gate_v1_blocking": [
+     "effect_vs_mde",
+     "interval_excludes_zero"
+    ],
+    "gate_v1_publishable": false,
     "gate_v2_direction": "block",
     "leader": "claude-haiku-4-5",
     "n": 799,
@@ -457,6 +583,8 @@
     ],
     "discordance": 0.1477,
     "gap": 0.0626,
+    "gate_v1_blocking": [],
+    "gate_v1_publishable": true,
     "gate_v2_direction": "pass",
     "leader": "claude-haiku-4-5",
     "n": 799,
@@ -469,6 +597,8 @@
     ],
     "discordance": 0.1877,
     "gap": 0.1026,
+    "gate_v1_blocking": [],
+    "gate_v1_publishable": true,
     "gate_v2_direction": "pass",
     "leader": "claude-haiku-4-5",
     "n": 799,
@@ -481,6 +611,8 @@
     ],
     "discordance": 0.1231,
     "gap": 0.0377,
+    "gate_v1_blocking": [],
+    "gate_v1_publishable": true,
     "gate_v2_direction": "pass",
     "leader": "claude-sonnet-5-5",
     "n": 796,
@@ -493,6 +625,8 @@
     ],
     "discordance": 0.1633,
     "gap": 0.0804,
+    "gate_v1_blocking": [],
+    "gate_v1_publishable": true,
     "gate_v2_direction": "pass",
     "leader": "claude-sonnet-5-5",
     "n": 796,
@@ -505,6 +639,8 @@
     ],
     "discordance": 0.2035,
     "gap": 0.1206,
+    "gate_v1_blocking": [],
+    "gate_v1_publishable": true,
     "gate_v2_direction": "pass",
     "leader": "claude-sonnet-5-5",
     "n": 796,
@@ -517,6 +653,8 @@
     ],
     "discordance": 0.1327,
     "gap": 0.0426,
+    "gate_v1_blocking": [],
+    "gate_v1_publishable": true,
     "gate_v2_direction": "pass",
     "leader": "gpt-4.1-mini",
     "n": 799,
@@ -529,6 +667,8 @@
     ],
     "discordance": 0.1452,
     "gap": 0.0826,
+    "gate_v1_blocking": [],
+    "gate_v1_publishable": true,
     "gate_v2_direction": "pass",
     "leader": "gpt-4.1-mini",
     "n": 799,
@@ -541,6 +681,8 @@
     ],
     "discordance": 0.1076,
     "gap": 0.0401,
+    "gate_v1_blocking": [],
+    "gate_v1_publishable": true,
     "gate_v2_direction": "pass",
     "leader": "gpt-oss-20b",
     "n": 799,
@@ -573,9 +715,9 @@
        "verdict": "warn"
       },
       {
-       "message": "Rater disagreement 0.201 implies single-rater error 0.113 and gold error 0.036 for a 3-rater majority, so observed gaps are shrunk by a factor 0.929. Observed gap -0.0951 is -0.1024 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.0624.",
+       "message": "Rater disagreement 0.201 implies single-rater error 0.113 and gold error 0.113 for a 2-rater majority, so observed gaps are shrunk by a factor 0.773. Observed gap -0.0951 is -0.1230 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.0749.",
        "name": "attenuation",
-       "observed": 0.9287,
+       "observed": 0.7733,
        "remedy": "",
        "threshold": null,
        "verdict": "pass"
@@ -626,9 +768,9 @@
        "verdict": "warn"
       },
       {
-       "message": "Rater disagreement 0.201 implies single-rater error 0.113 and gold error 0.036 for a 3-rater majority, so observed gaps are shrunk by a factor 0.929. Observed gap -0.0766 is -0.0825 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.0615.",
+       "message": "Rater disagreement 0.201 implies single-rater error 0.113 and gold error 0.113 for a 2-rater majority, so observed gaps are shrunk by a factor 0.773. Observed gap -0.0766 is -0.0991 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.0739.",
        "name": "attenuation",
-       "observed": 0.9287,
+       "observed": 0.7733,
        "remedy": "",
        "threshold": null,
        "verdict": "pass"
@@ -679,9 +821,9 @@
        "verdict": "warn"
       },
       {
-       "message": "Rater disagreement 0.201 implies single-rater error 0.113 and gold error 0.036 for a 3-rater majority, so observed gaps are shrunk by a factor 0.929. Observed gap -0.1151 is -0.1240 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.0671.",
+       "message": "Rater disagreement 0.201 implies single-rater error 0.113 and gold error 0.113 for a 2-rater majority, so observed gaps are shrunk by a factor 0.773. Observed gap -0.1151 is -0.1489 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.0806.",
        "name": "attenuation",
-       "observed": 0.9287,
+       "observed": 0.7733,
        "remedy": "",
        "threshold": null,
        "verdict": "pass"
@@ -731,9 +873,9 @@
        "verdict": "warn"
       },
       {
-       "message": "Rater disagreement 0.201 implies single-rater error 0.113 and gold error 0.036 for a 3-rater majority, so observed gaps are shrunk by a factor 0.929. Observed gap -0.1577 is -0.1698 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.0706.",
+       "message": "Rater disagreement 0.201 implies single-rater error 0.113 and gold error 0.113 for a 2-rater majority, so observed gaps are shrunk by a factor 0.773. Observed gap -0.1577 is -0.2039 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.0848.",
        "name": "attenuation",
-       "observed": 0.9287,
+       "observed": 0.7733,
        "remedy": "",
        "threshold": null,
        "verdict": "pass"
@@ -783,9 +925,9 @@
        "verdict": "warn"
       },
       {
-       "message": "Rater disagreement 0.201 implies single-rater error 0.113 and gold error 0.036 for a 3-rater majority, so observed gaps are shrunk by a factor 0.929. Observed gap -0.1977 is -0.2129 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.0736.",
+       "message": "Rater disagreement 0.201 implies single-rater error 0.113 and gold error 0.113 for a 2-rater majority, so observed gaps are shrunk by a factor 0.773. Observed gap -0.1977 is -0.2557 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.0884.",
        "name": "attenuation",
-       "observed": 0.9287,
+       "observed": 0.7733,
        "remedy": "",
        "threshold": null,
        "verdict": "pass"
@@ -820,6 +962,7 @@
  },
  "mhs": {
   "corpus": "mhs",
+  "corpus_alpha_binary": 0.4255,
   "human": {
    "m1": 0.803,
    "m1_ci": [
@@ -837,6 +980,12 @@
     ],
     "discordance": 0.1424,
     "gap": 0.0176,
+    "gate_v1_blocking": [
+     "reliability",
+     "effect_vs_mde",
+     "interval_excludes_zero"
+    ],
+    "gate_v1_publishable": false,
     "gate_v2_direction": "block",
     "leader": "claude-haiku-4-5",
     "n": 850,
@@ -849,6 +998,11 @@
     ],
     "discordance": 0.1703,
     "gap": 0.0382,
+    "gate_v1_blocking": [
+     "reliability",
+     "effect_vs_mde"
+    ],
+    "gate_v1_publishable": false,
     "gate_v2_direction": "pass",
     "leader": "claude-haiku-4-5",
     "n": 863,
@@ -861,6 +1015,10 @@
     ],
     "discordance": 0.2642,
     "gap": 0.1089,
+    "gate_v1_blocking": [
+     "reliability"
+    ],
+    "gate_v1_publishable": false,
     "gate_v2_direction": "pass",
     "leader": "claude-haiku-4-5",
     "n": 863,
@@ -873,6 +1031,10 @@
     ],
     "discordance": 0.2109,
     "gap": 0.0927,
+    "gate_v1_blocking": [
+     "reliability"
+    ],
+    "gate_v1_publishable": false,
     "gate_v2_direction": "pass",
     "leader": "claude-haiku-4-5",
     "n": 863,
@@ -885,6 +1047,12 @@
     ],
     "discordance": 0.16,
     "gap": 0.0212,
+    "gate_v1_blocking": [
+     "reliability",
+     "effect_vs_mde",
+     "interval_excludes_zero"
+    ],
+    "gate_v1_publishable": false,
     "gate_v2_direction": "block",
     "leader": "claude-sonnet-5-5",
     "n": 850,
@@ -897,6 +1065,10 @@
     ],
     "discordance": 0.2624,
     "gap": 0.0906,
+    "gate_v1_blocking": [
+     "reliability"
+    ],
+    "gate_v1_publishable": false,
     "gate_v2_direction": "pass",
     "leader": "claude-sonnet-5-5",
     "n": 850,
@@ -909,6 +1081,10 @@
     ],
     "discordance": 0.2553,
     "gap": 0.0765,
+    "gate_v1_blocking": [
+     "reliability"
+    ],
+    "gate_v1_publishable": false,
     "gate_v2_direction": "pass",
     "leader": "claude-sonnet-5-5",
     "n": 850,
@@ -921,6 +1097,10 @@
     ],
     "discordance": 0.1819,
     "gap": 0.0707,
+    "gate_v1_blocking": [
+     "reliability"
+    ],
+    "gate_v1_publishable": false,
     "gate_v2_direction": "pass",
     "leader": "gpt-4.1-mini",
     "n": 863,
@@ -933,6 +1113,10 @@
     ],
     "discordance": 0.1819,
     "gap": 0.0545,
+    "gate_v1_blocking": [
+     "reliability"
+    ],
+    "gate_v1_publishable": false,
     "gate_v2_direction": "pass",
     "leader": "gpt-4.1-mini",
     "n": 863,
@@ -945,6 +1129,12 @@
     ],
     "discordance": 0.19,
     "gap": -0.0162,
+    "gate_v1_blocking": [
+     "reliability",
+     "effect_vs_mde",
+     "interval_excludes_zero"
+    ],
+    "gate_v1_publishable": false,
     "gate_v2_direction": "block",
     "leader": "qwen2.5-14b",
     "n": 863,
@@ -977,9 +1167,9 @@
        "verdict": "pass"
       },
       {
-       "message": "Rater disagreement 0.211 implies single-rater error 0.120 and gold error 0.040 for a 3-rater majority, so observed gaps are shrunk by a factor 0.920. Observed gap +0.0000 is +0.0000 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.0600.",
+       "message": "Rater disagreement 0.211 implies single-rater error 0.120 and gold error 0.120 for a 2-rater majority, so observed gaps are shrunk by a factor 0.760. Observed gap +0.0000 is +0.0000 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.0727.",
        "name": "attenuation",
-       "observed": 0.9203,
+       "observed": 0.7596,
        "remedy": "",
        "threshold": null,
        "verdict": "pass"
@@ -1029,9 +1219,9 @@
        "verdict": "pass"
       },
       {
-       "message": "Rater disagreement 0.211 implies single-rater error 0.120 and gold error 0.040 for a 3-rater majority, so observed gaps are shrunk by a factor 0.920. Observed gap -0.0153 is -0.0166 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.0614.",
+       "message": "Rater disagreement 0.211 implies single-rater error 0.120 and gold error 0.120 for a 2-rater majority, so observed gaps are shrunk by a factor 0.760. Observed gap -0.0153 is -0.0201 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.0744.",
        "name": "attenuation",
-       "observed": 0.9203,
+       "observed": 0.7596,
        "remedy": "",
        "threshold": null,
        "verdict": "pass"
@@ -1084,9 +1274,9 @@
        "verdict": "pass"
       },
       {
-       "message": "Rater disagreement 0.211 implies single-rater error 0.120 and gold error 0.040 for a 3-rater majority, so observed gaps are shrunk by a factor 0.920. Observed gap -0.0382 is -0.0416 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.0630.",
+       "message": "Rater disagreement 0.211 implies single-rater error 0.120 and gold error 0.120 for a 2-rater majority, so observed gaps are shrunk by a factor 0.760. Observed gap -0.0382 is -0.0503 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.0764.",
        "name": "attenuation",
-       "observed": 0.9203,
+       "observed": 0.7596,
        "remedy": "",
        "threshold": null,
        "verdict": "pass"
@@ -1136,9 +1326,9 @@
        "verdict": "block"
       },
       {
-       "message": "Rater disagreement 0.211 implies single-rater error 0.120 and gold error 0.040 for a 3-rater majority, so observed gaps are shrunk by a factor 0.920. Observed gap -0.1089 is -0.1184 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.0718.",
+       "message": "Rater disagreement 0.211 implies single-rater error 0.120 and gold error 0.120 for a 2-rater majority, so observed gaps are shrunk by a factor 0.760. Observed gap -0.1089 is -0.1434 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.0870.",
        "name": "attenuation",
-       "observed": 0.9203,
+       "observed": 0.7596,
        "remedy": "",
        "threshold": null,
        "verdict": "pass"
@@ -1188,9 +1378,9 @@
        "verdict": "pass"
       },
       {
-       "message": "Rater disagreement 0.211 implies single-rater error 0.120 and gold error 0.040 for a 3-rater majority, so observed gaps are shrunk by a factor 0.920. Observed gap -0.0927 is -0.1007 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.0693.",
+       "message": "Rater disagreement 0.211 implies single-rater error 0.120 and gold error 0.120 for a 2-rater majority, so observed gaps are shrunk by a factor 0.760. Observed gap -0.0927 is -0.1220 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.0840.",
        "name": "attenuation",
-       "observed": 0.9203,
+       "observed": 0.7596,
        "remedy": "",
        "threshold": null,
        "verdict": "pass"
@@ -1228,6 +1418,7 @@
  },
  "wikitalk": {
   "corpus": "wikitalk",
+  "corpus_alpha_binary": 0.4644,
   "human": {
    "m1": 0.9149,
    "m1_ci": [
@@ -1244,6 +1435,10 @@
     ],
     "discordance": 0.1084,
     "gap": -0.0976,
+    "gate_v1_blocking": [
+     "reliability"
+    ],
+    "gate_v1_publishable": false,
     "gate_v2_direction": "pass",
     "leader": "claude-sonnet-5-5",
     "n": 932,
@@ -1256,6 +1451,12 @@
     ],
     "discordance": 0.0955,
     "gap": -0.0054,
+    "gate_v1_blocking": [
+     "reliability",
+     "effect_vs_mde",
+     "interval_excludes_zero"
+    ],
+    "gate_v1_publishable": false,
     "gate_v2_direction": "block",
     "leader": "gpt-4.1-mini",
     "n": 932,
@@ -1268,6 +1469,10 @@
     ],
     "discordance": 0.1116,
     "gap": -0.0322,
+    "gate_v1_blocking": [
+     "reliability"
+    ],
+    "gate_v1_publishable": false,
     "gate_v2_direction": "pass",
     "leader": "gpt-oss-20b",
     "n": 932,
@@ -1280,6 +1485,10 @@
     ],
     "discordance": 0.2221,
     "gap": 0.2114,
+    "gate_v1_blocking": [
+     "reliability"
+    ],
+    "gate_v1_publishable": false,
     "gate_v2_direction": "pass",
     "leader": "claude-haiku-4-5",
     "n": 932,
@@ -1292,6 +1501,10 @@
     ],
     "discordance": 0.1053,
     "gap": 0.0926,
+    "gate_v1_blocking": [
+     "reliability"
+    ],
+    "gate_v1_publishable": false,
     "gate_v2_direction": "pass",
     "leader": "claude-sonnet-5-5",
     "n": 940,
@@ -1304,6 +1517,10 @@
     ],
     "discordance": 0.0947,
     "gap": 0.0649,
+    "gate_v1_blocking": [
+     "reliability"
+    ],
+    "gate_v1_publishable": false,
     "gate_v2_direction": "pass",
     "leader": "claude-sonnet-5-5",
     "n": 940,
@@ -1316,6 +1533,10 @@
     ],
     "discordance": 0.3202,
     "gap": 0.3074,
+    "gate_v1_blocking": [
+     "reliability"
+    ],
+    "gate_v1_publishable": false,
     "gate_v2_direction": "pass",
     "leader": "claude-sonnet-5-5",
     "n": 940,
@@ -1328,6 +1549,11 @@
     ],
     "discordance": 0.0979,
     "gap": -0.0277,
+    "gate_v1_blocking": [
+     "reliability",
+     "effect_vs_mde"
+    ],
+    "gate_v1_publishable": false,
     "gate_v2_direction": "pass",
     "leader": "gpt-oss-20b",
     "n": 940,
@@ -1340,6 +1566,10 @@
     ],
     "discordance": 0.2277,
     "gap": 0.2149,
+    "gate_v1_blocking": [
+     "reliability"
+    ],
+    "gate_v1_publishable": false,
     "gate_v2_direction": "pass",
     "leader": "gpt-4.1-mini",
     "n": 940,
@@ -1352,6 +1582,10 @@
     ],
     "discordance": 0.2596,
     "gap": 0.2426,
+    "gate_v1_blocking": [
+     "reliability"
+    ],
+    "gate_v1_publishable": false,
     "gate_v2_direction": "pass",
     "leader": "gpt-oss-20b",
     "n": 940,
@@ -1384,7 +1618,7 @@
        "verdict": "pass"
       },
       {
-       "message": "Rater disagreement 0.140 implies single-rater error 0.076 and gold error 0.016 for a 3-rater majority, so observed gaps are shrunk by a factor 0.967. Observed gap -0.1052 is -0.1087 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.0492.",
+       "message": "Rater disagreement 0.140 implies single-rater error 0.076 and gold error 0.016 for a 4-rater majority, so observed gaps are shrunk by a factor 0.967. Observed gap -0.1052 is -0.1087 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.0492.",
        "name": "attenuation",
        "observed": 0.9673,
        "remedy": "",
@@ -1437,7 +1671,7 @@
        "verdict": "pass"
       },
       {
-       "message": "Rater disagreement 0.140 implies single-rater error 0.076 and gold error 0.016 for a 3-rater majority, so observed gaps are shrunk by a factor 0.967. Observed gap -0.0064 is -0.0066 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.0409.",
+       "message": "Rater disagreement 0.140 implies single-rater error 0.076 and gold error 0.016 for a 4-rater majority, so observed gaps are shrunk by a factor 0.967. Observed gap -0.0064 is -0.0066 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.0409.",
        "name": "attenuation",
        "observed": 0.9673,
        "remedy": "",
@@ -1489,7 +1723,7 @@
        "verdict": "warn"
       },
       {
-       "message": "Rater disagreement 0.140 implies single-rater error 0.076 and gold error 0.016 for a 3-rater majority, so observed gaps are shrunk by a factor 0.967. Observed gap -0.0989 is -0.1023 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.0491.",
+       "message": "Rater disagreement 0.140 implies single-rater error 0.076 and gold error 0.016 for a 4-rater majority, so observed gaps are shrunk by a factor 0.967. Observed gap -0.0989 is -0.1023 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.0491.",
        "name": "attenuation",
        "observed": 0.9673,
        "remedy": "",
@@ -1540,7 +1774,7 @@
        "verdict": "pass"
       },
       {
-       "message": "Rater disagreement 0.140 implies single-rater error 0.076 and gold error 0.016 for a 3-rater majority, so observed gaps are shrunk by a factor 0.967. Observed gap -0.0713 is -0.0737 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.0471.",
+       "message": "Rater disagreement 0.140 implies single-rater error 0.076 and gold error 0.016 for a 4-rater majority, so observed gaps are shrunk by a factor 0.967. Observed gap -0.0713 is -0.0737 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.0471.",
        "name": "attenuation",
        "observed": 0.9673,
        "remedy": "",
@@ -1591,7 +1825,7 @@
        "verdict": "pass"
       },
       {
-       "message": "Rater disagreement 0.140 implies single-rater error 0.076 and gold error 0.016 for a 3-rater majority, so observed gaps are shrunk by a factor 0.967. Observed gap -0.3138 is -0.3244 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.0619.",
+       "message": "Rater disagreement 0.140 implies single-rater error 0.076 and gold error 0.016 for a 4-rater majority, so observed gaps are shrunk by a factor 0.967. Observed gap -0.3138 is -0.3244 on the true-label scale; the smallest true gap this design resolves at 80% power is 0.0619.",
        "name": "attenuation",
        "observed": 0.9673,
        "remedy": "",
