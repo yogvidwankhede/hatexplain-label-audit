@@ -453,7 +453,7 @@ See §0 for the core claims. Additional details:
 - **uma2021learning** (JAIR 72:1385–1470). ABSTRACT-ONLY (JAIR page).
   - Survey and systematic comparison of learning from disagreement.
   - Even without a gold standard, a consensus on how to evaluate is needed, because method rankings depend on the evaluation form.
-- **gordon2021disagreement** (CHI 2021, pp. 1–14; DOI verified). METADATA-ONLY.
+- **gordon2021disagreement** (CHI 2021, pp. 1–14; DOI verified). ABSTRACT checked 2026-10-01 via Semantic Scholar: "compares each test set prediction to the individual stable opinions from each annotator".
   - I did not read the abstract or text here.
   - It is known to adjust metrics for annotator disagreement; read it before claiming anything about its method.
 - **klie2024analyzing** (CL 50(3):817–866). ABSTRACT-ONLY.
