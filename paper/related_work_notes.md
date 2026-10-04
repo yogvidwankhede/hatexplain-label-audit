@@ -534,3 +534,8 @@ See §0 for the core claims. Additional details:
 - **Boguslav & Cohen 2017**: abstract only; the full text was not open.
 - **Resnick et al.**: no peer-reviewed version found.
 - **Kunilovskaya et al.**: I did not look up the EMNLP 2026 Anthology entry.
+
+## Added 2026-10-04 (missed by the first search)
+
+- **duan2025exploring** (NAACL 2025 long, 2025.naacl-long.119, pp. 2359-2372; DOI 10.18653/v1/2025.naacl-long.119 from the Anthology bib). FULL TEXT READ. Crowdsourced toxicity on 120 comments; perspective-taking annotations (estimate a subgroup's opinion) vs. direct polling of the subgroup; lower variance, higher bias; best under a limited budget when calibrated with a few direct annotations.
+- **amin2026fallback** (Findings of ACL 2026, 2026.findings-acl.2124, pp. 42798-42830; DOI 10.18653/v1/2026.findings-acl.2124 from the Anthology bib). ABSTRACT, INTRODUCTION, SECTION 3, CONCLUSION AND LIMITATIONS READ. Frames perspective-taking as estimating a latent group-level judgement; bias-variance-correlation analysis of when LLMs beat human annotators, including in-group ones; uses the Duan et al. data and DICES-350 (DICES for regime behaviour, not direct human-LLM comparison). Overlap with our Section on judges: same corpus (DICES-350) and the same question of whether an LLM can beat a human annotator, but their target is a subgroup mean and ours is agreement with a panel majority, with a held-out human scored on the same items.

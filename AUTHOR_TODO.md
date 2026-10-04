@@ -32,7 +32,7 @@ Nothing below has been done on your behalf. Nothing has been pushed, published, 
 4. **Read every cited paper you rely on.**
    - `paper/related_work_notes.md` marks which ones were read in full, from the abstract only, or from metadata only.
    - Krippendorff's book page for the 0.667/0.800 thresholds was not seen directly. Check it, or cite only the 2004 article.
-   - ACL desk-rejects papers with hallucinated references. All 48 bib entries were fetched from primary sources, but verify any you are unsure of.
+   - ACL desk-rejects papers with hallucinated references. All 50 bib entries were fetched from primary sources, but verify any you are unsure of.
 5. **Responsible NLP checklist.** Re-check `paper/responsible_nlp_checklist.md` against the final PDF, then enter it in the ARR form.
 6. **Venue (decided 2026-09-30): ARR October 2026 cycle, then NAACL 2027.**
    - ARR submission deadline 2026-10-12; all authors register as reviewers by 2026-10-14; reviews 2026-12-17; NAACL commitment 2026-12-23; notification 2027-02-10 (NAACL 2027, San Francisco, June 1-5).

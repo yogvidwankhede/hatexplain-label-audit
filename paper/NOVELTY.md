@@ -10,6 +10,6 @@
 | Estimating eta from the benchmark's own replicated labels and propagating it into published leaderboard gaps (HateXplain) | Not found as an end-to-end procedure | builds on Lam & Stork |
 | Real-annotator test of the one-label theorem (3 corpora, contested-item system model) | Empirical replication/extension | Dorner & Hardt 2024 (theory, independent noise); Pandita et al. 2026 (Toxicity, K=1 best) |
 | Six-corpus reliability audit with alpha/AC1/raw side by side, capped vs all-ratings sensitivity | Descriptive contribution | Klie et al. 2024 surveys reporting practice |
-| Judge-vs-human-ceiling on 4 corpora with 5 judges, gate v2 applied | Empirical | Bavaresco et al. 2025; Calderon et al. 2025 |
+| Judge-vs-human-ceiling on 4 corpora with 5 judges, gate v2 applied | Empirical | Bavaresco et al. 2025; Calderon et al. 2025; Amin et al. 2026 (LLM vs human as estimators of subgroup means, incl. DICES-350) |
 
 Consequence for the paper: claim 7 of the old README ("one rater per item maximises power") is re-stated as a replication of Dorner & Hardt 2024 on real raters, never as our result.
