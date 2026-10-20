@@ -38,8 +38,8 @@ COL = 3.03   # ACL single-column width, inches
 FULL = 6.3
 
 
-def _save(fig, name):
-    fig.savefig(OUT / f"{name}.pdf")
+def _save(fig, name, *, metadata=None):
+    fig.savefig(OUT / f"{name}.pdf", metadata=metadata)
     plt.close(fig)
 
 
@@ -77,6 +77,27 @@ def fig_agreement():
 
 
 # --------------------------------------------------------------------------
+def fig_goemotions():
+    """Show each emotion's alpha and stored 95% bootstrap interval."""
+    with (R / "cross_goemotions.json").open() as stream:
+        rows = sorted(json.load(stream)["variants"], key=lambda row: (row["alpha"], row["variant"]))
+    fig, ax = plt.subplots(figsize=(COL, 4.8), layout="constrained")
+    for y, row in enumerate(rows):
+        ci = row["alpha_ci95"]
+        ax.plot([ci["lo"], ci["hi"]], [y, y], color=C[0], lw=1.5, solid_capstyle="round")
+        ax.plot(row["alpha"], y, M[0], color=C[0], ms=3, zorder=3)
+    ax.set_yticks(range(len(rows)), [row["variant"].removeprefix("emotion:") for row in rows])
+    ax.invert_yaxis()
+    ax.set_xlim(0, 1)
+    ax.set_xlabel("Krippendorff's α (95% CI)")
+    ax.set_title("GoEmotions: per-emotion agreement")
+    ax.grid(axis="y", visible=False)
+    # Keep the PDF at exactly one column, rather than tight-cropping its canvas.
+    with plt.rc_context({"savefig.bbox": None}):
+        # Do not embed the current time (or SOURCE_DATE_EPOCH) in this artefact.
+        _save(fig, "goemotions", metadata={"CreationDate": None, "ModDate": None})
+
+
 def fig_gate_operating_points():
     files = {"iid noise": "gate_sim_iid.jsonl", "hard items (specified first)": "gate_sim_het.jsonl",
              "hard items, post hoc (strong)": "gate_sim_het_k-0.10.jsonl"}
@@ -201,6 +222,6 @@ def fig_judges():
 
 
 if __name__ == "__main__":
-    for f in (fig_agreement, fig_gate_operating_points, fig_alpha_floor_sweep, fig_mde, fig_claim4, fig_judges):
+    for f in (fig_agreement, fig_goemotions, fig_gate_operating_points, fig_alpha_floor_sweep, fig_mde, fig_claim4, fig_judges):
         f()
         print("ok", f.__name__)
