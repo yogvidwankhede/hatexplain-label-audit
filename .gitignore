@@ -5,6 +5,7 @@ __pycache__/
 build/
 dist/
 .venv/
+temp_auto_push.bat
 data/
 __pycache__/
 *.egg-info/
@@ -12,3 +13,5 @@ __pycache__/
 
 .env
 submission/
+.gitignore
+branch_structure.json
